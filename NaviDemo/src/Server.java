@@ -26,12 +26,11 @@ public class Server
         try
         {
             serverSocket = new ServerSocket(10001);
-            while (true)
+            while (true)//循环接受Socket
             {
                 socket = serverSocket.accept();
-                System.out.println(socket);
                 ipInfo = socket.getInetAddress().getHostAddress().toString();
-                new Thread(new Task(socket)).start();
+                new Thread(new Task(socket)).start();//并且每次接收到Socket之后，就要新建一个线程以达到多次返回数据接受数据的目的
             }
         } catch (IOException e)
         {
@@ -56,8 +55,7 @@ public class Server
             {
                 bufferedReader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
                 System.out.println(ipInfo);
-                String code = bufferedReader.readLine();
-                System.out.println(code + "..");
+                String code = bufferedReader.readLine();//客户端先发送一个标志，说明是登录还是返回
                 if (code.equals("0"))
                 {
                     login();
@@ -68,7 +66,7 @@ public class Server
                 System.out.println(code);
             } catch (IOException e)
             {
-
+                e.printStackTrace();
             }
         }
     }
@@ -217,7 +215,8 @@ public class Server
 
     public static void main(String[] args)
     {
-        new Server();
+        Server server = new Server();
+        server.setAdminKey("KangYh is very handsome!");
 
     }
 }

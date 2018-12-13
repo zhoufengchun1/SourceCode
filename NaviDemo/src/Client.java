@@ -15,6 +15,8 @@ public class Client
     private Toolkit toolkit = Toolkit.getDefaultToolkit();
     private JPanel accountJPanel, passwdJPanel, buttonjPanel, invitejPanel;
     private JButton loginButton, registButton;
+    static JDialog jDialog=new JDialog();
+
     private Font font = new Font("微软雅黑", 1, 18);
 
     private BufferedWriter bufferedWriter;
@@ -22,6 +24,7 @@ public class Client
 
     private String account, passwd;
     private String tips;
+    private boolean isAdmin = false;
 
     public Client()
     {
@@ -74,12 +77,15 @@ public class Client
                 try
                 {
                     Socket socket = new Socket("localhost", 10001);
-                    System.out.println(socket);
+                    //每点击一次必须新建一个新的Socket，否则无法一直获取服务端的数据，具体原因不明，日后考证
                     sendInfo(0, socket);
-
+                    if (tips.contains("成功"))
+                    {
+                        Home home = new Home(isAdmin);
+                    }
                 } catch (IOException e1)
                 {
-
+                    e1.printStackTrace();
                 }
 
             }
@@ -109,7 +115,7 @@ public class Client
         jFrame.add(registButton);
     }
 
-    public void sendInfo(int code, Socket socket)
+    public void sendInfo(int code, Socket socket)//封装了注册登录的共性方法
     {
 
         account = accountText.getText();
@@ -125,6 +131,7 @@ public class Client
         try
         {
             bufferedWriter = new BufferedWriter(new OutputStreamWriter(socket.getOutputStream()));
+            //这里同样要使用每次的新的Socket获取写入流
 
             bufferedWriter.write(code + "\r\n");
             bufferedWriter.flush();//输出标示，告诉服务端是登录还是注册，登录为0，注册为1
@@ -140,14 +147,17 @@ public class Client
             }
             bufferedReader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
             tips = bufferedReader.readLine();
-            System.out.println(tips);
+            if (tips.contains("管理员"))
+            {
+                isAdmin = true;
+            }
         } catch (IOException e1)
         {
-            mDialog(string + "结果", "交换数据失败！");
+            new mDialog(string + "结果", "交换数据失败！",jFrame);
 
         } catch (NullPointerException e1)
         {
-            mDialog(string + "结果", "服务端关闭！请先打开服务端！");
+            new mDialog(string + "结果", "服务端关闭！请先打开服务端！",jFrame);
         } finally
         {
             try
@@ -157,60 +167,19 @@ public class Client
             } catch (IOException e1)
             {
                 tips = "流关闭失败！";
-                mDialog(string + "结果", tips);
+                new mDialog(string + "结果", tips,jFrame);
             }
-            mDialog(string + "结果", tips);
+            new mDialog(string + "结果", tips,jFrame);
         }
     }
 
 
-    public void mDialog(String title, String tips)
-    {
-        JDialog jDialog = new JDialog(jFrame, title, true);
-        jDialog.setBounds((toolkit.getScreenSize().width - 200) / 2, (toolkit.getScreenSize().height - 200) / 2, 300, 100);
-        JPanel jPanel = new JPanel();
-        jPanel.setLayout(new BorderLayout());
-        JLabel jLabel = new JLabel(tips);
-        jLabel.setFont(font);
-
-        jLabel.setHorizontalAlignment(SwingConstants.CENTER);
-
-        JButton jButton = new JButton("确定");
-
-        jPanel.add(jLabel, BorderLayout.CENTER);
-
-        jPanel.add(jButton, BorderLayout.SOUTH);
-
-        jDialog.add(jPanel);
-
-        jDialog.validate();//同步数据，和上面的原理一样
-
-        jButton.addActionListener(new ActionListener()
-
-        {
-
-            @Override
-
-            public void actionPerformed(ActionEvent e)
-
-            {
-
-                jDialog.setVisible(false);//点击确定设置为不可见
-
-            }
-
-        });
-
-        jDialog.setResizable(false);//不可调整大小
-
-        jDialog.setVisible(true);
 
 
-    }
 
     public static void main(String[] args)
     {
-        new Client();
+        Client client = new Client();
     }
 
 }

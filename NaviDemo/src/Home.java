@@ -4,6 +4,7 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+
 public class Home
 {
     private JFrame jFrame;
@@ -13,12 +14,21 @@ public class Home
     private Font titleFont = new Font("微软雅黑", 1, 28);
     private Font charFont = new Font("微软雅黑", 1, 20);
     private Toolkit toolkit = Toolkit.getDefaultToolkit();
+    private JDialog mDialog = Client.getjDialog();
+
+    private File pointFile = new File("D://String.txt");
+    private File lengthFile = new File("D://length.txt");
+    private File mapFile = new File("D://map.png");
+
     private ArrayList<String> Name;
     private String[] point;
     private int[][] a;
 
-    public Home()
+    private boolean isAdmin = false;
+
+    public Home(boolean isAdmin)
     {
+        this.isAdmin = isAdmin;//确定用户身份
         init();
     }
 
@@ -34,9 +44,8 @@ public class Home
         point = new String[Name.size()];//将获取到的数据转换为数组，
         point = Name.toArray(point);//数组大小为ArrayList的长度
 
-        jFrame.setBounds((toolkit.getScreenSize().width - 829) / 2, (toolkit.getScreenSize().height - 660) / 2, 829, 660);
+        jFrame.setBounds((toolkit.getScreenSize().width - 829) / 2, (toolkit.getScreenSize().height - 660) / 2, 700, 450);
         jFrame.setVisible(true);
-        writeLength();
     }
 
     public void titleInit()
@@ -48,26 +57,26 @@ public class Home
 
     public void mapInit()
     {
-        ImageIcon imageIcon = new ImageIcon("D://map.png");
+        ImageIcon imageIcon = new ImageIcon(mapFile.getPath());
         imageIcon.setImage(imageIcon.getImage().getScaledInstance(imageIcon.getIconWidth(),
                 imageIcon.getIconHeight(), Image.SCALE_DEFAULT));
         map = new JLabel();
-        map.setBounds(0, 0, 690, 552);
+        map.setBounds(0, 0, 690, 400);
         map.setHorizontalAlignment(0);
         map.setIcon(imageIcon);
         jPanel = new JPanel();
-        jPanel.setSize(690, 552);
+        jPanel.setSize(690, 400);
         jPanel.add(map);
         jFrame.add(jPanel, BorderLayout.CENTER);//地图显示
     }
 
+
     public void addString()
     {
-        File file = new File("D://String.txt");
         Name = new ArrayList<>();
         try
         {
-            BufferedReader bufferedReader = new BufferedReader(new FileReader(file));
+            BufferedReader bufferedReader = new BufferedReader(new FileReader(pointFile));
             int num = 0;
             String str;
             while ((str = bufferedReader.readLine()) != null)
@@ -81,10 +90,10 @@ public class Home
 
     }
 
-    public void writeLength()
+    public void writeLength()//根据已有的景点，创建图的结构
     {
 
-        System.out.println("start");
+        System.out.println("开始录入：");
         int num = point.length;
         a = new int[num][num];
         int i, j;
@@ -109,7 +118,7 @@ public class Home
                 }
                 else
                 {
-                    System.out.println(string1 + "到" + string2);
+                    System.out.println("请输入" + string1 + "到" + string2 + "的距离：");
                     int length = scanner.nextInt();
                     a[i][j] = length;
                 }
@@ -120,10 +129,10 @@ public class Home
             }
 
         }
-        System.out.println("finish");
+        System.out.println("录入完毕。");
         try                     //写入文件
         {
-            BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter("D://length.txt"));
+            BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(lengthFile));
             int count = 0;
             for (i = 0; i < num; i++)
             {
@@ -148,7 +157,7 @@ public class Home
 
     public void readLength()//
     {
-        int i,j;
+        int i, j;
 //        BufferedReader bufferedReader = new BufferedReader(new FileReader("D://length.txt"));
         int num;
         for (i = 0; i < a.length; i++)
@@ -192,9 +201,52 @@ public class Home
 
     }
 
+    public void adminTips()
+    {
+        String errorTitle = "数据错误！";
+        try
+        {
+            checkFile(mapFile, "地图");
+        } catch (IOException e)
+        {
+            e.printStackTrace();
+            new mDialog(errorTitle, "请管理员先录入地图数据！", jFrame);
+            //writeMap
+        }
+        try
+        {
+            checkFile(pointFile, "景点");
+
+        } catch (IOException e)
+        {
+            e.printStackTrace();
+            new mDialog(errorTitle, "请管理员先录入景点数据！", jFrame);
+            //writePoint
+        }
+        try
+        {
+            checkFile(lengthFile, "距离");
+
+        } catch (IOException e)
+        {
+            e.printStackTrace();
+            new mDialog(errorTitle, "请管理员先录入距离数据！", jFrame);
+            //writeLength
+        }
+
+    }
+
+    public void checkFile(File file, String string) throws IOException
+    {
+        if (!file.exists() || file.length() == 0)
+        {
+            throw new IOException(string + "文件打开失败！");
+        }
+    }
+
 
     public static void main(String[] args)
     {
-        new Home();
+        Home home = new Home(true);
     }
 }
