@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f6b8aca5-89b1-40f1-a02f-37ebea8fbe29" name="Default Changelist" comment="" />
+    <list default="true" id="f6b8aca5-89b1-40f1-a02f-37ebea8fbe29" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NaviDemo/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/NaviDemo/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NaviDemo/cilent$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/NaviDemo/cilent$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NaviDemo/cilent$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/NaviDemo/cilent$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NaviDemo/cilent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/NaviDemo/cilent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NaviDemo/server.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/NaviDemo/server.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cilent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,34 +37,45 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Home.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3915">
+            <state relative-caret-position="1015">
               <caret line="152" column="10" selection-start-line="152" selection-start-column="10" selection-end-line="152" selection-end-column="10" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cilent.java">
+        <entry file="file://$PROJECT_DIR$/src/Client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3078">
-              <caret line="124" column="31" selection-start-line="124" selection-start-column="31" selection-end-line="124" selection-end-column="31" />
+            <state relative-caret-position="1674">
+              <caret line="129" selection-start-line="129" selection-end-line="129" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#init#0;class#Client#0" />
+                <element signature="method#componentInit#0;class#Client#0" />
+                <element signature="e#2092#2277#0" expanded="true" />
+                <element signature="e#2276#2277#0" expanded="true" />
+                <element signature="e#2441#2674#0" expanded="true" />
+                <element signature="e#2673#2674#0" expanded="true" />
+                <element signature="method#mDialog#0;class#Client#0" />
+                <element signature="e#6144#6145#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/server.java">
+        <entry file="file://$PROJECT_DIR$/src/Server.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="27">
-              <caret line="107" column="55" selection-start-line="107" selection-start-column="36" selection-end-line="107" selection-end-column="55" />
+            <state relative-caret-position="972">
+              <caret line="42" column="19" lean-forward="true" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="19" />
               <folding>
+                <element signature="e#1068#1069#0" expanded="true" />
+                <element signature="e#1095#1096#0" expanded="true" />
                 <element signature="e#5654#5655#0" expanded="true" />
                 <element signature="e#5687#5688#0" expanded="true" />
                 <element signature="e#5726#5727#0" expanded="true" />
                 <element signature="e#5757#5758#0" expanded="true" />
+                <element signature="class#User#0" />
               </folding>
             </state>
           </provider>
@@ -74,10 +94,12 @@
     <findStrings>
       <find>account</find>
       <find>student</find>
+      <find>Cilent</find>
     </findStrings>
     <replaceStrings>
       <replace>passwd</replace>
       <replace>user</replace>
+      <replace>Client</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -89,8 +111,10 @@
         <option value="$PROJECT_DIR$/src/NaviDemo.java" />
         <option value="$PROJECT_DIR$/src/login.java" />
         <option value="$PROJECT_DIR$/src/Home.java" />
-        <option value="$PROJECT_DIR$/src/server.java" />
         <option value="$PROJECT_DIR$/src/cilent.java" />
+        <option value="$PROJECT_DIR$/src/server.java" />
+        <option value="$PROJECT_DIR$/src/Server.java" />
+        <option value="$PROJECT_DIR$/src/Client.java" />
       </list>
     </option>
   </component>
@@ -101,10 +125,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-3" />
-    <option name="y" value="-17" />
-    <option name="width" value="1920" />
-    <option name="height" value="1080" />
+    <option name="x" value="-440" />
+    <option name="y" value="-22" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -130,7 +154,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane">
         <subPane>
           <expand>
@@ -142,12 +165,13 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544628875587" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544689354446" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -174,25 +198,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.cilent">
-    <configuration name="cilent" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="cilent" />
+  <component name="RunManager" selected="Application.Client">
+    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Client" />
       <module name="NaviDemo" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="server" />
+    <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Server" />
       <module name="NaviDemo" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.Server" />
+      <item itemvalue="Application.Client" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.cilent" />
-        <item itemvalue="Application.server" />
+        <item itemvalue="Application.Client" />
+        <item itemvalue="Application.Server" />
       </list>
     </recent_temporary>
   </component>
@@ -208,15 +236,15 @@
       <updated>1544612852358</updated>
       <workItem from="1544612856801" duration="13041000" />
       <workItem from="1544677713493" duration="2377000" />
-      <workItem from="1544684278660" duration="314000" />
+      <workItem from="1544684278660" duration="5035000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15732000" />
+    <option name="totallyTimeSpent" value="20453000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.25" />
@@ -228,8 +256,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.35803878" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39794755" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.35689852" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4481186" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -237,7 +265,7 @@
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32959184" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3295325" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="bottom" id="Version Control" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -258,22 +286,10 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/server.java</url>
-          <line>107</line>
+          <url>file://$PROJECT_DIR$/src/Server.java</url>
+          <line>218</line>
           <properties />
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/server.java</url>
-          <line>96</line>
-          <properties />
-          <option name="timeStamp" value="29" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/cilent.java</url>
-          <line>106</line>
-          <properties />
-          <option name="timeStamp" value="30" />
+          <option name="timeStamp" value="35" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -285,30 +301,41 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Home.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3915">
+        <state relative-caret-position="1015">
           <caret line="152" column="10" selection-start-line="152" selection-start-column="10" selection-end-line="152" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cilent.java">
+    <entry file="file://$PROJECT_DIR$/src/Client.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3078">
-          <caret line="124" column="31" selection-start-line="124" selection-start-column="31" selection-end-line="124" selection-end-column="31" />
+        <state relative-caret-position="1674">
+          <caret line="129" selection-start-line="129" selection-end-line="129" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#init#0;class#Client#0" />
+            <element signature="method#componentInit#0;class#Client#0" />
+            <element signature="e#2092#2277#0" expanded="true" />
+            <element signature="e#2276#2277#0" expanded="true" />
+            <element signature="e#2441#2674#0" expanded="true" />
+            <element signature="e#2673#2674#0" expanded="true" />
+            <element signature="method#mDialog#0;class#Client#0" />
+            <element signature="e#6144#6145#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/server.java">
+    <entry file="file://$PROJECT_DIR$/src/Server.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="107" column="55" selection-start-line="107" selection-start-column="36" selection-end-line="107" selection-end-column="55" />
+        <state relative-caret-position="972">
+          <caret line="42" column="19" lean-forward="true" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="19" />
           <folding>
+            <element signature="e#1068#1069#0" expanded="true" />
+            <element signature="e#1095#1096#0" expanded="true" />
             <element signature="e#5654#5655#0" expanded="true" />
             <element signature="e#5687#5688#0" expanded="true" />
             <element signature="e#5726#5727#0" expanded="true" />
             <element signature="e#5757#5758#0" expanded="true" />
+            <element signature="class#User#0" />
           </folding>
         </state>
       </provider>

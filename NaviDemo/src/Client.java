@@ -7,7 +7,7 @@ import java.awt.event.MouseEvent;
 import java.io.*;
 import java.net.Socket;
 
-public class cilent
+public class Client
 {
     private JFrame jFrame;
     private JLabel accountLabel, passwdLabel, inviteLabel;
@@ -17,16 +17,14 @@ public class cilent
     private JButton loginButton, registButton;
     private Font font = new Font("Î¢ÈíÑÅºÚ", 1, 18);
 
-    private Socket socket;
     private BufferedWriter bufferedWriter;
     private BufferedReader bufferedReader;
 
     private String account, passwd;
     private String tips;
 
-    public cilent()
+    public Client()
     {
-        clientInit();
         init();
     }
 
@@ -73,17 +71,51 @@ public class cilent
             @Override
             public void mouseClicked(MouseEvent e)
             {
-                sendInfo(0);
+                try
+                {
+                    Socket socket = new Socket("localhost", 10001);
+                    System.out.println(socket);
+                    sendInfo(0, socket);
+
+                } catch (IOException e1)
+                {
+
+                }
+
             }
         });
         jFrame.add(loginButton);
     }
 
-    public void sendInfo(int code)
+    public void registButtonInit()
     {
+        registButton = new JButton("×¢²á");
+        registButton.addMouseListener(new MouseAdapter()
+        {
+            @Override
+            public void mouseClicked(MouseEvent e)
+            {
+                try
+                {
+                    Socket socket = new Socket("localhost", 10001);
+                    sendInfo(1, socket);
+                } catch (IOException e1)
+                {
+                    e1.printStackTrace();
+                }
+
+            }
+        });
+        jFrame.add(registButton);
+    }
+
+    public void sendInfo(int code, Socket socket)
+    {
+
         account = accountText.getText();
         passwd = passwdText.getText();
         String string;
+        System.out.println(code);
         if (code == 0)
         {
             string = "µÇÂ¼";
@@ -92,6 +124,8 @@ public class cilent
             string = "×¢²á";
         try
         {
+            bufferedWriter = new BufferedWriter(new OutputStreamWriter(socket.getOutputStream()));
+
             bufferedWriter.write(code + "\r\n");
             bufferedWriter.flush();//Êä³ö±êÊ¾£¬¸æËß·þÎñ¶ËÊÇµÇÂ¼»¹ÊÇ×¢²á£¬µÇÂ¼Îª0£¬×¢²áÎª1
 
@@ -129,37 +163,6 @@ public class cilent
         }
     }
 
-    public void registButtonInit()
-    {
-        registButton = new JButton("×¢²á");
-        registButton.addMouseListener(new MouseAdapter()
-        {
-            @Override
-            public void mouseClicked(MouseEvent e)
-            {
-                sendInfo(1);
-            }
-        });
-        jFrame.add(registButton);
-    }
-
-    public void clientInit() throws NullPointerException
-    {
-        try
-        {
-            socket = new Socket("localhost", 10001);
-            bufferedWriter = new BufferedWriter(new OutputStreamWriter(socket.getOutputStream()));
-            if (bufferedWriter == null)
-            {
-                throw new NullPointerException();
-            }
-        } catch (IOException e)
-        {
-
-        }
-
-
-    }
 
     public void mDialog(String title, String tips)
     {
@@ -207,7 +210,7 @@ public class cilent
 
     public static void main(String[] args)
     {
-        new cilent();
+        new Client();
     }
 
 }

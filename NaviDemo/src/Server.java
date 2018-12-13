@@ -1,10 +1,12 @@
+import com.sun.source.tree.Scope;
+
 import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.HashSet;
 import java.util.Iterator;
 
-public class server
+public class Server
 {
     private Socket socket;
     private ServerSocket serverSocket;
@@ -18,26 +20,59 @@ public class server
     private File infofile = new File("D://info.key");
     private boolean isAdmin = false;
 
-    public server()
+
+    public Server()
     {
         try
         {
             serverSocket = new ServerSocket(10001);
-            socket = serverSocket.accept();
-            ipInfo = socket.getInetAddress().getHostAddress().toString();
-            bufferedReader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
-            System.out.println(ipInfo);
-            if (bufferedReader.readLine().equals("0"))
+            while (true)
             {
-                login();
-            }else
-                regist();
+                socket = serverSocket.accept();
+                System.out.println(socket);
+                ipInfo = socket.getInetAddress().getHostAddress().toString();
+                new Thread(new Task(socket)).start();
+            }
         } catch (IOException e)
         {
-
+            e.printStackTrace();
         }
 
     }
+
+    public class Task implements Runnable
+    {
+        private Socket socket;
+
+        public Task(Socket socket)
+        {
+            this.socket = socket;
+        }
+
+        @Override
+        public void run()
+        {
+            try
+            {
+                bufferedReader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
+                System.out.println(ipInfo);
+                String code = bufferedReader.readLine();
+                System.out.println(code + "..");
+                if (code.equals("0"))
+                {
+                    login();
+                }
+                else
+                    regist();
+                code = bufferedReader.readLine();
+                System.out.println(code);
+            } catch (IOException e)
+            {
+
+            }
+        }
+    }
+
 
     public void login()
     {
@@ -54,12 +89,8 @@ public class server
         try
         {
             readFile(infofile);//先读文件
-            System.out.println(bufferedReader);
             account = bufferedReader.readLine();//客户端传回来的帐号密码
-            System.out.println(account);
-
             passwd = bufferedReader.readLine();
-            System.out.println(passwd);
             User user = new User(account, passwd);//封装对象
             if (isExists(user, false))//找到了
             {
@@ -74,9 +105,6 @@ public class server
         } catch (IOException e)
         {
             e.printStackTrace();
-        } finally
-        {
-            printWriter.close();
         }
     }
 
@@ -86,7 +114,7 @@ public class server
         String status = null;
         try
         {
-            printWriter = new PrintWriter(socket.getOutputStream());
+            printWriter = new PrintWriter(socket.getOutputStream(), true);
             account = bufferedReader.readLine();//客户端传回来的帐号密码
             passwd = bufferedReader.readLine();
             inviteCode = bufferedReader.readLine();
@@ -107,12 +135,13 @@ public class server
                 writeFile(infofile);
                 printWriter.println("注册成功！身份：" + status);
             }
+            else
+            {
+                printWriter.println("注册失败，用户已存在！");
+            }
         } catch (IOException e)
         {
             e.printStackTrace();
-        } finally
-        {
-            printWriter.close();
         }
 
     }
@@ -136,15 +165,6 @@ public class server
         } catch (ClassNotFoundException e)
         {
             printWriter.println("数据文件异常，请检查文件！");
-        } finally
-        {
-            try
-            {
-                objectInputStream.close();
-            } catch (IOException e)
-            {
-                printWriter.println("关闭流失败，请检查服务端！");
-            }
         }
     }
 
@@ -160,16 +180,6 @@ public class server
         } catch (IOException e)
         {
             printWriter.println("数据文件异常，请检查文件！");
-        } finally
-        {
-            printWriter.close();
-            try
-            {
-                objectOutputStream.close();
-            } catch (IOException e)
-            {
-                printWriter.println("关闭流失败，请检查服务端！");
-            }
         }
     }
 
@@ -207,7 +217,8 @@ public class server
 
     public static void main(String[] args)
     {
-        new server();
+        new Server();
+
     }
 }
 
@@ -250,7 +261,7 @@ class User implements Serializable
 
     public void setAdmin(String string)
     {
-        if (string.equals(new server().getAdminKey()))
+        if (string.equals(new Server().getAdminKey()))
         {
             isAdmin = true;
         }
