@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact build-on-make="true" name="Java:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Java_jar</output-path>
+    <root id="root">
+      <element id="archive" name="Java.jar">
+        <element id="directory" name="META-INF">
+          <element id="file-copy" path="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
+        </element>
+        <element id="module-output" name="Java" />
+      </element>
+      <element id="file-copy" path="$MAVEN_REPOSITORY$/org/jetbrains/annotations/16.0.2/annotations-16.0.2.jar" />
+    </root>
+  </artifact>
+</component>

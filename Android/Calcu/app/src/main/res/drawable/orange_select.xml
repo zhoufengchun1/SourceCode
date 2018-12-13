@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:drawable="@drawable/orange_bg" android:state_pressed="false"></item> <!-- 不点击时背景为orange_bg.xml页面的效果 -->
+    <item android:drawable="@drawable/khaki_bg" android:state_pressed="true"></item>   <!-- 点击时背景为khaki_bg.xml页面的效果 -->
+</selector>
