@@ -1,14 +1,17 @@
 import javax.print.DocFlavor;
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import java.io.*;
+import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.Set;
 import java.util.TreeMap;
 
 public class CreateLength
 {
-    private JComboBox jComboBox1,jComboBox2;
+    private JComboBox jComboBox1, jComboBox2;
     private JTextField jTextField;
     private ObjectInputStream objectInputStream1, objectInputStream2;
     private ObjectOutputStream objectOutputStream;
@@ -16,6 +19,7 @@ public class CreateLength
     private File pointFile = new File("D://point.obj");
     private int a[][];
     private Toolkit toolkit = Toolkit.getDefaultToolkit();
+    private ArrayList<ArrayList<>>
 
     private TreeMap treeMap;
     private Set set;
@@ -71,10 +75,30 @@ public class CreateLength
             jComboBox2.addItem(string);
         }
 
+        JButton cancelButton = new JButton("取消");
+        JButton okayButton = new JButton("确认");
+        cancelButton.addMouseListener(new MouseAdapter()
+        {
+            @Override
+            public void mouseClicked(MouseEvent e)
+            {
+                jFrame.setVisible(false);
+            }
+        });
+        okayButton.addMouseListener(new MouseAdapter()
+        {
+            @Override
+            public void mouseClicked(MouseEvent e)
+            {
+
+            }
+        });
+
         jFrame.add(jComboBox1);
         jFrame.add(jComboBox2);
         jFrame.add(jTextField);
-
+        jFrame.add(cancelButton);
+        jFrame.add(okayButton);
     }
 
 }

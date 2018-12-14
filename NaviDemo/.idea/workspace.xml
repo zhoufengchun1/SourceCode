@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f6b8aca5-89b1-40f1-a02f-37ebea8fbe29" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/CreateLength.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CreatePoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CreatePoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DeletePoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DeletePoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EditPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EditPoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CreateLength.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CreateLength.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -64,10 +61,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/CreateLength.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="17" column="58" selection-start-line="17" selection-start-column="58" selection-end-line="17" selection-end-column="58" />
+            <state relative-caret-position="243">
+              <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#2402#2564#0" expanded="true" />
+                <element signature="e#2563#2564#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -76,8 +75,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/DeletePoint.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
-              <caret line="19" column="58" selection-start-line="19" selection-start-column="58" selection-end-line="19" selection-end-column="58" />
+            <state relative-caret-position="459">
+              <caret line="54" column="47" lean-forward="true" selection-start-line="53" selection-start-column="8" selection-end-line="54" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1442#1623#0" expanded="true" />
@@ -223,7 +222,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-440" />
     <option name="y" value="-22" />
     <option name="width" value="1936" />
@@ -270,7 +269,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544774006999" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544776321250" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -345,15 +344,15 @@
       <updated>1544612852358</updated>
       <workItem from="1544612856801" duration="13041000" />
       <workItem from="1544677713493" duration="2377000" />
-      <workItem from="1544684278660" duration="24142000" />
+      <workItem from="1544684278660" duration="24722000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39560000" />
+    <option name="totallyTimeSpent" value="40140000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.12526427" />
@@ -509,8 +508,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DeletePoint.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="19" column="58" selection-start-line="19" selection-start-column="58" selection-end-line="19" selection-end-column="58" />
+        <state relative-caret-position="459">
+          <caret line="54" column="47" lean-forward="true" selection-start-line="53" selection-start-column="8" selection-end-line="54" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1442#1623#0" expanded="true" />
@@ -523,10 +522,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CreateLength.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="17" column="58" selection-start-line="17" selection-start-column="58" selection-end-line="17" selection-end-column="58" />
+        <state relative-caret-position="243">
+          <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2402#2564#0" expanded="true" />
+            <element signature="e#2563#2564#0" expanded="true" />
           </folding>
         </state>
       </provider>
