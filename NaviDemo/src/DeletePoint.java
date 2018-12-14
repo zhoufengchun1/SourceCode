@@ -5,18 +5,19 @@ import java.awt.event.ItemListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.io.*;
-import java.util.HashMap;
+import java.util.TreeMap;
 import java.util.Iterator;
 import java.util.Set;
 
 public class DeletePoint
 {
     private JComboBox jComboBox;
-    private HashMap hashMap;
+    private TreeMap treeMap;
     private ObjectInputStream objectInputStream;
     private ObjectOutputStream objectOutputStream;
     private Set set;
     private File file;
+    private Toolkit toolkit = Toolkit.getDefaultToolkit();
 
     public DeletePoint()
     {
@@ -24,7 +25,7 @@ public class DeletePoint
         {
             file = new File("D://info.obj");
             objectInputStream = new ObjectInputStream(new FileInputStream(file));
-            hashMap = (HashMap) objectInputStream.readObject();
+            treeMap = (TreeMap) objectInputStream.readObject();
 
         } catch (IOException e)
         {
@@ -39,10 +40,12 @@ public class DeletePoint
     {
         JFrame jFrame = new JFrame();
         jFrame.setLayout(new FlowLayout());
+        jFrame.setBounds((toolkit.getScreenSize().width - 829) / 2, (toolkit.getScreenSize().height - 660) / 2, 350, 450);
+
 
         jComboBox = new JComboBox();
         jFrame.add(jComboBox);
-        set = hashMap.keySet();
+        set = treeMap.keySet();
         Iterator iterator = set.iterator();
         while (iterator.hasNext())
         {
@@ -65,10 +68,10 @@ public class DeletePoint
             @Override
             public void mouseClicked(MouseEvent e)
             {
-                hashMap.remove((String) jComboBox.getSelectedItem());
+                treeMap.remove((String) jComboBox.getSelectedItem());
                 try
                 {
-                    objectOutputStream.writeObject(hashMap);
+                    objectOutputStream.writeObject(treeMap);
                     jFrame.setVisible(false);
                 } catch (IOException e1)
 

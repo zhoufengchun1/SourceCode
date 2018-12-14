@@ -7,9 +7,10 @@ import java.awt.event.ItemListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.io.*;
-import java.util.HashMap;
+import java.util.TreeMap;
 import java.util.Iterator;
 import java.util.Set;
+import java.util.TreeMap;
 
 public class EditPoint
 {
@@ -17,7 +18,7 @@ public class EditPoint
     private String key;
     private ObjectInputStream objectInputStream;
     private ObjectOutputStream objectOutputStream;
-    private HashMap hashMap;
+    private TreeMap treeMap;
     private Set<String> set;
     private File file;
 
@@ -27,8 +28,8 @@ public class EditPoint
         {
             file = new File("D://info.obj");
             objectInputStream = new ObjectInputStream(new FileInputStream(file));
-            hashMap = (HashMap) objectInputStream.readObject();
-            set = hashMap.keySet();
+            treeMap = (TreeMap) objectInputStream.readObject();
+            set = treeMap.keySet();
             frameInit();
         } catch (IOException e)
         {
@@ -58,7 +59,7 @@ public class EditPoint
             @Override
             public void itemStateChanged(ItemEvent e)
             {
-                jTextArea.setText((String) hashMap.get((String) jComboBox.getSelectedItem()));
+                jTextArea.setText((String) treeMap.get((String) jComboBox.getSelectedItem()));
             }
         });
         JButton okayButton = new JButton("È·¶¨");
@@ -77,10 +78,10 @@ public class EditPoint
             public void mouseClicked(MouseEvent e)
             {
                 String string = jTextArea.getText();
-                hashMap.put((String) jComboBox.getSelectedItem(), string);
+                treeMap.put((String) jComboBox.getSelectedItem(), string);
                 try
                 {
-                    objectOutputStream.writeObject(hashMap);
+                    objectOutputStream.writeObject(treeMap);
                     jFrame.setVisible(false);
                 } catch (IOException e1)
                 {

@@ -4,7 +4,7 @@ import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.io.*;
-import java.util.HashMap;
+import java.util.TreeMap;
 import java.util.HashSet;
 
 public class CreatePoint
@@ -12,7 +12,7 @@ public class CreatePoint
     private File file;
     private ObjectInputStream objectInputStream;
     private ObjectOutputStream objectOutputStream;
-    private HashMap hashMap;
+    private TreeMap treeMap;
     private Toolkit toolkit = Toolkit.getDefaultToolkit();
 
     public CreatePoint()
@@ -21,7 +21,7 @@ public class CreatePoint
         {
             file = new File("D://info.obj");
             objectInputStream = new ObjectInputStream(new FileInputStream(file));
-            hashMap = (HashMap) objectInputStream.readObject();
+            treeMap = (TreeMap) objectInputStream.readObject();
             frameInit();
         } catch (IOException e)
         {
@@ -63,11 +63,11 @@ public class CreatePoint
             @Override
             public void mouseClicked(MouseEvent e)
             {
-                hashMap.put(jTextField.getText(), jTextArea.getText());
+                treeMap.put(jTextField.getText(), jTextArea.getText());
                 try
                 {
                     objectOutputStream = new ObjectOutputStream(new FileOutputStream(file));
-                    objectOutputStream.writeObject(hashMap);
+                    objectOutputStream.writeObject(treeMap);
                     jFrame.setVisible(false);
                 } catch (IOException e1)
                 {
