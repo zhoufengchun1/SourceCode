@@ -1,7 +1,16 @@
+import javax.naming.Name;
+import javax.print.DocFlavor;
+import javax.sound.midi.spi.MidiFileReader;
 import javax.swing.*;
+import javax.swing.text.DefaultEditorKit;
+import javax.swing.text.JTextComponent;
 import java.awt.*;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
 import java.io.*;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.Scanner;
 
 
@@ -14,13 +23,13 @@ public class Home
     private Font titleFont = new Font("微软雅黑", 1, 28);
     private Font charFont = new Font("微软雅黑", 1, 20);
     private Toolkit toolkit = Toolkit.getDefaultToolkit();
-    private JDialog mDialog = Client.getjDialog();
 
-    private File pointFile = new File("D://String.txt");
+    private File pointFile = new File("D://point.txt");
     private File lengthFile = new File("D://length.txt");
     private File mapFile = new File("D://map.png");
+    private File infoFile = new File("D://info.txt");
 
-    private ArrayList<String> Name;
+    private HashSet<String> Name;
     private String[] point;
     private int[][] a;
 
@@ -71,107 +80,8 @@ public class Home
     }
 
 
-    public void addString()
-    {
-        Name = new ArrayList<>();
-        try
-        {
-            BufferedReader bufferedReader = new BufferedReader(new FileReader(pointFile));
-            int num = 0;
-            String str;
-            while ((str = bufferedReader.readLine()) != null)
-            {
-                Name.add(str);
-            }
-        } catch (IOException e)
-        {
-            //wrongDialog
-        }
-
-    }
-
-    public void writeLength()//根据已有的景点，创建图的结构
-    {
-
-        System.out.println("开始录入：");
-        int num = point.length;
-        a = new int[num][num];
-        int i, j;
-        Scanner scanner = new Scanner(System.in);
-        for (i = 0; i < num; i++)//初始化
-        {
-            for (j = 0; j < num; j++)
-            {
-                a[i][j] = -1;
-            }
-        }
-        for (i = 0; i < num; i++)//录入信息
-        {
-            for (j = 0; j <= i; j++)
-            {
-                String string1 = point[i];
-                String string2 = point[j];
-
-                if (i == j)//对角线全为0
-                {
-                    a[i][j] = 0;
-                }
-                else
-                {
-                    System.out.println("请输入" + string1 + "到" + string2 + "的距离：");
-                    int length = scanner.nextInt();
-                    a[i][j] = length;
-                }
-
-
-                a[j][i] = a[i][j];//对称矩阵
-
-            }
-
-        }
-        System.out.println("录入完毕。");
-        try                     //写入文件
-        {
-            BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(lengthFile));
-            int count = 0;
-            for (i = 0; i < num; i++)
-            {
-                for (j = 0; j < num; j++)
-                {
-                    bufferedWriter.write(a[i][j] + "");
-                    if (j != num - 1)
-                    {
-                        bufferedWriter.write(" ");
-                    }
-                }
-                bufferedWriter.newLine();
-            }
-            bufferedWriter.close();
-        } catch (IOException e)
-        {
-
-        }
-
-
-    }
-
-    public void readLength()//
-    {
-        int i, j;
-//        BufferedReader bufferedReader = new BufferedReader(new FileReader("D://length.txt"));
-        int num;
-        for (i = 0; i < a.length; i++)
-        {
-            for (j = 0; j < a.length; j++)
-            {
-
-            }
-        }
-    }
-
     public void comboboxInit()
     {
-        addString();
         jComboBoxOfDestin = new JComboBox();
         jComboBoxOfOrigin = new JComboBox();
         for (String string : Name)
@@ -196,10 +106,25 @@ public class Home
         jbutton.setFont(charFont);
         jbutton.setSize(20, 30);
         jPanel.add(jbutton);
+        if (isAdmin)
+        {
+            JButton admin = new JButton("管理员菜单");
+            admin.setFont(charFont);
+            jPanel.add(admin);
+            admin.addMouseListener(new MouseAdapter()
+            {
+                @Override
+                public void mouseClicked(MouseEvent e)
+                {
+
+                }
+            });
+        }
 
         jFrame.add(jPanel, BorderLayout.SOUTH);
 
     }
+
 
     public void adminTips()
     {
@@ -233,7 +158,6 @@ public class Home
             new mDialog(errorTitle, "请管理员先录入距离数据！", jFrame);
             //writeLength
         }
-
     }
 
     public void checkFile(File file, String string) throws IOException
@@ -249,4 +173,94 @@ public class Home
     {
         Home home = new Home(true);
     }
+}
+
+class adminMenu
+{
+    private JFrame jFrame;
+    private JButton createPoint, editPoint, deletePoint, createLength, editLength;
+    private JButton okayButton, cancelButton;
+    private Toolkit toolkit = Toolkit.getDefaultToolkit();
+    private Font font = new Font("微软雅黑", 1, 20);
+    private File pointFile = new File("D://point.txt");
+    private File lengthFile = new File("D://length.txt");
+    private JFrame childFrame;
+    private JPanel childPanel;
+
+    private BufferedReader bufferedReader;
+    private BufferedWriter bufferedWriter;
+
+
+    public adminMenu()
+    {
+        jFrame = new JFrame();
+        jFrame.setBounds((toolkit.getScreenSize().width - 829) / 2, (toolkit.getScreenSize().height - 660) / 2, 350, 450);
+        jFrame.setLayout(new FlowLayout());
+
+        childPanel = new JPanel();
+        childPanel.setLayout(new FlowLayout());
+        cancelButton = new JButton("取消");
+        okayButton = new JButton("确认");
+        childPanel.add(cancelButton);
+        childPanel.add(okayButton);
+
+        createPoint = new JButton("1.创建景点信息");
+        createPoint.setFont(font);
+        createPoint.addMouseListener(new MouseAdapter()
+        {
+            @Override
+            public void mouseClicked(MouseEvent e)
+            {
+                new CreatePoint();
+            }
+        });
+
+        editPoint = new JButton("2.修改景点信息");
+        editPoint.setFont(font);
+        editPoint.addMouseListener(new MouseAdapter()
+        {
+            @Override
+            public void mouseClicked(MouseEvent e)
+            {
+                new EditPoint();
+            }
+        });
+
+        deletePoint = new JButton("3.删除景点信息");
+        deletePoint.setFont(font);
+        deletePoint.addMouseListener(new MouseAdapter()
+        {
+            @Override
+            public void mouseClicked(MouseEvent e)
+            {
+                new DeletePoint();
+            }
+        });
+
+        createLength = new JButton("4.创建道路信息");
+        createLength.setFont(font);
+        createLength.addMouseListener(new MouseAdapter()
+        {
+            @Override
+            public void mouseClicked(MouseEvent e)
+            {
+                super.mouseClicked(e);
+            }
+        });
+
+        editLength = new JButton("5.修改道路信息");
+        editLength.setFont(font);
+        editLength.addMouseListener(new MouseAdapter()
+        {
+            @Override
+            public void mouseClicked(MouseEvent e)
+            {
+                super.mouseClicked(e);
+            }
+        });
+
+
+    }
+
+
 }
