@@ -2,70 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f6b8aca5-89b1-40f1-a02f-37ebea8fbe29" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../C/CProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../C/CProject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C/CProject/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../C/CProject/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C/CProject/cmake-build-debug/CMakeFiles/3.12.3/CMakeCCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C/CProject/cmake-build-debug/CMakeFiles/3.12.3/CMakeCXXCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C/CProject/cmake-build-debug/CMakeFiles/3.12.3/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C/CProject/cmake-build-debug/CMakeFiles/3.12.3/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C/CProject/cmake-build-debug/CMakeFiles/3.12.3/CMakeRCCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C/CProject/cmake-build-debug/CMakeFiles/3.12.3/CMakeSystem.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C/CProject/cmake-build-debug/CMakeFiles/3.12.3/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C/CProject/cmake-build-debug/CMakeFiles/3.12.3/CompilerIdC/a.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C/CProject/cmake-build-debug/CMakeFiles/3.12.3/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C/CProject/cmake-build-debug/CMakeFiles/3.12.3/CompilerIdCXX/a.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C/CProject/cmake-build-debug/CMakeFiles/3.13.1/CMakeCCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C/CProject/cmake-build-debug/CMakeFiles/3.13.1/CMakeCXXCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C/CProject/cmake-build-debug/CMakeFiles/3.13.1/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C/CProject/cmake-build-debug/CMakeFiles/3.13.1/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C/CProject/cmake-build-debug/CMakeFiles/3.13.1/CMakeRCCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C/CProject/cmake-build-debug/CMakeFiles/3.13.1/CompilerIdC/a.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C/CProject/cmake-build-debug/CMakeFiles/3.13.1/CompilerIdCXX/a.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C/CProject/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C/CProject/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/../C/CProject/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C/CProject/cmake-build-debug/CMakeFiles/CProject.dir/CXX.includecache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C/CProject/cmake-build-debug/CMakeFiles/CProject.dir/Demo.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C/CProject/cmake-build-debug/CMakeFiles/CProject.dir/DependInfo.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C/CProject/cmake-build-debug/CMakeFiles/CProject.dir/build.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C/CProject/cmake-build-debug/CMakeFiles/CProject.dir/cmake_clean.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C/CProject/cmake-build-debug/CMakeFiles/CProject.dir/depend.internal" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C/CProject/cmake-build-debug/CMakeFiles/CProject.dir/depend.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C/CProject/cmake-build-debug/CMakeFiles/CProject.dir/flags.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C/CProject/cmake-build-debug/CMakeFiles/CProject.dir/link.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C/CProject/cmake-build-debug/CMakeFiles/CProject.dir/linklibs.rsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C/CProject/cmake-build-debug/CMakeFiles/CProject.dir/main.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C/CProject/cmake-build-debug/CMakeFiles/CProject.dir/objects.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C/CProject/cmake-build-debug/CMakeFiles/CProject.dir/objects1.rsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C/CProject/cmake-build-debug/CMakeFiles/CProject.dir/progress.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C/CProject/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C/CProject/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C/CProject/cmake-build-debug/CMakeFiles/Progress/1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C/CProject/cmake-build-debug/CMakeFiles/Progress/3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C/CProject/cmake-build-debug/CMakeFiles/Progress/count.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C/CProject/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C/CProject/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../C/CProject/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C/CProject/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../C/CProject/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C/CProject/cmake-build-debug/CMakeFiles/feature_tests.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C/CProject/cmake-build-debug/CMakeFiles/feature_tests.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C/CProject/cmake-build-debug/CMakeFiles/feature_tests.cxx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C/CProject/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/NaviDemo/Client$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/NaviDemo/Client$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/NaviDemo/Client$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/NaviDemo/Client$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/NaviDemo/Client$3.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/NaviDemo/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/NaviDemo/Client.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/NaviDemo/Home.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/NaviDemo/Home.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/NaviDemo/META-INF/NaviDemo.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/NaviDemo/Server$Task.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/NaviDemo/Server$Task.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/NaviDemo/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/NaviDemo/User.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/NaviDemo/server.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/NaviDemo/server.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CreateLength.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CreateLength.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CreatePoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CreatePoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DeletePoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DeletePoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EditPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EditPoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Home.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Home.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mDialog.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -134,8 +78,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/DeletePoint.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="94" column="26" selection-start-line="94" selection-start-column="26" selection-end-line="94" selection-end-column="26" />
+            <state relative-caret-position="2673">
+              <caret line="99" column="55" selection-start-line="99" selection-start-column="55" selection-end-line="99" selection-end-column="55" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1625#1806#0" expanded="true" />
@@ -275,9 +219,10 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="GO_FMT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544874538997" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544874610342" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -376,12 +321,20 @@
       <workItem from="1544797578020" duration="55000" />
       <workItem from="1544797635896" duration="270000" />
       <workItem from="1544842014186" duration="764000" />
-      <workItem from="1544842811065" duration="6068000" />
+      <workItem from="1544842811065" duration="6315000" />
     </task>
+    <task id="LOCAL-00001" summary="1">
+      <created>1544874604048</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1544874604048</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48962000" />
+    <option name="totallyTimeSpent" value="49209000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
@@ -407,7 +360,7 @@
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32857144" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
-      <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="13" weight="0.32959184" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" show_stripe_button="false" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -421,6 +374,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1" />
+    <option name="LAST_COMMIT_MESSAGE" value="1" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -519,8 +476,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DeletePoint.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="94" column="26" selection-start-line="94" selection-start-column="26" selection-end-line="94" selection-end-column="26" />
+        <state relative-caret-position="2673">
+          <caret line="99" column="55" selection-start-line="99" selection-start-column="55" selection-end-line="99" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1625#1806#0" expanded="true" />
