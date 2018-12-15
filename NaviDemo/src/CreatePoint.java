@@ -25,10 +25,12 @@ public class CreatePoint
             frameInit();
         } catch (IOException e)
         {
+            treeMap = new TreeMap();
+            frameInit();
 
         } catch (ClassNotFoundException e)
         {
-
+            frameInit();
         }
 
     }
@@ -36,11 +38,11 @@ public class CreatePoint
     public void frameInit()
     {
         JSeparator jSeparator = new JSeparator(SwingConstants.HORIZONTAL);
-        JTextArea jTextArea = new JTextArea(15, 10);
-        JTextField jTextField = new JTextField(10);
+        JTextArea jTextArea = new JTextArea(15, 30);
+        JTextField jTextField = new JTextField(20);
 
         JFrame jFrame = new JFrame();
-        jFrame.setBounds((toolkit.getScreenSize().width - 829) / 2, (toolkit.getScreenSize().height - 660) / 2, 350, 450);
+        jFrame.setBounds((toolkit.getScreenSize().width - 350) / 2, (toolkit.getScreenSize().height - 450) / 2, 350, 450);
         jFrame.setLayout(new FlowLayout());
 
         jFrame.add(jTextField);
@@ -68,10 +70,11 @@ public class CreatePoint
                 {
                     objectOutputStream = new ObjectOutputStream(new FileOutputStream(file));
                     objectOutputStream.writeObject(treeMap);
+                    new mDialog("成功", "数据正常保存", jFrame);
                     jFrame.setVisible(false);
                 } catch (IOException e1)
                 {
-
+                    new mDialog("失败", "数据异常！", jFrame);
                 }
             }
         });
@@ -81,4 +84,6 @@ public class CreatePoint
 
 
     }
+
+
 }

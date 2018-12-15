@@ -1,3 +1,0 @@
-D:/ResourceCode/C/CProject/cmake-build-debug/CMakeFiles/CProject.dir
-D:/ResourceCode/C/CProject/cmake-build-debug/CMakeFiles/edit_cache.dir
-D:/ResourceCode/C/CProject/cmake-build-debug/CMakeFiles/rebuild_cache.dir

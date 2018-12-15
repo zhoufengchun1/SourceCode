@@ -17,16 +17,16 @@ public class mDialog
         this.tips = tips;
         this.title = title;
         this.jFrame = jFrame;
+        init();
 
     }
 
     public void init()//¶Ô»°¿ò
     {
         jDialog = new JDialog(jFrame, title, true);
-        jDialog.setContentPane(jFrame);
         jDialog.setTitle(title);
         jDialog.setModal(true);
-        jDialog.setBounds((toolkit.getScreenSize().width - 200) / 2, (toolkit.getScreenSize().height - 200) / 2, 300, 100);
+        jDialog.setBounds((toolkit.getScreenSize().width - 300) / 2, (toolkit.getScreenSize().height - 100) / 2, 300, 100);
         JPanel jPanel = new JPanel();
         jPanel.setLayout(new BorderLayout());
         JLabel jLabel = new JLabel(tips);
@@ -66,4 +66,6 @@ public class mDialog
 
 
     }
+
+
 }

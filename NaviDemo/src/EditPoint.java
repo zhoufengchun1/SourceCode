@@ -21,6 +21,7 @@ public class EditPoint
     private TreeMap treeMap;
     private Set<String> set;
     private File file;
+    private Toolkit toolkit = Toolkit.getDefaultToolkit();
 
     public EditPoint()
     {
@@ -33,26 +34,28 @@ public class EditPoint
             frameInit();
         } catch (IOException e)
         {
-
-
+            e.printStackTrace();
         } catch (ClassNotFoundException e)
         {
-
+            e.printStackTrace();
         }
     }
 
     public void frameInit()
     {
-        JFrame jFrame = new JFrame();
+        JFrame jFrame = new JFrame("");
+        jFrame.setBounds((toolkit.getScreenSize().width - 829) / 2, (toolkit.getScreenSize().height - 660) / 2, 350, 450);
+
         jFrame.setLayout(new FlowLayout());
 
         jComboBox = new JComboBox();
+        jComboBox.setPreferredSize(new Dimension(270,30));
         Iterator iterator = set.iterator();
         while (iterator.hasNext())
         {
             jComboBox.addItem((String)iterator.next());
         }
-        JTextArea jTextArea = new JTextArea(15, 10);
+        JTextArea jTextArea = new JTextArea(15, 30);
 
         jComboBox.addItemListener(new ItemListener()
         {
@@ -81,15 +84,27 @@ public class EditPoint
                 treeMap.put((String) jComboBox.getSelectedItem(), string);
                 try
                 {
+                    objectOutputStream = new ObjectOutputStream(new FileOutputStream(file));
                     objectOutputStream.writeObject(treeMap);
+                    new mDialog("成功", "数据成功修改", jFrame);
                     jFrame.setVisible(false);
                 } catch (IOException e1)
                 {
-
+                    new mDialog("失败", "数据异常！", jFrame);
                 }
 
             }
         });
+        jFrame.add(jComboBox);
+        jFrame.add(jTextArea);
+        jFrame.add(cancelButton);
+        jFrame.add(okayButton);
+        jFrame.setResizable(false);
+        jFrame.setVisible(true);
+    }
 
+    public static void main(String[] args)
+    {
+        new EditPoint();
     }
 }

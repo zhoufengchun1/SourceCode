@@ -17,9 +17,8 @@ public class CreateLength
     private ObjectOutputStream objectOutputStream;
     private File lengthFile = new File("D://length.obj");
     private File pointFile = new File("D://point.obj");
-    private int a[][];
+    private int length[][];
     private Toolkit toolkit = Toolkit.getDefaultToolkit();
-    private ArrayList<ArrayList<>>
 
     private TreeMap treeMap;
     private Set set;
@@ -32,7 +31,7 @@ public class CreateLength
             objectOutputStream = new ObjectOutputStream(new FileOutputStream(lengthFile));
             objectInputStream2 = new ObjectInputStream(new FileInputStream(pointFile));
 
-            a = (int[][]) objectInputStream1.readObject();
+            length = (int[][]) objectInputStream1.readObject();
             treeMap = (TreeMap) objectInputStream2.readObject();
             if (treeMap.isEmpty())
             {
@@ -63,7 +62,7 @@ public class CreateLength
         jFrame.setLayout(new FlowLayout());
         jFrame.setBounds((toolkit.getScreenSize().width - 829) / 2, (toolkit.getScreenSize().height - 660) / 2, 350, 450);
 
-        jTextField = new JTextField(10);
+        jTextField = new JTextField(5);
         jComboBox1 = new JComboBox();
         jComboBox2 = new JComboBox();
 
@@ -90,7 +89,9 @@ public class CreateLength
             @Override
             public void mouseClicked(MouseEvent e)
             {
-
+                if (length == null)
+                {
+                }
             }
         });
 

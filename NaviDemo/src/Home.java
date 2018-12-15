@@ -82,6 +82,8 @@ public class Home
 
     public void comboboxInit()
     {
+
+
         jComboBoxOfDestin = new JComboBox();
         jComboBoxOfOrigin = new JComboBox();
         for (String string : Name)
