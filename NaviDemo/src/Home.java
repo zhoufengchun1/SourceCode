@@ -10,7 +10,7 @@ public class Home
     private JFrame jFrame;
     private JPanel mapLabel;
     private JLabel title, map;
-    private JButton admin, menu;
+    private JButton admin, menu, close;
     private Font titleFont = new Font("微软雅黑", 1, 28);
     private Font charFont = new Font("微软雅黑", 1, 20);
     private Toolkit toolkit = Toolkit.getDefaultToolkit();
@@ -37,8 +37,8 @@ public class Home
 
         jFrame.setBounds((toolkit.getScreenSize().width - 700) / 2, (toolkit.getScreenSize().height - 450) / 2, 700, 450);
 
-        JPanel buttonLabel = new JPanel();
-        buttonLabel.setLayout(new FlowLayout());
+        JPanel buttonPanel = new JPanel();
+        buttonPanel.setLayout(new FlowLayout());
 
         admin = new JButton("管理员菜单");
         admin.setFont(charFont);
@@ -58,17 +58,28 @@ public class Home
             @Override
             public void mouseClicked(MouseEvent e)
             {
-                super.mouseClicked(e);
+                new NormalMenu();
             }
         });
-        buttonLabel.add(menu);
+        buttonPanel.add(menu);
         if (isAdmin)
         {
-            buttonLabel.add(admin);
+            buttonPanel.add(admin);
             adminTips();
         }
+        close = new JButton("关闭");
+        close.setFont(charFont);
+        close.addMouseListener(new MouseAdapter()
+        {
+            @Override
+            public void mouseClicked(MouseEvent e)
+            {
+                System.exit(0);
+            }
+        });
+        buttonPanel.add(close);
 
-        jFrame.add(buttonLabel, BorderLayout.SOUTH);
+        jFrame.add(buttonPanel, BorderLayout.SOUTH);
 
         jFrame.setResizable(false);
         jFrame.setVisible(true);
@@ -95,8 +106,6 @@ public class Home
         mapLabel.add(map);
         jFrame.add(mapLabel, BorderLayout.CENTER);//地图显示
     }
-
-
 
 
     public void adminTips()
@@ -147,17 +156,18 @@ public class Home
         Home home = new Home(true);
     }
 }
+
 class NormalMenu
 {
     private JFrame jFrame;
-    private JButton visitButton, searchButton,okayButton;
+    private JButton visitButton, searchButton, okayButton;
     private Font font = new Font("微软雅黑", 1, 20);
     private Toolkit toolkit = Toolkit.getDefaultToolkit();
 
     public NormalMenu()
     {
-        jFrame = new JFrame();
-        jFrame.setBounds((toolkit.getScreenSize().width - 200) / 2, (toolkit.getScreenSize().height - 200) / 2, 200, 200);
+        jFrame = new JFrame("功能菜单");
+        jFrame.setBounds((toolkit.getScreenSize().width - 250) / 2, (toolkit.getScreenSize().height - 200) / 2, 250, 200);
         jFrame.setLayout(new FlowLayout());
         visitButton = new JButton("1.浏览景点信息");
         visitButton.setFont(font);
@@ -181,7 +191,7 @@ class NormalMenu
             @Override
             public void mouseClicked(MouseEvent e)
             {
-                super.mouseClicked(e);
+                new SearchLength();
             }
         });
 
@@ -202,13 +212,7 @@ class NormalMenu
 
     }
 
-
-    public static void main(String[] args)
-    {
-        new NormalMenu();
-    }
 }
-
 
 
 class adminMenu
@@ -229,8 +233,8 @@ class adminMenu
 
     public adminMenu()
     {
-        jFrame = new JFrame();
-        jFrame.setBounds((toolkit.getScreenSize().width - 350) / 2, (toolkit.getScreenSize().height - 450) / 2, 200, 450);
+        jFrame = new JFrame("管理员菜单");
+        jFrame.setBounds((toolkit.getScreenSize().width - 250) / 2, (toolkit.getScreenSize().height - 310) / 2, 250, 310);
         jFrame.setLayout(new FlowLayout());
 
         childPanel = new JPanel();

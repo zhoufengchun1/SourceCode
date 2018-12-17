@@ -21,8 +21,9 @@ public class Server
     private boolean isAdmin = false;
 
 
-    public Server()
+    public Server(String adminKey)
     {
+        this.adminKey = adminKey;
         try
         {
             serverSocket = new ServerSocket(10001);
@@ -215,8 +216,7 @@ public class Server
 
     public static void main(String[] args)
     {
-        Server server = new Server();
-        server.setAdminKey("KangYh is very handsome!");
+        Server server = new Server("KangYh is very handsome!");
 
     }
 }
@@ -260,7 +260,7 @@ class User implements Serializable
 
     public void setAdmin(String string)
     {
-        if (string.equals(new Server().getAdminKey()))
+        if (string.equals(new Server("KangYh is very handsome!").getAdminKey()))
         {
             isAdmin = true;
         }

@@ -118,8 +118,5 @@ public class SearchLength
         jFrame.setVisible(true);
     }
 
-    public static void main(String[] args)
-    {
-        new SearchLength();
-    }
+
 }

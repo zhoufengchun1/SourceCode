@@ -1,4 +1,3 @@
-import java.io.DataOutput;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -89,7 +88,7 @@ public class LengthInfo implements Serializable
         int pre=P[to];
         while (pre != -1)
         {
-            stringBuilder.append(" <-- " + arrayList.get(pre));
+            stringBuilder.append(" --- " + arrayList.get(pre));
             pre = P[pre];
         }
         return D[to];
