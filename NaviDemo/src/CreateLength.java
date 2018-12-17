@@ -1,9 +1,11 @@
-import javax.print.DocFlavor;
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ItemEvent;
+import java.awt.event.ItemListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.io.*;
+import java.rmi.server.ExportException;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.Set;
@@ -15,57 +17,74 @@ public class CreateLength
     private JTextField jTextField;
     private ObjectInputStream objectInputStream1, objectInputStream2;
     private ObjectOutputStream objectOutputStream;
-    private File lengthFile = new File("D://length.obj");
-    private File pointFile = new File("D://point.obj");
-    private int length[][];
+    private File lengthFile;
+    private File pointFile;
+    private double length[][];
     private Toolkit toolkit = Toolkit.getDefaultToolkit();
 
     private TreeMap treeMap;
     private Set set;
 
+    private LengthInfo lengthInfo;
+    private ArrayList arrayList;
+
     public CreateLength(JFrame jFrame)
     {
+
+        lengthFile = new File("D://length.obj");
+        pointFile = new File("D://point.obj");
         try
         {
-            objectInputStream1 = new ObjectInputStream(new FileInputStream(lengthFile));
-            objectOutputStream = new ObjectOutputStream(new FileOutputStream(lengthFile));
-            objectInputStream2 = new ObjectInputStream(new FileInputStream(pointFile));
-
-            length = (int[][]) objectInputStream1.readObject();
-            treeMap = (TreeMap) objectInputStream2.readObject();
-            if (treeMap.isEmpty())
-            {
-                new mDialog("错误", "景点数据为空！", jFrame);
-            }
-            else
-            {
-                set = treeMap.entrySet();
-                if (set.isEmpty())
-                    new mDialog("错误", "景点数据为空！", jFrame);
-                else
-                {
-                    frameInit();
-                }
-            }
+            objectInputStream1 = new ObjectInputStream(new FileInputStream(pointFile));
         } catch (IOException e)
         {
+            new mDialog("错误", "没有景点信息！", jFrame);
+        }
 
+
+        try
+        {
+            objectInputStream2 = new ObjectInputStream(new FileInputStream(lengthFile));
+            treeMap = (TreeMap) objectInputStream1.readObject();
+            arrayList = (ArrayList) objectInputStream2.readObject();
+        } catch (IOException e)
+        {
+            lengthInfo = new LengthInfo();
+            lengthInfo.init();
+            arrayList = new ArrayList();
+            arrayList.add(lengthInfo);
+            try
+            {
+                objectOutputStream = new ObjectOutputStream(new FileOutputStream(lengthFile));
+                objectOutputStream.writeObject(arrayList);
+                objectOutputStream.flush();
+            } catch (IOException e1)
+            {
+
+            }
         } catch (ClassNotFoundException e)
         {
 
         }
+
+        frameInit();
+
+
     }
 
     public void frameInit()
     {
         JFrame jFrame = new JFrame();
         jFrame.setLayout(new FlowLayout());
-        jFrame.setBounds((toolkit.getScreenSize().width - 829) / 2, (toolkit.getScreenSize().height - 660) / 2, 350, 450);
+        jFrame.setBounds((toolkit.getScreenSize().width - 350) / 2, (toolkit.getScreenSize().height - 200) / 2, 350, 200);
 
-        jTextField = new JTextField(5);
+        jTextField = new JTextField(27);
         jComboBox1 = new JComboBox();
+        jComboBox1.setPreferredSize(new Dimension(270, 30));
         jComboBox2 = new JComboBox();
+        jComboBox2.setPreferredSize(new Dimension(270, 30));
 
+        set = treeMap.keySet();
         Iterator iterator = set.iterator();
         while (iterator.hasNext())
         {
@@ -74,8 +93,32 @@ public class CreateLength
             jComboBox2.addItem(string);
         }
 
+        int from = jComboBox1.getSelectedIndex();
+        int to = jComboBox2.getSelectedIndex();
+
+        lengthInfo = (LengthInfo) arrayList.get(0);
+        jTextField.setText(lengthInfo.getLength(from, to) + "");
+        jComboBox1.addItemListener(new ItemListener()
+        {
+            @Override
+            public void itemStateChanged(ItemEvent e)
+            {
+                jTextField.setText(lengthInfo.getLength(jComboBox1.getSelectedIndex(), jComboBox2.getSelectedIndex()) + "");
+            }
+        });
+        jComboBox2.addItemListener(new ItemListener()
+        {
+            @Override
+            public void itemStateChanged(ItemEvent e)
+            {
+                jTextField.setText(lengthInfo.getLength(jComboBox1.getSelectedIndex(), jComboBox2.getSelectedIndex()) + "");
+            }
+        });
+
         JButton cancelButton = new JButton("取消");
         JButton okayButton = new JButton("确认");
+
+
         cancelButton.addMouseListener(new MouseAdapter()
         {
             @Override
@@ -89,9 +132,25 @@ public class CreateLength
             @Override
             public void mouseClicked(MouseEvent e)
             {
-                if (length == null)
+                try
                 {
+                    double weight = Double.parseDouble(jTextField.getText().toString());
+                    lengthInfo.editLength(jComboBox1.getSelectedIndex(), jComboBox2.getSelectedIndex(), weight);
+                    objectOutputStream = new ObjectOutputStream(new FileOutputStream(lengthFile));
+                    objectOutputStream.writeObject(arrayList);
+
+                    new mDialog("成功", "数据修改成功！", jFrame);
+                    jFrame.setVisible(false);
+                } catch (NumberFormatException e1)
+                {
+                    e1.printStackTrace();
+                    new mDialog("错误", "请输入正确信息！", jFrame);
+                } catch (IOException e1)
+                {
+                    new mDialog("错误", "信息写入失败！", jFrame);
                 }
+
+
             }
         });
 
@@ -100,6 +159,13 @@ public class CreateLength
         jFrame.add(jTextField);
         jFrame.add(cancelButton);
         jFrame.add(okayButton);
+        jFrame.setVisible(true);
+        jFrame.setResizable(false);
+    }
+
+    public static void main(String[] args)
+    {
+        new CreateLength(new JFrame());
     }
 
 }

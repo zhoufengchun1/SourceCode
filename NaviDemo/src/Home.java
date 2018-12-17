@@ -1,37 +1,23 @@
-import javax.naming.Name;
-import javax.print.DocFlavor;
-import javax.sound.midi.spi.MidiFileReader;
 import javax.swing.*;
-import javax.swing.text.DefaultEditorKit;
-import javax.swing.text.JTextComponent;
 import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import java.awt.event.MouseListener;
 import java.io.*;
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.Scanner;
 
 
 public class Home
 {
     private JFrame jFrame;
-    private JPanel jPanel;
-    private JLabel jLabelOfDestion, jLabelOfOrigin, title, map;
-    private JComboBox jComboBoxOfDestin, jComboBoxOfOrigin;
+    private JPanel mapLabel;
+    private JLabel title, map;
+    private JButton admin, menu;
     private Font titleFont = new Font("微软雅黑", 1, 28);
     private Font charFont = new Font("微软雅黑", 1, 20);
     private Toolkit toolkit = Toolkit.getDefaultToolkit();
 
-    private File pointFile = new File("D://point.txt");
-    private File lengthFile = new File("D://length.txt");
+    private File pointFile = new File("D://point.obj");
+    private File lengthFile = new File("D://length.obj");
     private File mapFile = new File("D://map.png");
-    private File infoFile = new File("D://info.txt");
-
-    private HashSet<String> Name;
-    private String[] point;
-    private int[][] a;
 
     private boolean isAdmin = false;
 
@@ -48,12 +34,43 @@ public class Home
 
         titleInit();//初始化标题栏
         mapInit();//初始化地图
-        comboboxInit();//初始化底部选择栏
 
-        point = new String[Name.size()];//将获取到的数据转换为数组，
-        point = Name.toArray(point);//数组大小为ArrayList的长度
+        jFrame.setBounds((toolkit.getScreenSize().width - 700) / 2, (toolkit.getScreenSize().height - 450) / 2, 700, 450);
 
-        jFrame.setBounds((toolkit.getScreenSize().width - 829) / 2, (toolkit.getScreenSize().height - 660) / 2, 700, 450);
+        JPanel buttonLabel = new JPanel();
+        buttonLabel.setLayout(new FlowLayout());
+
+        admin = new JButton("管理员菜单");
+        admin.setFont(charFont);
+        admin.addMouseListener(new MouseAdapter()
+        {
+            @Override
+            public void mouseClicked(MouseEvent e)
+            {
+                new adminMenu();
+            }
+        });
+
+        menu = new JButton("功能菜单");
+        menu.setFont(charFont);
+        menu.addMouseListener(new MouseAdapter()
+        {
+            @Override
+            public void mouseClicked(MouseEvent e)
+            {
+                super.mouseClicked(e);
+            }
+        });
+        buttonLabel.add(menu);
+        if (isAdmin)
+        {
+            buttonLabel.add(admin);
+            adminTips();
+        }
+
+        jFrame.add(buttonLabel, BorderLayout.SOUTH);
+
+        jFrame.setResizable(false);
         jFrame.setVisible(true);
     }
 
@@ -73,59 +90,13 @@ public class Home
         map.setBounds(0, 0, 690, 400);
         map.setHorizontalAlignment(0);
         map.setIcon(imageIcon);
-        jPanel = new JPanel();
-        jPanel.setSize(690, 400);
-        jPanel.add(map);
-        jFrame.add(jPanel, BorderLayout.CENTER);//地图显示
+        mapLabel = new JPanel();
+        mapLabel.setSize(690, 400);
+        mapLabel.add(map);
+        jFrame.add(mapLabel, BorderLayout.CENTER);//地图显示
     }
 
 
-    public void comboboxInit()
-    {
-
-
-        jComboBoxOfDestin = new JComboBox();
-        jComboBoxOfOrigin = new JComboBox();
-        for (String string : Name)
-        {
-            jComboBoxOfDestin.addItem(string);
-            jComboBoxOfOrigin.addItem(string);
-        }
-        JPanel jPanel = new JPanel();
-        jPanel.setLayout(new FlowLayout());
-
-        jLabelOfOrigin = new JLabel("始发地：");
-        jLabelOfOrigin.setFont(charFont);
-        jPanel.add(jLabelOfOrigin);
-        jPanel.add(jComboBoxOfOrigin);
-
-        jLabelOfDestion = new JLabel("目的地：");
-        jLabelOfDestion.setFont(charFont);
-        jPanel.add(jLabelOfDestion);
-        jPanel.add(jComboBoxOfDestin);
-
-        JButton jbutton = new JButton("确定");
-        jbutton.setFont(charFont);
-        jbutton.setSize(20, 30);
-        jPanel.add(jbutton);
-        if (isAdmin)
-        {
-            JButton admin = new JButton("管理员菜单");
-            admin.setFont(charFont);
-            jPanel.add(admin);
-            admin.addMouseListener(new MouseAdapter()
-            {
-                @Override
-                public void mouseClicked(MouseEvent e)
-                {
-
-                }
-            });
-        }
-
-        jFrame.add(jPanel, BorderLayout.SOUTH);
-
-    }
 
 
     public void adminTips()
@@ -176,12 +147,75 @@ public class Home
         Home home = new Home(true);
     }
 }
+class NormalMenu
+{
+    private JFrame jFrame;
+    private JButton visitButton, searchButton,okayButton;
+    private Font font = new Font("微软雅黑", 1, 20);
+    private Toolkit toolkit = Toolkit.getDefaultToolkit();
+
+    public NormalMenu()
+    {
+        jFrame = new JFrame();
+        jFrame.setBounds((toolkit.getScreenSize().width - 200) / 2, (toolkit.getScreenSize().height - 200) / 2, 200, 200);
+        jFrame.setLayout(new FlowLayout());
+        visitButton = new JButton("1.浏览景点信息");
+        visitButton.setFont(font);
+        searchButton = new JButton("2.查询最短路径");
+        searchButton.setFont(font);
+        okayButton = new JButton("关闭");
+        okayButton.setFont(font);
+
+
+        visitButton.addMouseListener(new MouseAdapter()
+        {
+            @Override
+            public void mouseClicked(MouseEvent e)
+            {
+                new VisitPoint();
+            }
+        });
+
+        searchButton.addMouseListener(new MouseAdapter()
+        {
+            @Override
+            public void mouseClicked(MouseEvent e)
+            {
+                super.mouseClicked(e);
+            }
+        });
+
+        okayButton.addMouseListener(new MouseAdapter()
+        {
+            @Override
+            public void mouseClicked(MouseEvent e)
+            {
+                jFrame.setVisible(false);
+            }
+        });
+
+        jFrame.add(visitButton);
+        jFrame.add(searchButton);
+        jFrame.add(okayButton);
+        jFrame.setResizable(false);
+        jFrame.setVisible(true);
+
+    }
+
+
+    public static void main(String[] args)
+    {
+        new NormalMenu();
+    }
+}
+
+
 
 class adminMenu
 {
     private JFrame jFrame;
     private JButton createPoint, editPoint, deletePoint, createLength, editLength;
-    private JButton okayButton, cancelButton;
+    private JButton cancelButton;
     private Toolkit toolkit = Toolkit.getDefaultToolkit();
     private Font font = new Font("微软雅黑", 1, 20);
     private File pointFile = new File("D://point.txt");
@@ -196,15 +230,23 @@ class adminMenu
     public adminMenu()
     {
         jFrame = new JFrame();
-        jFrame.setBounds((toolkit.getScreenSize().width - 829) / 2, (toolkit.getScreenSize().height - 660) / 2, 350, 450);
+        jFrame.setBounds((toolkit.getScreenSize().width - 350) / 2, (toolkit.getScreenSize().height - 450) / 2, 200, 450);
         jFrame.setLayout(new FlowLayout());
 
         childPanel = new JPanel();
         childPanel.setLayout(new FlowLayout());
-        cancelButton = new JButton("取消");
-        okayButton = new JButton("确认");
+        cancelButton = new JButton("关闭");
         childPanel.add(cancelButton);
-        childPanel.add(okayButton);
+
+
+        cancelButton.addMouseListener(new MouseAdapter()
+        {
+            @Override
+            public void mouseClicked(MouseEvent e)
+            {
+                jFrame.setVisible(false);
+            }
+        });
 
         createPoint = new JButton("1.创建景点信息");
         createPoint.setFont(font);
@@ -246,7 +288,7 @@ class adminMenu
             @Override
             public void mouseClicked(MouseEvent e)
             {
-                super.mouseClicked(e);
+                new CreateLength(jFrame);
             }
         });
 
@@ -257,11 +299,17 @@ class adminMenu
             @Override
             public void mouseClicked(MouseEvent e)
             {
-                super.mouseClicked(e);
+                new CreateLength(jFrame);
             }
         });
 
-
+        jFrame.add(createPoint);
+        jFrame.add(editPoint);
+        jFrame.add(deletePoint);
+        jFrame.add(createLength);
+        jFrame.add(editLength);
+        jFrame.add(childPanel);
+        jFrame.setVisible(true);
     }
 
 

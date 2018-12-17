@@ -23,7 +23,7 @@ public class DeletePoint
     {
         try
         {
-            file = new File("D://info.obj");
+            file = new File("D://point.obj");
             objectInputStream = new ObjectInputStream(new FileInputStream(file));
             treeMap = (TreeMap) objectInputStream.readObject();
             frameInit();

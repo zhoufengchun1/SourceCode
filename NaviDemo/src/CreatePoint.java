@@ -19,16 +19,15 @@ public class CreatePoint
     {
         try
         {
-            file = new File("D://info.obj");
+            file = new File("D://point.obj");
             objectInputStream = new ObjectInputStream(new FileInputStream(file));
             treeMap = (TreeMap) objectInputStream.readObject();
-            frameInit();
         } catch (IOException e)
         {
             treeMap = new TreeMap();
-            frameInit();
-
         } catch (ClassNotFoundException e)
+        {
+        }finally
         {
             frameInit();
         }
@@ -83,6 +82,11 @@ public class CreatePoint
         jFrame.setVisible(true);
 
 
+    }
+
+    public static void main(String[] args)
+    {
+        new CreatePoint();
     }
 
 

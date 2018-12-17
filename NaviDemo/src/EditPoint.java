@@ -27,7 +27,7 @@ public class EditPoint
     {
         try
         {
-            file = new File("D://info.obj");
+            file = new File("D://point.obj");
             objectInputStream = new ObjectInputStream(new FileInputStream(file));
             treeMap = (TreeMap) objectInputStream.readObject();
             set = treeMap.keySet();
@@ -44,25 +44,26 @@ public class EditPoint
     public void frameInit()
     {
         JFrame jFrame = new JFrame("");
-        jFrame.setBounds((toolkit.getScreenSize().width - 829) / 2, (toolkit.getScreenSize().height - 660) / 2, 350, 450);
+        jFrame.setBounds((toolkit.getScreenSize().width - 350) / 2, (toolkit.getScreenSize().height - 450) / 2, 350, 450);
 
         jFrame.setLayout(new FlowLayout());
 
         jComboBox = new JComboBox();
-        jComboBox.setPreferredSize(new Dimension(270,30));
+        jComboBox.setPreferredSize(new Dimension(270, 30));
         Iterator iterator = set.iterator();
         while (iterator.hasNext())
         {
-            jComboBox.addItem((String)iterator.next());
+            jComboBox.addItem((String) iterator.next());
         }
         JTextArea jTextArea = new JTextArea(15, 30);
+        jTextArea.setText((String) treeMap.get(jComboBox.getSelectedItem()));
 
         jComboBox.addItemListener(new ItemListener()
         {
             @Override
             public void itemStateChanged(ItemEvent e)
             {
-                jTextArea.setText((String) treeMap.get((String) jComboBox.getSelectedItem()));
+                jTextArea.setText((String) treeMap.get(jComboBox.getSelectedItem()));
             }
         });
         JButton okayButton = new JButton("È·¶¨");
