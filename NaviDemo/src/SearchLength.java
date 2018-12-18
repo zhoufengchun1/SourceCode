@@ -1,3 +1,4 @@
+import javax.imageio.event.IIOReadProgressListener;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ItemEvent;
@@ -45,13 +46,25 @@ public class SearchLength
             lengthInfo = (LengthInfo) arrayList.get(0);
 
             treeMap = (TreeMap) objectInputStream2.readObject();
+
+
         } catch (IOException e)
         {
             new mDialog("错误", "无景点信息！", jFrame);
         } catch (ClassNotFoundException e)
         {
-
+            new mDialog("错误！", "文件信息错误！", jFrame);
         }
+
+
+        try
+        {
+            set = treeMap.keySet();
+        } catch (NullPointerException e)
+        {
+            new mDialog("错误", "无道路长度信息！", jFrame);
+        }
+
         frameInit();
     }
 
@@ -67,7 +80,6 @@ public class SearchLength
         jComboBox2.setPreferredSize(new Dimension(180, 30));
         jComboBox2.setFont(new Font("微软雅黑", 1, 20));
 
-        set = treeMap.keySet();
         Iterator iterator = set.iterator();
         while (iterator.hasNext())
         {
@@ -76,9 +88,9 @@ public class SearchLength
             jComboBox2.addItem(string);
         }
         jLabel = new JLabel();
-        jLabel.setPreferredSize(new Dimension(350,80));
-        jLabel.setFont(new Font("微软雅黑",1,20));
-        double str1 = lengthInfo.getMin(0,1, treeMap);
+        jLabel.setPreferredSize(new Dimension(350, 80));
+        jLabel.setFont(new Font("微软雅黑", 1, 20));
+        double str1 = lengthInfo.getMin(0, 1, treeMap);
         jComboBox1.addItemListener(new ItemListener()
         {
             @Override
@@ -86,7 +98,7 @@ public class SearchLength
             {
                 double str1 = lengthInfo.getMin(jComboBox1.getSelectedIndex(), jComboBox2.getSelectedIndex(), treeMap);
                 String str2 = lengthInfo.getStringBuilder();
-                jLabel.setText("<html><body>"+"最优路径:  "+str2+"<br>"+"里程：  "+str1+"m"+"<body></html>");
+                jLabel.setText("<html><body>" + "最优路径:  " + str2 + "<br>" + "里程：  " + str1 + "m" + "<body></html>");
             }
         });
         jComboBox2.addItemListener(new ItemListener()
@@ -96,7 +108,7 @@ public class SearchLength
             {
                 double str1 = lengthInfo.getMin(jComboBox1.getSelectedIndex(), jComboBox2.getSelectedIndex(), treeMap);
                 String str2 = lengthInfo.getStringBuilder();
-                jLabel.setText("<html><body>"+"最优路径:  "+str2+"<br>"+"里程：  "+str1+"m"+"<body></html>");
+                jLabel.setText("<html><body>" + "最优路径:  " + str2 + "<br>" + "里程：  " + str1 + "m" + "<body></html>");
             }
         });
 

@@ -31,6 +31,7 @@ public class Server
             {
                 socket = serverSocket.accept();
                 ipInfo = socket.getInetAddress().getHostAddress().toString();
+                System.out.println(ipInfo+"  Connected! ");
                 new Thread(new Task(socket)).start();//并且每次接收到Socket之后，就要新建一个线程以达到多次返回数据接受数据的目的
             }
         } catch (IOException e)

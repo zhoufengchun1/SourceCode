@@ -121,7 +121,6 @@ public class Client
         account = accountText.getText();
         passwd = passwdText.getText();
         String string;
-        System.out.println(code);
         if (code == 0)
         {
             string = "µÇÂ¼";
