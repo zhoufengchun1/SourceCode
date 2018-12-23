@@ -11,10 +11,10 @@
 				<Option working_dir="D:/ResourceCode/C/CProject/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="D:/CodeBlocks/MinGW/bin/mingw32-make.exe -f &quot;D:/ResourceCode/C/CProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="D:/CodeBlocks/MinGW/bin/mingw32-make.exe -f &quot;D:/ResourceCode/C/CProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/CodeBlocks/MinGW/bin/mingw32-make.exe -f &quot;D:/ResourceCode/C/CProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/CodeBlocks/MinGW/bin/mingw32-make.exe -f &quot;D:/ResourceCode/C/CProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/mingw/bin/mingw32-make.exe -f &quot;D:/ResourceCode/C/CProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/mingw/bin/mingw32-make.exe -f &quot;D:/ResourceCode/C/CProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw/bin/mingw32-make.exe -f &quot;D:/ResourceCode/C/CProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw/bin/mingw32-make.exe -f &quot;D:/ResourceCode/C/CProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="CProject">
@@ -30,12 +30,13 @@
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="D:/CodeBlocks/MinGW/bin/mingw32-make.exe -f &quot;D:/ResourceCode/C/CProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 CProject"/>
-					<CompileFile command="D:/CodeBlocks/MinGW/bin/mingw32-make.exe -f &quot;D:/ResourceCode/C/CProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/CodeBlocks/MinGW/bin/mingw32-make.exe -f &quot;D:/ResourceCode/C/CProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/CodeBlocks/MinGW/bin/mingw32-make.exe -f &quot;D:/ResourceCode/C/CProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/mingw/bin/mingw32-make.exe -f &quot;D:/ResourceCode/C/CProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 CProject"/>
+					<CompileFile command="C:/mingw/bin/mingw32-make.exe -f &quot;D:/ResourceCode/C/CProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw/bin/mingw32-make.exe -f &quot;D:/ResourceCode/C/CProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw/bin/mingw32-make.exe -f &quot;D:/ResourceCode/C/CProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="CProject/fast">
@@ -51,38 +52,36 @@
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="D:/CodeBlocks/MinGW/bin/mingw32-make.exe -f &quot;D:/ResourceCode/C/CProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 CProject/fast"/>
-					<CompileFile command="D:/CodeBlocks/MinGW/bin/mingw32-make.exe -f &quot;D:/ResourceCode/C/CProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/CodeBlocks/MinGW/bin/mingw32-make.exe -f &quot;D:/ResourceCode/C/CProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/CodeBlocks/MinGW/bin/mingw32-make.exe -f &quot;D:/ResourceCode/C/CProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/mingw/bin/mingw32-make.exe -f &quot;D:/ResourceCode/C/CProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 CProject/fast"/>
+					<CompileFile command="C:/mingw/bin/mingw32-make.exe -f &quot;D:/ResourceCode/C/CProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw/bin/mingw32-make.exe -f &quot;D:/ResourceCode/C/CProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw/bin/mingw32-make.exe -f &quot;D:/ResourceCode/C/CProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
 				<Option working_dir="D:/ResourceCode/C/CProject/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="D:/CodeBlocks/MinGW/bin/mingw32-make.exe -f &quot;D:/ResourceCode/C/CProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="D:/CodeBlocks/MinGW/bin/mingw32-make.exe -f &quot;D:/ResourceCode/C/CProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/CodeBlocks/MinGW/bin/mingw32-make.exe -f &quot;D:/ResourceCode/C/CProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/CodeBlocks/MinGW/bin/mingw32-make.exe -f &quot;D:/ResourceCode/C/CProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/mingw/bin/mingw32-make.exe -f &quot;D:/ResourceCode/C/CProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/mingw/bin/mingw32-make.exe -f &quot;D:/ResourceCode/C/CProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw/bin/mingw32-make.exe -f &quot;D:/ResourceCode/C/CProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw/bin/mingw32-make.exe -f &quot;D:/ResourceCode/C/CProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
 				<Option working_dir="D:/ResourceCode/C/CProject/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="D:/CodeBlocks/MinGW/bin/mingw32-make.exe -f &quot;D:/ResourceCode/C/CProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="D:/CodeBlocks/MinGW/bin/mingw32-make.exe -f &quot;D:/ResourceCode/C/CProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/CodeBlocks/MinGW/bin/mingw32-make.exe -f &quot;D:/ResourceCode/C/CProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/CodeBlocks/MinGW/bin/mingw32-make.exe -f &quot;D:/ResourceCode/C/CProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/mingw/bin/mingw32-make.exe -f &quot;D:/ResourceCode/C/CProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/mingw/bin/mingw32-make.exe -f &quot;D:/ResourceCode/C/CProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/mingw/bin/mingw32-make.exe -f &quot;D:/ResourceCode/C/CProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/mingw/bin/mingw32-make.exe -f &quot;D:/ResourceCode/C/CProject/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="D:/ResourceCode/C/CProject/Demo.cpp">
-			<Option target="CProject"/>
-		</Unit>
 		<Unit filename="D:/ResourceCode/C/CProject/Demo.h">
 			<Option target="CProject"/>
 		</Unit>

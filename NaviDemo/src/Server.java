@@ -29,6 +29,7 @@ public class Server
             serverSocket = new ServerSocket(10001);
             while (true)//循环接受Socket
             {
+                System.out.println("服务端开启，等待客户端建立连接。");
                 socket = serverSocket.accept();
                 ipInfo = socket.getInetAddress().getHostAddress().toString();
                 System.out.println(ipInfo+"  Connected! ");

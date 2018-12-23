@@ -7,21 +7,125 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="971dbd24-0f2c-4cdf-9812-eda12a9fca7a" name="Default Changelist" comment="。">
-      <change afterPath="$PROJECT_DIR$/../NaviDemo/src/Home.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NaviDemo/src/cilent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NaviDemo/src/server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/CProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../C/CProject/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/CProject/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../C/CProject/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/CProject/Demo.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/CProject/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../C/CProject/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/CProject/cmake-build-debug/CMakeFiles/CMakeError.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/CProject/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/../C/CProject/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/CProject/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../C/CProject/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/CProject/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../C/CProject/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/CProject/cmake-build-debug/CProject.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/../C/CProject/cmake-build-debug/CProject.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/CProject/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../C/CProject/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/CProject/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../C/CProject/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/123.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/copy.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUI/GUI.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUI/src/build.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUI/src/start.bat" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Java_jar/Java.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Java_jar/Java.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/homework/finalHomework/NaviDemo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NaviDemo/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../NaviDemo/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/META-INF/Java.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/Others/Complex.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/Others/Complex.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/Others/JComplex$ButtonPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/Others/JComplex$ButtonPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/Others/JComplex$OperatorPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/Others/JComplex$OperatorPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/Others/JComplex$TextPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/Others/JComplex$TextPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/Others/JComplex.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/Others/JComplex.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/Practice/ChatDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/Practice/ChatDemo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/Practice/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/Practice/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/Practice/Client2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/Practice/Client2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/Practice/Client3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/Practice/Client3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/Practice/CollectionDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/Practice/CollectionDemo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/Practice/Consumer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/Practice/Consumer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/Practice/CssChooser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/Practice/CssChooser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/Practice/FileDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/Practice/FileDemo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/Practice/IODemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/Practice/IODemo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/Practice/ListDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/Practice/ListDemo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/Practice/ListIteratorDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/Practice/ListIteratorDemo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/Practice/MathDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/Practice/MathDemo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/Practice/PipedStreamDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/Practice/PipedStreamDemo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/Practice/Producer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/Practice/Producer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/Practice/RandomAccessFileDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/Practice/RandomAccessFileDemo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/Practice/Read.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/Practice/Read.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/Practice/Receive.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/Practice/Receive.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/Practice/Receive2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/Practice/Receive2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/Practice/Res.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/Practice/Res.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/Practice/Send.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/Practice/Send.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/Practice/Send2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/Practice/Send2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/Practice/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/Practice/Server.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/Practice/Server2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/Practice/Server2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/Practice/Server3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/Practice/Server3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/Practice/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/Practice/Student.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/Practice/Write.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/Practice/Write.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/Practice/synchronizedDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/Practice/synchronizedDemo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/Account.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/Account.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/Answer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/Answer$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/Answer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/Answer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/Answer0.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/Answer0.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/Answer3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/Answer3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/Answer4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/Answer4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/Area.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/Area.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/Average.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/Average.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/Bank.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/Bank.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/Calculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/Calculator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/Comparable.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/Comparable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/Complex.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/Complex.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/ComplexCal$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/ComplexCal$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/ComplexCal$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/ComplexCal$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/ComplexCal$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/ComplexCal$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/ComplexCal$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/ComplexCal$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/ComplexCal$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/ComplexCal$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/ComplexCal$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/ComplexCal$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/ComplexCal$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/ComplexCal$7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/ComplexCal$JComplexList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/ComplexCal$JComplexList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/ComplexCal.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/ComplexCal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/Consumer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/Consumer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/Demo1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/Demo1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/Demo2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/Demo2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/Demo3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/Demo3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/Figure.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/Figure.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/Globe.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/Globe.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/IO$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/IO$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/IO$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/IO$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/IO$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/IO$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/IO$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/IO$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/IO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/IO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/Info$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/Info$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/Info$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/Info$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/Info$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/Info$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/Info.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/Info.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/JComplex$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/JComplex$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/JComplex.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/JComplex.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/NaviDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/Point.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/Point.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/Polygon.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/Polygon.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/Producer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/Producer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/ProducerConsumer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/ProducerConsumer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/Resources.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/Resources.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/Solid.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/Solid.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/Student.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/Triangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/Triangle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/Volume.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/Volume.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/aver.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/aver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/calcuNum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/cone.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/cone.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/judge$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/judge$1$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/judge$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/judge$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/judge$2$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/judge$2$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/judge$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/judge$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/judge$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/judge$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/judge.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/judge.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/number.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/operate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/homework/6-33.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/homework/6-33.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/homework/8-12.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/homework/8-12.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/homework/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/homework/Calculator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../NaviDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../NaviDemo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NaviDemo/NaviDemo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../NaviDemo/NaviDemo.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NaviDemo/build.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NaviDemo/src/NaviDemo.form" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NaviDemo/src/NaviDemo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NaviDemo/start.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NaviDemo/out/production/NaviDemo/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/../NaviDemo/out/production/NaviDemo/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NaviDemo/out/production/NaviDemo/Server$Task.class" beforeDir="false" afterPath="$PROJECT_DIR$/../NaviDemo/out/production/NaviDemo/Server$Task.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NaviDemo/out/production/NaviDemo/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/../NaviDemo/out/production/NaviDemo/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NaviDemo/out/production/NaviDemo/server.class" beforeDir="false" afterPath="$PROJECT_DIR$/../NaviDemo/out/production/NaviDemo/server.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NaviDemo/src/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/../NaviDemo/src/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NaviDemo/src/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/../NaviDemo/src/Server.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -65,7 +169,35 @@
     <favorites_list name="JavaDemo" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/homework/Calculator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="283" column="9" lean-forward="true" selection-start-line="283" selection-start-column="9" selection-end-line="283" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#9598#9599#0" expanded="true" />
+                <element signature="e#9630#9631#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/homework/6-33.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2655">
+              <caret line="54" column="44" lean-forward="true" selection-start-line="54" selection-start-column="44" selection-end-line="54" selection-end-column="44" />
+              <folding>
+                <element signature="e#1371#2311#0" expanded="true" />
+                <element signature="e#2310#2311#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -87,11 +219,14 @@
       <find>main</find>
       <find>try</find>
       <find>icon</find>
+      <find>add</find>
+      <find>System</find>
     </findStrings>
     <replaceStrings>
       <replace>TextField</replace>
       <replace>&quot;</replace>
       <replace>imageIcon</replace>
+      <replace>set</replace>
     </replaceStrings>
   </component>
   <component name="GOROOT" path="C:\Go" />
@@ -114,8 +249,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/windou.java" />
-        <option value="$PROJECT_DIR$/src/complex.java" />
         <option value="$PROJECT_DIR$/src/IODemo.java" />
         <option value="$PROJECT_DIR$/src/Triangle.java" />
         <option value="$PROJECT_DIR$/src/FileDemo.java" />
@@ -151,11 +284,9 @@
         <option value="$PROJECT_DIR$/src/Practice/IODemo.java" />
         <option value="$PROJECT_DIR$/src/Others/UserJComplex.java" />
         <option value="$PROJECT_DIR$/src/Others/JComplex.java" />
-        <option value="$PROJECT_DIR$/src/homework/Calculator.java" />
         <option value="$PROJECT_DIR$/src/Practice/UploadDemo.java" />
         <option value="$PROJECT_DIR$/src/homework/ComplexCal.java" />
         <option value="$PROJECT_DIR$/src/homework/Answer.java" />
-        <option value="$PROJECT_DIR$/src/homework/2-23.java" />
         <option value="$PROJECT_DIR$/src/homework/8-15.java" />
         <option value="$PROJECT_DIR$/src/homework/4-19.java" />
         <option value="$PROJECT_DIR$/src/homework/2-28.java" />
@@ -165,6 +296,10 @@
         <option value="$PROJECT_DIR$/src/homework/4-21.java" />
         <option value="$PROJECT_DIR$/src/homework/NaviDemo.java" />
         <option value="$PROJECT_DIR$/src/homework/finalHomework/NaviDemo.java" />
+        <option value="$PROJECT_DIR$/src/homework/2-23.java" />
+        <option value="$PROJECT_DIR$/src/homework/8-12.java" />
+        <option value="$PROJECT_DIR$/src/homework/Calculator.java" />
+        <option value="$PROJECT_DIR$/src/homework/6-33.java" />
       </list>
     </option>
   </component>
@@ -174,7 +309,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-649" />
     <option name="y" value="415" />
     <option name="width" value="1936" />
@@ -195,6 +330,8 @@
       <foldersAlwaysOnTop value="false" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -211,29 +348,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope">
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
-            <path>
-              <item name="JavaDemo" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="Java" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-            </path>
-            <path>
-              <item name="JavaDemo" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="Java" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="JavaDemo" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="Java" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="homework" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -244,14 +358,14 @@
     <property name="ToolWindowRun.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544614888457" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545534065455" />
     <property name="configurable.Global.GOPATH.is.expanded" value="true" />
     <property name="configurable.Module.GOPATH.is.expanded" value="false" />
     <property name="configurable.Project.GOPATH.is.expanded" value="true" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="10" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../NaviDemo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -288,26 +402,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.NaviDemo">
-    <configuration name="Answer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="homework.Answer" />
+  <component name="RunManager" selected="Application.judge">
+    <configuration name="Calculator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="homework.Calculator" />
       <module name="Java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="homework.finalHomework.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Client3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Practice.Client3" />
-      <module name="Java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Practice.*" />
+          <option name="PATTERN" value="homework.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -341,12 +442,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ans" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="homework.ans" />
+      <module name="Java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="homework.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="judge" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="homework.judge" />
       <module name="Java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="homework.finalHomework.*" />
+          <option name="PATTERN" value="homework.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -372,19 +486,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.Client3" />
-      <item itemvalue="Application.Answer" />
-      <item itemvalue="Application.judge" />
       <item itemvalue="Application.Info" />
       <item itemvalue="Application.NaviDemo" />
+      <item itemvalue="Application.ans" />
+      <item itemvalue="Application.Calculator" />
+      <item itemvalue="Application.judge" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.judge" />
+        <item itemvalue="Application.Calculator" />
+        <item itemvalue="Application.ans" />
         <item itemvalue="Application.NaviDemo" />
         <item itemvalue="Application.Info" />
-        <item itemvalue="Application.Answer" />
-        <item itemvalue="Application.judge" />
-        <item itemvalue="Application.Client3" />
       </list>
     </recent_temporary>
   </component>
@@ -497,6 +611,13 @@
       <workItem from="1544522052338" duration="7587000" />
       <workItem from="1544576727460" duration="555000" />
       <workItem from="1544577682150" duration="12652000" />
+      <workItem from="1545135304454" duration="255000" />
+      <workItem from="1545135578030" duration="3344000" />
+      <workItem from="1545139424129" duration="7538000" />
+      <workItem from="1545211886837" duration="2087000" />
+      <workItem from="1545295727873" duration="14592000" />
+      <workItem from="1545374597499" duration="3659000" />
+      <workItem from="1545533111527" duration="586000" />
     </task>
     <task id="LOCAL-00001" summary="123">
       <created>1541220645392</created>
@@ -593,7 +714,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="375995000" />
+    <option name="totallyTimeSpent" value="408056000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -605,7 +726,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-649" y="415" width="1936" height="1056" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="1" />
@@ -613,18 +735,18 @@
       <window_info id="UI Designer" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="Favorites" order="5" side_tool="true" weight="0.3292683" />
-      <window_info active="true" content_ui="combo" id="Project" order="6" sideWeight="0.49901575" visible="true" weight="0.19238901" />
+      <window_info content_ui="combo" id="Project" order="6" sideWeight="0.49901575" visible="true" weight="0.19238901" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3295325" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4989429" weight="0.6157355" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4036488" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4989429" weight="0.34435576" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4010204" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49947146" weight="0.32845894" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49947146" weight="0.327551" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49947146" weight="0.32839224" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.3265306" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5010571" side_tool="true" weight="0.48004562" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5010571" side_tool="true" weight="0.47959185" />
       <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.4936575" weight="0.32040817" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Duplicate detector" order="13" weight="0.32959184" />
@@ -640,40 +762,6 @@
       <window_info anchor="right" id="Maven Projects" order="9" show_stripe_button="false" sideWeight="0.50098425" side_tool="true" weight="0.19186047" />
       <window_info anchor="right" id="Maven" order="10" show_stripe_button="false" weight="0.3299356" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="1" />
-      <window_info id="Designer" order="2" />
-      <window_info id="UI Designer" order="3" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info id="Favorites" order="5" side_tool="true" weight="0.3292683" />
-      <window_info content_ui="combo" id="Project" order="6" sideWeight="0.49901575" weight="0.17494714" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3295325" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4989429" weight="0.4754846" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.42303306" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49947146" weight="0.32845894" />
-      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49947146" weight="0.32839224" />
-      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3265306" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5010571" side_tool="true" weight="0.48004562" />
-      <window_info active="true" anchor="bottom" id="Messages" order="11" sideWeight="0.4936575" visible="true" weight="0.32040817" />
-      <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Duplicate detector" order="13" weight="0.32959184" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" show_stripe_button="false" side_tool="true" weight="0.24285714" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Database" order="5" show_stripe_button="false" side_tool="true" weight="0.3299356" />
-      <window_info anchor="right" id="Theme Preview" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Coverage" order="8" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" order="9" show_stripe_button="false" sideWeight="0.50098425" side_tool="true" weight="0.19186047" />
-      <window_info anchor="right" id="Maven" order="10" show_stripe_button="false" weight="0.3299356" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -690,10 +778,16 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/homework/finalHomework/NaviDemo.java</url>
-          <line>101</line>
+          <url>file://$PROJECT_DIR$/src/homework/Calculator.java</url>
+          <line>271</line>
           <properties />
-          <option name="timeStamp" value="11" />
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/homework/Calculator.java</url>
+          <line>296</line>
+          <properties />
+          <option name="timeStamp" value="41" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -703,7 +797,34 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>arrayList.get(11)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
     <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>arrayList</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>arrayList.get(11)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>i</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>k</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>(1 / 2) * L * R</expression-string>
         <language-id>JAVA</language-id>
@@ -722,11 +843,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Chat/Server.java" />
-    <entry file="file://$PROJECT_DIR$/src/Chat/Receive.java" />
-    <entry file="file://$PROJECT_DIR$/src/Chat/Utils.java" />
-    <entry file="file://$PROJECT_DIR$/src/Chat/Client.java" />
-    <entry file="file://$PROJECT_DIR$/src/homework/RedBlackTree.java" />
     <entry file="file://$PROJECT_DIR$/src/homework/ProducerConsumer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="274">
@@ -783,13 +899,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/io/FileInputStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="65" column="6" selection-start-line="65" selection-start-column="6" selection-end-line="65" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/io/FileInputStream.java" />
     <entry file="file://$USER_HOME$/Desktop/Complexcalculator/src/Complexcalculator.java" />
     <entry file="file://$PROJECT_DIR$/src/Practice/CssChooser.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -848,24 +958,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.desktop/java/awt/event/ActionListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="44" column="17" selection-start-line="44" selection-start-column="17" selection-end-line="44" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/lang/Object.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="156" column="19" selection-start-line="156" selection-start-column="19" selection-end-line="156" selection-end-column="19" />
-          <folding>
-            <element signature="e#5877#5878#0" expanded="true" />
-            <element signature="e#5913#5914#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.desktop/java/awt/event/ActionListener.java" />
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/lang/Object.java" />
     <entry file="file://$PROJECT_DIR$/src/Others/JComplex.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
@@ -924,34 +1018,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/homework/Calculator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-189">
-          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/lang/Double.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="541" column="25" selection-start-line="541" selection-start-column="25" selection-end-line="541" selection-end-column="25" />
-          <folding>
-            <element signature="e#27027#27028#0" expanded="true" />
-            <element signature="e#27060#27061#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/util/Timer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="173" column="11" selection-start-line="173" selection-start-column="11" selection-end-line="173" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/lang/Double.java" />
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/util/Timer.java" />
     <entry file="file://$PROJECT_DIR$/src/homework/IO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="659">
@@ -964,20 +1032,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/homework/2-23.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/homework/Answer.java" />
-    <entry file="file://$PROJECT_DIR$/GUI/src/start.bat">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GUI/src/build.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/GUI/src/start.bat" />
+    <entry file="file://$PROJECT_DIR$/GUI/src/build.xml" />
     <entry file="file://$PROJECT_DIR$/src/homework/4-19.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="213">
@@ -1021,29 +1078,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/homework/3-36.java" />
-    <entry file="file://$PROJECT_DIR$/src/homework/3-37.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="55" column="20" selection-start-line="55" selection-start-column="20" selection-end-line="55" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/123.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/homework/ComplexCal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="82" selection-start-line="82" selection-end-line="83" />
-          <folding>
-            <element signature="method#wrongDialog#0;class#ComplexCal#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/123.txt" />
     <entry file="file://$PROJECT_DIR$/src/homework/8-15.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-494">
@@ -1058,32 +1093,80 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/homework/finalHomework/NaviDemo.java">
+    <entry file="file://$PROJECT_DIR$/src/homework/finalHomework/NaviDemo.java" />
+    <entry file="file://$PROJECT_DIR$/src/homework/ComplexCal.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        <state relative-caret-position="567">
+          <caret line="82" selection-start-line="82" selection-end-line="83" />
           <folding>
-            <element signature="method#init#0;class#NaviDemo#0" />
-            <element signature="method#titleInit#0;class#NaviDemo#0" />
-            <element signature="method#mapInit#0;class#NaviDemo#0" />
-            <element signature="method#addString#0;class#NaviDemo#0" />
-            <element signature="e#1902#2169#0" />
-            <element signature="e#2113#2159#1" />
-            <element signature="method#writeLength#0;class#NaviDemo#0" />
-            <element signature="e#2626#2655#1" />
-            <element signature="e#2685#2720#1" />
-            <element signature="e#2779#3376#1" />
-            <element signature="e#2830#3365#1" />
-            <element signature="e#3103#3154#1" />
-            <element signature="e#3207#3397#1" />
-            <element signature="e#3323#3866#0" />
-            <element signature="e#3618#3940#1" />
-            <element signature="e#3676#3884#1" />
-            <element signature="e#3792#3866#1" />
-            <element signature="method#readLength#0;class#NaviDemo#0" />
-            <element signature="method#comboboxInit#0;class#NaviDemo#0" />
-            <element signature="e#2437#2542#1" />
-            <element signature="e#4407#4438#1" />
+            <element signature="method#wrongDialog#0;class#ComplexCal#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/homework/8-12.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="16" column="16" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/homework/7-20.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="39" column="69" lean-forward="true" selection-start-line="39" selection-start-column="69" selection-end-line="39" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/homework/3-37.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-369">
+          <caret line="94" column="6" selection-start-line="94" selection-start-column="6" selection-end-line="94" selection-end-column="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/homework/2-23.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1728">
+          <caret line="64" column="5" lean-forward="true" selection-start-line="53" selection-start-column="4" selection-end-line="64" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Android/Calcu/app/src/main/java/org/xlxw/xlxw/calcu/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/java.base/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19980">
+          <caret line="786" selection-start-line="786" selection-end-line="786" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/homework/Calculator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="283" column="9" lean-forward="true" selection-start-line="283" selection-start-column="9" selection-end-line="283" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#9598#9599#0" expanded="true" />
+            <element signature="e#9630#9631#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/homework/6-33.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2655">
+          <caret line="54" column="44" lean-forward="true" selection-start-line="54" selection-start-column="44" selection-end-line="54" selection-end-column="44" />
+          <folding>
+            <element signature="e#1371#2311#0" expanded="true" />
+            <element signature="e#2310#2311#0" expanded="true" />
           </folding>
         </state>
       </provider>

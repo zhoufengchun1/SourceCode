@@ -38,10 +38,10 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "D:\CLion 2018.2.5\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2018.3.1\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "D:\CLion 2018.2.5\bin\cmake\win\bin\cmake.exe" -E remove -f
+RM = "C:\Program Files\JetBrains\CLion 2018.3.1\bin\cmake\win\bin\cmake.exe" -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -58,7 +58,7 @@ CMAKE_BINARY_DIR = D:\ResourceCode\C\CProject\cmake-build-debug
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"D:\CLion 2018.2.5\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+	"C:\Program Files\JetBrains\CLion 2018.3.1\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -69,7 +69,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"D:\CLion 2018.2.5\bin\cmake\win\bin\cmake.exe" -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"C:\Program Files\JetBrains\CLion 2018.3.1\bin\cmake\win\bin\cmake.exe" -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -122,33 +122,6 @@ CProject/fast:
 	$(MAKE) -f CMakeFiles\CProject.dir\build.make CMakeFiles/CProject.dir/build
 .PHONY : CProject/fast
 
-Demo.obj: Demo.cpp.obj
-
-.PHONY : Demo.obj
-
-# target to build an object file
-Demo.cpp.obj:
-	$(MAKE) -f CMakeFiles\CProject.dir\build.make CMakeFiles/CProject.dir/Demo.cpp.obj
-.PHONY : Demo.cpp.obj
-
-Demo.i: Demo.cpp.i
-
-.PHONY : Demo.i
-
-# target to preprocess a source file
-Demo.cpp.i:
-	$(MAKE) -f CMakeFiles\CProject.dir\build.make CMakeFiles/CProject.dir/Demo.cpp.i
-.PHONY : Demo.cpp.i
-
-Demo.s: Demo.cpp.s
-
-.PHONY : Demo.s
-
-# target to generate assembly for a file
-Demo.cpp.s:
-	$(MAKE) -f CMakeFiles\CProject.dir\build.make CMakeFiles/CProject.dir/Demo.cpp.s
-.PHONY : Demo.cpp.s
-
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -185,9 +158,6 @@ help:
 	@echo ... CProject
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... Demo.obj
-	@echo ... Demo.i
-	@echo ... Demo.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

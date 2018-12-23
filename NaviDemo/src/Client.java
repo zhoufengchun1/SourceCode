@@ -35,7 +35,7 @@ public class Client
     {
         jFrame = new JFrame("”√ªßµ«¬º");
         jFrame.setLayout(new FlowLayout());
-        jFrame.setBounds((toolkit.getScreenSize().width - 400) / 2, (toolkit.getScreenSize().height - 400) / 2, 270, 200);
+        jFrame.setBounds((toolkit.getScreenSize().width - 270) / 2, (toolkit.getScreenSize().height - 200) / 2, 270, 200);
 
         componentInit(accountJPanel = new JPanel(), accountLabel = new JLabel(), accountText = new JTextField(), "   ’ ∫≈");
         componentInit(passwdJPanel = new JPanel(), passwdLabel = new JLabel(), passwdText = new JTextField(), "   √‹¬Î");

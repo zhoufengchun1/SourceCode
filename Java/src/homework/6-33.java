@@ -172,7 +172,7 @@ class judge
 
     public static void main(String[] args)
     {
-        new judge(50);
+        new judge(10);
     }
 }
 
