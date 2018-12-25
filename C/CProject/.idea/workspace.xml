@@ -13,123 +13,20 @@
   <component name="ChangeListManager">
     <list default="true" id="e555fb88-b1c3-4bd7-912f-499e3963f2de" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Demo.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeError.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.1/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.1/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.1/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.1/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.1/CompilerIdC/a.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.1/CompilerIdC/a.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.1/CompilerIdCXX/a.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.1/CompilerIdCXX/a.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CProject.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CProject.dir/main.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CProject.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CProject.dir/objects.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CProject.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CProject.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CProject.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CProject.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Java/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/GUI/GUI.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/GUI/src/build.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/GUI/src/start.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/out/artifacts/Java_jar/Java.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/out/artifacts/Java_jar/Java.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/out/production/Java/META-INF/Java.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/out/production/Java/Others/Complex.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/out/production/Java/Others/Complex.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/out/production/Java/Others/JComplex$ButtonPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/out/production/Java/Others/JComplex$ButtonPanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/out/production/Java/Others/JComplex$OperatorPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/out/production/Java/Others/JComplex$OperatorPanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/out/production/Java/Others/JComplex$TextPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/out/production/Java/Others/JComplex$TextPanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/out/production/Java/Others/JComplex.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/out/production/Java/Others/JComplex.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/out/production/Java/Practice/ChatDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/out/production/Java/Practice/ChatDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/out/production/Java/Practice/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/out/production/Java/Practice/Client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/out/production/Java/Practice/Client2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/out/production/Java/Practice/Client2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/out/production/Java/Practice/Client3.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/out/production/Java/Practice/Client3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/out/production/Java/Practice/CollectionDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/out/production/Java/Practice/CollectionDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/out/production/Java/Practice/Consumer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/out/production/Java/Practice/Consumer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/out/production/Java/Practice/CssChooser.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/out/production/Java/Practice/CssChooser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/out/production/Java/Practice/FileDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/out/production/Java/Practice/FileDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/out/production/Java/Practice/IODemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/out/production/Java/Practice/IODemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/out/production/Java/Practice/ListDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/out/production/Java/Practice/ListDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/out/production/Java/Practice/ListIteratorDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/out/production/Java/Practice/ListIteratorDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/out/production/Java/Practice/MathDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/out/production/Java/Practice/MathDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/out/production/Java/Practice/PipedStreamDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/out/production/Java/Practice/PipedStreamDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/out/production/Java/Practice/Producer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/out/production/Java/Practice/Producer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/out/production/Java/Practice/RandomAccessFileDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/out/production/Java/Practice/RandomAccessFileDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/out/production/Java/Practice/Read.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/out/production/Java/Practice/Read.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/out/production/Java/Practice/Receive.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/out/production/Java/Practice/Receive.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/out/production/Java/Practice/Receive2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/out/production/Java/Practice/Receive2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/out/production/Java/Practice/Res.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/out/production/Java/Practice/Res.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/out/production/Java/Practice/Send.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/out/production/Java/Practice/Send.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/out/production/Java/Practice/Send2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/out/production/Java/Practice/Send2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/out/production/Java/Practice/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/out/production/Java/Practice/Server.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/out/production/Java/Practice/Server2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/out/production/Java/Practice/Server2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/out/production/Java/Practice/Server3.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/out/production/Java/Practice/Server3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/out/production/Java/Practice/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/out/production/Java/Practice/Student.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/out/production/Java/Practice/Write.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/out/production/Java/Practice/Write.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/out/production/Java/Practice/synchronizedDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/out/production/Java/Practice/synchronizedDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/out/production/Java/homework/Account.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/out/production/Java/homework/Account.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/out/production/Java/homework/Answer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/out/production/Java/homework/Answer$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/out/production/Java/homework/Answer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/out/production/Java/homework/Answer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/out/production/Java/homework/Answer0.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/out/production/Java/homework/Answer0.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/out/production/Java/homework/Answer3.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/out/production/Java/homework/Answer3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/out/production/Java/homework/Answer4.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/out/production/Java/homework/Answer4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/out/production/Java/homework/Area.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/out/production/Java/homework/Area.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/out/production/Java/homework/Average.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/out/production/Java/homework/Average.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/out/production/Java/homework/Bank.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/out/production/Java/homework/Bank.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/out/production/Java/homework/Calculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/out/production/Java/homework/Calculator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/out/production/Java/homework/Comparable.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/out/production/Java/homework/Comparable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/out/production/Java/homework/Complex.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/out/production/Java/homework/Complex.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/out/production/Java/homework/ComplexCal$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/out/production/Java/homework/ComplexCal$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/out/production/Java/homework/ComplexCal$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/out/production/Java/homework/ComplexCal$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/out/production/Java/homework/ComplexCal$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/out/production/Java/homework/ComplexCal$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/out/production/Java/homework/ComplexCal$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/out/production/Java/homework/ComplexCal$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/out/production/Java/homework/ComplexCal$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/out/production/Java/homework/ComplexCal$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/out/production/Java/homework/ComplexCal$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/out/production/Java/homework/ComplexCal$6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/out/production/Java/homework/ComplexCal$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/out/production/Java/homework/ComplexCal$7.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/out/production/Java/homework/ComplexCal$JComplexList.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/out/production/Java/homework/ComplexCal$JComplexList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/out/production/Java/homework/ComplexCal.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/out/production/Java/homework/ComplexCal.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/out/production/Java/homework/Consumer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/out/production/Java/homework/Consumer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/out/production/Java/homework/Demo1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/out/production/Java/homework/Demo1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/out/production/Java/homework/Demo2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/out/production/Java/homework/Demo2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/out/production/Java/homework/Demo3.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/out/production/Java/homework/Demo3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/out/production/Java/homework/Figure.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/out/production/Java/homework/Figure.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/out/production/Java/homework/Globe.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/out/production/Java/homework/Globe.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/out/production/Java/homework/IO$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/out/production/Java/homework/IO$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/out/production/Java/homework/IO$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/out/production/Java/homework/IO$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/out/production/Java/homework/IO$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/out/production/Java/homework/IO$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/out/production/Java/homework/IO$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/out/production/Java/homework/IO$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/out/production/Java/homework/IO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/out/production/Java/homework/IO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/out/production/Java/homework/Info$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/out/production/Java/homework/Info$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/out/production/Java/homework/Info$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/out/production/Java/homework/Info$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/out/production/Java/homework/Info$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/out/production/Java/homework/Info$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/out/production/Java/homework/Info.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/out/production/Java/homework/Info.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/out/production/Java/homework/JComplex$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/out/production/Java/homework/JComplex$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/out/production/Java/homework/JComplex.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/out/production/Java/homework/JComplex.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/out/production/Java/homework/NaviDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/out/production/Java/homework/Point.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/out/production/Java/homework/Point.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/out/production/Java/homework/Polygon.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/out/production/Java/homework/Polygon.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/out/production/Java/homework/Producer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/out/production/Java/homework/Producer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/out/production/Java/homework/ProducerConsumer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/out/production/Java/homework/ProducerConsumer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/out/production/Java/homework/Resources.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/out/production/Java/homework/Resources.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/out/production/Java/homework/Solid.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/out/production/Java/homework/Solid.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/out/production/Java/homework/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/out/production/Java/homework/Student.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/out/production/Java/homework/Triangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/out/production/Java/homework/Triangle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/out/production/Java/homework/Volume.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/out/production/Java/homework/Volume.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/out/production/Java/homework/aver.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/out/production/Java/homework/aver.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/out/production/Java/homework/calcuNum.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/out/production/Java/homework/cone.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/out/production/Java/homework/cone.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/out/production/Java/homework/judge$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/out/production/Java/homework/judge$1$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/out/production/Java/homework/judge$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/out/production/Java/homework/judge$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/out/production/Java/homework/judge$2$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/out/production/Java/homework/judge$2$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/out/production/Java/homework/judge$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/out/production/Java/homework/judge$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/out/production/Java/homework/judge$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/out/production/Java/homework/judge$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/out/production/Java/homework/judge.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/out/production/Java/homework/judge.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/out/production/Java/homework/number.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/out/production/Java/homework/operate.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/src/homework/8-12.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/src/homework/8-12.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/src/homework/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/src/homework/Calculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../NaviDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../NaviDemo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../NaviDemo/out/production/NaviDemo/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../NaviDemo/out/production/NaviDemo/Client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../NaviDemo/out/production/NaviDemo/Server$Task.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../NaviDemo/out/production/NaviDemo/Server$Task.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../NaviDemo/out/production/NaviDemo/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../NaviDemo/out/production/NaviDemo/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../NaviDemo/out/production/NaviDemo/server.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../NaviDemo/out/production/NaviDemo/server.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../NaviDemo/src/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../NaviDemo/src/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../NaviDemo/src/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../NaviDemo/src/Server.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -158,8 +55,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="371">
-              <caret line="16" column="27" lean-forward="true" selection-end-line="22" />
+            <state relative-caret-position="378">
+              <caret line="38" column="5" lean-forward="true" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -178,7 +75,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-7" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
@@ -190,20 +87,7 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="CProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CProject" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -212,7 +96,7 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="CPPToolchains" />
+    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -280,11 +164,12 @@
       <workItem from="1544797930904" duration="832000" />
       <workItem from="1545208170530" duration="69000" />
       <workItem from="1545208257002" duration="3546000" />
+      <workItem from="1545651934957" duration="1264000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42983000" />
+    <option name="totallyTimeSpent" value="44247000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -296,7 +181,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="974" height="1047" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.18172044" />
@@ -304,7 +189,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.37350836" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.95667046" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3996063" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -314,7 +199,7 @@
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="CMake" order="11" weight="0.336374" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.35918856" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.35917902" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -357,17 +242,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Demo.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Demo.cpp" />
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="16" column="27" lean-forward="true" selection-end-line="22" />
+        <state relative-caret-position="378">
+          <caret line="38" column="5" lean-forward="true" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
         </state>
       </provider>
     </entry>

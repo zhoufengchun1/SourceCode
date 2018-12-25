@@ -1,22 +1,65 @@
 #include <bits/stdc++.h>
-
 using namespace std;
-
+int du[1005];
+int pre[1004];
+void init(int num)
+{
+    for (int i = 1; i <= num; i++)
+    {
+        pre[i] = i;
+    }
+}
+int find(int x)
+{
+    if (x == pre[x])
+        return x;
+    else
+    {
+        pre[x] = find(pre[x]);
+        return pre[x];
+    }
+}
+void join(int x, int y)
+{
+    int t1, t2;
+    t1 = find(x);
+    t2 = find(y);
+    if (t1 != t2)
+        pre[t2] = t1;
+}
+int judge(int num)
+{
+    int t = 0;
+    for (int i = 1; i <= num; i++)
+    {
+        if (pre[i] == i)
+            t++;
+        if (du[i] % 2 != 0)
+            return 0;
+    }
+    if (t != 1)
+        return 0;
+    return 1;
+}
 int main()
 {
-    int n, p;
-    scanf("%d%d", &n, &p);
-    int a[1001];
-    int *b = (int *) malloc(sizeof(int) * p);
-    for (int i = 0; i < p; i++)b[i] = 0;
-    for (int i = 0; i < n; i++)
+    int num, count;
+    scanf("%d %d", &num, &count);
+    init(num);
+    int x, y;
+    memset(du, 0, sizeof(du));
+
+    for (int i = 1; i <= count; i++)
     {
-        scanf("%d", &a[i]);
-        int flag = a[i] % p;
-        while (b[flag % p] && b[flag % p] != a[i])flag++;
-        b[flag % p] = a[i];
-        if (i)printf(" ");
-        printf("%d", flag % p);
+        scanf("%d %d", &x, &y);
+        du[x]++;
+        du[y]++;
+        join(x, y);
+
     }
-    return 0;
+    if (judge(num))
+        printf("1");
+    else
+        printf("0");
+
 }
