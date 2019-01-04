@@ -18,17 +18,20 @@ public class DeletePoint
     private Set set;
     private File file;
     private Toolkit toolkit = Toolkit.getDefaultToolkit();
+    private JFrame jFrame;
 
     public DeletePoint()
     {
         try
         {
+            jFrame = new JFrame();
             file = new File("D://point.obj");
             objectInputStream = new ObjectInputStream(new FileInputStream(file));
             treeMap = (TreeMap) objectInputStream.readObject();
             frameInit();
         } catch (IOException e)
         {
+            new mDialog("错误", "没有文件！", jFrame);
             e.printStackTrace();
 
         } catch (ClassNotFoundException e)
@@ -39,7 +42,6 @@ public class DeletePoint
 
     public void frameInit()
     {
-        JFrame jFrame = new JFrame();
         jFrame.setLayout(new FlowLayout());
         jFrame.setBounds((toolkit.getScreenSize().width - 350) / 2, (toolkit.getScreenSize().height - 250) / 2, 350, 250);
 

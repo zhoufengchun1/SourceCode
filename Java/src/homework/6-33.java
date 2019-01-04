@@ -75,7 +75,8 @@ class judge
             }
         });
         jButton2 = new JButton("Æ½¾ù·Ö2");
-        jButton2.addMouseListener(new MouseAdapter()
+        jButton2.addMouseListener(
+                new MouseAdapter()
         {
             @Override
             public void mouseClicked(MouseEvent e)

@@ -1,11 +1,9 @@
-import javax.net.ssl.KeyStoreBuilderParameters;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.io.*;
 import java.util.TreeMap;
-import java.util.HashSet;
 
 public class CreatePoint
 {

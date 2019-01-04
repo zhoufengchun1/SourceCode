@@ -3,7 +3,7 @@ file(REMOVE_RECURSE
   "CProject.pdb"
   "CProject.exe"
   "CProject.exe.manifest"
-  "libCProject.dll.a"
+  "CProject.lib"
 )
 
 # Per-language clean rules from dependency scanning.

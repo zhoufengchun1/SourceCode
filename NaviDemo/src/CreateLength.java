@@ -5,7 +5,6 @@ import java.awt.event.ItemListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.io.*;
-import java.rmi.server.ExportException;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.Set;
@@ -30,7 +29,6 @@ public class CreateLength
 
     public CreateLength(JFrame jFrame)
     {
-
         lengthFile = new File("D://length.obj");
         pointFile = new File("D://point.obj");
         try
@@ -40,7 +38,6 @@ public class CreateLength
         {
             new mDialog("错误", "没有景点信息！", jFrame);
         }
-
 
         try
         {

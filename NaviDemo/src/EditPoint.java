@@ -1,5 +1,3 @@
-import org.w3c.dom.css.CSSStyleRule;
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ItemEvent;
@@ -10,7 +8,6 @@ import java.io.*;
 import java.util.TreeMap;
 import java.util.Iterator;
 import java.util.Set;
-import java.util.TreeMap;
 
 public class EditPoint
 {
@@ -22,18 +19,21 @@ public class EditPoint
     private Set<String> set;
     private File file;
     private Toolkit toolkit = Toolkit.getDefaultToolkit();
+    JFrame jFrame;
 
     public EditPoint()
     {
         try
         {
             file = new File("D://point.obj");
+            jFrame = new JFrame("");
             objectInputStream = new ObjectInputStream(new FileInputStream(file));
             treeMap = (TreeMap) objectInputStream.readObject();
             set = treeMap.keySet();
             frameInit();
         } catch (IOException e)
         {
+            new mDialog("错误", "没有文件！", jFrame);
             e.printStackTrace();
         } catch (ClassNotFoundException e)
         {
@@ -43,7 +43,7 @@ public class EditPoint
 
     public void frameInit()
     {
-        JFrame jFrame = new JFrame("");
+
         jFrame.setBounds((toolkit.getScreenSize().width - 350) / 2, (toolkit.getScreenSize().height - 450) / 2, 350, 450);
 
         jFrame.setLayout(new FlowLayout());

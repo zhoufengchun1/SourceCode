@@ -2,18 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f6b8aca5-89b1-40f1-a02f-37ebea8fbe29" name="Default Changelist" comment="1">
-      <change beforePath="$PROJECT_DIR$/../Java/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Java/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java/GUI/GUI.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java/GUI/src/build.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java/GUI/src/start.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/src/homework/6-33.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/src/homework/6-33.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/NaviDemo/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/NaviDemo/Client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/NaviDemo/Server$Task.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/NaviDemo/Server$Task.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/NaviDemo/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/NaviDemo/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/NaviDemo/server.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/NaviDemo/server.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NaviDemo/CreatePoint$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/NaviDemo/CreatePoint$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NaviDemo/CreatePoint$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/NaviDemo/CreatePoint$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NaviDemo/CreatePoint.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/NaviDemo/CreatePoint.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NaviDemo/META-INF/NaviDemo.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CreateLength.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CreateLength.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CreatePoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CreatePoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DeletePoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DeletePoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EditPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EditPoint.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,34 +42,36 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AdminMenu.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1377">
-              <caret line="66" selection-end-line="110" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/NormalMenu.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
-              <caret line="25" selection-end-line="63" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/DeletePoint.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1161">
-              <caret line="52" column="30" selection-end-line="117" />
+            <state relative-caret-position="-414">
+              <caret line="20" column="26" selection-end-line="119" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/CreateLength.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#5199#5200#0" expanded="true" />
+                <element signature="e#5245#5246#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/SearchLength.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2862">
+              <caret line="106" column="53" lean-forward="true" selection-start-line="106" selection-start-column="53" selection-end-line="106" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -80,20 +82,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/EditPoint.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1566">
-              <caret line="70" column="38" selection-end-line="111" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/SearchLength.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1026">
-              <caret line="52" column="43" selection-end-line="134" />
+            <state relative-caret-position="-873">
+              <caret line="31" column="14" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -104,8 +94,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/LengthInfo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="14" column="5" selection-end-line="123" />
+            <state relative-caret-position="-1881">
+              <caret line="20" column="48" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2592#2593#0" expanded="true" />
@@ -120,10 +110,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/mDialog.java">
+        <entry file="file://$PROJECT_DIR$/src/VisitPoint.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="648">
-              <caret line="27" column="31" selection-end-line="71" />
+            <state relative-caret-position="-387">
+              <caret line="61" column="9" lean-forward="true" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -132,24 +122,31 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/CreateLength.java">
+        <entry file="file://$PROJECT_DIR$/src/Server.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1053">
-              <caret line="50" column="9" selection-end-line="171" />
+            <state relative-caret-position="303">
+              <caret line="264" column="62" selection-start-line="264" selection-start-column="38" selection-end-line="264" selection-end-column="62" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AdminMenu.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="96" column="31" selection-start-line="96" selection-start-column="31" selection-end-line="96" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#5199#5200#0" expanded="true" />
-                <element signature="e#5245#5246#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/VisitPoint.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/NormalMenu.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="576">
-              <caret line="50" column="9" lean-forward="true" selection-start-line="50" selection-start-column="9" selection-end-line="50" selection-end-column="9" />
+            <state relative-caret-position="567">
+              <caret line="21" column="35" lean-forward="true" selection-end-line="63" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -160,8 +157,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/CreatePoint.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="22" column="57" selection-end-line="93" />
+            <state relative-caret-position="-9">
+              <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -209,18 +206,18 @@
         <option value="$PROJECT_DIR$/src/server.java" />
         <option value="$PROJECT_DIR$/src/createPoint.java" />
         <option value="$PROJECT_DIR$/src/mDialog.java" />
-        <option value="$PROJECT_DIR$/src/DeletePoint.java" />
-        <option value="$PROJECT_DIR$/src/EditPoint.java" />
-        <option value="$PROJECT_DIR$/src/CreatePoint.java" />
         <option value="$PROJECT_DIR$/src/VisitPoint.java" />
         <option value="$PROJECT_DIR$/src/LengthInfo.java" />
-        <option value="$PROJECT_DIR$/src/CreateLength.java" />
         <option value="$PROJECT_DIR$/src/SearchLength.java" />
         <option value="$PROJECT_DIR$/src/NormalMenu.java" />
         <option value="$PROJECT_DIR$/src/AdminMenu.java" />
         <option value="$PROJECT_DIR$/src/Home.java" />
         <option value="$PROJECT_DIR$/src/Server.java" />
+        <option value="$PROJECT_DIR$/src/CreatePoint.java" />
         <option value="$PROJECT_DIR$/src/Client.java" />
+        <option value="$PROJECT_DIR$/src/EditPoint.java" />
+        <option value="$PROJECT_DIR$/src/DeletePoint.java" />
+        <option value="$PROJECT_DIR$/src/CreateLength.java" />
       </list>
     </option>
   </component>
@@ -231,8 +228,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-649" />
-    <option name="y" value="415" />
+    <option name="x" value="-25" />
+    <option name="y" value="-22" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
@@ -269,9 +266,9 @@
     <property name="GO_FMT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545134453740" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545790308368" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Java" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -373,6 +370,8 @@
       <workItem from="1544945103224" duration="22049000" />
       <workItem from="1545123909116" duration="5983000" />
       <workItem from="1545135130878" duration="444000" />
+      <workItem from="1545728374758" duration="6872000" />
+      <workItem from="1545791262700" duration="6256000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1544874604048</created>
@@ -385,7 +384,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88675000" />
+    <option name="totallyTimeSpent" value="101803000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -397,7 +396,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.103065535" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -476,12 +476,6 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/SearchLength.java</url>
-          <line>92</line>
-          <properties />
-          <option name="timeStamp" value="54" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Server.java</url>
           <line>222</line>
           <properties />
@@ -530,18 +524,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Server.java">
+    <entry file="file://$PROJECT_DIR$/src/mDialog.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="229" column="18" lean-forward="true" selection-end-line="287" />
+        <state relative-caret-position="459">
+          <caret line="20" selection-end-line="71" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Client.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="34" column="5" lean-forward="true" selection-end-line="184" />
+        <state relative-caret-position="2970">
+          <caret line="145" column="12" selection-start-line="145" selection-start-column="12" selection-end-line="145" selection-end-column="45" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="method#componentInit#0;class#Client#0" />
             <element signature="method#registButtonInit#0;class#Client#0" />
           </folding>
@@ -550,8 +548,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Home.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="107" column="5" lean-forward="true" selection-end-line="154" />
+        <state relative-caret-position="297">
+          <caret line="127" column="9" lean-forward="true" selection-start-line="127" selection-start-column="9" selection-end-line="127" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#mapInit#0;class#Home#0" />
@@ -560,20 +558,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AdminMenu.java">
+    <entry file="file://$PROJECT_DIR$/src/Server.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1377">
-          <caret line="66" selection-end-line="110" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="303">
+          <caret line="264" column="62" selection-start-line="264" selection-start-column="38" selection-end-line="264" selection-end-column="62" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/NormalMenu.java">
+    <entry file="file://$PROJECT_DIR$/src/CreatePoint.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="25" selection-end-line="63" />
+        <state relative-caret-position="-9">
+          <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -582,8 +577,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DeletePoint.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1161">
-          <caret line="52" column="30" selection-end-line="117" />
+        <state relative-caret-position="-414">
+          <caret line="20" column="26" selection-end-line="119" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -592,18 +587,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/EditPoint.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1566">
-          <caret line="70" column="38" selection-end-line="111" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SearchLength.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1026">
-          <caret line="52" column="43" selection-end-line="134" />
+        <state relative-caret-position="-873">
+          <caret line="31" column="14" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -612,8 +597,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LengthInfo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="14" column="5" selection-end-line="123" />
+        <state relative-caret-position="-1881">
+          <caret line="20" column="48" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2592#2593#0" expanded="true" />
@@ -626,10 +611,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/mDialog.java">
+    <entry file="file://$PROJECT_DIR$/src/AdminMenu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="27" column="31" selection-end-line="71" />
+        <state relative-caret-position="396">
+          <caret line="96" column="31" selection-start-line="96" selection-start-column="31" selection-end-line="96" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -638,8 +623,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CreateLength.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1053">
-          <caret line="50" column="9" selection-end-line="171" />
+        <state relative-caret-position="300">
+          <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#5199#5200#0" expanded="true" />
@@ -648,10 +633,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CreatePoint.java">
+    <entry file="file://$PROJECT_DIR$/src/NormalMenu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="22" column="57" selection-end-line="93" />
+        <state relative-caret-position="567">
+          <caret line="21" column="35" lean-forward="true" selection-end-line="63" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -660,8 +645,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/VisitPoint.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="50" column="9" lean-forward="true" selection-start-line="50" selection-start-column="9" selection-end-line="50" selection-end-column="9" />
+        <state relative-caret-position="-387">
+          <caret line="61" column="9" lean-forward="true" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SearchLength.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2862">
+          <caret line="106" column="53" lean-forward="true" selection-start-line="106" selection-start-column="53" selection-end-line="106" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

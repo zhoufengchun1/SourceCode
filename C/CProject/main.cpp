@@ -1,65 +1,48 @@
 #include <bits/stdc++.h>
-using namespace std;
-int du[1005];
-int pre[1004];
-void init(int num)
-{
-    for (int i = 1; i <= num; i++)
-    {
-        pre[i] = i;
-    }
-}
-int find(int x)
-{
-    if (x == pre[x])
-        return x;
-    else
-    {
-        pre[x] = find(pre[x]);
-        return pre[x];
-    }
-}
-void join(int x, int y)
-{
-    int t1, t2;
-    t1 = find(x);
-    t2 = find(y);
-    if (t1 != t2)
-        pre[t2] = t1;
-}
-int judge(int num)
-{
-    int t = 0;
-    for (int i = 1; i <= num; i++)
-    {
-        if (pre[i] == i)
-            t++;
-        if (du[i] % 2 != 0)
-            return 0;
-    }
-    if (t != 1)
-        return 0;
-    return 1;
-}
+#include <algorithm>
+int search(int num);
+int a[100];
+int n;
 int main()
 {
-    int num, count;
-    scanf("%d %d", &num, &count);
-    init(num);
-    int x, y;
-    memset(du, 0, sizeof(du));
-
-    for (int i = 1; i <= count; i++)
+    int m;
+    scanf("%d %d", &n, &m);
+    int b[100];
+    int i, j;
+    for (i = 0; i < n; i++)
     {
-        scanf("%d %d", &x, &y);
-        du[x]++;
-        du[y]++;
-        join(x, y);
-
+        scanf("%d", &a[i]);
     }
-    if (judge(num))
-        printf("1");
-    else
-        printf("0");
-
+    sort(a, a + n);
+    for (i = 0; i < m; i++)
+    {
+        int temp;
+        scanf("%d", &temp);
+        b[i] = search(temp);
+    }
+    for (i = 0; i < m; i++)
+    {
+        printf("%d", b[i]);
+        if (i != m - 1)
+            printf(" ");
+    }
+}
+int search(int num)
+{
+    int low, high;
+    low = 0, high = n - 1;
+    while (low < high)
+    {
+        int mid = (low + high) / 2;
+        if (mid > num)
+        {
+            high = low - 1;
+        }
+        else if (mid < num)
+        {
+            low = mid + 1;
+        }
+        else return mid;
+    }
+    return -1;
 }
