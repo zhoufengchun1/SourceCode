@@ -45,19 +45,16 @@ class ComplexCal
 
     {
 
-        FrameInit();//主窗口初始化
+        FrameInit();
 
-        labelInit();//第一行提示信息初始化
+        labelInit();
 
-        JComplexInit();//复数部件初始化
+        JComplexInit();
 
-        ResultInit();//结果部件初始化
+        ResultInit();
 
         f.validate();
 
-        /* 添加完组件要用validate()方法刷新数据，
-
-         否则就只能手动拖一下窗口才能正常显示窗口*/
 
     }
 

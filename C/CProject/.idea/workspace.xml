@@ -12,21 +12,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e555fb88-b1c3-4bd7-912f-499e3963f2de" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../Java/src/Demo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.1/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.1/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.1/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.1/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.1/CompilerIdC/a.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.1/CompilerIdC/a.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.1/CompilerIdCXX/a.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.1/CompilerIdCXX/a.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CProject.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CProject.dir/main.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CProject.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CProject.dir/objects.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CProject.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CProject.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CProject.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CProject.dir/depend.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConsoleApplication1/.vs/ConsoleApplication1/v15/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/../ConsoleApplication1/.vs/ConsoleApplication1/v15/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConsoleApplication1/.vs/ConsoleApplication1/v15/Browse.VC.db" beforeDir="false" afterPath="$PROJECT_DIR$/../ConsoleApplication1/.vs/ConsoleApplication1/v15/Browse.VC.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConsoleApplication1/.vs/ConsoleApplication1/v15/ipch/AutoPCH/1262ce3bd88d13cb/CONSOLEAPPLICATION1.ipch" beforeDir="false" afterPath="$PROJECT_DIR$/../ConsoleApplication1/.vs/ConsoleApplication1/v15/ipch/AutoPCH/1262ce3bd88d13cb/CONSOLEAPPLICATION1.ipch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConsoleApplication1/ConsoleApplication1.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ConsoleApplication1/ConsoleApplication1.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConsoleApplication1/ConsoleApplication1.vcxproj" beforeDir="false" afterPath="$PROJECT_DIR$/../ConsoleApplication1/ConsoleApplication1.vcxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConsoleApplication1/ConsoleApplication1.vcxproj.filters" beforeDir="false" afterPath="$PROJECT_DIR$/../ConsoleApplication1/ConsoleApplication1.vcxproj.filters" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConsoleApplication1/x64/Debug/ConsoleA.415406AA.tlog/CL.command.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/../ConsoleApplication1/x64/Debug/ConsoleA.415406AA.tlog/CL.command.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConsoleApplication1/x64/Debug/ConsoleA.415406AA.tlog/CL.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/../ConsoleApplication1/x64/Debug/ConsoleA.415406AA.tlog/CL.read.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConsoleApplication1/x64/Debug/ConsoleA.415406AA.tlog/CL.write.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/../ConsoleApplication1/x64/Debug/ConsoleA.415406AA.tlog/CL.write.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConsoleApplication1/x64/Debug/ConsoleA.415406AA.tlog/link.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/../ConsoleApplication1/x64/Debug/ConsoleA.415406AA.tlog/link.read.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConsoleApplication1/x64/Debug/ConsoleApplication1.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../ConsoleApplication1/x64/Debug/ConsoleApplication1.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConsoleApplication1/x64/Debug/ConsoleApplication1.ilk" beforeDir="false" afterPath="$PROJECT_DIR$/../ConsoleApplication1/x64/Debug/ConsoleApplication1.ilk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConsoleApplication1/x64/Debug/ConsoleApplication1.log" beforeDir="false" afterPath="$PROJECT_DIR$/../ConsoleApplication1/x64/Debug/ConsoleApplication1.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConsoleApplication1/x64/Debug/ConsoleApplication1.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../ConsoleApplication1/x64/Debug/ConsoleApplication1.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConsoleApplication1/x64/Debug/ConsoleApplication1.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../ConsoleApplication1/x64/Debug/ConsoleApplication1.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConsoleApplication1/x64/Debug/vc141.idb" beforeDir="false" afterPath="$PROJECT_DIR$/../ConsoleApplication1/x64/Debug/vc141.idb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConsoleApplication1/x64/Debug/vc141.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../ConsoleApplication1/x64/Debug/vc141.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Java/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/out/artifacts/Java_jar/Java.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/out/artifacts/Java_jar/Java.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/out/production/Java/homework/judge$2$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/out/production/Java/homework/judge$2$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/out/production/Java/homework/judge$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/out/production/Java/homework/judge$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/out/production/Java/homework/judge$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/out/production/Java/homework/judge$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/out/production/Java/homework/judge.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/out/production/Java/homework/judge.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../NaviDemo/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../NaviDemo/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../NaviDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../NaviDemo/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -55,11 +70,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="15" column="6" selection-end-line="48" />
-              <folding>
-                <element signature="e#0#24#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-2000">
+              <caret line="205" column="10" selection-start-line="205" selection-start-column="10" selection-end-line="205" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -69,7 +81,11 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>sort</find>
+      <find>EdgeType</find>
     </findStrings>
+    <replaceStrings>
+      <replace>int</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
@@ -83,6 +99,7 @@
       </list>
     </option>
   </component>
+  <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="953" />
     <option name="y" value="110" />
@@ -105,7 +122,7 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
+    <property name="settings.editor.selected.configurable" value="CPPToolchains" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -175,11 +192,15 @@
       <workItem from="1545208257002" duration="3546000" />
       <workItem from="1545651934957" duration="1264000" />
       <workItem from="1546404934965" duration="1362000" />
+      <workItem from="1546594138303" duration="31000" />
+      <workItem from="1546594205092" duration="2309000" />
+      <workItem from="1546597001318" duration="614000" />
+      <workItem from="1547733303916" duration="132000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45609000" />
+    <option name="totallyTimeSpent" value="48695000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -192,7 +213,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.18172044" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -209,7 +229,7 @@
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="CMake" order="11" weight="0.336374" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.35917902" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.35803878" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -262,11 +282,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="15" column="6" selection-end-line="48" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-2000">
+          <caret line="205" column="10" selection-start-line="205" selection-start-column="10" selection-end-line="205" selection-end-column="10" />
         </state>
       </provider>
     </entry>

@@ -7,7 +7,7 @@ interface Average
     abstract double calculateAverage();
 }
 
-class Demo1 implements Average//算法一，直接相加
+class Demo1 implements Average
 {
     private double[] score;
 
