@@ -7,107 +7,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="971dbd24-0f2c-4cdf-9812-eda12a9fca7a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Android/MyApplication2/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Android/MyApplication2/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Android/ToastDemo/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Android/MyApplication/.idea/caches/gradle_models.ser" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Android/MyApplication/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Android/MyApplication/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Android/MyApplication/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Android/MyApplication/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Android/ToastDemo/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Android/ToastDemo/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Android/ToastDemo/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Android/ToastDemo/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/ConsoleApplication1/.vs/ConsoleApplication1/v15/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/../C/ConsoleApplication1/.vs/ConsoleApplication1/v15/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C/ConsoleApplication1/.vs/ConsoleApplication1/v15/Browse.VC.db" beforeDir="false" afterPath="$PROJECT_DIR$/../C/ConsoleApplication1/.vs/ConsoleApplication1/v15/Browse.VC.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Java_jar/Java.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Java_jar/Java.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/Demo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/Demo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/Others/Complex.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/Others/Complex.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/Others/JComplex$ButtonPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/Others/JComplex$ButtonPanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/Others/JComplex$OperatorPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/Others/JComplex$OperatorPanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/Others/JComplex$TextPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/Others/JComplex$TextPanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/Others/JComplex.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/Others/JComplex.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/Practice/ChatDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/Practice/ChatDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/Practice/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/Practice/Client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/Practice/Client2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/Practice/Client2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/Practice/Client3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/Practice/Client3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/Practice/CollectionDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/Practice/CollectionDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/Practice/Consumer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/Practice/Consumer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/Practice/CssChooser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/Practice/CssChooser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/Practice/FileDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/Practice/FileDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/Practice/IODemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/Practice/IODemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/Practice/ListDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/Practice/ListDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/Practice/ListIteratorDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/Practice/ListIteratorDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/Practice/MathDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/Practice/MathDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/Practice/PipedStreamDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/Practice/PipedStreamDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/Practice/Producer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/Practice/Producer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/Practice/RandomAccessFileDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/Practice/RandomAccessFileDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/Practice/Read.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/Practice/Read.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/Practice/Receive.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/Practice/Receive.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/Practice/Receive2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/Practice/Receive2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/Practice/Res.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/Practice/Res.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/Practice/Send.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/Practice/Send.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/Practice/Send2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/Practice/Send2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/Practice/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/Practice/Server.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/Practice/Server2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/Practice/Server2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/Practice/Server3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/Practice/Server3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/Practice/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/Practice/Student.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/Practice/Write.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/Practice/Write.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/Practice/synchronizedDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/Practice/synchronizedDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/Account.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/Account.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/Answer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/Answer$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/Answer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/Answer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/Answer0.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/Answer0.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/Answer3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/Answer3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/Answer4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/Answer4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/Area.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/Area.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/Average.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/Average.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/Bank.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/Bank.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/Calculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/Calculator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/Comparable.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/Comparable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/Complex.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/Complex.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/ComplexCal$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/ComplexCal$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/ComplexCal$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/ComplexCal$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/ComplexCal$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/ComplexCal$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/ComplexCal$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/ComplexCal$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/ComplexCal$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/ComplexCal$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/ComplexCal$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/ComplexCal$6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/ComplexCal$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/ComplexCal$7.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/ComplexCal$JComplexList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/ComplexCal$JComplexList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/ComplexCal.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/ComplexCal.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/Consumer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/Consumer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/Demo1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/Demo1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/Demo2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/Demo2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/Demo3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/Demo3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/Figure.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/Figure.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/Globe.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/Globe.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/IO$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/IO$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/IO$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/IO$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/IO$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/IO$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/IO$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/IO$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/IO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/IO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/Info$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/Info$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/Info$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/Info$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/Info$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/Info$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/Info.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/Info.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/JComplex$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/JComplex$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/JComplex.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/JComplex.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/Point.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/Point.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/Polygon.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/Polygon.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/Producer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/Producer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/ProducerConsumer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/ProducerConsumer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/Resources.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/Resources.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/Solid.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/Solid.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/Student.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/Triangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/Triangle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/Volume.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/Volume.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/ans.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/ans.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/aver.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/aver.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/cone.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/cone.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/judge$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/judge$1$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/judge$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/judge$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/judge$2$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/judge$2$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/judge$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/judge$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/judge$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/judge$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/judge.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/homework/judge.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/Demo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Demo.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -155,38 +61,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Demo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1102">
-              <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/homework/ComplexCal.java">
+        <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25650">
-              <caret line="732" lean-forward="true" selection-start-line="732" selection-end-line="732" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Practice/ListDemo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/homework/4-19.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="13" column="29" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+            <state relative-caret-position="27">
+              <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -215,12 +97,14 @@
       <find>icon</find>
       <find>add</find>
       <find>System</find>
+      <find>m + 3</find>
     </findStrings>
     <replaceStrings>
       <replace>TextField</replace>
       <replace>&quot;</replace>
       <replace>imageIcon</replace>
       <replace>set</replace>
+      <replace>n</replace>
     </replaceStrings>
   </component>
   <component name="GOROOT" path="C:\Go" />
@@ -243,7 +127,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Triangle.java" />
         <option value="$PROJECT_DIR$/src/FileDemo.java" />
         <option value="$PROJECT_DIR$/src/ProducerConsumer.java" />
         <option value="$PROJECT_DIR$/src/Text/ProducerConsumer.java" />
@@ -292,8 +175,9 @@
         <option value="$PROJECT_DIR$/src/homework/8-12.java" />
         <option value="$PROJECT_DIR$/src/homework/Calculator.java" />
         <option value="$PROJECT_DIR$/src/homework/6-33.java" />
-        <option value="$PROJECT_DIR$/src/Demo.java" />
         <option value="$PROJECT_DIR$/src/homework/ComplexCal.java" />
+        <option value="$PROJECT_DIR$/src/Demo.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
       </list>
     </option>
   </component>
@@ -303,11 +187,10 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="53" />
-    <option name="y" value="-15" />
-    <option name="width" value="1717" />
-    <option name="height" value="914" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-7" />
+    <option name="width" value="1250" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -333,7 +216,7 @@
     <property name="ToolWindowRun.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549336955696" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551945717224" />
     <property name="configurable.Global.GOPATH.is.expanded" value="true" />
     <property name="configurable.Module.GOPATH.is.expanded" value="false" />
     <property name="configurable.Project.GOPATH.is.expanded" value="true" />
@@ -348,7 +231,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -377,20 +260,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ComplexCal">
-    <configuration name="Calculator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="homework.Calculator" />
-      <module name="Java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="homework.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Main">
     <configuration name="ComplexCal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="homework.ComplexCal" />
       <module name="Java" />
@@ -411,15 +281,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ans" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="homework.ans" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="homework.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test" />
+      <module name="Java" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -455,19 +326,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.ans" />
-      <item itemvalue="Application.Calculator" />
       <item itemvalue="Application.judge" />
       <item itemvalue="Application.Demo" />
       <item itemvalue="Application.ComplexCal" />
+      <item itemvalue="Application.Test" />
+      <item itemvalue="Application.Main" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Test" />
         <item itemvalue="Application.ComplexCal" />
         <item itemvalue="Application.Demo" />
         <item itemvalue="Application.judge" />
-        <item itemvalue="Application.Calculator" />
-        <item itemvalue="Application.ans" />
       </list>
     </recent_temporary>
   </component>
@@ -611,6 +482,10 @@
       <workItem from="1551612263487" duration="641000" />
       <workItem from="1551612946589" duration="1088000" />
       <workItem from="1551710298007" duration="34000" />
+      <workItem from="1551770057075" duration="1411000" />
+      <workItem from="1551934377756" duration="11328000" />
+      <workItem from="1552040514190" duration="568000" />
+      <workItem from="1552372620007" duration="369000" />
     </task>
     <task id="LOCAL-00001" summary="123">
       <created>1541220645392</created>
@@ -714,7 +589,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="419533000" />
+    <option name="totallyTimeSpent" value="433209000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -726,7 +601,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-7" y="0" width="1250" height="1047" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="1" />
@@ -737,8 +613,8 @@
       <window_info content_ui="combo" id="Project" order="6" sideWeight="0.49901575" weight="0.19238901" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3295325" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4989429" weight="0.3808438" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.40022805" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4989429" weight="0.12788019" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.2896237" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49947146" weight="0.327551" />
@@ -746,7 +622,7 @@
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.3265306" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5010571" side_tool="true" weight="0.47959185" />
-      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.4936575" weight="0.31986532" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.4936575" weight="0.31813" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Duplicate detector" order="13" weight="0.32959184" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -790,6 +666,15 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="flag[j][i]" language="JAVA" />
+        <watch expression="flag[j][i] == -1" language="JAVA" />
+        <watch expression="(temp1 == i &amp;&amp; temp2 != j" language="JAVA" />
+        <watch expression="temp1 == i" language="JAVA" />
+        <watch expression="temp2 != j" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -798,12 +683,42 @@
   <component name="debuggerHistoryManager">
     <expressions id="watch">
       <expression>
+        <expression-string>temp2 != j</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>temp1 == i</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>(temp1 == i &amp;&amp; temp2 != j</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>flag[j][i] == -1</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>flag[j][i]</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
         <expression-string>arrayList.get(11)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
     <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>flag</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>arrayList</expression-string>
         <language-id>JAVA</language-id>
@@ -1118,13 +1033,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Demo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1102">
-          <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Practice/ListDemo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="456">
@@ -1141,8 +1049,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/homework/ComplexCal.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25650">
-          <caret line="732" lean-forward="true" selection-start-line="732" selection-end-line="732" />
+        <state relative-caret-position="25118">
+          <caret line="718" column="22" lean-forward="true" selection-start-line="718" selection-start-column="22" selection-end-line="718" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
