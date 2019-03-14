@@ -1,0 +1,4 @@
+#Thu Mar 14 14:18:38 CST 2019
+base.0=D\:\\SourceCode\\Android\\XunFeiDemo\\sample\\speechDemo\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out
+renamed.0=classes.dex
+path.0=classes.dex
