@@ -56,16 +56,16 @@ public class SquareFragment extends Fragment
 
         } else
         {
-            view = inflater.inflate(R.layout.activity_square,null);
-            listView = (ListView) view.findViewById(R.id.listview);
+            view = inflater.inflate(R.layout.activity_square, null);
 
+            listView = (ListView) view.findViewById(R.id.listview);
+            System.out.println(listView.getParent());
         }
         initDatas();
         initListener();
         return view;
 
     }
-
 
 
     private void initDatas()
