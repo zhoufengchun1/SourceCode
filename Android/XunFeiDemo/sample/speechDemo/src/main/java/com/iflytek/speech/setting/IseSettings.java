@@ -35,6 +35,7 @@ public class IseSettings extends PreferenceActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
+		//启用窗口的扩展特性，取消显示标题栏
 		super.onCreate(savedInstanceState);
 		
 		getPreferenceManager().setSharedPreferencesName(PREFER_NAME);

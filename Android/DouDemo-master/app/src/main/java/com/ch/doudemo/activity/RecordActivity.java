@@ -267,7 +267,7 @@ public class RecordActivity extends AppCompatActivity implements SurfaceHolder.C
             if (sizes.size() > 0) {
                 size = sizes.get(sizes.size() - 1);
             }
-
+            Log.d("Para", parameters.toString());
             camera.setParameters(parameters);
             camera.startPreview();
         } catch (IOException e) {

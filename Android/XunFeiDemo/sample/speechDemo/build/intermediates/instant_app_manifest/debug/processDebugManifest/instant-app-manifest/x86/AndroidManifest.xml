@@ -7,7 +7,7 @@
 
     <uses-sdk
         android:minSdkVersion="9"
-        android:targetSdkVersion="23" />
+        android:targetSdkVersion="26" />
 
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -112,6 +112,11 @@
         <meta-data
             android:name="IFLYTEK_CHANNEL"
             android:value="Android_Demo" />
+
+        <provider
+            android:name="com.android.tools.ir.server.InstantRunContentProvider"
+            android:authorities="com.iflytek.voicedemo.com.android.tools.ir.server.InstantRunContentProvider"
+            android:multiprocess="true" />
     </application>
 
 </manifest>

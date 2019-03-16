@@ -29,141 +29,170 @@ import android.widget.Toast;
 /**
  * 语音评测demo
  */
-public class IseDemo extends Activity implements OnClickListener {
-	private static String TAG = IseDemo.class.getSimpleName();
-	
-	private final static String PREFER_NAME = "ise_settings";
-	private final static int REQUEST_CODE_SETTINGS = 1;
+public class IseDemo extends Activity implements OnClickListener
+{
+    private static String TAG = IseDemo.class.getSimpleName();
 
-	private EditText mEvaTextEditText;
-	private EditText mResultEditText;
-	private Button mIseStartButton;
-	private Toast mToast;
+    private final static String PREFER_NAME = "ise_settings";
+    private final static int REQUEST_CODE_SETTINGS = 1;
 
-	// 评测语种
-	private String language;
-	// 评测题型
-	private String category;
-	// 结果等级
-	private String result_level;
-	
-	private String mLastResult;
-	private SpeechEvaluator mIse;
-	
-	
-	// 评测监听接口
-	private EvaluatorListener mEvaluatorListener = new EvaluatorListener() {
-		
-		@Override
-		public void onResult(EvaluatorResult result, boolean isLast) {
-			Log.d(TAG, "evaluator result :" + isLast);
+    private EditText mEvaTextEditText;
+    private EditText mResultEditText;
+    private Button mIseStartButton;
+    private Toast mToast;
 
-			if (isLast) {
-				StringBuilder builder = new StringBuilder();
-				builder.append(result.getResultString());
-				
-				if(!TextUtils.isEmpty(builder)) {
-					mResultEditText.setText(builder.toString());
-				}
-				mIseStartButton.setEnabled(true);
-				mLastResult = builder.toString();
-				
-				showTip("评测结束");
-			}
-		}
+    // 评测语种
+    private String language;
+    // 评测题型
+    private String category;
+    // 结果等级
+    private String result_level;
 
-		@Override
-		public void onError(SpeechError error) {
-			mIseStartButton.setEnabled(true);
-			if(error != null) {	
-				showTip("error:"+ error.getErrorCode() + "," + error.getErrorDescription());
-				mResultEditText.setText("");
-				mResultEditText.setHint("请点击“开始评测”按钮");
-			} else {
-				Log.d(TAG, "evaluator over");
-			}
-		}
+    private String mLastResult;
+    private SpeechEvaluator mIse;
 
-		@Override
-		public void onBeginOfSpeech() {
-			// 此回调表示：sdk内部录音机已经准备好了，用户可以开始语音输入
-			Log.d(TAG, "evaluator begin");
-		}
 
-		@Override
-		public void onEndOfSpeech() {
-			// 此回调表示：检测到了语音的尾端点，已经进入识别过程，不再接受语音输入
-			Log.d(TAG, "evaluator stoped");
-		}
+    // 评测监听接口
+    private EvaluatorListener mEvaluatorListener = new EvaluatorListener()
+    {
 
-		@Override
-		public void onVolumeChanged(int volume, byte[] data) {
-			showTip("当前音量：" + volume);
-			Log.d(TAG, "返回音频数据："+data.length);
-		}
+        @Override
+        public void onResult(EvaluatorResult result, boolean isLast)
+        {
+            //可能会多次调用，通过isLast判断是否结尾。
+            //也就是说，这个录音->判断过程采用的是边录边上传的方式。
+            Log.d(TAG, "evaluator result :" + isLast);
 
-		@Override
-		public void onEvent(int eventType, int arg1, int arg2, Bundle obj) {
-			// 以下代码用于获取与云端的会话id，当业务出错时将会话id提供给技术支持人员，可用于查询会话日志，定位出错原因
-			//	if (SpeechEvent.EVENT_SESSION_ID == eventType) {
-			//		String sid = obj.getString(SpeechEvent.KEY_EVENT_SESSION_ID);
-			//		Log.d(TAG, "session id =" + sid);
-			//	}
-		}
-		
-	};
+            if (isLast)
+            {
+                StringBuilder builder = new StringBuilder();
+                builder.append(result.getResultString());
 
-	@Override
-	public void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		requestWindowFeature(Window.FEATURE_NO_TITLE);
-		setContentView(R.layout.isedemo);
+                if (!TextUtils.isEmpty(builder))
+                {
+                    mResultEditText.setText(builder.toString());
+                }
+                mIseStartButton.setEnabled(true);
+                mLastResult = builder.toString();
 
-		mIse = SpeechEvaluator.createEvaluator(IseDemo.this, null);
-		initUI();
-		setEvaText();
-	}
+                showTip("评测结束");
+            }
+        }
 
-	private void initUI() {
-		findViewById(R.id.image_ise_set).setOnClickListener(IseDemo.this);
-		mEvaTextEditText = (EditText) findViewById(R.id.ise_eva_text);
-		mResultEditText = (EditText)findViewById(R.id.ise_result_text);
-		mIseStartButton = (Button) findViewById(R.id.ise_start);
-		mIseStartButton.setOnClickListener(IseDemo.this);
-		findViewById(R.id.ise_parse).setOnClickListener(IseDemo.this);
-		findViewById(R.id.ise_stop).setOnClickListener(IseDemo.this);
-		findViewById(R.id.ise_cancel).setOnClickListener(IseDemo.this);
-				
-		mToast = Toast.makeText(IseDemo.this, "", Toast.LENGTH_LONG);
-	}
-	
-	@Override
-	public void onClick(View view) {
-		if( null == mIse ){
-			// 创建单例失败，与 21001 错误为同样原因，参考 http://bbs.xfyun.cn/forum.php?mod=viewthread&tid=9688
-			this.showTip( "创建对象失败，请确认 libmsc.so 放置正确，且有调用 createUtility 进行初始化" );
-			return;
-		}
-		
-		switch (view.getId()) {
-			case R.id.image_ise_set:
-				Intent intent = new Intent(IseDemo.this, IseSettings.class);
-				startActivityForResult(intent, REQUEST_CODE_SETTINGS);
-				break;
-			case R.id.ise_start:
-				if (mIse == null) {
-					return;
-				}
-	
-				String evaText = mEvaTextEditText.getText().toString();
-				mLastResult = null;
-				mResultEditText.setText("");
-				mResultEditText.setHint("请朗读以上内容");
-				mIseStartButton.setEnabled(false);
-				
-				setParams();
-				int ret = mIse.startEvaluating(evaText, null, mEvaluatorListener);
-				//以下方法为通过直接写入音频的方式进行评测业务
+        @Override
+        public void onError(SpeechError error)
+        {
+            mIseStartButton.setEnabled(true);
+            if (error != null)
+            {
+                showTip("error:" + error.getErrorCode() + "," + error.getErrorDescription());
+                mResultEditText.setText("");
+                mResultEditText.setHint("请点击“开始评测”按钮");
+            } else
+            {
+                Log.d(TAG, "evaluator over");
+            }
+        }
+
+        @Override
+        public void onBeginOfSpeech()
+        {
+            //此回调表示：sdk内部录音机已经准备好了，用户可以开始语音输入
+            //我们可以用这个方法来实现一些动画效果。
+            //在这个方法被调用之前播放动画效果。
+            Log.d(TAG, "evaluator begin");
+        }
+
+        @Override
+        public void onEndOfSpeech()
+        {
+            // 此回调表示：检测到了语音的尾端点，已经进入识别过程，不再接受语音输入
+            //同理，通过函数回调，可以给一个识别中等类似的回馈
+            Log.d(TAG, "evaluator stoped");
+        }
+
+        @Override
+        public void onVolumeChanged(int volume, byte[] data)
+        {
+            //当开始识别，到停止录音（停止写入音频流）或SDK返回最后一个结果自动结束识别为止，
+            // SDK检测到音频数据（正在录音或写入音频流）的音量变化时，会多次通过此函数回调，
+            // 告知应用层当前的音量值。应用层可通过此函数传入的值变化，改变自定义UI的画面等。
+            showTip("当前音量：" + volume);
+            Log.d(TAG, "返回音频数据：" + data.length);
+        }
+
+        @Override
+        public void onEvent(int eventType, int arg1, int arg2, Bundle obj)
+        {
+            // 以下代码用于获取与云端的会话id，当业务出错时将会话id提供给技术支持人员，可用于查询会话日志，定位出错原因
+            //	if (SpeechEvent.EVENT_SESSION_ID == eventType) {
+            //		String sid = obj.getString(SpeechEvent.KEY_EVENT_SESSION_ID);
+            //		Log.d(TAG, "session id =" + sid);
+            //	}
+        }
+
+    };
+
+    @Override
+    public void onCreate(Bundle savedInstanceState)
+    {
+        super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        setContentView(R.layout.isedemo);
+
+        mIse = SpeechEvaluator.createEvaluator(IseDemo.this, null);
+        initUI();
+        setEvaText();
+    }
+
+    private void initUI()
+    {
+        findViewById(R.id.image_ise_set).setOnClickListener(IseDemo.this);
+        mEvaTextEditText = (EditText) findViewById(R.id.ise_eva_text);
+        mResultEditText = (EditText) findViewById(R.id.ise_result_text);
+        mIseStartButton = (Button) findViewById(R.id.ise_start);
+        mIseStartButton.setOnClickListener(IseDemo.this);
+        findViewById(R.id.ise_parse).setOnClickListener(IseDemo.this);
+        findViewById(R.id.ise_stop).setOnClickListener(IseDemo.this);
+        findViewById(R.id.ise_cancel).setOnClickListener(IseDemo.this);
+
+        mToast = Toast.makeText(IseDemo.this, "", Toast.LENGTH_LONG);
+    }
+
+    @Override
+    public void onClick(View view)
+    {
+        if (null == mIse)
+        {
+            // 创建单例失败，与 21001 错误为同样原因，参考 http://bbs.xfyun.cn/forum.php?mod=viewthread&tid=9688
+            this.showTip("创建对象失败，请确认 libmsc.so 放置正确，且有调用 createUtility 进行初始化");
+            return;
+        }
+
+        switch (view.getId())
+        {
+            case R.id.image_ise_set:
+                Intent intent = new Intent(IseDemo.this, IseSettings.class);
+                startActivityForResult(intent, REQUEST_CODE_SETTINGS);
+                break;
+            case R.id.ise_start:
+                if (mIse == null)
+                {
+                    return;
+                }
+
+                String evaText = mEvaTextEditText.getText().toString();
+                mLastResult = null;
+                mResultEditText.setText("");
+                mResultEditText.setHint("请朗读以上内容");
+                mIseStartButton.setEnabled(false);
+
+                setParams();
+                int ret = mIse.startEvaluating(evaText, null, mEvaluatorListener);
+                //调用此函数，开始评测。目前不支持多线程。
+                //三个参数：评测文本（示例文本）;当前会话参数，一般为空;监听器。
+
+                //以下方法为通过直接写入音频的方式进行评测业务
 				/*if (ret != ErrorCode.SUCCESS) {
 					showTip("识别失败,错误码：" + ret);
 				} else {
@@ -182,135 +211,158 @@ public class IseDemo extends Activity implements OnClickListener {
 				}*/
 
 
-				break;
-			case R.id.ise_parse:
-				// 解析最终结果
-				if (!TextUtils.isEmpty(mLastResult)) {
-					XmlResultParser resultParser = new XmlResultParser();
-					Result result = resultParser.parse(mLastResult);
-					
-					if (null != result) {
-						mResultEditText.setText(result.toString());
-					} else {
-						showTip("解析结果为空");
-					}
-				}
-				break;
-			case R.id.ise_stop:
-				if (mIse.isEvaluating()) {
-					mResultEditText.setHint("评测已停止，等待结果中...");
-					mIse.stopEvaluating();
-				}
-				break;
-			case R.id.ise_cancel: {
-				mIse.cancel();
-				mIseStartButton.setEnabled(true);
-				mResultEditText.setText("");
-				mResultEditText.setHint("请点击“开始评测”按钮");
-				mLastResult = null;
-				break;
-			}
-		}
-	}
-	
-	@Override
-	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-		super.onActivityResult(requestCode, resultCode, data);
-		
-		if (REQUEST_CODE_SETTINGS == requestCode) {
-			setEvaText();
-		}
-	}
-	
-	@Override
-	protected void onDestroy() {
-		super.onDestroy();
-		
-		if (null != mIse) {
-			mIse.destroy();
-			mIse = null;
-		}
-	}
-	
-	// 设置评测试题
-	private void setEvaText() {
-		SharedPreferences pref = getSharedPreferences(PREFER_NAME, MODE_PRIVATE);
-		language = pref.getString(SpeechConstant.LANGUAGE, "zh_cn");
-		category = pref.getString(SpeechConstant.ISE_CATEGORY, "read_sentence");
-		
-		String text = "";
-		if ("en_us".equals(language)) {
-			if ("read_word".equals(category)) {
-				text = getString(R.string.text_en_word);
-			} else if ("read_sentence".equals(category)) {
-				text = getString(R.string.text_en_sentence);
-			} 
-		} else {
-			// 中文评测
-			if ("read_syllable".equals(category)) {
-				text = getString(R.string.text_cn_syllable);
-			} else if ("read_word".equals(category)) {
-				text = getString(R.string.text_cn_word);
-			} else if ("read_sentence".equals(category)) {
-				text = getString(R.string.text_cn_sentence);
-			} 
-		}
-		
-		mEvaTextEditText.setText(text);
-		mResultEditText.setText("");
-		mLastResult = null;
-		mResultEditText.setHint("请点击“开始评测”按钮");
-	}
+                break;
+            case R.id.ise_parse:
+                // 解析最终结果
+                if (!TextUtils.isEmpty(mLastResult))
+                {
+                    XmlResultParser resultParser = new XmlResultParser();
+                    Result result = resultParser.parse(mLastResult);
 
-	private void showTip(String str) {
-		if(!TextUtils.isEmpty(str)) {
-			mToast.setText(str);
-			mToast.show();
-		}
-	}
-	private void setParams() {
-		SharedPreferences pref = getSharedPreferences(PREFER_NAME, MODE_PRIVATE);
-		// 设置评测语言
-		language = pref.getString(SpeechConstant.LANGUAGE, "zh_cn");
-		// 设置需要评测的类型
-		category = pref.getString(SpeechConstant.ISE_CATEGORY, "read_sentence");
-		// 设置结果等级（中文仅支持complete）
-		result_level = pref.getString(SpeechConstant.RESULT_LEVEL, "complete");
-		// 设置语音前端点:静音超时时间，即用户多长时间不说话则当做超时处理
-		String vad_bos = pref.getString(SpeechConstant.VAD_BOS, "5000");
-		// 设置语音后端点:后端点静音检测时间，即用户停止说话多长时间内即认为不再输入， 自动停止录音
-		String vad_eos = pref.getString(SpeechConstant.VAD_EOS, "1800");
-		// 语音输入超时时间，即用户最多可以连续说多长时间；
-		String speech_timeout = pref.getString(SpeechConstant.KEY_SPEECH_TIMEOUT, "-1");
-		
-		mIse.setParameter(SpeechConstant.LANGUAGE, language);
-		mIse.setParameter(SpeechConstant.ISE_CATEGORY, category);
-		mIse.setParameter(SpeechConstant.TEXT_ENCODING, "utf-8");
-		mIse.setParameter(SpeechConstant.VAD_BOS, vad_bos);
-		mIse.setParameter(SpeechConstant.VAD_EOS, vad_eos);
-		mIse.setParameter(SpeechConstant.KEY_SPEECH_TIMEOUT, speech_timeout);
-		mIse.setParameter(SpeechConstant.RESULT_LEVEL, result_level);
+                    if (null != result)
+                    {
+                        mResultEditText.setText(result.toString());
+                    } else
+                    {
+                        showTip("解析结果为空");
+                    }
+                }
+                break;
+            case R.id.ise_stop:
+                if (mIse.isEvaluating())
+                {
+                    mResultEditText.setHint("评测已停止，等待结果中...");
+                    mIse.stopEvaluating();
+                }
+                break;
+            case R.id.ise_cancel:
+            {
+                mIse.cancel();
+                mIseStartButton.setEnabled(true);
+                mResultEditText.setText("");
+                mResultEditText.setHint("请点击“开始评测”按钮");
+                mLastResult = null;
+                break;
+            }
+        }
+    }
 
-		// 设置音频保存路径，保存音频格式支持pcm、wav，设置路径为sd卡请注意WRITE_EXTERNAL_STORAGE权限
-		mIse.setParameter(SpeechConstant.AUDIO_FORMAT,"wav");
-		mIse.setParameter(SpeechConstant.ISE_AUDIO_PATH, Environment.getExternalStorageDirectory().getAbsolutePath() + "/msc/ise.wav");
-		//通过writeaudio方式直接写入音频时才需要此设置
-		//mIse.setParameter(SpeechConstant.AUDIO_SOURCE,"-1");
-	}
-	
-	@Override
-	protected void onResume() {
-		// 开放统计 移动数据统计分析
-		FlowerCollector.onResume(IseDemo.this);
-		FlowerCollector.onPageStart(TAG);
-		super.onResume();
-	}
-	
-	@Override
-	protected void onPause() {
-		// 开放统计 移动数据统计分析
-		FlowerCollector.onPageEnd(TAG);
-		FlowerCollector.onPause(IseDemo.this);
-		super.onPause();
-	}
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data)
+    {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        if (REQUEST_CODE_SETTINGS == requestCode)
+        {
+            setEvaText();
+        }
+    }
+
+    @Override
+    protected void onDestroy()
+    {
+        super.onDestroy();
+
+        if (null != mIse)
+        {
+            mIse.destroy();
+            mIse = null;
+        }
+    }
+
+    // 设置评测试题
+    private void setEvaText()
+    {
+        SharedPreferences pref = getSharedPreferences(PREFER_NAME, MODE_PRIVATE);
+        language = pref.getString(SpeechConstant.LANGUAGE, "zh_cn");
+        category = pref.getString(SpeechConstant.ISE_CATEGORY, "read_sentence");
+
+        String text = "";
+        if ("en_us".equals(language))
+        {
+            if ("read_word".equals(category))
+            {
+                text = getString(R.string.text_en_word);
+            } else if ("read_sentence".equals(category))
+            {
+                text = getString(R.string.text_en_sentence);
+            }
+        } else
+        {
+            // 中文评测
+            if ("read_syllable".equals(category))
+            {
+                text = getString(R.string.text_cn_syllable);
+            } else if ("read_word".equals(category))
+            {
+                text = getString(R.string.text_cn_word);
+            } else if ("read_sentence".equals(category))
+            {
+                text = getString(R.string.text_cn_sentence);
+            }
+        }
+
+        mEvaTextEditText.setText(text);
+        mResultEditText.setText("");
+        mLastResult = null;
+        mResultEditText.setHint("请点击“开始评测”按钮");
+    }
+
+    private void showTip(String str)
+    {
+        if (!TextUtils.isEmpty(str))
+        {
+            mToast.setText(str);
+            mToast.show();
+        }
+    }
+
+    private void setParams()
+    {
+        SharedPreferences pref = getSharedPreferences(PREFER_NAME, MODE_PRIVATE);
+        // 设置评测语言
+        language = pref.getString(SpeechConstant.LANGUAGE, "zh_cn");
+        // 设置需要评测的类型
+        category = pref.getString(SpeechConstant.ISE_CATEGORY, "read_sentence");
+        // 设置结果等级（中文仅支持complete）
+        result_level = pref.getString(SpeechConstant.RESULT_LEVEL, "complete");
+        // 设置语音前端点:静音超时时间，即用户多长时间不说话则当做超时处理
+        String vad_bos = pref.getString(SpeechConstant.VAD_BOS, "5000");
+        // 设置语音后端点:后端点静音检测时间，即用户停止说话多长时间内即认为不再输入， 自动停止录音
+        String vad_eos = pref.getString(SpeechConstant.VAD_EOS, "1800");
+        // 语音输入超时时间，即用户最多可以连续说多长时间；
+        String speech_timeout = pref.getString(SpeechConstant.KEY_SPEECH_TIMEOUT, "-1");
+
+        mIse.setParameter(SpeechConstant.LANGUAGE, language);
+        mIse.setParameter(SpeechConstant.ISE_CATEGORY, category);
+        mIse.setParameter(SpeechConstant.TEXT_ENCODING, "utf-8");
+        mIse.setParameter(SpeechConstant.VAD_BOS, vad_bos);
+        mIse.setParameter(SpeechConstant.VAD_EOS, vad_eos);
+        mIse.setParameter(SpeechConstant.KEY_SPEECH_TIMEOUT, speech_timeout);
+        mIse.setParameter(SpeechConstant.RESULT_LEVEL, result_level);
+
+        // 设置音频保存路径，保存音频格式支持pcm、wav，设置路径为sd卡请注意WRITE_EXTERNAL_STORAGE权限
+        mIse.setParameter(SpeechConstant.AUDIO_FORMAT, "wav");
+        mIse.setParameter(SpeechConstant.ISE_AUDIO_PATH, Environment.getExternalStorageDirectory().getAbsolutePath() + "/msc/ise.wav");
+        //通过writeaudio方式直接写入音频时才需要此设置
+        //mIse.setParameter(SpeechConstant.AUDIO_SOURCE,"-1");
+    }
+
+    @Override
+    protected void onResume()
+    {
+        // 开放统计 移动数据统计分析
+        FlowerCollector.onResume(IseDemo.this);
+        FlowerCollector.onPageStart(TAG);
+        super.onResume();
+    }
+
+    @Override
+    protected void onPause()
+    {
+        // 开放统计 移动数据统计分析
+        FlowerCollector.onPageEnd(TAG);
+        FlowerCollector.onPause(IseDemo.this);
+        super.onPause();
+    }
 }
