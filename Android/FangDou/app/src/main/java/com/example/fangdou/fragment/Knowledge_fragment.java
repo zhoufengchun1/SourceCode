@@ -19,13 +19,14 @@ import com.example.fangdou.R;
 public class Knowledge_fragment extends Fragment
 {
 
+    private int num = 7;
     private TabLayout tabLayout;
 
     private ViewPager viewPager;
 
-    private Fragment[] mFragmentArrays = new Fragment[5];
+    private Fragment[] mFragmentArrays = new Fragment[num];
 
-    private String[] mTabTitles = new String[5];
+    private String[] mTabTitles = new String[num];
 
     private View view;
 
@@ -36,6 +37,7 @@ public class Knowledge_fragment extends Fragment
         view = inflater.inflate(R.layout.tab_layout, container, false);
         tabLayout = (TabLayout) view.findViewById(R.id.tab_layout);
         viewPager = (ViewPager) view.findViewById(R.id.tab_viewpager);
+
         initView();
         return view;
     }
@@ -47,14 +49,15 @@ public class Knowledge_fragment extends Fragment
         mTabTitles[2] = "唐山话";
         mTabTitles[3] = "普通话";
         mTabTitles[4] = "沧州话";
-        tabLayout.setTabMode(TabLayout.MODE_FIXED);
+        mTabTitles[5] = "沧州话";
+        mTabTitles[6] = "沧州话";
+        tabLayout.setTabMode(TabLayout.MODE_SCROLLABLE);
         //设置tablayout距离上下左右的距离
         //tab_title.setPadding(20,20,20,20);
-        mFragmentArrays[0] = TabFragment.newInstance();
-        mFragmentArrays[1] = TabFragment.newInstance();
-        mFragmentArrays[2] = TabFragment.newInstance();
-        mFragmentArrays[3] = TabFragment.newInstance();
-        mFragmentArrays[4] = TabFragment.newInstance();
+        for(int i=0;i<num;i++)
+        {
+            mFragmentArrays[i] = TabFragment.newInstance();
+        }
         PagerAdapter pagerAdapter = new MyViewPagerAdapter(getFragmentManager());
         viewPager.setAdapter(pagerAdapter);
         //将ViewPager和TabLayout绑定

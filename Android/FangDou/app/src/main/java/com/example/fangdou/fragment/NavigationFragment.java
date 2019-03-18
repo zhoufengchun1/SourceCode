@@ -12,12 +12,15 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import com.example.fangdou.R;
+import com.example.fangdou.activity.MainActivity;
+import com.example.fangdou.activity.RecordActivity;
 
 import java.util.Iterator;
 
@@ -70,7 +73,6 @@ public class NavigationFragment extends Fragment
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId)
             {
-                Toast.makeText(view.getContext(), "clicked!", Toast.LENGTH_SHORT).show();
                 fragmentTransaction = fragmentManager.beginTransaction();
                 //因为一个实例化的FragmentTransaction只能被commit一次，所以
                 //我们每次点击就重新实例化一次FragmentTransaction。
@@ -102,5 +104,16 @@ public class NavigationFragment extends Fragment
                 startActivity(new Intent(Style3Activity.this, SignActivity.class));
             }
         });*/
+        ImageView imageView = (ImageView) view.findViewById(R.id.start_record);
+        imageView.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                Intent intent = new Intent(view.getContext(), RecordActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 }

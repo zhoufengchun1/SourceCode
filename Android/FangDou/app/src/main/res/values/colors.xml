@@ -4,8 +4,8 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
-    <color name="colorTabChosen">#F11E65</color>
+    <color name="colorTabChosen">#7CB342</color>
     <color name="colorTextChosen">#FF7043</color>
     <color name="blue_light">#00C0E4</color>
-    <color name="color_ActionBar">#85D1E1</color>
+    <color name="color_ActionBar">#262323</color>
 </resources>
