@@ -1,32 +1,29 @@
 package com.example.fangdou.activity;
 
-import android.content.Intent;
-import android.graphics.Rect;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
+import android.view.Window;
 import android.widget.AbsListView;
 import android.widget.ListView;
 import android.widget.RadioGroup;
-import android.widget.Toast;
 
 import com.example.fangdou.R;
 import com.example.fangdou.adapter.VideoAdapter;
+import com.example.fangdou.fragment.Knowledge_fragment;
 import com.example.fangdou.fragment.SquareFragment;
-import com.example.fangdou.fragment.navigationFragment;
+import com.example.fangdou.fragment.NavigationFragment;
+import com.gyf.barlibrary.ImmersionBar;
 
 import java.util.ArrayList;
 
-import fm.jiecao.jcvideoplayer_lib.JCVideoPlayer;
 import fm.jiecao.jcvideoplayer_lib.JCVideoPlayerStandard;
 
 public class MainActivity extends AppCompatActivity
 {
-    private String videoUrl = "http://gslb.miaopai.com/stream/ed5HCfnhovu3tyIQAiv60Q__.mp4";
     private ListView listView;
     private ArrayList<String> datas;
     private JCVideoPlayerStandard currPlayer;
@@ -40,8 +37,9 @@ public class MainActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        ImmersionBar.with(this).statusBarColor(R.color.color_ActionBar).init();
+        addFragment(new NavigationFragment(),R.id.navigation_fragment);
         addFragment(new SquareFragment(),R.id.square_fragment);
-        addFragment(new navigationFragment(),R.id.navigation_fragment);
     }
 
     private void addFragment(Fragment fragment,int id)
@@ -56,4 +54,10 @@ public class MainActivity extends AppCompatActivity
 
     }
 
+    @Override
+    protected void onDestroy()
+    {
+        super.onDestroy();
+        ImmersionBar.with(this).destroy(); //必须调用该方法，防止内存泄漏
+    }
 }

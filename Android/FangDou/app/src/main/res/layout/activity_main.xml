@@ -2,6 +2,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:fitsSystemWindows="true"
     >
 
     <fragment
@@ -10,10 +11,16 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         />
+    <fragment
+        android:id="@+id/knowledge_fragment"
+        android:name="com.example.fangdou.fragment.Knowledge_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
 
     <fragment
         android:id="@+id/navigation_fragment"
-        android:name="com.example.fangdou.fragment.navigationFragment"
+        android:name="com.example.fangdou.fragment.NavigationFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 

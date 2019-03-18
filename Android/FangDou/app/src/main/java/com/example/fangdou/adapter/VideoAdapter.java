@@ -34,7 +34,7 @@ public class VideoAdapter extends CommonAdapter<String> {
         }
         boolean setUp = player.setUp(url, JCVideoPlayer.SCREEN_LAYOUT_LIST, "");
         if (setUp) {
-            Glide.with(mContext).load("http://a4.att.hudong.com/05/71/01300000057455120185716259013.jpg").into(player.thumbImageView);
+            Glide.with(mContext).load("http://i.gtimg.cn/qqlive/images/20150608/pic_h.png").into(player.thumbImageView);
         }
     }
 }
