@@ -74,7 +74,6 @@ public class TabLessActivity extends AppCompatActivity {
         @Override
         public CharSequence getPageTitle(int position) {
             return mTabTitles[position];
-
         }
     }
 }

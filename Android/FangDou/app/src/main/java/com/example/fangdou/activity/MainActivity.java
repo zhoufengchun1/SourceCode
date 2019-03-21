@@ -33,16 +33,18 @@ public class MainActivity extends AppCompatActivity
     private int visibleCount;//当前可见的item个数
 
     private RadioGroup radioGroup;
+
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ImmersionBar.with(this).statusBarColor(R.color.color_ActionBar).init();
-        addFragment(new NavigationFragment(),R.id.navigation_fragment);
-        addFragment(new SquareFragment(),R.id.square_fragment);
+        addFragment(new NavigationFragment(), R.id.navigation_fragment);
+        addFragment(new SquareFragment(), R.id.square_fragment);
     }
 
-    private void addFragment(Fragment fragment,int id)
+    private void addFragment(Fragment fragment, int id)
     {
 
         FragmentManager fragmentManager = getSupportFragmentManager();
