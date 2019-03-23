@@ -11,257 +11,156 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8c8aa17a-90ec-4ae8-a4ce-f86c339a8713" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../BaiduDemo/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../BaiduDemo/.idea/libraries/Gradle____local_aars___D__SourceCode_Android_BaiduDemo_core_libs_bdasr_V3_20180801_d6f298a_jar_unspecified_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../BaiduDemo/.idea/libraries/Gradle__android_arch_core_common_1_1_0_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../BaiduDemo/.idea/libraries/Gradle__android_arch_core_runtime_1_1_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../BaiduDemo/.idea/libraries/Gradle__android_arch_lifecycle_common_1_1_0_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../BaiduDemo/.idea/libraries/Gradle__android_arch_lifecycle_livedata_core_1_1_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../BaiduDemo/.idea/libraries/Gradle__android_arch_lifecycle_runtime_1_1_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../BaiduDemo/.idea/libraries/Gradle__android_arch_lifecycle_viewmodel_1_1_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../BaiduDemo/.idea/libraries/Gradle__com_android_support_animated_vector_drawable_27_1_1_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../BaiduDemo/.idea/libraries/Gradle__com_android_support_appcompat_v7_27_1_1_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../BaiduDemo/.idea/libraries/Gradle__com_android_support_constraint_constraint_layout_1_1_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../BaiduDemo/.idea/libraries/Gradle__com_android_support_constraint_constraint_layout_solver_1_1_0_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../BaiduDemo/.idea/libraries/Gradle__com_android_support_support_annotations_27_1_1_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../BaiduDemo/.idea/libraries/Gradle__com_android_support_support_compat_27_1_1_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../BaiduDemo/.idea/libraries/Gradle__com_android_support_support_core_ui_27_1_1_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../BaiduDemo/.idea/libraries/Gradle__com_android_support_support_core_utils_27_1_1_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../BaiduDemo/.idea/libraries/Gradle__com_android_support_support_fragment_27_1_1_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../BaiduDemo/.idea/libraries/Gradle__com_android_support_support_vector_drawable_27_1_1_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../BaiduDemo/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../FangDou/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../FangDou/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../FangDou/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../FangDou/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../FangDou/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../FangDou/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../FangDou/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../FangDou/app/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../FangDou/app/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../FangDou/app/proguard-rules.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../FangDou/app/src/androidTest/java/base/BaseRecAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../FangDou/app/src/androidTest/java/base/BaseRecViewHolder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../FangDou/app/src/androidTest/java/base/MyApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../FangDou/app/src/androidTest/java/com/example/fangdou/ExampleInstrumentedTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../FangDou/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../FangDou/app/src/main/java/com/example/fangdou/MainActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../FangDou/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../FangDou/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../FangDou/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../FangDou/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../FangDou/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../FangDou/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../FangDou/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../FangDou/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../FangDou/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../FangDou/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../FangDou/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../FangDou/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../FangDou/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../FangDou/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../FangDou/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../FangDou/app/src/main/res/values/colors.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../FangDou/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../FangDou/app/src/main/res/values/styles.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../FangDou/app/src/test/java/com/example/fangdou/ExampleUnitTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../FangDou/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../FangDou/gradle.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../FangDou/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../FangDou/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../FangDou/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../FangDou/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../FangDou/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/hbtsk.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../DouDemo-master/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../DouDemo-master/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../DouDemo-master/app/src/main/java/com/ch/doudemo/activity/RecordActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../DouDemo-master/app/src/main/java/com/ch/doudemo/activity/RecordActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/taskHistory/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/taskHistory/taskHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../FangDou2/app/src/main/java/com/example/fangdou2/fragment/PlaybackDialogFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../FangDou2/app/src/main/java/com/example/fangdou2/fragment/RecordAudioDialogFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../FangDou2/app/src/main/java/com/example/fangdou2/service/RecordingService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../FangDou2/app/src/main/java/com/example/fangdou2/utils/RecordingItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../FangDou2/app/src/main/res/drawable-v24/ic_media_pause.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../FangDou2/app/src/main/res/drawable-v24/ic_media_stop.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../FangDou2/app/src/main/res/drawable/ic_close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../FangDou2/app/src/main/res/drawable/ic_media_play.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../FangDou2/app/src/main/res/drawable/ic_mic_white_36dp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../FangDou2/app/src/main/res/layout/fragment_media_playback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../FangDou2/app/src/main/res/layout/fragment_record_audio.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../FangDou2/app/src/main/res/mipmap-mdpi/pic_natural.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../FangDou2/app/src/main/res/mipmap-mdpi/pic_play.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DouDemo-master/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DouDemo-master/.idea/caches/build_file_checksums.ser" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DouDemo-master/.idea/caches/gradle_models.ser" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DouDemo-master/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DouDemo-master/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DouDemo-master/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DouDemo-master/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DouDemo-master/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DouDemo-master/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DouDemo-master/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DouDemo-master/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DouDemo-master/app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DouDemo-master/app/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DouDemo-master/app/libs/LiteAVSDK_UGC_5.0.4978.aar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DouDemo-master/app/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DouDemo-master/app/src/androidTest/java/com/ch/doudemo/ExampleInstrumentedTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DouDemo-master/app/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DouDemo-master/app/src/main/java/com/ch/doudemo/activity/ListActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DouDemo-master/app/src/main/java/com/ch/doudemo/activity/MainActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DouDemo-master/app/src/main/java/com/ch/doudemo/activity/Page2Activity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DouDemo-master/app/src/main/java/com/ch/doudemo/activity/PageActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DouDemo-master/app/src/main/java/com/ch/doudemo/activity/PrepareActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DouDemo-master/app/src/main/java/com/ch/doudemo/activity/Record2Activity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DouDemo-master/app/src/main/java/com/ch/doudemo/activity/RecordActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DouDemo-master/app/src/main/java/com/ch/doudemo/adapter/VerticalViewPagerAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DouDemo-master/app/src/main/java/com/ch/doudemo/base/BaseRecAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DouDemo-master/app/src/main/java/com/ch/doudemo/base/BaseRecViewHolder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DouDemo-master/app/src/main/java/com/ch/doudemo/base/MyApp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DouDemo-master/app/src/main/java/com/ch/doudemo/fragment/BaseFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DouDemo-master/app/src/main/java/com/ch/doudemo/fragment/VideoFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DouDemo-master/app/src/main/java/com/ch/doudemo/widget/MyFileNameGenerator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DouDemo-master/app/src/main/java/com/ch/doudemo/widget/MyVideoPlayer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DouDemo-master/app/src/main/java/com/ch/doudemo/widget/VerticalViewPager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DouDemo-master/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DouDemo-master/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DouDemo-master/app/src/main/res/layout/activity_list.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DouDemo-master/app/src/main/res/layout/activity_list2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DouDemo-master/app/src/main/res/layout/activity_main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DouDemo-master/app/src/main/res/layout/activity_page.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DouDemo-master/app/src/main/res/layout/activity_page2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DouDemo-master/app/src/main/res/layout/activity_prepare.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DouDemo-master/app/src/main/res/layout/activity_record.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DouDemo-master/app/src/main/res/layout/activity_record2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DouDemo-master/app/src/main/res/layout/fm_video.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DouDemo-master/app/src/main/res/layout/item_page2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DouDemo-master/app/src/main/res/layout/item_video.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DouDemo-master/app/src/main/res/layout/jz_layout_standard.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DouDemo-master/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DouDemo-master/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DouDemo-master/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DouDemo-master/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DouDemo-master/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DouDemo-master/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DouDemo-master/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DouDemo-master/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DouDemo-master/app/src/main/res/mipmap-xhdpi/stop.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DouDemo-master/app/src/main/res/mipmap-xhdpi/video_play_parse.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DouDemo-master/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DouDemo-master/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DouDemo-master/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DouDemo-master/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DouDemo-master/app/src/main/res/values/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DouDemo-master/app/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DouDemo-master/app/src/main/res/values/styles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DouDemo-master/app/src/test/java/com/ch/doudemo/ExampleUnitTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DouDemo-master/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DouDemo-master/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DouDemo-master/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DouDemo-master/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DouDemo-master/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DouDemo-master/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DouDemo-master/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FangDou2/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../../FangDou2/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FangDou2/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../FangDou2/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FangDou2/app/src/main/java/com/example/fangdou2/adapter/MyAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../FangDou2/app/src/main/java/com/example/fangdou2/adapter/MyAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FangDou2/app/src/main/java/com/example/fangdou2/fragment/ListViewFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../FangDou2/app/src/main/java/com/example/fangdou2/fragment/ListViewFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FangDou2/app/src/main/res/layout/item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../FangDou2/app/src/main/res/layout/item.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FangDou2/app/src/main/res/layout/medialistview.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../FangDou2/app/src/main/res/layout/medialistview.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FangDou2/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../FangDou2/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FangDou2/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../../FangDou2/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/apk_list/debug/mainApkListPersistenceDebug/apk-list.gson" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/apk_list/debug/mainApkListPersistenceDebug/apk-list.gson" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/build-info/debug/build-info.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/build-info/debug/build-info.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/bundle_manifest/debug/processDebugManifest/bundle-manifest/output.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/bundle_manifest/debug/processDebugManifest/bundle-manifest/output.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/bundle_manifest/debug/processDebugManifest/bundle-manifest/x86/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/bundle_manifest/debug/processDebugManifest/bundle-manifest/x86/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/iflytek/ise/result/ReadSentenceResult.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/iflytek/ise/result/ReadSentenceResult.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/iflytek/ise/result/ReadWordResult.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/iflytek/ise/result/ReadWordResult.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/iflytek/ise/result/entity/Phone.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/iflytek/ise/result/entity/Phone.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/iflytek/ise/result/entity/Syll.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/iflytek/ise/result/entity/Syll.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/iflytek/ise/result/util/ResultFormatUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/iflytek/ise/result/util/ResultFormatUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/iflytek/ise/result/util/ResultTranslateUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/iflytek/ise/result/util/ResultTranslateUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/iflytek/ise/result/xml/XmlResultParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/iflytek/ise/result/xml/XmlResultParser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/iflytek/speech/setting/IseSettings$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/iflytek/speech/setting/IseSettings$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/iflytek/speech/setting/IseSettings$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/iflytek/speech/setting/IseSettings$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/iflytek/speech/setting/IseSettings$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/iflytek/speech/setting/IseSettings$6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/iflytek/speech/setting/IseSettings.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/iflytek/speech/setting/IseSettings.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/iflytek/speech/util/FaceUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/iflytek/speech/util/FaceUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/iflytek/speech/util/FucUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/iflytek/speech/util/FucUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/iflytek/speech/util/JsonParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/iflytek/speech/util/JsonParser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/iflytek/speech/util/ParseResult.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/iflytek/speech/util/ParseResult.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/iflytek/speech/util/XmlParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/iflytek/speech/util/XmlParser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/iflytek/voicedemo/AsrDemo$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/iflytek/voicedemo/AsrDemo$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/iflytek/voicedemo/AsrDemo$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/iflytek/voicedemo/AsrDemo$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/iflytek/voicedemo/AsrDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/iflytek/voicedemo/AsrDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/iflytek/voicedemo/IatDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/iflytek/voicedemo/IatDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/iflytek/voicedemo/IdentifyGroup/FaceIdentifyActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/iflytek/voicedemo/IdentifyGroup/FaceIdentifyActivity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/iflytek/voicedemo/IdentifyGroup/GroupManagerActivity$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/iflytek/voicedemo/IdentifyGroup/GroupManagerActivity$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/iflytek/voicedemo/IdentifyGroup/GroupManagerActivity$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/iflytek/voicedemo/IdentifyGroup/GroupManagerActivity$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/iflytek/voicedemo/IdentifyGroup/GroupManagerActivity$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/iflytek/voicedemo/IdentifyGroup/GroupManagerActivity$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/iflytek/voicedemo/IdentifyGroup/GroupManagerActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/iflytek/voicedemo/IdentifyGroup/GroupManagerActivity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/iflytek/voicedemo/IdentifyGroup/ResultIdentifyActivity$MyAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/iflytek/voicedemo/IdentifyGroup/ResultIdentifyActivity$MyAdapter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/iflytek/voicedemo/IdentifyGroup/ResultIdentifyActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/iflytek/voicedemo/IdentifyGroup/ResultIdentifyActivity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/iflytek/voicedemo/IdentifyGroup/VocalIdentifyActivity$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/iflytek/voicedemo/IdentifyGroup/VocalIdentifyActivity$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/iflytek/voicedemo/IdentifyGroup/VocalIdentifyActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/iflytek/voicedemo/IdentifyGroup/VocalIdentifyActivity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/iflytek/voicedemo/IseDemo$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/iflytek/voicedemo/IseDemo$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/iflytek/voicedemo/IseDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/iflytek/voicedemo/IseDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/iflytek/voicedemo/MainActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/iflytek/voicedemo/MainActivity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/iflytek/voicedemo/faceonline/OnlineFaceDemo$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/iflytek/voicedemo/faceonline/OnlineFaceDemo$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/iflytek/voicedemo/faceonline/OnlineFaceDemo$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/iflytek/voicedemo/faceonline/OnlineFaceDemo$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/iflytek/voicedemo/faceonline/OnlineFaceDemo$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/iflytek/voicedemo/faceonline/OnlineFaceDemo$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/iflytek/voicedemo/faceonline/OnlineFaceDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/iflytek/voicedemo/faceonline/OnlineFaceDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/iflytek/voicedemo/vocalverify/VocalVerifyDemo$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/iflytek/voicedemo/vocalverify/VocalVerifyDemo$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/iflytek/voicedemo/vocalverify/VocalVerifyDemo$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/iflytek/voicedemo/vocalverify/VocalVerifyDemo$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/iflytek/voicedemo/vocalverify/VocalVerifyDemo$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/iflytek/voicedemo/vocalverify/VocalVerifyDemo$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/iflytek/voicedemo/vocalverify/VocalVerifyDemo$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/iflytek/voicedemo/vocalverify/VocalVerifyDemo$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/iflytek/voicedemo/vocalverify/VocalVerifyDemo$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/iflytek/voicedemo/vocalverify/VocalVerifyDemo$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/iflytek/voicedemo/vocalverify/VocalVerifyDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/iflytek/voicedemo/vocalverify/VocalVerifyDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/ir_dep/debug/package_dependencies/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/incremental/ir_dep/debug/package_dependencies/dex-renamer-state.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/ir_slices/debug/package_slice_0/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/incremental/ir_slices/debug/package_slice_0/dex-renamer-state.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/ir_slices/debug/package_slice_1/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/incremental/ir_slices/debug/package_slice_1/dex-renamer-state.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/ir_slices/debug/package_slice_2/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/incremental/ir_slices/debug/package_slice_2/dex-renamer-state.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/ir_slices/debug/package_slice_3/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/incremental/ir_slices/debug/package_slice_3/dex-renamer-state.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/ir_slices/debug/package_slice_4/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/incremental/ir_slices/debug/package_slice_4/dex-renamer-state.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/ir_slices/debug/package_slice_5/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/incremental/ir_slices/debug/package_slice_5/dex-renamer-state.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/ir_slices/debug/package_slice_6/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/incremental/ir_slices/debug/package_slice_6/dex-renamer-state.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/ir_slices/debug/package_slice_7/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/incremental/ir_slices/debug/package_slice_7/dex-renamer-state.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/ir_slices/debug/package_slice_8/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/incremental/ir_slices/debug/package_slice_8/dex-renamer-state.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/ir_slices/debug/package_slice_9/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/incremental/ir_slices/debug/package_slice_9/dex-renamer-state.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/packageDebug/tmp/x86Debug/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/incremental/packageDebug/tmp/x86Debug/dex-renamer-state.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/packageDebug/tmp/x86Debug/file-input-save-data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/incremental/packageDebug/tmp/x86Debug/file-input-save-data.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/packageDebug/tmp/x86Debug/zip-cache/beuiGJ8cbj0MkdMvsh2xIcewjJw=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/incremental/processInstantRunDebugResourcesApk/package_resources-x86-debug/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/incremental/processInstantRunDebugResourcesApk/package_resources-x86-debug/dex-renamer-state.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/instant-run-apk/debug/output.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/instant-run-apk/debug/output.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/instant-run-apk/debug/speechDemo-x86-debug.apk" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/instant-run-apk/debug/speechDemo-x86-debug.apk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/instant_app_manifest/debug/processDebugManifest/instant-app-manifest/output.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/instant_app_manifest/debug/processDebugManifest/instant-app-manifest/output.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/instant_app_manifest/debug/processDebugManifest/instant-app-manifest/x86/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/instant_app_manifest/debug/processDebugManifest/instant-app-manifest/x86/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/instant_run_app_info_output_file/debug/generateDebugInstantRunAppInfo/instant-run-bootstrap.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/instant_run_app_info_output_file/debug/generateDebugInstantRunAppInfo/instant-run-bootstrap.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/instant_run_main_apk_resources/debug/instantRunMainApkResourcesDebug/out/main_resources/resources_ap" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/instant_run_main_apk_resources/debug/instantRunMainApkResourcesDebug/out/main_resources/resources_ap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/instant_run_main_apk_resources/debug/instantRunMainApkResourcesDebug/out/output.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/instant_run_main_apk_resources/debug/instantRunMainApkResourcesDebug/out/output.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/instant_run_merged_manifests/debug/processDebugManifest/instant-run/output.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/instant_run_merged_manifests/debug/processDebugManifest/instant-run/output.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/instant_run_merged_manifests/debug/processDebugManifest/instant-run/x86/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/instant_run_merged_manifests/debug/processDebugManifest/instant-run/x86/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/iflytek/ise/result/ReadSentenceResult.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/iflytek/ise/result/ReadSentenceResult.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/iflytek/ise/result/ReadWordResult.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/iflytek/ise/result/ReadWordResult.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/iflytek/ise/result/entity/Phone.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/iflytek/ise/result/entity/Phone.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/iflytek/ise/result/entity/Syll.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/iflytek/ise/result/entity/Syll.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/iflytek/ise/result/util/ResultFormatUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/iflytek/ise/result/util/ResultFormatUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/iflytek/ise/result/util/ResultTranslateUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/iflytek/ise/result/util/ResultTranslateUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/iflytek/ise/result/xml/XmlResultParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/iflytek/ise/result/xml/XmlResultParser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/iflytek/speech/setting/IseSettings$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/iflytek/speech/setting/IseSettings$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/iflytek/speech/setting/IseSettings$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/iflytek/speech/setting/IseSettings$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/iflytek/speech/setting/IseSettings$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/iflytek/speech/setting/IseSettings$6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/iflytek/speech/setting/IseSettings.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/iflytek/speech/setting/IseSettings.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/iflytek/speech/util/FaceUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/iflytek/speech/util/FaceUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/iflytek/speech/util/FucUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/iflytek/speech/util/FucUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/iflytek/speech/util/JsonParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/iflytek/speech/util/JsonParser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/iflytek/speech/util/ParseResult.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/iflytek/speech/util/ParseResult.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/iflytek/speech/util/XmlParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/iflytek/speech/util/XmlParser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/iflytek/voicedemo/AsrDemo$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/iflytek/voicedemo/AsrDemo$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/iflytek/voicedemo/AsrDemo$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/iflytek/voicedemo/AsrDemo$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/iflytek/voicedemo/AsrDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/iflytek/voicedemo/AsrDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/iflytek/voicedemo/IatDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/iflytek/voicedemo/IatDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/iflytek/voicedemo/IdentifyGroup/FaceIdentifyActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/iflytek/voicedemo/IdentifyGroup/FaceIdentifyActivity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/iflytek/voicedemo/IdentifyGroup/GroupManagerActivity$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/iflytek/voicedemo/IdentifyGroup/GroupManagerActivity$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/iflytek/voicedemo/IdentifyGroup/GroupManagerActivity$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/iflytek/voicedemo/IdentifyGroup/GroupManagerActivity$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/iflytek/voicedemo/IdentifyGroup/GroupManagerActivity$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/iflytek/voicedemo/IdentifyGroup/GroupManagerActivity$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/iflytek/voicedemo/IdentifyGroup/GroupManagerActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/iflytek/voicedemo/IdentifyGroup/GroupManagerActivity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/iflytek/voicedemo/IdentifyGroup/ResultIdentifyActivity$MyAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/iflytek/voicedemo/IdentifyGroup/ResultIdentifyActivity$MyAdapter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/iflytek/voicedemo/IdentifyGroup/ResultIdentifyActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/iflytek/voicedemo/IdentifyGroup/ResultIdentifyActivity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/iflytek/voicedemo/IdentifyGroup/VocalIdentifyActivity$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/iflytek/voicedemo/IdentifyGroup/VocalIdentifyActivity$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/iflytek/voicedemo/IdentifyGroup/VocalIdentifyActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/iflytek/voicedemo/IdentifyGroup/VocalIdentifyActivity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/iflytek/voicedemo/IseDemo$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/iflytek/voicedemo/IseDemo$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/iflytek/voicedemo/IseDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/iflytek/voicedemo/IseDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/iflytek/voicedemo/MainActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/iflytek/voicedemo/MainActivity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/iflytek/voicedemo/faceonline/OnlineFaceDemo$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/iflytek/voicedemo/faceonline/OnlineFaceDemo$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/iflytek/voicedemo/faceonline/OnlineFaceDemo$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/iflytek/voicedemo/faceonline/OnlineFaceDemo$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/iflytek/voicedemo/faceonline/OnlineFaceDemo$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/iflytek/voicedemo/faceonline/OnlineFaceDemo$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/iflytek/voicedemo/faceonline/OnlineFaceDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/iflytek/voicedemo/faceonline/OnlineFaceDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/iflytek/voicedemo/vocalverify/VocalVerifyDemo$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/iflytek/voicedemo/vocalverify/VocalVerifyDemo$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/iflytek/voicedemo/vocalverify/VocalVerifyDemo$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/iflytek/voicedemo/vocalverify/VocalVerifyDemo$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/iflytek/voicedemo/vocalverify/VocalVerifyDemo$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/iflytek/voicedemo/vocalverify/VocalVerifyDemo$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/iflytek/voicedemo/vocalverify/VocalVerifyDemo$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/iflytek/voicedemo/vocalverify/VocalVerifyDemo$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/iflytek/voicedemo/vocalverify/VocalVerifyDemo$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/iflytek/voicedemo/vocalverify/VocalVerifyDemo$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/iflytek/voicedemo/vocalverify/VocalVerifyDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/com/iflytek/voicedemo/vocalverify/VocalVerifyDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/manifest-checker/debug/manifest.crc" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/manifest-checker/debug/manifest.crc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/manifest-checker/debug/manifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/manifest-checker/debug/manifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/merged_manifests/debug/output.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/merged_manifests/debug/output.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/merged_manifests/debug/x86/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/merged_manifests/debug/x86/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/metadata_feature_manifest/debug/processDebugManifest/metadata-feature/output.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/metadata_feature_manifest/debug/processDebugManifest/metadata-feature/output.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/processed_res/debug/processDebugResources/out/output.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/processed_res/debug/processDebugResources/out/output.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/processed_res/debug/processDebugResources/out/resources-x86Debug.ap_" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/processed_res/debug/processDebugResources/out/resources-x86Debug.ap_" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/resources/instant-run/debug/output.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/resources/instant-run/debug/output.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/resources/instant-run/debug/resources-x86-debug.apk" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/resources/instant-run/debug/resources-x86-debug.apk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/signing_config/debug/out/signing-config.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/signing_config/debug/out/signing-config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/split-apk/debug/slices/slice_1.apk" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/split-apk/debug/slices/slice_1.apk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/split-apk/debug/slices/slice_2.apk" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/split-apk/debug/slices/slice_2.apk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/split-apk/debug/slices/slice_4.apk" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/split-apk/debug/slices/slice_4.apk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/split-apk/debug/slices/slice_6.apk" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/split-apk/debug/slices/slice_6.apk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/split-apk/debug/slices/slice_7.apk" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/split-apk/debug/slices/slice_7.apk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/transforms/dexBuilder/debug/__content__.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/transforms/dexBuilder/debug/__content__.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/0/com/iflytek/ise/result/ReadSentenceResult.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/0/com/iflytek/ise/result/ReadSentenceResult.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/0/com/iflytek/ise/result/ReadWordResult.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/0/com/iflytek/ise/result/ReadWordResult.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/0/com/iflytek/ise/result/entity/Phone.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/0/com/iflytek/ise/result/entity/Phone.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/0/com/iflytek/ise/result/entity/Syll.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/0/com/iflytek/ise/result/entity/Syll.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/0/com/iflytek/ise/result/util/ResultFormatUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/0/com/iflytek/ise/result/util/ResultFormatUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/0/com/iflytek/ise/result/util/ResultTranslateUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/0/com/iflytek/ise/result/util/ResultTranslateUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/0/com/iflytek/ise/result/xml/XmlResultParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/0/com/iflytek/ise/result/xml/XmlResultParser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/0/com/iflytek/speech/setting/IseSettings$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/0/com/iflytek/speech/setting/IseSettings$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/0/com/iflytek/speech/setting/IseSettings$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/0/com/iflytek/speech/setting/IseSettings$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/0/com/iflytek/speech/setting/IseSettings$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/0/com/iflytek/speech/setting/IseSettings$6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/0/com/iflytek/speech/setting/IseSettings.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/0/com/iflytek/speech/setting/IseSettings.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/0/com/iflytek/speech/util/FaceUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/0/com/iflytek/speech/util/FaceUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/0/com/iflytek/speech/util/FucUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/0/com/iflytek/speech/util/FucUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/0/com/iflytek/speech/util/JsonParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/0/com/iflytek/speech/util/JsonParser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/0/com/iflytek/speech/util/ParseResult.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/0/com/iflytek/speech/util/ParseResult.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/0/com/iflytek/speech/util/XmlParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/0/com/iflytek/speech/util/XmlParser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/0/com/iflytek/voicedemo/AsrDemo$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/0/com/iflytek/voicedemo/AsrDemo$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/0/com/iflytek/voicedemo/AsrDemo$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/0/com/iflytek/voicedemo/AsrDemo$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/0/com/iflytek/voicedemo/AsrDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/0/com/iflytek/voicedemo/AsrDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/0/com/iflytek/voicedemo/IatDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/0/com/iflytek/voicedemo/IatDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/0/com/iflytek/voicedemo/IdentifyGroup/FaceIdentifyActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/0/com/iflytek/voicedemo/IdentifyGroup/FaceIdentifyActivity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/0/com/iflytek/voicedemo/IdentifyGroup/GroupManagerActivity$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/0/com/iflytek/voicedemo/IdentifyGroup/GroupManagerActivity$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/0/com/iflytek/voicedemo/IdentifyGroup/GroupManagerActivity$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/0/com/iflytek/voicedemo/IdentifyGroup/GroupManagerActivity$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/0/com/iflytek/voicedemo/IdentifyGroup/GroupManagerActivity$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/0/com/iflytek/voicedemo/IdentifyGroup/GroupManagerActivity$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/0/com/iflytek/voicedemo/IdentifyGroup/GroupManagerActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/0/com/iflytek/voicedemo/IdentifyGroup/GroupManagerActivity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/0/com/iflytek/voicedemo/IdentifyGroup/ResultIdentifyActivity$MyAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/0/com/iflytek/voicedemo/IdentifyGroup/ResultIdentifyActivity$MyAdapter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/0/com/iflytek/voicedemo/IdentifyGroup/ResultIdentifyActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/0/com/iflytek/voicedemo/IdentifyGroup/ResultIdentifyActivity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/0/com/iflytek/voicedemo/IdentifyGroup/VocalIdentifyActivity$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/0/com/iflytek/voicedemo/IdentifyGroup/VocalIdentifyActivity$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/0/com/iflytek/voicedemo/IdentifyGroup/VocalIdentifyActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/0/com/iflytek/voicedemo/IdentifyGroup/VocalIdentifyActivity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/0/com/iflytek/voicedemo/IseDemo$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/0/com/iflytek/voicedemo/IseDemo$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/0/com/iflytek/voicedemo/IseDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/0/com/iflytek/voicedemo/IseDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/0/com/iflytek/voicedemo/MainActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/0/com/iflytek/voicedemo/MainActivity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/0/com/iflytek/voicedemo/faceonline/OnlineFaceDemo$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/0/com/iflytek/voicedemo/faceonline/OnlineFaceDemo$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/0/com/iflytek/voicedemo/faceonline/OnlineFaceDemo$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/0/com/iflytek/voicedemo/faceonline/OnlineFaceDemo$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/0/com/iflytek/voicedemo/faceonline/OnlineFaceDemo$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/0/com/iflytek/voicedemo/faceonline/OnlineFaceDemo$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/0/com/iflytek/voicedemo/faceonline/OnlineFaceDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/0/com/iflytek/voicedemo/faceonline/OnlineFaceDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/0/com/iflytek/voicedemo/vocalverify/VocalVerifyDemo$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/0/com/iflytek/voicedemo/vocalverify/VocalVerifyDemo$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/0/com/iflytek/voicedemo/vocalverify/VocalVerifyDemo$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/0/com/iflytek/voicedemo/vocalverify/VocalVerifyDemo$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/0/com/iflytek/voicedemo/vocalverify/VocalVerifyDemo$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/0/com/iflytek/voicedemo/vocalverify/VocalVerifyDemo$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/0/com/iflytek/voicedemo/vocalverify/VocalVerifyDemo$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/0/com/iflytek/voicedemo/vocalverify/VocalVerifyDemo$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/0/com/iflytek/voicedemo/vocalverify/VocalVerifyDemo$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/0/com/iflytek/voicedemo/vocalverify/VocalVerifyDemo$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/0/com/iflytek/voicedemo/vocalverify/VocalVerifyDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/0/com/iflytek/voicedemo/vocalverify/VocalVerifyDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/__content__.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/__content__.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/speechDemo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/speechDemo.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/iflytek/speech/setting/IseSettings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iflytek/speech/setting/IseSettings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/iflytek/voicedemo/IseDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/iflytek/voicedemo/IseDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../android-tablayout-master/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../android-tablayout-master/.idea/caches/build_file_checksums.ser" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../android-tablayout-master/.idea/caches/gradle_models.ser" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../android-tablayout-master/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../SoundRecorderUtils-master/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../android-tablayout-master/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../android-tablayout-master/.idea/copyright/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../android-tablayout-master/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../SoundRecorderUtils-master/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../android-tablayout-master/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../android-tablayout-master/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../SoundRecorderUtils-master/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../android-tablayout-master/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../android-tablayout-master/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../android-tablayout-master/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../android-tablayout-master/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../android-tablayout-master/app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../android-tablayout-master/app/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../android-tablayout-master/app/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../android-tablayout-master/app/src/androidTest/java/com/newstablayout/ExampleInstrumentedTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../android-tablayout-master/app/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../android-tablayout-master/app/src/main/java/com/newstablayout/MainActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../android-tablayout-master/app/src/main/java/com/newstablayout/RecyclerAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../android-tablayout-master/app/src/main/java/com/newstablayout/TabFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../android-tablayout-master/app/src/main/java/com/newstablayout/TabLessActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../android-tablayout-master/app/src/main/java/com/newstablayout/TabManyActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../android-tablayout-master/app/src/main/res/layout/activity_main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../android-tablayout-master/app/src/main/res/layout/fragment_tab.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../android-tablayout-master/app/src/main/res/layout/item.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../android-tablayout-master/app/src/main/res/layout/tab_layout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../android-tablayout-master/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../android-tablayout-master/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../android-tablayout-master/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../android-tablayout-master/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../android-tablayout-master/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../android-tablayout-master/app/src/main/res/values-w820dp/dimens.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../android-tablayout-master/app/src/main/res/values/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../android-tablayout-master/app/src/main/res/values/dimens.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../android-tablayout-master/app/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../android-tablayout-master/app/src/main/res/values/styles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../android-tablayout-master/app/src/test/java/com/newstablayout/ExampleUnitTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../android-tablayout-master/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../android-tablayout-master/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../android-tablayout-master/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../android-tablayout-master/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../android-tablayout-master/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../android-tablayout-master/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../android-tablayout-master/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../clickArea-master1/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../clickArea-master1/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../clickArea-master1/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../clickArea-master1/.idea/libraries/Gradle__com_android_support_support_v4_19_1_0_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../clickArea-master1/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../clickArea-master1/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../clickArea-master1/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../clickArea-master1/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../clickArea-master1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../clickArea-master1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../clickArea-master1/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../clickArea-master1/app/app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../clickArea-master1/clickArea-master1.iml" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -286,9 +185,10 @@
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.17" value="1" />
+          <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.32" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="7" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -328,8 +228,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/iflytek/voicedemo/IseDemo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="473">
-              <caret line="346" column="37" lean-forward="true" selection-end-line="368" />
+            <state relative-caret-position="7368">
+              <caret line="353" column="22" selection-start-line="353" selection-start-column="22" selection-end-line="353" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="docComment;class#IseDemo#0" />
@@ -359,12 +259,12 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/res/layout/isedemo.xml">
-          <provider editor-type-id="android-designer2" />
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="720">
               <caret line="30" column="4" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
             </state>
           </provider>
+          <provider editor-type-id="android-designer2" />
         </entry>
       </file>
     </leaf>
@@ -389,10 +289,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="260" />
-    <option name="y" value="20" />
-    <option name="width" value="1400" />
-    <option name="height" value="1000" />
+    <option name="x" value="476" />
+    <option name="y" value="23" />
+    <option name="width" value="974" />
+    <option name="height" value="1100" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -402,7 +302,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="AndroidView">
         <subPane>
           <expand>
@@ -412,35 +311,14 @@
             </path>
             <path>
               <item name="speechDemo" type="1abcf292:AndroidViewProjectNode" />
-              <item name="speechDemo" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-            </path>
-            <path>
-              <item name="speechDemo" type="1abcf292:AndroidViewProjectNode" />
-              <item name="speechDemo" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="iflytek" type="cbb59c9e:AndroidPsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="speechDemo" type="1abcf292:AndroidViewProjectNode" />
-              <item name="speechDemo" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="iflytek" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="speech" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="speechDemo" type="1abcf292:AndroidViewProjectNode" />
-              <item name="speechDemo" type="feadf853:AndroidModuleNode" />
-              <item name="assets" type="edd41e36:AndroidSourceTypeNode" />
-            </path>
-            <path>
-              <item name="speechDemo" type="1abcf292:AndroidViewProjectNode" />
               <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -470,13 +348,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="device.picker.selection" value="Nexus_5X_API_28" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../DouDemo-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../SoundRecorderUtils-master" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
@@ -583,9 +460,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.15450644" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.15450644" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Build Variants" order="4" side_tool="true" />
@@ -598,7 +476,7 @@
       <window_info anchor="bottom" id="Find" order="3" weight="0.3295838" />
       <window_info anchor="bottom" id="Terminal" order="4" weight="0.3295838" />
       <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.5005365" side_tool="true" weight="0.3295838" />
-      <window_info anchor="bottom" id="Build" order="6" sideWeight="0.49946353" weight="0.29246345" />
+      <window_info active="true" anchor="bottom" id="Build" order="6" sideWeight="0.49946353" visible="true" weight="0.29246345" />
       <window_info anchor="bottom" id="Android Profiler" order="7" show_stripe_button="false" sideWeight="0.49946353" weight="0.3295838" />
       <window_info anchor="bottom" id="Run" order="8" weight="0.3295838" />
       <window_info anchor="bottom" id="Debug" order="9" />
@@ -709,8 +587,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/iflytek/voicedemo/IseDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="473">
-          <caret line="346" column="37" lean-forward="true" selection-end-line="368" />
+        <state relative-caret-position="7368">
+          <caret line="353" column="22" selection-start-line="353" selection-start-column="22" selection-end-line="353" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="docComment;class#IseDemo#0" />

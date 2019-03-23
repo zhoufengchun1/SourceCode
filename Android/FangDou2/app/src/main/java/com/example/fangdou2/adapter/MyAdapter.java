@@ -7,6 +7,7 @@ import android.view.*;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
+import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -56,6 +57,8 @@ public class MyAdapter extends BaseAdapter implements View.OnClickListener
             viewHolder = new ViewHolder();
             convertView = layoutInflater.inflate(R.layout.item, null);
             viewHolder.img_record = (ImageView) convertView.findViewById(R.id.img_record);
+            viewHolder.img_natural = (ImageView) convertView.findViewById(R.id.img_natural);
+            viewHolder.img_play = (ImageView) convertView.findViewById(R.id.img_play);
             viewHolder.textView = (TextView) convertView.findViewById(R.id.item_text);
             convertView.setTag(viewHolder);
         } else
@@ -66,6 +69,9 @@ public class MyAdapter extends BaseAdapter implements View.OnClickListener
         viewHolder.textView.setText(bean.lrc);
         viewHolder.textView.setOnClickListener(this);
         viewHolder.img_record.setOnClickListener(this);
+        viewHolder.img_play.setOnClickListener(this);
+        viewHolder.img_natural.setOnClickListener(this);
+        viewHolder.textView.setTag(position);
         return convertView;
     }
 
@@ -82,8 +88,11 @@ public class MyAdapter extends BaseAdapter implements View.OnClickListener
 
     class ViewHolder
     {
-        public ImageView img_pause;
         public ImageView img_record;
+        public ImageView img_play;
+        public ImageView img_natural;
         public TextView textView;
     }
+
+
 }

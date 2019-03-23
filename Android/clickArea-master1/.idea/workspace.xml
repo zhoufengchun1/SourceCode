@@ -7,11 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a0210ee7-9883-496f-8f30-aaada3260fcd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../FangDou2/app/src/main/java/com/example/fangdou2/adapter/MyAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../FangDou2/app/src/main/java/com/example/fangdou2/adapter/MyAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FangDou2/app/src/main/java/com/example/fangdou2/fragment/ListViewFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../FangDou2/app/src/main/java/com/example/fangdou2/fragment/ListViewFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FangDou2/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../FangDou2/app/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../FangDou2/app/src/main/res/layout/item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../FangDou2/app/src/main/res/layout/item.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FangDou2/app/src/main/res/mipmap-mdpi/pic_record.png" beforeDir="false" afterPath="$PROJECT_DIR$/../FangDou2/app/src/main/res/mipmap-mdpi/pic_record.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FangDou2/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../FangDou2/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FangDou2/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../FangDou2/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,6 +29,7 @@
     <session id="-338228665">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.opened" value="2" />
@@ -53,36 +52,7 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vane/clickarea/MainActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="44" column="24" selection-start-line="44" selection-start-column="24" selection-end-line="44" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vane/clickarea/widget/MenuViewItem.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="41" column="31" lean-forward="true" selection-start-line="41" selection-start-column="31" selection-end-line="41" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer2" />
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />

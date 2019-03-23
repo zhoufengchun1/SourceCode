@@ -1,6 +1,6 @@
 package com.example.fangdou2.fragment;
 
-import android.app.Activity;
+import android.content.SharedPreferences;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -9,27 +9,28 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.accessibility.AccessibilityManager;
-import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.fangdou2.R;
 import com.example.fangdou2.adapter.MyAdapter;
 import com.example.fangdou2.bean.ItemBean;
+import com.example.fangdou2.utils.RecordingItem;
 
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+import static android.content.Context.MODE_PRIVATE;
+
 
 public class ListViewFragment extends Fragment implements MyAdapter.Callback
 {
-    View view;
-    ListView listView;
-    MediaPlayer mediaPlayer;
-    TextView textView;
+    private View view;
+    private ListView listView;
+    private MediaPlayer mediaPlayer;
+    private TextView textView;
+    private List<ItemBean> itemBeanList;
 
     @Nullable
     @Override
@@ -47,19 +48,22 @@ public class ListViewFragment extends Fragment implements MyAdapter.Callback
         {
             view = inflater.inflate(R.layout.medialistview, null);
         }
+
         initView();
         return view;
     }
 
     public void initView()
     {
-        List<ItemBean> itemBeanList = new ArrayList<>();
+        itemBeanList = new ArrayList<>();
         for (int i = 0; i < 20; i++)
         {
             itemBeanList.add(new ItemBean("This is textString", R.raw.test));
+            //在此处添加文字与音频文件
         }
         listView = (ListView) view.findViewById(R.id.listView);
         listView.setAdapter(new MyAdapter(itemBeanList, getLayoutInflater(), this));
+
     }
 
     @Override
@@ -79,13 +83,12 @@ public class ListViewFragment extends Fragment implements MyAdapter.Callback
                     {
                         if (mediaPlayer == null)
                         {
-                            mediaPlayer = MediaPlayer.create(view.getContext(), R.raw.test);
+                            mediaPlayer = MediaPlayer.create(view.getContext(), itemBeanList.get((Integer) v.getTag()).resourceId);
                             mediaPlayer.prepare();
                         }
                         mediaPlayer.start();
                         textView.setTextColor(getResources().getColor(R.color.color_lrcColor_Y));
                     }
-
 
                 } catch (IOException e)
                 {
@@ -102,6 +105,28 @@ public class ListViewFragment extends Fragment implements MyAdapter.Callback
                 妥协的方法是在catch中再写一次start()和文字颜色处理。
                  */
                 break;
+            case R.id.img_record:
+                final RecordAudioDialogFragment fragment = RecordAudioDialogFragment.newInstance();
+                fragment.show(getFragmentManager(), RecordAudioDialogFragment.class.getSimpleName());
+                fragment.setOnCancelListener(new RecordAudioDialogFragment.OnAudioCancelListener()
+                {
+                    @Override
+                    public void onCancel()
+                    {
+                        fragment.dismiss();
+                    }
+                });
+                break;
+            case R.id.img_play:
+                RecordingItem recordingItem = new RecordingItem();
+                SharedPreferences sharePreferences = v.getContext().getSharedPreferences("sp_name_audio", MODE_PRIVATE);
+                final String filePath = sharePreferences.getString("audio_path", "");
+                long elpased = sharePreferences.getLong("elpased", 0);
+                recordingItem.setFilePath(filePath);
+                recordingItem.setLength((int) elpased);
+                PlaybackDialogFragment fragmentPlay = PlaybackDialogFragment.newInstance(recordingItem);
+                fragmentPlay.show(getFragmentManager(), PlaybackDialogFragment.class.getSimpleName());
+                break;
             default:
                 break;
         }
@@ -109,3 +134,7 @@ public class ListViewFragment extends Fragment implements MyAdapter.Callback
 
 
 }
+
+
+
+
