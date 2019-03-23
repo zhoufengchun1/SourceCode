@@ -55,7 +55,6 @@ public class MyAdapter extends BaseAdapter implements View.OnClickListener
         {
             viewHolder = new ViewHolder();
             convertView = layoutInflater.inflate(R.layout.item, null);
-            viewHolder.img_pause = (ImageView) convertView.findViewById(R.id.img_pause);
             viewHolder.img_record = (ImageView) convertView.findViewById(R.id.img_record);
             viewHolder.textView = (TextView) convertView.findViewById(R.id.item_text);
             convertView.setTag(viewHolder);
@@ -67,7 +66,6 @@ public class MyAdapter extends BaseAdapter implements View.OnClickListener
         viewHolder.textView.setText(bean.lrc);
         viewHolder.textView.setOnClickListener(this);
         viewHolder.img_record.setOnClickListener(this);
-        viewHolder.img_pause.setOnClickListener(this);
         return convertView;
     }
 

@@ -7,7 +7,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#797272"
+        android:background="#FFFFFF"
         android:orientation="vertical">
 
         <TextView
@@ -16,32 +16,27 @@
             android:layout_marginLeft="10dp"
             android:layout_marginTop="30dp"
             android:layout_marginRight="10dp"
-            android:background="#4F4A4A"
+            android:background="#FFFFFF"
             android:text="示例文本"
             android:id="@+id/item_text"
             android:textColor="@color/color_lrcColor_N"
-            android:textSize="25dp" />
+            android:textSize="25dp"
+            android:clickable="true"
+            android:focusable="true" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="90dp"
             android:orientation="horizontal">
 
-            <ImageView
-                android:layout_width="44dp"
-                android:layout_height="44dp"
-                android:layout_marginLeft="50dp"
-                android:layout_marginTop="20dp"
-                android:src="@mipmap/pic_pause"
-                android:id="@+id/img_pause" />
 
             <ImageView
-                android:layout_width="48dp"
+                android:id="@+id/img_record"
+                android:layout_width="44dp"
                 android:layout_height="44dp"
-                android:layout_marginLeft="80dp"
+                android:layout_marginLeft="300dp"
                 android:layout_marginTop="20dp"
-                android:src="@mipmap/pic_record"
-                android:id="@+id/img_record" />
+                android:src="@mipmap/pic_record" />
 
         </LinearLayout>
 
