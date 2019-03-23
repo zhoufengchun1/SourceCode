@@ -88,6 +88,7 @@ public class Knowledge_fragment extends Fragment
     {
         verticalTabLayout = (VerticalTabLayout) view.findViewById(R.id.leftTab);
         verticalTabLayout.setTabAdapter(new MyTabAdapter(mLeftTabTitles,view.getContext()));
+        verticalTabLayout.setupWithViewPager(viewPager);
         verticalTabLayout.addOnTabSelectedListener(new VerticalTabLayout.OnTabSelectedListener()
         {
             @Override

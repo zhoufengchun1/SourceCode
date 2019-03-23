@@ -2,7 +2,6 @@ package com.example.fangdou.adapter;
 
 import android.content.Context;
 import android.graphics.Color;
-import android.support.v7.widget.ScrollingTabContainerView;
 
 import com.example.fangdou.activity.QTabView;
 import com.example.fangdou.activity.TabAdapter;

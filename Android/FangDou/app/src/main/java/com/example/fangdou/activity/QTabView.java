@@ -17,7 +17,8 @@ import com.example.fangdou.R;
  * @author chqiu
  *         Email:qstumn@163.com
  */
-public class QTabView extends TabView {
+public class QTabView extends TabView
+{
     private Context mContext;
     private ImageView mIcon;
     private TextView mTitle;

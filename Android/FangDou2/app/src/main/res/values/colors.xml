@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorTabChosen">#7CB342</color>
+    <color name="colorTextChosen">#FF7043</color>
+    <color name="blue_light">#00C0E4</color>
+    <color name="color_ActionBar">#262323</color>
+    <color name="color_lrcColor_N">#6E6B6B</color>
+    <!--未读语句颜色-->
+    <color name="color_lrcColor_Y">#FF5500</color>
+    <!--已读语句颜色-->
+</resources>
