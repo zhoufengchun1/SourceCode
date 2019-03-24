@@ -67,11 +67,14 @@ public class MyAdapter extends BaseAdapter implements View.OnClickListener
         }
         final ItemBean bean = mList.get(position);
         viewHolder.textView.setText(bean.lrc);
+        //设置监听器
         viewHolder.textView.setOnClickListener(this);
         viewHolder.img_record.setOnClickListener(this);
         viewHolder.img_play.setOnClickListener(this);
         viewHolder.img_natural.setOnClickListener(this);
+        //将ViewHolder与控件绑定
         viewHolder.textView.setTag(position);
+        viewHolder.img_natural.setTag(position);
         return convertView;
     }
 

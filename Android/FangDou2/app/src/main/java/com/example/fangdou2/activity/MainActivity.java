@@ -22,6 +22,8 @@ import android.widget.Toast;
 import com.example.fangdou2.R;
 import com.example.fangdou2.fragment.ListViewFragment;
 import com.example.fangdou2.fragment.NavigationFragment;
+import com.iflytek.cloud.SpeechConstant;
+import com.iflytek.cloud.SpeechUtility;
 
 public class MainActivity extends AppCompatActivity
 {
@@ -36,23 +38,9 @@ public class MainActivity extends AppCompatActivity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M)
         {
-
-            /*// 检查该权限是否已经获取
-            int i = ContextCompat.checkSelfPermission(this, permissions[0]);
-            int j = ContextCompat.checkSelfPermission(this, permissions[1]);
-            // 权限是否已经 授权 GRANTED---授权  DINIED---拒绝
-            if (i != PackageManager.PERMISSION_GRANTED )
-            {
-                // 如果没有授予该权限，就去提示用户请求
-                showDialogTipUserRequestPermission(i);
-            }
-            if (j != PackageManager.PERMISSION_GRANTED )
-            {
-                // 如果没有授予该权限，就去提示用户请求
-                showDialogTipUserRequestPermission(j);
-            }*/
             for (int i = 0; i < permissions.length; i++)
             {
                 if (ContextCompat.checkSelfPermission(this, permissions[i]) != PackageManager.PERMISSION_GRANTED)

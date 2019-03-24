@@ -13,9 +13,15 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.example.fangdou2.R;
+import com.example.fangdou2.Tts;
 import com.example.fangdou2.adapter.MyAdapter;
 import com.example.fangdou2.bean.ItemBean;
 import com.example.fangdou2.utils.RecordingItem;
+import com.iflytek.cloud.SpeechConstant;
+import com.iflytek.cloud.SpeechUtility;
+
+
+import org.w3c.dom.Text;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -31,6 +37,8 @@ public class ListViewFragment extends Fragment implements MyAdapter.Callback
     private MediaPlayer mediaPlayer;
     private TextView textView;
     private List<ItemBean> itemBeanList;
+    private String app_id = "5c6e22da";
+
 
     @Nullable
     @Override
@@ -48,6 +56,12 @@ public class ListViewFragment extends Fragment implements MyAdapter.Callback
         {
             view = inflater.inflate(R.layout.medialistview, null);
         }
+        StringBuffer param = new StringBuffer();
+        param.append("appid=" + app_id);
+        param.append(",");
+        // 设置使用v5+
+        param.append(SpeechConstant.ENGINE_MODE + "=" + SpeechConstant.MODE_MSC);
+        SpeechUtility.createUtility(view.getContext(), param.toString());
 
         initView();
         return view;
@@ -58,7 +72,11 @@ public class ListViewFragment extends Fragment implements MyAdapter.Callback
         itemBeanList = new ArrayList<>();
         for (int i = 0; i < 20; i++)
         {
-            itemBeanList.add(new ItemBean("This is textString", R.raw.test));
+            if (i % 2 == 0)
+            {
+                itemBeanList.add(new ItemBean("This is textString", R.raw.test));
+            } else
+                itemBeanList.add(new ItemBean("哈哈哈哈哈哈哈", R.raw.test));
             //在此处添加文字与音频文件
         }
         listView = (ListView) view.findViewById(R.id.listView);
@@ -127,6 +145,8 @@ public class ListViewFragment extends Fragment implements MyAdapter.Callback
                 PlaybackDialogFragment fragmentPlay = PlaybackDialogFragment.newInstance(recordingItem);
                 fragmentPlay.show(getFragmentManager(), PlaybackDialogFragment.class.getSimpleName());
                 break;
+            case R.id.img_natural:
+                new Tts(v, itemBeanList.get((Integer) v.getTag()).lrc);
             default:
                 break;
         }
