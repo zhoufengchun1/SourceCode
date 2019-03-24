@@ -21,14 +21,25 @@ public class Tts
     private int mPercentForBuffering = 0;
     // 播放进度
     private int mPercentForPlaying = 0;
-    private String voicer = "xiaoyan";
+    private String voicer;
     private String text;
 
-    public Tts(View view, String text)
+    public Tts(View view, String text, String voicer)
     {
         this.view = view;
         this.text = text;
+        this.voicer = voicer;
         init();
+    }
+
+    public void setText(String text)
+    {
+        this.text = text;
+    }
+
+    public void setVoicer(String voicer)
+    {
+        this.voicer = voicer;
     }
 
     public void init()
@@ -42,6 +53,11 @@ public class Tts
         {
             showTip("语音合成失败,错误码: " + code);
         }
+    }
+
+    public SpeechSynthesizer getmTts()
+    {
+        return mTts;
     }
 
     /**

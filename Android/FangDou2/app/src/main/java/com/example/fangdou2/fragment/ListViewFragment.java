@@ -5,23 +5,29 @@ import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
+import android.widget.RadioGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.example.fangdou2.MyDrawerLayout;
 import com.example.fangdou2.R;
 import com.example.fangdou2.Tts;
 import com.example.fangdou2.adapter.MyAdapter;
 import com.example.fangdou2.bean.ItemBean;
 import com.example.fangdou2.utils.RecordingItem;
 import com.iflytek.cloud.SpeechConstant;
+import com.iflytek.cloud.SpeechSynthesizer;
 import com.iflytek.cloud.SpeechUtility;
 
-
-import org.w3c.dom.Text;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -38,12 +44,22 @@ public class ListViewFragment extends Fragment implements MyAdapter.Callback
     private TextView textView;
     private List<ItemBean> itemBeanList;
     private String app_id = "5c6e22da";
-
+    private MyDrawerLayout draw;
+    private RadioGroup group;
+    private String[] mCloudVoicersEntries;
+    private String[] mCloudVoicersValue;
+    private MyDrawerLayout drawerLayout;
+    private NavigationView navigationView;
+    private LayoutInflater inflater;
+    private Menu menu;
+    private Tts tts;
+    private String voicer = "xiaoyan";
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState)
     {
+        this.inflater = inflater;
         if (view != null)
         {
             ViewGroup parent = (ViewGroup) view.getParent();
@@ -62,9 +78,45 @@ public class ListViewFragment extends Fragment implements MyAdapter.Callback
         // 设置使用v5+
         param.append(SpeechConstant.ENGINE_MODE + "=" + SpeechConstant.MODE_MSC);
         SpeechUtility.createUtility(view.getContext(), param.toString());
+        setHasOptionsMenu(true);
 
         initView();
+        initSide();
         return view;
+    }
+
+    public void initSide()
+    {
+        drawerLayout = (MyDrawerLayout) view.findViewById(R.id.listView_Fragment);
+        navigationView = (NavigationView) view.findViewById(R.id.nav);
+        mCloudVoicersEntries = view.getResources().getStringArray(R.array.voicer_cloud_entries);
+        mCloudVoicersValue = view.getResources().getStringArray(R.array.voicer_cloud_values);
+        menu = navigationView.getMenu();
+        for (int i = 0; i < mCloudVoicersEntries.length; i++)
+        {
+            menu.add(1, i, 0, mCloudVoicersEntries[i]);
+        }
+        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener()
+        {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item)
+            {
+                //item.setChecked(true);
+                voicer = mCloudVoicersValue[item.getItemId()];
+                Toast.makeText(view.getContext(), voicer, Toast.LENGTH_LONG).show();
+                drawerLayout.closeDrawer(navigationView);
+                return true;
+            }
+        });
+    }
+
+    @Override
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater)
+    {
+        menu = navigationView.getMenu();
+        inflater.inflate(R.menu.menu, menu);
+        super.onCreateOptionsMenu(menu, inflater);
+
     }
 
     public void initView()
@@ -74,7 +126,7 @@ public class ListViewFragment extends Fragment implements MyAdapter.Callback
         {
             if (i % 2 == 0)
             {
-                itemBeanList.add(new ItemBean("This is textString", R.raw.test));
+                itemBeanList.add(new ItemBean("嘿嘿嘿嘿嘿嘿嘿", R.raw.test));
             } else
                 itemBeanList.add(new ItemBean("哈哈哈哈哈哈哈", R.raw.test));
             //在此处添加文字与音频文件
@@ -146,13 +198,19 @@ public class ListViewFragment extends Fragment implements MyAdapter.Callback
                 fragmentPlay.show(getFragmentManager(), PlaybackDialogFragment.class.getSimpleName());
                 break;
             case R.id.img_natural:
-                new Tts(v, itemBeanList.get((Integer) v.getTag()).lrc);
+                tts = new Tts(v, itemBeanList.get((Integer) v.getTag()).lrc, voicer);
+                tts = null;
             default:
                 break;
         }
     }
 
-
+    @Override
+    public void onCreate(Bundle savedInstanceState)
+    {
+        super.onCreate(savedInstanceState);
+        setHasOptionsMenu(true);
+    }
 }
 
 

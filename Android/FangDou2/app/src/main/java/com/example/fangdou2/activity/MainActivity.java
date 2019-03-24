@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.graphics.Color;
 import android.net.Uri;
 import android.os.Build;
 import android.provider.Settings;
@@ -17,6 +18,8 @@ import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Toast;
 
 import com.example.fangdou2.R;
@@ -24,6 +27,7 @@ import com.example.fangdou2.fragment.ListViewFragment;
 import com.example.fangdou2.fragment.NavigationFragment;
 import com.iflytek.cloud.SpeechConstant;
 import com.iflytek.cloud.SpeechUtility;
+import com.readystatesoftware.systembartint.SystemBarTintManager;
 
 public class MainActivity extends AppCompatActivity
 {
@@ -32,13 +36,14 @@ public class MainActivity extends AppCompatActivity
     private String dialogTips = "", settingTips = "", tips = "";
     private boolean flag = true;
     private AlertDialog dialog;
+    private SystemBarTintManager tintManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_main);
-
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M)
         {
             for (int i = 0; i < permissions.length; i++)
@@ -204,5 +209,18 @@ public class MainActivity extends AppCompatActivity
 
         fragmentTransaction.commit();
 
+    }
+
+    private void initWindow()
+    {//初始化窗口属性，让状态栏和导航栏透明
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT)
+        {
+            getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+            getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
+            tintManager = new SystemBarTintManager(this);
+            int statusColor = Color.parseColor("#1976d2");
+            tintManager.setStatusBarTintColor(statusColor);
+            tintManager.setStatusBarTintEnabled(true);
+        }
     }
 }
