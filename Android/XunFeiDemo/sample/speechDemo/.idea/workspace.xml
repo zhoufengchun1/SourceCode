@@ -11,17 +11,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8c8aa17a-90ec-4ae8-a4ce-f86c339a8713" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../FangDou2/app/src/main/java/com/example/fangdou2/MyDrawerLayout.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../FangDou2/app/src/main/res/layout/radiobutton.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../FangDou2/app/src/main/res/menu/menu.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../FangDou2/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../../FangDou2/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../FangDou2/app/src/main/java/com/example/fangdou2/Tts.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../FangDou2/app/src/main/java/com/example/fangdou2/Tts.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../FangDou2/app/src/main/java/com/example/fangdou2/activity/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../FangDou2/app/src/main/java/com/example/fangdou2/activity/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FangDou2/app/src/main/java/com/example/fangdou2/adapter/MyAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../FangDou2/app/src/main/java/com/example/fangdou2/adapter/MyAdapter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../FangDou2/app/src/main/java/com/example/fangdou2/fragment/ListViewFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../FangDou2/app/src/main/java/com/example/fangdou2/fragment/ListViewFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../FangDou2/app/src/main/res/layout/medialistview.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../FangDou2/app/src/main/res/layout/medialistview.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../FangDou2/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../FangDou2/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

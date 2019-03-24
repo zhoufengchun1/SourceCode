@@ -1,7 +1,6 @@
 package com.example.fangdou2.activity;
 
 import android.Manifest;
-import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -25,8 +24,6 @@ import android.widget.Toast;
 import com.example.fangdou2.R;
 import com.example.fangdou2.fragment.ListViewFragment;
 import com.example.fangdou2.fragment.NavigationFragment;
-import com.iflytek.cloud.SpeechConstant;
-import com.iflytek.cloud.SpeechUtility;
 import com.readystatesoftware.systembartint.SystemBarTintManager;
 
 public class MainActivity extends AppCompatActivity

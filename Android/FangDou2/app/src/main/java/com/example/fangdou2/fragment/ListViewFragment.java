@@ -25,7 +25,6 @@ import com.example.fangdou2.adapter.MyAdapter;
 import com.example.fangdou2.bean.ItemBean;
 import com.example.fangdou2.utils.RecordingItem;
 import com.iflytek.cloud.SpeechConstant;
-import com.iflytek.cloud.SpeechSynthesizer;
 import com.iflytek.cloud.SpeechUtility;
 
 

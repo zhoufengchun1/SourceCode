@@ -1,15 +1,11 @@
 package com.example.fangdou2.adapter;
 
-import android.support.v7.view.*;
-import android.support.v7.view.ActionMode;
 import android.view.LayoutInflater;
 import android.view.*;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
-import android.widget.SeekBar;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.fangdou2.R;
 import com.example.fangdou2.bean.ItemBean;
