@@ -11,7 +11,80 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8c8aa17a-90ec-4ae8-a4ce-f86c339a8713" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../FangDou2/app/src/main/java/com/example/fangdou2/activity/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../FangDou2/app/src/main/java/com/example/fangdou2/activity/MainActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../FangDou2/app/src/main/java/com/example/fangdou2/fragment/RecordAudioDialogFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../FangDou2/app/src/main/java/com/example/fangdou2/fragment/RecordAudioDialogFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../FangDou2/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../FangDou2/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../FangDou2/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../FangDou2/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../FangDou2/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../FangDou2/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../FangDou2/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../FangDou2/app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../FangDou2/app/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../FangDou2/app/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../FangDou2/app/src/androidTest/java/com/example/fangdou2/ExampleInstrumentedTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../FangDou2/app/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../FangDou2/app/src/main/java/com/example/fangdou2/activity/MainActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../FangDou2/app/src/main/java/com/example/fangdou2/adapter/MyAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../FangDou2/app/src/main/java/com/example/fangdou2/bean/ItemBean.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../FangDou2/app/src/main/java/com/example/fangdou2/fragment/ListViewFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../FangDou2/app/src/main/java/com/example/fangdou2/fragment/MapFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../FangDou2/app/src/main/java/com/example/fangdou2/fragment/NavigationFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../FangDou2/app/src/main/java/com/example/fangdou2/fragment/PlaybackDialogFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../FangDou2/app/src/main/java/com/example/fangdou2/fragment/RecordAudioDialogFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../FangDou2/app/src/main/java/com/example/fangdou2/service/RecordingService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../FangDou2/app/src/main/java/com/example/fangdou2/utils/RecordingItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../FangDou2/app/src/main/res/color/tab_text_color_selector.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../FangDou2/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../FangDou2/app/src/main/res/drawable-v24/ic_media_pause.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../FangDou2/app/src/main/res/drawable-v24/ic_media_stop.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../FangDou2/app/src/main/res/drawable/ic_close.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../FangDou2/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../FangDou2/app/src/main/res/drawable/ic_media_play.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../FangDou2/app/src/main/res/drawable/ic_mic_white_36dp.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../FangDou2/app/src/main/res/drawable/tab_contact_selector.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../FangDou2/app/src/main/res/drawable/tab_record_selector.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../FangDou2/app/src/main/res/layout/activity_main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../FangDou2/app/src/main/res/layout/activity_navigation.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../FangDou2/app/src/main/res/layout/fragment_media_playback.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../FangDou2/app/src/main/res/layout/fragment_record_audio.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../FangDou2/app/src/main/res/layout/item.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../FangDou2/app/src/main/res/layout/medialistview.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../FangDou2/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../FangDou2/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../FangDou2/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../FangDou2/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../FangDou2/app/src/main/res/mipmap-hdpi/sign.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../FangDou2/app/src/main/res/mipmap-hdpi/tabbar_contact_default.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../FangDou2/app/src/main/res/mipmap-hdpi/tabbar_contact_pressed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../FangDou2/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../FangDou2/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../FangDou2/app/src/main/res/mipmap-mdpi/pic_natural.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../FangDou2/app/src/main/res/mipmap-mdpi/pic_pause.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../FangDou2/app/src/main/res/mipmap-mdpi/pic_play.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../FangDou2/app/src/main/res/mipmap-mdpi/pic_record.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../FangDou2/app/src/main/res/mipmap-mdpi/tabbar_record_default.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../FangDou2/app/src/main/res/mipmap-mdpi/tabbar_record_pressed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../FangDou2/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../FangDou2/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../FangDou2/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../FangDou2/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../FangDou2/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../FangDou2/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../FangDou2/app/src/main/res/raw/test.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../FangDou2/app/src/main/res/values/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../FangDou2/app/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../FangDou2/app/src/main/res/values/styles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../FangDou2/app/src/test/java/com/example/fangdou2/ExampleUnitTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../FangDou2/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../FangDou2/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../FangDou2/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../FangDou2/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../FangDou2/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../FangDou2/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../FangDou2/settings.gradle" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -140,10 +213,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="476" />
-    <option name="y" value="23" />
+    <option name="x" value="-7" />
     <option name="width" value="974" />
-    <option name="height" value="1100" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />

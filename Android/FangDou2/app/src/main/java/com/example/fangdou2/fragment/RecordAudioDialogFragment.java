@@ -73,9 +73,7 @@ public class RecordAudioDialogFragment extends DialogFragment
     {
         Dialog dialog = super.onCreateDialog(savedInstanceState);
         final AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
-        View view = getActivity().getLayoutInflater().inflate(R.layout.fragment_r7
-
-                cecord_audio, null);
+        View view = getActivity().getLayoutInflater().inflate(R.layout.fragment_record_audio, null);
         initView(view);
 
         mFabRecord.setColorNormal(getResources().getColor(R.color.colorPrimary));
