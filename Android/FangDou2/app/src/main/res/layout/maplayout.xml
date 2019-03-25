@@ -14,55 +14,55 @@
             android:id="@+id/GanFangYan"
             android:layout_width="wrap_content"
             android:layout_height="300dp"
-            android:background="@drawable/pic_ganfangyan"></com.example.fangdou2.widget.MenuViewItem>
+            android:background="@drawable/pic_ganfangyan" />
 
         <com.example.fangdou2.widget.MenuViewItem
             android:id="@+id/GuanHuaFangYan"
             android:layout_width="wrap_content"
             android:layout_height="300dp"
-            android:background="@drawable/pic_guanhuafangyan"></com.example.fangdou2.widget.MenuViewItem>
+            android:background="@drawable/pic_guanhuafangyan" />
 
         <com.example.fangdou2.widget.MenuViewItem
             android:id="@+id/KeJiaFangYan"
             android:layout_width="wrap_content"
             android:layout_height="300dp"
-            android:background="@drawable/pic_kejiafangyan"></com.example.fangdou2.widget.MenuViewItem>
+            android:background="@drawable/pic_kejiafangyan" />
 
         <com.example.fangdou2.widget.MenuViewItem
             android:id="@+id/MinFangYan"
             android:layout_width="wrap_content"
             android:layout_height="300dp"
-            android:background="@drawable/pic_minfangyan"></com.example.fangdou2.widget.MenuViewItem>
+            android:background="@drawable/pic_minfangyan" />
 
         <com.example.fangdou2.widget.MenuViewItem
             android:id="@+id/KongBai"
             android:layout_width="wrap_content"
             android:layout_height="300dp"
-            android:background="@drawable/pic_kongbai"></com.example.fangdou2.widget.MenuViewItem>
+            android:background="@drawable/pic_kongbai" />
 
         <com.example.fangdou2.widget.MenuViewItem
             android:id="@+id/MinFangyan"
             android:layout_width="wrap_content"
             android:layout_height="300dp"
-            android:background="@drawable/pic_minfangyan"></com.example.fangdou2.widget.MenuViewItem>
+            android:background="@drawable/pic_minfangyan" />
 
         <com.example.fangdou2.widget.MenuViewItem
             android:id="@+id/WuFangYan"
             android:layout_width="wrap_content"
             android:layout_height="300dp"
-            android:background="@drawable/pic_wufangyan"></com.example.fangdou2.widget.MenuViewItem>
+            android:background="@drawable/pic_wufangyan" />
 
         <com.example.fangdou2.widget.MenuViewItem
             android:id="@+id/XiangFangYan"
             android:layout_width="wrap_content"
             android:layout_height="300dp"
-            android:background="@drawable/pic_xiangfangyan"></com.example.fangdou2.widget.MenuViewItem>
+            android:background="@drawable/pic_xiangfangyan" />
 
         <com.example.fangdou2.widget.MenuViewItem
             android:id="@+id/YueFangYan"
             android:layout_width="wrap_content"
             android:layout_height="300dp"
-            android:background="@drawable/pic_yuefangyan"></com.example.fangdou2.widget.MenuViewItem>
+            android:background="@drawable/pic_yuefangyan" />
 
     </FrameLayout>
 
@@ -75,6 +75,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/language_listView"
-        android:background="#E9E4E4"></ListView>
+        android:background="#E9E4E4" />
 
 </LinearLayout>
