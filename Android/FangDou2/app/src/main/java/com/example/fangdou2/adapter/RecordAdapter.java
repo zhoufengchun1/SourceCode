@@ -8,18 +8,18 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.fangdou2.R;
-import com.example.fangdou2.bean.ItemBean;
+import com.example.fangdou2.bean.RecordItemBean;
 
 import java.util.List;
 
 
-public class MyAdapter extends BaseAdapter implements View.OnClickListener
+public class RecordAdapter extends BaseAdapter implements View.OnClickListener
 {
-    private List<ItemBean> mList;
+    private List<RecordItemBean> mList;
     private LayoutInflater layoutInflater;
     private Callback mCallback;
 
-    public MyAdapter(List<ItemBean> mList, LayoutInflater layoutInflater, Callback callback)
+    public RecordAdapter(List<RecordItemBean> mList, LayoutInflater layoutInflater, Callback callback)
     {
         this.mList = mList;
         this.layoutInflater = layoutInflater;
@@ -51,7 +51,7 @@ public class MyAdapter extends BaseAdapter implements View.OnClickListener
         if (convertView == null)
         {
             viewHolder = new ViewHolder();
-            convertView = layoutInflater.inflate(R.layout.item, null);
+            convertView = layoutInflater.inflate(R.layout.recorditem, null);
             viewHolder.img_record = (ImageView) convertView.findViewById(R.id.img_record);
             viewHolder.img_natural = (ImageView) convertView.findViewById(R.id.img_natural);
             viewHolder.img_play = (ImageView) convertView.findViewById(R.id.img_play);
@@ -61,7 +61,7 @@ public class MyAdapter extends BaseAdapter implements View.OnClickListener
         {
             viewHolder = (ViewHolder) convertView.getTag();
         }
-        final ItemBean bean = mList.get(position);
+        final RecordItemBean bean = mList.get(position);
         viewHolder.textView.setText(bean.lrc);
         //设置监听器
         viewHolder.textView.setOnClickListener(this);

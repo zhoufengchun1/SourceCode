@@ -21,8 +21,8 @@ import android.widget.Toast;
 import com.example.fangdou2.MyDrawerLayout;
 import com.example.fangdou2.R;
 import com.example.fangdou2.Tts;
-import com.example.fangdou2.adapter.MyAdapter;
-import com.example.fangdou2.bean.ItemBean;
+import com.example.fangdou2.adapter.RecordAdapter;
+import com.example.fangdou2.bean.RecordItemBean;
 import com.example.fangdou2.utils.RecordingItem;
 import com.iflytek.cloud.SpeechConstant;
 import com.iflytek.cloud.SpeechUtility;
@@ -35,13 +35,13 @@ import java.util.List;
 import static android.content.Context.MODE_PRIVATE;
 
 
-public class ListViewFragment extends Fragment implements MyAdapter.Callback
+public class ListViewFragment extends Fragment implements RecordAdapter.Callback
 {
     private View view;
     private ListView listView;
     private MediaPlayer mediaPlayer;
     private TextView textView;
-    private List<ItemBean> itemBeanList;
+    private List<RecordItemBean> recordItemBeanList;
     private String app_id = "5c6e22da";
     private MyDrawerLayout draw;
     private RadioGroup group;
@@ -81,6 +81,7 @@ public class ListViewFragment extends Fragment implements MyAdapter.Callback
 
         initView();
         initSide();
+        System.out.println("123");
         return view;
     }
 
@@ -100,9 +101,9 @@ public class ListViewFragment extends Fragment implements MyAdapter.Callback
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item)
             {
-                //item.setChecked(true);
+                //recorditem.setChecked(true);
                 voicer = mCloudVoicersValue[item.getItemId()];
-                Toast.makeText(view.getContext(), voicer, Toast.LENGTH_LONG).show();
+                Toast.makeText(view.getContext(), "现在是" + mCloudVoicersEntries[item.getItemId()], Toast.LENGTH_SHORT).show();
                 drawerLayout.closeDrawer(navigationView);
                 return true;
             }
@@ -113,25 +114,25 @@ public class ListViewFragment extends Fragment implements MyAdapter.Callback
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater)
     {
         menu = navigationView.getMenu();
-        inflater.inflate(R.menu.menu, menu);
+        inflater.inflate(R.menu.menu_language, menu);
         super.onCreateOptionsMenu(menu, inflater);
 
     }
 
     public void initView()
     {
-        itemBeanList = new ArrayList<>();
+        recordItemBeanList = new ArrayList<>();
         for (int i = 0; i < 20; i++)
         {
             if (i % 2 == 0)
             {
-                itemBeanList.add(new ItemBean("嘿嘿嘿嘿嘿嘿嘿", R.raw.test));
+                recordItemBeanList.add(new RecordItemBean("嘿嘿嘿嘿嘿嘿嘿", R.raw.test));
             } else
-                itemBeanList.add(new ItemBean("哈哈哈哈哈哈哈", R.raw.test));
+                recordItemBeanList.add(new RecordItemBean("哈哈哈哈哈哈哈", R.raw.test));
             //在此处添加文字与音频文件
         }
         listView = (ListView) view.findViewById(R.id.listView);
-        listView.setAdapter(new MyAdapter(itemBeanList, getLayoutInflater(), this));
+        listView.setAdapter(new RecordAdapter(recordItemBeanList, getLayoutInflater(), this));
 
     }
 
@@ -152,7 +153,7 @@ public class ListViewFragment extends Fragment implements MyAdapter.Callback
                     {
                         if (mediaPlayer == null)
                         {
-                            mediaPlayer = MediaPlayer.create(view.getContext(), itemBeanList.get((Integer) v.getTag()).resourceId);
+                            mediaPlayer = MediaPlayer.create(view.getContext(), recordItemBeanList.get((Integer) v.getTag()).resourceId);
                             mediaPlayer.prepare();
                         }
                         mediaPlayer.start();
@@ -197,7 +198,7 @@ public class ListViewFragment extends Fragment implements MyAdapter.Callback
                 fragmentPlay.show(getFragmentManager(), PlaybackDialogFragment.class.getSimpleName());
                 break;
             case R.id.img_natural:
-                tts = new Tts(v, itemBeanList.get((Integer) v.getTag()).lrc, voicer);
+                tts = new Tts(v, recordItemBeanList.get((Integer) v.getTag()).lrc, voicer);
                 tts = null;
             default:
                 break;

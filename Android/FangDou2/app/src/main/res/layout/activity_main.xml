@@ -1,21 +1,33 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:fitsSystemWindows="true">
+    tools:context="com.example.fangdou2.activity.MainActivity">
 
-    <fragment
-        android:id="@+id/square_fragment"
-        android:name="com.example.fangdou2.fragment.ListViewFragment"
+    <LinearLayout
+        android:id="@+id/MainView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+    </LinearLayout>
 
 
-    <fragment
-        android:id="@+id/navigation_fragment"
-        android:name="com.example.fangdou2.fragment.NavigationFragment"
+    <ImageView
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="0.3dp"
+        android:background="#000000" />
 
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bnv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="11"
+        app:menu="@menu/menu_navigation">
 
-</RelativeLayout>
+    </android.support.design.widget.BottomNavigationView>
+</LinearLayout>

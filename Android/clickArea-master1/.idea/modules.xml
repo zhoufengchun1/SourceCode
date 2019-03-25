@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/BottomBar-master.iml" filepath="$PROJECT_DIR$/.idea/BottomBar-master.iml" />
-      <module fileurl="file://$PROJECT_DIR$/BottomBar-master.iml" filepath="$PROJECT_DIR$/BottomBar-master.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/clickArea-master1.iml" filepath="$PROJECT_DIR$/clickArea-master1.iml" />
     </modules>
   </component>
 </project>

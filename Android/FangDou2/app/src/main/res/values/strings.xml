@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">FangDou2</string>
+    <string name="app_name">方逗</string>
 
 
     <!-- Notifications -->
@@ -39,7 +39,7 @@
     <string name="pref_about_desc">v%s</string>
 
     <!--讯飞相关-->
-    <string formatted="false" name="tts_toast_format">缓冲进度为%d%%，播放进度为%d%%</string>
+    <string name="tts_toast_format" formatted="false">缓冲进度为%d%%，播放进度为%d%%</string>
     <string-array name="voicer_cloud_entries">
         <item>小燕—女青、中英、普通话</item>
         <item>小宇—男青、中英、普通话</item>
@@ -75,4 +75,18 @@
         <item>nannan</item>
         <item>vils</item>
     </string-array>
+    <string-array name="language_item">
+        <item>赣方言</item>
+        <item>官话方言</item>
+        <item>客家方言</item>
+        <item>其他语种</item>
+        <item>闽方言</item>
+        <item>吴方言</item>
+        <item>湘方言</item>
+        <item>粤方言</item>
+    </string-array>
+    <string name="title_activity_bottom">BottomActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
 </resources>

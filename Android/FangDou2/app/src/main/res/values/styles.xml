@@ -34,9 +34,9 @@
 
     <!--自定义Tab栏文字风格-->
     <!--<style name="TabStyle" parent="TextAppearance.Design.Tab">-->
-    <!--<item name="textAllCaps">true</item>-->
-    <!--<item name="android:textAllCaps">true</item>-->
-    <!--<item name="android:textSize">18sp</item>-->
+    <!--<recorditem name="textAllCaps">true</recorditem>-->
+    <!--<recorditem name="android:textAllCaps">true</recorditem>-->
+    <!--<recorditem name="android:textSize">18sp</recorditem>-->
 
     <!--</style>-->
 

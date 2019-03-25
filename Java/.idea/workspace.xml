@@ -7,10 +7,57 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="971dbd24-0f2c-4cdf-9812-eda12a9fca7a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Android/XunFeiDemo/sample/speechDemo/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Android/XunFeiDemo/sample/speechDemo/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Android/BottomBar-master/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Android/BottomBar-master/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Android/FangDou2/app/src/main/java/com/example/fangdou2/widget/MenuViewItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Android/FangDou2/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Android/FangDou2/app/src/main/res/drawable/ic_home_black_24dp.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Android/FangDou2/app/src/main/res/drawable/ic_notifications_black_24dp.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Android/FangDou2/app/src/main/res/drawable/pic_ganfangyan.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Android/FangDou2/app/src/main/res/drawable/pic_guanhuafangyan.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Android/FangDou2/app/src/main/res/drawable/pic_kejiafangyan.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Android/FangDou2/app/src/main/res/drawable/pic_kongbai.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Android/FangDou2/app/src/main/res/drawable/pic_kongbai_n.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Android/FangDou2/app/src/main/res/drawable/pic_kongbai_s.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Android/FangDou2/app/src/main/res/drawable/pic_minfangyan.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Android/FangDou2/app/src/main/res/drawable/pic_wufangyan.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Android/FangDou2/app/src/main/res/drawable/pic_xiangfangyan.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Android/FangDou2/app/src/main/res/drawable/pic_yuefangyan.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Android/FangDou2/app/src/main/res/layout/maplayout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Android/FangDou2/app/src/main/res/menu/menu_navigation.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Android/FangDou2/app/src/main/res/values/dimens.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Android/clickArea-master/.idea/clickArea-master.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Android/clickArea-master/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Android/clickArea-master/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Android/clickArea-master/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Android/clickArea-master1/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Android/clickArea-master1/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Android/clickArea-master1/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Android/clickArea-master1/.idea/libraries/Gradle__com_android_support_support_v4_19_1_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Android/clickArea-master1/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Android/clickArea-master1/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Android/clickArea-master1/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Android/clickArea-master1/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Android/clickArea-master1/clickArea-master1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Android/BottomBar-master/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Android/BottomBar-master/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Android/BottomBar-master/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Android/BottomBar-master/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Android/FangDou/app/src/main/java/com/example/fangdou/fragment/NavigationFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Android/FangDou/app/src/main/java/com/example/fangdou/fragment/NavigationFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Android/FangDou2/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../Android/FangDou2/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Android/FangDou2/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Android/FangDou2/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Android/FangDou2/app/src/main/java/com/example/fangdou2/MyDrawerLayout.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Android/FangDou2/app/src/main/java/com/example/fangdou2/MyDrawerLayout.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Android/FangDou2/app/src/main/java/com/example/fangdou2/activity/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Android/FangDou2/app/src/main/java/com/example/fangdou2/activity/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Android/FangDou2/app/src/main/java/com/example/fangdou2/fragment/ListViewFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Android/FangDou2/app/src/main/java/com/example/fangdou2/fragment/ListViewFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Android/FangDou2/app/src/main/java/com/example/fangdou2/fragment/MapFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Android/FangDou2/app/src/main/java/com/example/fangdou2/fragment/MapFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Android/FangDou2/app/src/main/java/com/example/fangdou2/fragment/NavigationFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Android/FangDou2/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Android/FangDou2/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Android/FangDou2/app/src/main/res/layout/activity_navigation.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Android/FangDou2/app/src/main/res/layout/medialistview.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Android/FangDou2/app/src/main/res/layout/medialistview.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Android/FangDou2/app/src/main/res/menu/menu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Android/FangDou2/app/src/main/res/menu/menu_language.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Android/FangDou2/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Android/FangDou2/app/src/main/res/values/strings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Android/XunFeiDemo/sample/speechDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Android/XunFeiDemo/sample/speechDemo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Android/clickArea-master1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Android/clickArea-master1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Android/clickArea-master1/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Android/clickArea-master1/app/app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -52,7 +99,7 @@
     <favorites_list name="JavaDemo" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375" />
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -185,7 +232,11 @@
       <sortByType ProjectPane="false" />
       <foldersAlwaysOnTop value="false" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane" />
+      <pane id="Scope" />
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="Downloaded.Files.Path.Enabled" value="false" />
@@ -286,23 +337,6 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
-    </configuration>
-    <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
-      <working_directory value="$PROJECT_DIR$" />
-      <go_parameters value="-i" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$" />
-      <directory value="$PROJECT_DIR$" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
-      <working_directory value="$PROJECT_DIR$" />
-      <go_parameters value="-i" />
-      <framework value="gotest" />
-      <kind value="DIRECTORY" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <method v="2" />
     </configuration>
     <list>
       <item itemvalue="Application.judge" />
@@ -466,6 +500,7 @@
       <workItem from="1552040514190" duration="568000" />
       <workItem from="1552372620007" duration="369000" />
       <workItem from="1552572421135" duration="512000" />
+      <workItem from="1553518789839" duration="96000" />
     </task>
     <task id="LOCAL-00001" summary="123">
       <created>1541220645392</created>
@@ -569,7 +604,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="433721000" />
+    <option name="totallyTimeSpent" value="433817000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -589,7 +624,7 @@
       <window_info id="UI Designer" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="Favorites" order="5" side_tool="true" weight="0.3292683" />
-      <window_info content_ui="combo" id="Project" order="6" sideWeight="0.49901575" weight="0.19238901" />
+      <window_info active="true" content_ui="combo" id="Project" order="6" sideWeight="0.49901575" visible="true" weight="0.19237147" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3295325" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4989429" weight="0.12788019" />
@@ -736,308 +771,57 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Practice/synchronizedDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-424">
-          <caret line="86" column="6" selection-start-line="86" selection-start-column="6" selection-end-line="86" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Java.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Practice/FileDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="23" column="39" lean-forward="true" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Practice/synchronizedDemo.java" />
+    <entry file="file://$PROJECT_DIR$/Java.iml" />
+    <entry file="file://$PROJECT_DIR$/src/Practice/FileDemo.java" />
     <entry file="file://$PROJECT_DIR$/src/homework/Demo.java" />
     <entry file="file://$PROJECT_DIR$/src/Others/Demo.java" />
     <entry file="file://$PROJECT_DIR$/src/Practice/PipedDemo.java" />
-    <entry file="file://$PROJECT_DIR$/src/Practice/PipedStreamDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="34" column="53" lean-forward="true" selection-start-line="34" selection-start-column="53" selection-end-line="34" selection-end-column="53" />
-          <folding>
-            <element signature="e#750#751#0" expanded="true" />
-            <element signature="e#806#807#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Practice/RandomAccessFileDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Practice/PipedStreamDemo.java" />
+    <entry file="file://$PROJECT_DIR$/src/Practice/RandomAccessFileDemo.java" />
     <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/io/FileInputStream.java" />
     <entry file="file://$USER_HOME$/Desktop/Complexcalculator/src/Complexcalculator.java" />
-    <entry file="file://$PROJECT_DIR$/src/Practice/CssChooser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="37" selection-start-line="37" selection-end-line="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Practice/CssChooser.java" />
     <entry file="file://$PROJECT_DIR$/src/Others/Complexcalculator.java" />
-    <entry file="file://$PROJECT_DIR$/src/Practice/UDPDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="556">
-          <caret line="35" column="13" lean-forward="true" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Practice/ChatDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1091">
-          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1167#1168#0" expanded="true" />
-            <element signature="e#1219#1220#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Practice/CollectionDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Practice/TCPDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="4" column="28" lean-forward="true" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Practice/UDPDemo.java" />
+    <entry file="file://$PROJECT_DIR$/src/Practice/ChatDemo.java" />
+    <entry file="file://$PROJECT_DIR$/src/Practice/CollectionDemo.java" />
+    <entry file="file://$PROJECT_DIR$/src/Practice/TCPDemo.java" />
     <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.desktop/java/awt/event/ActionListener.java" />
     <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/lang/Object.java" />
-    <entry file="file://$PROJECT_DIR$/src/Practice/ListIteratorDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="24" column="34" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Practice/TransServerDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="772">
-          <caret line="59" column="22" selection-start-line="59" selection-start-column="22" selection-end-line="59" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Practice/IODemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Practice/UploadDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="12" column="45" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Practice/MathDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="6" column="21" lean-forward="true" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Practice/ListIteratorDemo.java" />
+    <entry file="file://$PROJECT_DIR$/src/Practice/TransServerDemo.java" />
+    <entry file="file://$PROJECT_DIR$/src/Practice/IODemo.java" />
+    <entry file="file://$PROJECT_DIR$/src/Practice/UploadDemo.java" />
+    <entry file="file://$PROJECT_DIR$/src/Practice/MathDemo.java" />
     <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/lang/Double.java" />
     <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/util/Timer.java" />
-    <entry file="file://$PROJECT_DIR$/src/homework/IO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="659">
-          <caret line="190" lean-forward="true" selection-start-line="157" selection-start-column="8" selection-end-line="190" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#chooseFile#0;class#IO#0" />
-            <element signature="class#4599:4802" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/homework/IO.java" />
     <entry file="file://$PROJECT_DIR$/src/homework/Answer.java" />
     <entry file="file://$PROJECT_DIR$/GUI/src/start.bat" />
     <entry file="file://$PROJECT_DIR$/GUI/src/build.xml" />
-    <entry file="file://$PROJECT_DIR$/src/homework/2-28.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/homework/2-26.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/homework/4-18.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="23" column="19" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#203#204#0" expanded="true" />
-            <element signature="e#256#257#0" expanded="true" />
-            <element signature="e#311#312#0" expanded="true" />
-            <element signature="e#356#357#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/homework/4-21.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/homework/2-28.java" />
+    <entry file="file://$PROJECT_DIR$/src/homework/2-26.java" />
+    <entry file="file://$PROJECT_DIR$/src/homework/4-18.java" />
+    <entry file="file://$PROJECT_DIR$/src/homework/4-21.java" />
     <entry file="file://$PROJECT_DIR$/src/homework/3-36.java" />
     <entry file="file://$PROJECT_DIR$/123.txt" />
-    <entry file="file://$PROJECT_DIR$/src/homework/8-15.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-494">
-          <caret line="35" column="34" lean-forward="true" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/homework/Triangle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1674">
-          <caret line="6" column="15" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/homework/8-15.java" />
+    <entry file="file://$PROJECT_DIR$/src/homework/Triangle.java" />
     <entry file="file://$PROJECT_DIR$/src/homework/finalHomework/NaviDemo.java" />
-    <entry file="file://$PROJECT_DIR$/src/homework/8-12.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="16" column="16" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/homework/7-20.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="39" column="69" lean-forward="true" selection-start-line="39" selection-start-column="69" selection-end-line="39" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/homework/3-37.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-369">
-          <caret line="94" column="6" selection-start-line="94" selection-start-column="6" selection-end-line="94" selection-end-column="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/homework/2-23.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1728">
-          <caret line="64" column="5" lean-forward="true" selection-start-line="53" selection-start-column="4" selection-end-line="64" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Android/Calcu/app/src/main/java/org/xlxw/xlxw/calcu/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/homework/8-12.java" />
+    <entry file="file://$PROJECT_DIR$/src/homework/7-20.java" />
+    <entry file="file://$PROJECT_DIR$/src/homework/3-37.java" />
+    <entry file="file://$PROJECT_DIR$/src/homework/2-23.java" />
+    <entry file="file://$PROJECT_DIR$/../Android/Calcu/app/src/main/java/org/xlxw/xlxw/calcu/MainActivity.java" />
     <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/java.base/java/util/ArrayList.java" />
-    <entry file="file://$PROJECT_DIR$/src/homework/Calculator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10336">
-          <caret line="283" column="9" selection-start-line="283" selection-start-column="9" selection-end-line="283" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/homework/6-33.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Others/JComplex.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1008">
-          <caret line="92" column="38" lean-forward="true" selection-start-line="92" selection-start-column="38" selection-end-line="92" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#733#734#0" expanded="true" />
-            <element signature="e#765#766#0" expanded="true" />
-            <element signature="e#808#809#0" expanded="true" />
-            <element signature="e#845#846#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Practice/ListDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/homework/4-19.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="13" column="29" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/homework/ComplexCal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25118">
-          <caret line="718" column="22" lean-forward="true" selection-start-line="718" selection-start-column="22" selection-end-line="718" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/homework/Calculator.java" />
+    <entry file="file://$PROJECT_DIR$/src/homework/6-33.java" />
+    <entry file="file://$PROJECT_DIR$/src/Others/JComplex.java" />
+    <entry file="file://$PROJECT_DIR$/src/Practice/ListDemo.java" />
+    <entry file="file://$PROJECT_DIR$/src/homework/4-19.java" />
+    <entry file="file://$PROJECT_DIR$/src/homework/ComplexCal.java" />
+    <entry file="file://$PROJECT_DIR$/src/Main.java" />
   </component>
   <component name="masterDetails">
     <states>

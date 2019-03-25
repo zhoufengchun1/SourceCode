@@ -4,26 +4,26 @@ import android.Manifest;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
-import android.graphics.Color;
 import android.net.Uri;
 import android.os.Build;
 import android.provider.Settings;
 import android.support.annotation.NonNull;
+import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
+import android.support.v4.app.ListFragment;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.Window;
-import android.view.WindowManager;
+import android.view.MenuItem;
 import android.widget.Toast;
 
 import com.example.fangdou2.R;
 import com.example.fangdou2.fragment.ListViewFragment;
-import com.example.fangdou2.fragment.NavigationFragment;
+import com.example.fangdou2.fragment.MapFragment;
+import com.gyf.barlibrary.ImmersionBar;
 import com.readystatesoftware.systembartint.SystemBarTintManager;
 
 public class MainActivity extends AppCompatActivity
@@ -34,13 +34,20 @@ public class MainActivity extends AppCompatActivity
     private boolean flag = true;
     private AlertDialog dialog;
     private SystemBarTintManager tintManager;
+    private ImmersionBar mImmersionBar;
+    private BottomNavigationView bottomNavigationView;
+    private int lastfragment;
+    private Fragment fragment[];
+    private MapFragment mapFragment;
+    private ListViewFragment listFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_main);
+        mImmersionBar = ImmersionBar.with(this);
+        mImmersionBar.init();
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M)
         {
             for (int i = 0; i < permissions.length; i++)
@@ -62,9 +69,7 @@ public class MainActivity extends AppCompatActivity
                 showDialogTipUserRequestPermission();
             }
         }
-
-        addFragment(new NavigationFragment(), R.id.navigation_fragment);
-        addFragment(new ListViewFragment(), R.id.listView_Fragment);
+        initFragment();
 
     }
 
@@ -196,28 +201,75 @@ public class MainActivity extends AppCompatActivity
     }
 
 
-    private void addFragment(Fragment fragment, int id)
+    private void initFragment()
     {
 
-        FragmentManager fragmentManager = getSupportFragmentManager();
-
-        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.replace(id, fragment);
-
-        fragmentTransaction.commit();
-
+        mapFragment = new MapFragment();
+        listFragment = new ListViewFragment();
+        fragment = new Fragment[]{mapFragment, listFragment};
+        lastfragment = 0;
+        getSupportFragmentManager().beginTransaction().replace(R.id.MainView, mapFragment).show(mapFragment).commit();
+        bottomNavigationView = (BottomNavigationView) findViewById(R.id.bnv);
+        bottomNavigationView.setOnNavigationItemSelectedListener(changeFragment);
     }
 
-    private void initWindow()
-    {//初始化窗口属性，让状态栏和导航栏透明
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT)
+
+    @Override
+    protected void onDestroy()
+    {
+        super.onDestroy();
+        if (mImmersionBar != null)
+            mImmersionBar.destroy();
+    }
+
+    private BottomNavigationView.OnNavigationItemSelectedListener changeFragment = new BottomNavigationView.OnNavigationItemSelectedListener()
+    {
+        @Override
+        public boolean onNavigationItemSelected(@NonNull MenuItem item)
         {
-            getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
-            getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
-            tintManager = new SystemBarTintManager(this);
-            int statusColor = Color.parseColor("#1976d2");
-            tintManager.setStatusBarTintColor(statusColor);
-            tintManager.setStatusBarTintEnabled(true);
+
+            switch (item.getItemId())
+            {
+                case R.id.id1:
+                {
+                    if (lastfragment != 0)
+                    {
+                        switchFragment(lastfragment, 0);
+                        lastfragment = 0;
+                    }
+
+                    return true;
+                }
+                case R.id.id2:
+                {
+                    if (lastfragment != 1)
+                    {
+                        switchFragment(lastfragment, 1);
+                        lastfragment = 1;
+                    }
+
+                    return true;
+                }
+
+
+            }
+
+
+            return false;
         }
+    };
+
+    private void switchFragment(int lastfragment, int index)
+    {
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+        transaction.hide(fragment[lastfragment]);//隐藏上个Fragment
+        if (!fragment[index].isAdded())
+        {
+            transaction.add(R.id.MainView, fragment[index]);
+        }
+        transaction.show(fragment[index]).commitAllowingStateLoss();
+
+
     }
+
 }

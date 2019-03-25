@@ -1,8 +1,14 @@
 package com.example.fangdou2;
 
+import android.app.Activity;
 import android.content.Context;
 import android.support.v4.widget.DrawerLayout;
+import android.support.v4.widget.ViewDragHelper;
 import android.util.AttributeSet;
+import android.util.DisplayMetrics;
+import android.util.Log;
+
+import java.lang.reflect.Field;
 
 public class MyDrawerLayout extends DrawerLayout
 {
@@ -31,5 +37,6 @@ public class MyDrawerLayout extends DrawerLayout
                 MeasureSpec.getSize(heightMeasureSpec), MeasureSpec.EXACTLY);
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
     }
+
 
 }

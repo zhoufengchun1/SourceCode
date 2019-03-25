@@ -11,9 +11,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8c8aa17a-90ec-4ae8-a4ce-f86c339a8713" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../FangDou2/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../../FangDou2/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FangDou2/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../FangDou2/app/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../FangDou2/app/src/main/java/com/example/fangdou2/activity/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../FangDou2/app/src/main/java/com/example/fangdou2/activity/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../FangDou2/app/src/main/java/com/example/fangdou2/adapter/MyAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../FangDou2/app/src/main/java/com/example/fangdou2/adapter/MyAdapter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../FangDou2/app/src/main/java/com/example/fangdou2/fragment/ListViewFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../FangDou2/app/src/main/java/com/example/fangdou2/fragment/ListViewFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FangDou2/app/src/main/res/layout/medialistview.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../FangDou2/app/src/main/res/layout/medialistview.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,7 +35,7 @@
     <session id="-2143368882">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="7" />
+          <entry key="project.closed" value="8" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.12" value="1" />
@@ -82,22 +85,14 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/iflytek/voicedemo/TtsDemo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="177" column="30" selection-start-line="177" selection-start-column="24" selection-end-line="177" selection-end-column="30" />
+            <state relative-caret-position="168">
+              <caret line="64" column="16" lean-forward="true" selection-start-line="64" selection-start-column="16" selection-end-line="64" selection-end-column="16" />
               <folding>
+                <element signature="e#1956#2006#0" expanded="true" />
                 <element signature="e#5113#5644#0" expanded="true" />
                 <element signature="e#5643#5644#0" expanded="true" />
                 <element signature="docComment;method#setParam#0;class#TtsDemo#0" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/res/values/strings.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="699">
-              <caret line="81" column="19" lean-forward="true" selection-start-line="62" selection-start-column="3" selection-end-line="81" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -229,7 +224,7 @@
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="device.picker.selection" value="Nexus_5X_API_28" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../SoundRecorderUtils-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../FangDou2" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
@@ -630,9 +625,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/iflytek/voicedemo/TtsDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="177" column="30" selection-start-line="177" selection-start-column="24" selection-end-line="177" selection-end-column="30" />
+        <state relative-caret-position="168">
+          <caret line="64" column="16" lean-forward="true" selection-start-line="64" selection-start-column="16" selection-end-line="64" selection-end-column="16" />
           <folding>
+            <element signature="e#1956#2006#0" expanded="true" />
             <element signature="e#5113#5644#0" expanded="true" />
             <element signature="e#5643#5644#0" expanded="true" />
             <element signature="docComment;method#setParam#0;class#TtsDemo#0" />

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="851bbc29-a4e9-4dbf-bdcb-be7d04ab936d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../FangDou2/app/src/main/java/com/example/fangdou2/widget/MenuViewItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FangDou2/app/src/main/res/drawable/pic_ganfangyan1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FangDou2/app/src/main/res/drawable/pic_ganfangyan2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FangDou2/app/src/main/res/drawable/pic_guanhuafangyan1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FangDou2/app/src/main/res/drawable/pic_guanhuafangyan2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FangDou2/app/src/main/res/drawable/pic_kejiafangyan1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FangDou2/app/src/main/res/drawable/pic_kejiafangyan2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FangDou2/app/src/main/res/drawable/pic_kongbai.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FangDou2/app/src/main/res/drawable/pic_minfangyan1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FangDou2/app/src/main/res/drawable/pic_minfangyan2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FangDou2/app/src/main/res/drawable/pic_wufangyan1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FangDou2/app/src/main/res/drawable/pic_wufangyan2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FangDou2/app/src/main/res/drawable/pic_xiangfangyan1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FangDou2/app/src/main/res/drawable/pic_xiangfangyan2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FangDou2/app/src/main/res/drawable/pic_yuefangyan1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FangDou2/app/src/main/res/drawable/pic_yuefangyan2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FangDou2/app/src/main/res/layout/maplayout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/clickArea-master.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../clickArea-master1/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../clickArea-master1/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../clickArea-master1/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../clickArea-master1/.idea/libraries/Gradle__com_android_support_support_v4_19_1_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../clickArea-master1/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../clickArea-master1/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../clickArea-master1/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../clickArea-master1/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../clickArea-master1/clickArea-master1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FangDou2/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../FangDou2/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FangDou2/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../FangDou2/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FangDou2/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../FangDou2/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FangDou2/app/src/main/java/com/example/fangdou2/MyDrawerLayout.java" beforeDir="false" afterPath="$PROJECT_DIR$/../FangDou2/app/src/main/java/com/example/fangdou2/MyDrawerLayout.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FangDou2/app/src/main/java/com/example/fangdou2/activity/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../FangDou2/app/src/main/java/com/example/fangdou2/activity/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FangDou2/app/src/main/java/com/example/fangdou2/fragment/ListViewFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../FangDou2/app/src/main/java/com/example/fangdou2/fragment/ListViewFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FangDou2/app/src/main/res/layout/medialistview.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../FangDou2/app/src/main/res/layout/medialistview.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XunFeiDemo/sample/speechDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../XunFeiDemo/sample/speechDemo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../clickArea-master1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../clickArea-master1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../clickArea-master1/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../clickArea-master1/app/app.iml" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-1433524907">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-1" />
+    <option name="y" value="-19" />
+    <option name="width" value="974" />
+    <option name="height" value="1047" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="clickArea-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="clickArea-master" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../clickArea-master1" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="851bbc29-a4e9-4dbf-bdcb-be7d04ab936d" name="Default Changelist" comment="" />
+      <created>1553512954987</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1553512954987</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" visible="true" weight="0.32980973" />
+      <window_info id="Structure" side_tool="true" />
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info id="Captures" order="0" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
+      <window_info anchor="bottom" id="TODO" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Palette&#9;" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+</project>

@@ -48,7 +48,6 @@ public class NavigationFragment extends Fragment
         } else
         {
             view = inflater.inflate(R.layout.activity_navigation, null);
-
             initView();
         }
         return view;
