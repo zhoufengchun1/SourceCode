@@ -19,13 +19,13 @@ import com.example.fangdou2.widget.MenuViewItem;
 
 import java.util.ArrayList;
 
-public class MapFragment extends Fragment implements View.OnClickListener, LanguageAdapter.Callback
+public class MapFragment extends Fragment implements LanguageAdapter.Callback
 {
     private View view;
     private int menuViewItem[];
     private String language_item[];
     private ArrayList<LanguageItemBean> arrayList;
-    private ListView listView;
+    public static ListView listView;
     private int locate;
 
     @Nullable
@@ -50,7 +50,9 @@ public class MapFragment extends Fragment implements View.OnClickListener, Langu
 
     public void initView()
     {
-        initItem();
+        //initItem();
+        language_item = new String[8];
+        language_item = view.getResources().getStringArray(R.array.language_item);
         arrayList = new ArrayList<>();
         for (int i = 0; i < language_item.length; i++)
         {
@@ -58,9 +60,9 @@ public class MapFragment extends Fragment implements View.OnClickListener, Langu
         }
         listView = (ListView) view.findViewById(R.id.language_listView);
         listView.setAdapter(new LanguageAdapter(arrayList, getLayoutInflater(), this));
-
     }
 
+/*
     public void initItem()
     {
         int i = 0;
@@ -86,21 +88,8 @@ public class MapFragment extends Fragment implements View.OnClickListener, Langu
         language_item = view.getResources().getStringArray(R.array.language_item);
         //为每个item获取文字
     }
+*/
 
-    @Override
-    public void onClick(View v)
-    {
-        for (int i = 0; i < menuViewItem.length; i++)
-        {
-            if (v.getId() == menuViewItem[i])
-            {
-                locate = i;
-                break;
-            }
-        }
-        listView.smoothScrollToPosition(locate);
-        Toast.makeText(v.getContext(), menuViewItem[locate] + "", Toast.LENGTH_SHORT).show();
-    }
 
     @Override
     public void click(View v)

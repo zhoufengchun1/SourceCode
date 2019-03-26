@@ -46,7 +46,7 @@ public class MenuViewItem extends FrameLayout
         int y = (int) event.getY();
         if (width == -1 || height == -1)
         {
-            Drawable drawable = getBackground().getCurrent();
+            Drawable drawable = ((StateListDrawable) getBackground()).getCurrent();
             bitmap = ((BitmapDrawable) drawable).getBitmap();
             width = getWidth();
             height = getHeight();

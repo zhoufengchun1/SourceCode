@@ -85,6 +85,16 @@
         <item>湘方言</item>
         <item>粤方言</item>
     </string-array>
+    <string-array name="language_item_pinyin">
+        <item>ganfangyan</item>
+        <item>guanhuafangyan</item>
+        <item>kejiafangyan</item>
+        <item>kongbai</item>
+        <item>minfangyan</item>
+        <item>wufangyan</item>
+        <item>xiangfangyan</item>
+        <item>yuefangyan</item>
+    </string-array>
     <string name="title_activity_bottom">BottomActivity</string>
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>

@@ -38,6 +38,8 @@ public class MainActivity extends AppCompatActivity
     private BottomNavigationView bottomNavigationView;
     private int lastfragment;
     private Fragment fragment[];
+
+
     private MapFragment mapFragment;
     private ListViewFragment listFragment;
 
@@ -271,5 +273,11 @@ public class MainActivity extends AppCompatActivity
 
 
     }
+
+    public MapFragment getMapFragment()
+    {
+        return mapFragment;
+    }
+
 
 }
