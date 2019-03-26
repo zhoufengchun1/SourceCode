@@ -5,12 +5,9 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Path;
-import android.support.annotation.ColorRes;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
-import android.widget.ListView;
-import android.widget.Toast;
 
 import com.example.fangdou2.bean.CityPath;
 import com.example.fangdou2.bean.ViewAttr;
@@ -26,7 +23,7 @@ import java.util.List;
 
 public class MapView extends View implements ParserCallBack
 {
-    private List<CityPath> list;
+    public static List<CityPath> list;
     private ViewAttr mViewAttr;
     private Paint mPaint;
     private Path mPath;
@@ -138,6 +135,7 @@ public class MapView extends View implements ParserCallBack
             mPaint.setStyle(Paint.Style.FILL);
             mPaint.setColor(getResources().getColor(R.color.color_mapSelected));
             canvas.drawPath(mPath, mPaint);
+            System.out.println(mPath + "....." + mPaint);
         }
 
     }
@@ -181,7 +179,6 @@ public class MapView extends View implements ParserCallBack
                         mPath = cityPath.getmPath();
                         postInvalidate();
                         MapFragment.listView.smoothScrollToPosition(initList(cityPath));
-                        System.out.println(initList(cityPath));
                         break;
                     }
                 }
@@ -201,4 +198,5 @@ public class MapView extends View implements ParserCallBack
         }
         return 0;
     }
+
 }

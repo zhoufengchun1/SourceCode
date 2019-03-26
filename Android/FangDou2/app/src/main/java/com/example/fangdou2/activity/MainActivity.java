@@ -12,7 +12,6 @@ import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
-import android.support.v4.app.ListFragment;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -30,10 +29,9 @@ public class MainActivity extends AppCompatActivity
 {
     // 要申请的权限
     private String[] permissions = {Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.RECORD_AUDIO};
-    private String dialogTips = "", settingTips = "", tips = "";
+    private String tips = "";
     private boolean flag = true;
     private AlertDialog dialog;
-    private SystemBarTintManager tintManager;
     private ImmersionBar mImmersionBar;
     private BottomNavigationView bottomNavigationView;
     private int lastfragment;
@@ -270,14 +268,6 @@ public class MainActivity extends AppCompatActivity
             transaction.add(R.id.MainView, fragment[index]);
         }
         transaction.show(fragment[index]).commitAllowingStateLoss();
-
-
     }
-
-    public MapFragment getMapFragment()
-    {
-        return mapFragment;
-    }
-
 
 }
