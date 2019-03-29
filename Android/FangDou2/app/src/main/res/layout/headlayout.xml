@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0277BD"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="我是有上限的"
+        android:textSize="20sp" />
+
+    <com.example.fangdou2.utils.CircleImageView
+        android:id="@+id/person"
+        android:layout_width="wrap_content"
+        android:layout_height="72dp"
+        android:layout_marginTop="40dp"
+        android:src="@mipmap/pic_head" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="NickName"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+
+</LinearLayout>

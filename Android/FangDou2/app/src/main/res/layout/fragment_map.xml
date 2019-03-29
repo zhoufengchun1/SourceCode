@@ -1,0 +1,94 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:layout_scrollFlags="scroll"
+            app:theme="@style/ThemeOverlay.AppCompat.ActionBar">
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <com.example.fangdou2.MyDrawerLayout
+        android:id="@+id/leftDraw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:clickable="true">
+
+
+            <LinearLayout
+                android:id="@+id/map_Fragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.example.fangdou2.MapView
+                        android:layout_width="match_parent"
+                        android:layout_height="350dp"
+                        android:layout_marginTop="20dp" />
+
+                </FrameLayout>
+
+
+                <android.support.v4.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fillViewport="true"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                    <com.example.fangdou2.MyListView
+                        android:id="@+id/language_listView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/item_cornerbackground"
+                        android:fadingEdgeLength="100dp"
+                        android:requiresFadingEdge="vertical" />
+                </android.support.v4.widget.NestedScrollView>
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/infoFragment"
+                android:layout_width="300dp"
+                android:layout_height="600dp"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+            </FrameLayout>
+        </FrameLayout>
+
+        <android.support.design.widget.NavigationView
+            android:id="@+id/nav"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:fitsSystemWindows="true"
+            app:headerLayout="@layout/headlayout"
+            app:menu="@menu/menu_leftnavigation" />
+    </com.example.fangdou2.MyDrawerLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>
