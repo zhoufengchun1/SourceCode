@@ -23,6 +23,8 @@ import com.example.fangdou2.R;
 import com.example.fangdou2.fragment.ListViewFragment;
 import com.example.fangdou2.fragment.MapFragment;
 import com.gyf.barlibrary.ImmersionBar;
+import com.iflytek.cloud.SpeechConstant;
+import com.iflytek.cloud.SpeechUtility;
 
 public class MainActivity extends AppCompatActivity
 {
@@ -36,7 +38,7 @@ public class MainActivity extends AppCompatActivity
     private int lastfragment;
     private Fragment fragment[];
 
-
+    private String app_id = "5c6e22da";
     private MapFragment mapFragment;
     private ListViewFragment listFragment;
 
@@ -45,6 +47,13 @@ public class MainActivity extends AppCompatActivity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        StringBuffer param = new StringBuffer();
+        param.append("appid=" + app_id);
+        param.append(",");
+        // 设置使用v5+
+        param.append(SpeechConstant.ENGINE_MODE + "=" + SpeechConstant.MODE_MSC);
+        SpeechUtility.createUtility(this, param.toString());
 //        mImmersionBar = ImmersionBar.with(this);
 //        mImmersionBar.init();
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M)

@@ -13,7 +13,7 @@
         android:color="#000000" />
 
     <!-- 实心填充 -->
-    <solid android:color="#E1E1E1" />
+    <solid android:color="#78FFFFFF" />
 
     <!-- 圆角 -->
     <corners

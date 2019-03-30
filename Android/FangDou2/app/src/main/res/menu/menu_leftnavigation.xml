@@ -4,7 +4,7 @@
 
     <item
         android:id="@+id/id1"
-        android:title="菜单项1" />
+        android:title="DIY语音合成" />
     <item
         android:id="@+id/id2"
         android:title="菜单项2" />

@@ -233,9 +233,9 @@
       <foldersAlwaysOnTop value="false" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -252,6 +252,7 @@
     <property name="configurable.Project.GOPATH.is.expanded" value="true" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="10" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -501,6 +502,7 @@
       <workItem from="1552372620007" duration="369000" />
       <workItem from="1552572421135" duration="512000" />
       <workItem from="1553518789839" duration="96000" />
+      <workItem from="1553927318130" duration="3000" />
     </task>
     <task id="LOCAL-00001" summary="123">
       <created>1541220645392</created>
@@ -604,7 +606,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="433817000" />
+    <option name="totallyTimeSpent" value="433820000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">

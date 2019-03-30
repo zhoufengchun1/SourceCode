@@ -30,8 +30,6 @@ import com.example.fangdou2.Tts;
 import com.example.fangdou2.adapter.RecordAdapter;
 import com.example.fangdou2.bean.RecordItemBean;
 import com.example.fangdou2.utils.RecordingItem;
-import com.iflytek.cloud.SpeechConstant;
-import com.iflytek.cloud.SpeechUtility;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -47,7 +45,6 @@ public class ListViewFragment extends Fragment implements RecordAdapter.Callback
     private MediaPlayer mediaPlayer;
     private TextView textView;
     private List<RecordItemBean> recordItemBeanList;
-    private String app_id = "5c6e22da";
     private MyDrawerLayout draw;
     private RadioGroup group;
     private String[] mCloudVoicersEntries;
@@ -77,12 +74,7 @@ public class ListViewFragment extends Fragment implements RecordAdapter.Callback
         {
             view = inflater.inflate(R.layout.fragment_listview, null);
         }
-        StringBuffer param = new StringBuffer();
-        param.append("appid=" + app_id);
-        param.append(",");
-        // 设置使用v5+
-        param.append(SpeechConstant.ENGINE_MODE + "=" + SpeechConstant.MODE_MSC);
-        SpeechUtility.createUtility(view.getContext(), param.toString());
+
         setHasOptionsMenu(true);
 
         initView();

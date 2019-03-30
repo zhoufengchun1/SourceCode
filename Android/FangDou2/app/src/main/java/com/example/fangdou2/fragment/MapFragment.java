@@ -1,5 +1,6 @@
 package com.example.fangdou2.fragment;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -75,7 +76,7 @@ public class MapFragment extends Fragment implements LanguageAdapter.Callback
     @Override
     public void click(View v)
     {
-        infoFragment = new InfoFragment("示例文字", "http://www.baidu.com");
+        infoFragment = new InfoFragment("示例文字", "https://x1aolata.github.io/fangdouwangye/index.html");
         getFragmentManager().beginTransaction().replace(R.id.infoFragment, infoFragment).addToBackStack(null).commit();
 
     }
@@ -119,6 +120,28 @@ public class MapFragment extends Fragment implements LanguageAdapter.Callback
 
         mDrawerToggle.syncState();
         drawerLayout.setDrawerListener(mDrawerToggle);
+
+        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener()
+        {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem)
+            {
+                String string = menuItem.getTitle().toString();
+                Intent intent;
+                switch (string)
+                {
+                    case "DIY语音合成":
+                        intent = new Intent("android.intent.action.build");
+                        startActivity(intent);
+                        break;
+                    default:
+                        break;
+                }
+                return true;
+            }
+
+
+        });
     }
 
 
