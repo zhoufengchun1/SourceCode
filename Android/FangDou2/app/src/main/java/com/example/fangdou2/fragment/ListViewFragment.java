@@ -57,6 +57,9 @@ public class ListViewFragment extends Fragment implements RecordAdapter.Callback
     private String voicer = "xiaoyan";
     private ActionBarDrawerToggle mDrawerToggle;
 
+
+    public static Toolbar toolbar;
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState)
@@ -76,9 +79,7 @@ public class ListViewFragment extends Fragment implements RecordAdapter.Callback
         }
 
         setHasOptionsMenu(true);
-
         initView();
-        initSide();
         return view;
     }
 
@@ -106,12 +107,11 @@ public class ListViewFragment extends Fragment implements RecordAdapter.Callback
             }
         });
 
-        Toolbar toolbar = view.findViewById(R.id.toolbar);
+        toolbar = view.findViewById(R.id.toolbar);
         setHasOptionsMenu(true);
         ((AppCompatActivity) getActivity()).setSupportActionBar(toolbar);
         toolbar.setTitle("方逗");
         toolbar.setTitleTextColor(Color.WHITE);
-
         ((AppCompatActivity) getActivity()).getSupportActionBar().setHomeButtonEnabled(true);
         ((AppCompatActivity) getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
@@ -170,6 +170,7 @@ public class ListViewFragment extends Fragment implements RecordAdapter.Callback
         }
         listView = view.findViewById(R.id.listView);
         listView.setAdapter(new RecordAdapter(recordItemBeanList, getLayoutInflater(), this));
+        initSide();
 
     }
 

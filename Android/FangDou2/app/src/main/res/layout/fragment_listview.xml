@@ -17,6 +17,8 @@
             android:minHeight="?attr/actionBarSize"
             android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
             app:layout_scrollFlags="scroll|enterAlways"
+            android:fitsSystemWindows="true"
+
             app:theme="@style/ThemeOverlay.AppCompat.ActionBar">
 
         </android.support.v7.widget.Toolbar>

@@ -35,11 +35,13 @@ public class MapFragment extends Fragment implements LanguageAdapter.Callback
     private MyDrawerLayout drawerLayout;
     private NavigationView navigationView;
     private ActionBarDrawerToggle mDrawerToggle;
+    public static Toolbar toolbar;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState)
     {
+        System.out.println(inflater + ".." + container + "..." + savedInstanceState);
         if (view != null)
         {
             ViewGroup parent = (ViewGroup) view.getParent();
@@ -52,7 +54,6 @@ public class MapFragment extends Fragment implements LanguageAdapter.Callback
         {
             view = inflater.inflate(R.layout.fragment_map, null);
         }
-
         initView();
         return view;
     }
@@ -95,7 +96,7 @@ public class MapFragment extends Fragment implements LanguageAdapter.Callback
             }
         });
         /*下面是toolbar的设置，包括动画*/
-        Toolbar toolbar = view.findViewById(R.id.toolbar);
+        toolbar = view.findViewById(R.id.toolbar);
         setHasOptionsMenu(true);
         ((AppCompatActivity) getActivity()).setSupportActionBar(toolbar);
         toolbar.setTitle("方逗");
@@ -150,6 +151,5 @@ public class MapFragment extends Fragment implements LanguageAdapter.Callback
 
         });
     }
-
 
 }

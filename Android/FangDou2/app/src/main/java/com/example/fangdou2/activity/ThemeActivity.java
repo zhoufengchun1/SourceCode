@@ -19,6 +19,8 @@ import android.widget.ListView;
 import com.example.fangdou2.Item;
 import com.example.fangdou2.R;
 import com.example.fangdou2.adapter.ColorAdapter;
+import com.example.fangdou2.fragment.ListViewFragment;
+import com.example.fangdou2.fragment.MapFragment;
 import com.example.fangdou2.utils.RippleAnimation;
 
 import java.util.ArrayList;
@@ -29,12 +31,15 @@ public class ThemeActivity extends AppCompatActivity
 {
     private List<Item> colorList = new ArrayList<Item>();
 
+    public static int color = Color.parseColor("#808080");
+    public MainActivity mainActivity;
+
     static void setStatusBarColor(Activity activity, int statusColor)
     {
 
         Window window = activity.getWindow();
         //取消状态栏透明
-        window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+        //window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
         //添加Flag把状态栏设为可绘制模式
         window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
         //设置状态栏颜色
@@ -93,16 +98,14 @@ public class ThemeActivity extends AppCompatActivity
                 Item item = colorList.get(position);
                 onClick(item, view, toolbar, listview);
             }
-
-
         });
+
     }
 
     public void onClick(Item item, View view, Toolbar toolbar, ListView listView)
     {
         RippleAnimation.create(view).setDuration(800).start();
-        int color = 0;
-
+        color = 0;
         switch (item.getName())
         {
             case "默认白":
@@ -126,7 +129,12 @@ public class ThemeActivity extends AppCompatActivity
         updateColor(color);
         toolbar.setBackgroundColor(color);
         listView.setBackgroundColor(color);
-
+        //设置ThemeActivity的颜色
+        setStatusBarColor(MainActivity.mapFragment.getActivity(), color);
+        MapFragment.toolbar.setBackgroundColor(color);
+        //设置地图的颜色
+        ListViewFragment.toolbar.setBackgroundColor(color);
+        //设置listFragment的颜色
         //view.setBackgroundColor(color);
     }
 

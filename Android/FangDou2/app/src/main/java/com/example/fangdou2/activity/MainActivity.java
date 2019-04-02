@@ -26,7 +26,9 @@ import com.gyf.barlibrary.ImmersionBar;
 import com.iflytek.cloud.SpeechConstant;
 import com.iflytek.cloud.SpeechUtility;
 
-public class MainActivity extends AppCompatActivity
+import java.io.Serializable;
+
+public class MainActivity extends AppCompatActivity implements Serializable
 {
     // 要申请的权限
     private String[] permissions = {Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.RECORD_AUDIO};
@@ -39,8 +41,8 @@ public class MainActivity extends AppCompatActivity
     private Fragment fragment[];
 
     private String app_id = "5c6e22da";
-    private MapFragment mapFragment;
-    private ListViewFragment listFragment;
+    public static MapFragment mapFragment;
+    public static ListViewFragment listFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -78,7 +80,6 @@ public class MainActivity extends AppCompatActivity
             }
         }
         initFragment();
-
     }
 
     private void showDialogTipUserRequestPermission()
@@ -215,8 +216,10 @@ public class MainActivity extends AppCompatActivity
         mapFragment = new MapFragment();
         listFragment = new ListViewFragment();
         fragment = new Fragment[]{mapFragment, listFragment};
-        lastfragment = 0;
-        getSupportFragmentManager().beginTransaction().replace(R.id.MainView, mapFragment).show(mapFragment).commit();
+
+//        listFragment.onCreateView();
+        getSupportFragmentManager().beginTransaction().replace(R.id.MainView, listFragment).show(listFragment)
+                .replace(R.id.MainView, mapFragment).show(mapFragment).commit();
         bottomNavigationView = findViewById(R.id.bnv);
         bottomNavigationView.setOnNavigationItemSelectedListener(changeFragment);
     }
