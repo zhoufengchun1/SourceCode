@@ -7,8 +7,7 @@ public class Main
     {
         Scanner scanner = new Scanner(System.in);
         int m = scanner.nextInt();
-        int[][] count = new int[m][2];
-        int[] max = new int[m+1];
+        int[][] count = new int[m][2];int[] max = new int[m+1];
 
         for(int i=0;i<m;i++)
         {

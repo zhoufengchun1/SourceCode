@@ -134,6 +134,13 @@ public class MapFragment extends Fragment implements LanguageAdapter.Callback
                         intent = new Intent("android.intent.action.build");
                         startActivity(intent);
                         break;
+                    case "我的收藏/点赞":
+                        Toast.makeText(view.getContext(), "敬请期待！", Toast.LENGTH_LONG).show();
+                        break;
+                    case "主题":
+                        intent = new Intent("android.intent.action.theme");
+                        startActivity(intent);
+                        break;
                     default:
                         break;
                 }

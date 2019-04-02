@@ -7,9 +7,12 @@
         android:title="DIY语音合成" />
     <item
         android:id="@+id/id2"
-        android:title="菜单项2" />
+        android:title="我的收藏/点赞" />
     <item
         android:id="@+id/id3"
-        android:title="菜单项3" />
+        android:title="个人设置" />
+    <item
+        android:id="@+id/id4"
+        android:title="主题" />
 
 </menu>

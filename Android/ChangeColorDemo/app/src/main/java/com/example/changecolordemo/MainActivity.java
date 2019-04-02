@@ -67,20 +67,19 @@ public class MainActivity extends AppCompatActivity {
 
         switch (item.getName()) {
             case "默认白":
-                color = Color.WHITE;
+                color = Color.parseColor("#808080");
                 break;
             case "酷安绿":
-                color = Color.GREEN;
-                Log.d("点击", color + "");
+                color = Color.parseColor("#109D58");
                 break;
             case "激情红":
-                color = Color.RED;
+                color = Color.parseColor("#DC4437");
                 break;
             case "哔哩粉":
-                color = Color.GRAY;
+                color = Color.parseColor("#FA7298");
                 break;
             case "水鸭青":
-                color = Color.GREEN;
+                color = Color.parseColor("#019788");
                 break;
 
         }
