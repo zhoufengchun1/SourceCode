@@ -41,7 +41,6 @@ public class MapFragment extends Fragment implements LanguageAdapter.Callback
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState)
     {
-        System.out.println(inflater + ".." + container + "..." + savedInstanceState);
         if (view != null)
         {
             ViewGroup parent = (ViewGroup) view.getParent();
