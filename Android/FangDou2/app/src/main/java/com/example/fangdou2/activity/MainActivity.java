@@ -81,7 +81,7 @@ public class MainActivity extends AppCompatActivity implements Serializable
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
         unbinder = ButterKnife.bind(this);
-        initButtom();
+        initBottom();
         StringBuffer param = new StringBuffer();
 
         param.append("appid=" + app_id);
@@ -252,7 +252,7 @@ public class MainActivity extends AppCompatActivity implements Serializable
     }
 
 
-    public void initButtom()
+    public void initBottom()
     {
         tv_list = new ArrayList<>();
         tv_list.add(tv1);
@@ -288,6 +288,10 @@ public class MainActivity extends AppCompatActivity implements Serializable
                 }
                 changePageSelect(0);
                 switchFragment(fragment_now, mapFragment);
+                tv1.setBackgroundResource(R.drawable.bottom_cornerbackground_y);
+                tv1.setTextColor(Color.parseColor("#000000"));
+                tv2.setBackgroundResource(R.drawable.bottom_cornerbackground_n);
+                tv2.setTextColor(Color.parseColor("#ece638"));
                 break;
             case R.id.ll_tab2:
             case R.id.tv2:
@@ -297,6 +301,10 @@ public class MainActivity extends AppCompatActivity implements Serializable
                 }
                 changePageSelect(1);
                 switchFragment(fragment_now, listFragment);
+                tv1.setBackgroundResource(R.drawable.bottom_cornerbackground_n);
+                tv1.setTextColor(Color.parseColor("#ece638"));
+                tv2.setBackgroundResource(R.drawable.bottom_cornerbackground_y);
+                tv2.setTextColor(Color.parseColor("#000000"));
                 break;
 
         }

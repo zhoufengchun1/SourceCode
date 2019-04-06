@@ -4,10 +4,6 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
-    <color name="colorTabChosen">#7CB342</color>
-    <color name="colorTextChosen">#FF7043</color>
-    <color name="blue_light">#00C0E4</color>
-    <color name="color_ActionBar">#262323</color>
     <color name="color_lrcColor_N">#000000</color>
     <!--未读语句颜色-->
     <color name="color_lrcColor_Y">#ED7C42</color>
@@ -18,7 +14,5 @@
 
     <color name="Indigo_colorPrimaryDark">#303f9f</color>
     <color name="Indigo_colorPrimary">#3f51b5</color>
-    <color name="Indigo_nav_color">#4675FF</color>
-    <color name="item_background_color">#E9E338</color>
 
 </resources>

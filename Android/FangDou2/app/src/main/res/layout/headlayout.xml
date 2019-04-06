@@ -14,7 +14,6 @@
         android:textSize="20sp" />
 
     <com.example.fangdou2.utils.CircleImageView
-        android:id="@+id/person"
         android:layout_width="wrap_content"
         android:layout_height="72dp"
         android:layout_marginTop="40dp"
