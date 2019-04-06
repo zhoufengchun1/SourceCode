@@ -109,7 +109,6 @@ public class MainActivity extends AppCompatActivity implements Serializable
                 showDialogTipUserRequestPermission();
             }
         }
-        initFragment();
     }
 
     private void showDialogTipUserRequestPermission()
@@ -240,23 +239,11 @@ public class MainActivity extends AppCompatActivity implements Serializable
     }
 
 
-    private void initFragment()
-    {
-
-        mapFragment = new MapFragment();
-        listFragment = new ListViewFragment();
-        fragment = new Fragment[]{mapFragment, listFragment};
-        //这个方法很蠢，因为要更换主题，所以必须得先创建两个碎片的view。
-        //以后更新考虑下函数回调
-    }
-
-
     public void initBottom()
     {
         tv_list = new ArrayList<>();
         tv_list.add(tv1);
         tv_list.add(tv2);
-        System.out.println(tv_list);
         changePageSelect(0);
         changePageFragment(R.id.ll_tab1);
     }
@@ -284,6 +271,8 @@ public class MainActivity extends AppCompatActivity implements Serializable
                 if (mapFragment == null)
                 {//减少new fragment,避免不必要的内存消耗
                     mapFragment = new MapFragment();
+                    listFragment = new ListViewFragment();
+                    switchFragment(fragment_now, listFragment);
                 }
                 changePageSelect(0);
                 switchFragment(fragment_now, mapFragment);
@@ -327,7 +316,15 @@ public class MainActivity extends AppCompatActivity implements Serializable
         } else
         {
             // 隐藏当前的fragment，显示下一个
-            transaction.hide(from).show(to).commit();
+            if (!from.equals(to))
+            {
+                transaction.setCustomAnimations(R.animator.slide_left_in, R.animator.slide_left_out, R.animator.slide_right_out, R.animator.slide_right_in);
+                if (from == mapFragment)
+                    transaction.hide(from).show(to).commit();
+                else
+                    transaction.hide(from).show(to).commit();
+            } else
+                transaction.hide(from).show(to).commit();
         }
         fragment_now = to;
 

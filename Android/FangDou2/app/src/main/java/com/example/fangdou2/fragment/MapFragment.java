@@ -19,6 +19,7 @@ import android.widget.Toast;
 import com.example.fangdou2.MyDrawerLayout;
 import com.example.fangdou2.MyListView;
 import com.example.fangdou2.R;
+import com.example.fangdou2.activity.ThemeActivity;
 import com.example.fangdou2.adapter.LanguageAdapter;
 import com.example.fangdou2.bean.LanguageItemBean;
 
@@ -81,6 +82,7 @@ public class MapFragment extends Fragment implements LanguageAdapter.Callback
         getFragmentManager().beginTransaction().setCustomAnimations(R.anim.translate_into, R.anim.translate_into)
                 .replace(R.id.infoFragment, infoFragment).addToBackStack(null).commit();
 
+
     }
 
     private void initLeftNavi()
@@ -102,6 +104,8 @@ public class MapFragment extends Fragment implements LanguageAdapter.Callback
         ((AppCompatActivity) getActivity()).setSupportActionBar(toolbar);
         toolbar.setTitle("方逗");
         toolbar.setTitleTextColor(Color.WHITE);
+        toolbar.setBackgroundColor(getResources().getColor(R.color.color_default));
+        ThemeActivity.setStatusBarColor(getActivity(), getResources().getColor(R.color.color_default));
         ((AppCompatActivity) getActivity()).getSupportActionBar().setHomeButtonEnabled(true);
         ((AppCompatActivity) getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 

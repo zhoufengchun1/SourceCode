@@ -112,6 +112,8 @@ public class ListViewFragment extends Fragment implements RecordAdapter.Callback
         ((AppCompatActivity) getActivity()).setSupportActionBar(toolbar);
         toolbar.setTitle("方逗");
         toolbar.setTitleTextColor(Color.WHITE);
+        toolbar.setBackgroundColor(getResources().getColor(R.color.color_default));
+
         ((AppCompatActivity) getActivity()).getSupportActionBar().setHomeButtonEnabled(true);
         ((AppCompatActivity) getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
@@ -159,15 +161,19 @@ public class ListViewFragment extends Fragment implements RecordAdapter.Callback
     public void initView()
     {
         recordItemBeanList = new ArrayList<>();
-        for (int i = 0; i < 20; i++)
-        {
-            if (i % 2 == 0)
-            {
-                recordItemBeanList.add(new RecordItemBean("嘿嘿嘿嘿嘿嘿嘿", R.raw.test));
-            } else
-                recordItemBeanList.add(new RecordItemBean("哈哈哈哈哈哈哈", R.raw.test));
-            //在此处添加文字与音频文件
-        }
+
+        recordItemBeanList.add(new RecordItemBean("姑娘你就别跟我这逗闷子了，你心里还不跟个明镜儿似的", R.raw.media_beijing_1));
+        recordItemBeanList.add(new RecordItemBean("海燕呐，你可长点心", R.raw.media_dongbei_1));
+        recordItemBeanList.add(new RecordItemBean("你瞅你这个损色你瞅", R.raw.media_dongbei_2));
+        recordItemBeanList.add(new RecordItemBean("妮儿，你别说话啦中不中", R.raw.media_henan_1));
+        recordItemBeanList.add(new RecordItemBean("我好悔啊，我从一开始就不应该嫁过来，如果我不嫁过来，" +
+                "我的夫君也不会死，如果我的夫君不死，我也不会沦落到这么一个伤心的地方", R.raw.media_shanxi_1));
+        recordItemBeanList.add(new RecordItemBean("哥哥  又咋了嘛", R.raw.media_sichuan_1));
+        recordItemBeanList.add(new RecordItemBean("晓得不", R.raw.media_sichuan_2));
+        recordItemBeanList.add(new RecordItemBean("你啊晓得，我其实蛮喜欢你的，你啊可以做我男朋友", R.raw.media_suzhou_1));
+        recordItemBeanList.add(new RecordItemBean("你是从哪冒出来的", R.raw.media_tangshan_1));
+        recordItemBeanList.add(new RecordItemBean("对不住了您内，我是个警察", R.raw.media_tianjin_1));
+
         listView = view.findViewById(R.id.listView);
         listView.setAdapter(new RecordAdapter(recordItemBeanList, getLayoutInflater(), this));
         initSide();

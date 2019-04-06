@@ -31,10 +31,10 @@ public class ThemeActivity extends AppCompatActivity
 {
     private List<Item> colorList = new ArrayList<Item>();
 
-    public static int color = Color.parseColor("#808080");
+    public static int color = Color.parseColor("#22221e");
     public MainActivity mainActivity;
 
-    static void setStatusBarColor(Activity activity, int statusColor)
+    public static void setStatusBarColor(Activity activity, int statusColor)
     {
 
         Window window = activity.getWindow();
@@ -60,19 +60,18 @@ public class ThemeActivity extends AppCompatActivity
 
     private void initItem()
     {
-        for (int i = 0; i < 4; i++)
-        {
-            Item white = new Item("默认白", R.drawable.white);
-            colorList.add(white);
-            Item green = new Item("酷安绿", R.drawable.green);
-            colorList.add(green);
-            Item red = new Item("激情红", R.drawable.red);
-            colorList.add(red);
-            Item pink = new Item("哔哩粉", R.drawable.pink);
-            colorList.add(pink);
-            Item ching = new Item("水鸭青", R.drawable.ching);
-            colorList.add(ching);
-        }
+
+        Item white = new Item("默认黑", R.drawable.white);
+        colorList.add(white);
+        Item green = new Item("酷安绿", R.drawable.green);
+        colorList.add(green);
+        Item red = new Item("激情红", R.drawable.red);
+        colorList.add(red);
+        Item pink = new Item("哔哩粉", R.drawable.pink);
+        colorList.add(pink);
+        Item ching = new Item("水鸭青", R.drawable.ching);
+        colorList.add(ching);
+
 
     }
 
@@ -80,9 +79,11 @@ public class ThemeActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
+        updateColor(getResources().getColor(R.color.color_default));
         setContentView(R.layout.activity_theme);
         final Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        toolbar.setBackgroundColor(getResources().getColor(R.color.color_default));
         ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
         actionBar.setHomeButtonEnabled(true);
@@ -105,11 +106,10 @@ public class ThemeActivity extends AppCompatActivity
     public void onClick(Item item, View view, Toolbar toolbar, ListView listView)
     {
         RippleAnimation.create(view).setDuration(800).start();
-        color = 0;
         switch (item.getName())
         {
-            case "默认白":
-                color = Color.parseColor("#808080");
+            case "默认黑":
+                color = getResources().getColor(R.color.color_default);
                 break;
             case "酷安绿":
                 color = Color.parseColor("#109D58");
@@ -134,8 +134,6 @@ public class ThemeActivity extends AppCompatActivity
         MapFragment.toolbar.setBackgroundColor(color);
         //设置地图的颜色
         ListViewFragment.toolbar.setBackgroundColor(color);
-        //设置listFragment的颜色
-        //view.setBackgroundColor(color);
     }
 
     private void updateColor(int color)

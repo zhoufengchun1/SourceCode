@@ -32,7 +32,7 @@
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#22221e"
+            android:background="@color/color_default"
             android:clickable="true">
 
 
@@ -49,7 +49,7 @@
                     <com.example.fangdou2.MapView
                         android:layout_width="match_parent"
                         android:layout_height="350dp"
-                        android:layout_marginTop="20dp" />
+                        android:layout_marginTop="60dp" />
 
                 </FrameLayout>
 
@@ -64,7 +64,6 @@
                         android:id="@+id/language_listView"
                         android:layout_width="350dp"
                         android:layout_gravity="center"
-                        android:layout_marginTop="22dp"
                         android:layout_height="wrap_content"
                         android:background="@drawable/item_cornerbackground"
                         android:fadingEdgeLength="100dp"
@@ -88,8 +87,10 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_gravity="start"
+            android:background="#616161"
             android:fitsSystemWindows="true"
             app:headerLayout="@layout/headlayout"
+            app:itemTextColor="#ffffff"
             app:menu="@menu/menu_leftnavigation" />
     </com.example.fangdou2.MyDrawerLayout>
 
