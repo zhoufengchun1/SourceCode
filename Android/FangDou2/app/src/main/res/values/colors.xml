@@ -13,12 +13,12 @@
     <color name="color_lrcColor_Y">#ED7C42</color>
     <!--已读语句颜色-->
 
-    <color name="color_mapBackground">#FFFFFF</color>
-    <color name="color_mapSelected">#B900695C</color>
+    <color name="color_mapBackground">#22221e</color>
+    <color name="color_mapSelected">#EBE538</color>
 
     <color name="Indigo_colorPrimaryDark">#303f9f</color>
     <color name="Indigo_colorPrimary">#3f51b5</color>
     <color name="Indigo_nav_color">#4675FF</color>
-
+    <color name="item_background_color">#E9E338</color>
 
 </resources>

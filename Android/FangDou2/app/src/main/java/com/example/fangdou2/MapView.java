@@ -27,7 +27,7 @@ public class MapView extends View implements ParserCallBack
     private ViewAttr mViewAttr;
     private Paint mPaint;
     private Path mPath;
-    private float scale = 0.5f;
+    private float scaleX = 0.3f, scaleY = 0.3f;
     private int viewWidth;
     private int viewHeight;
     //是否计算完成
@@ -63,6 +63,7 @@ public class MapView extends View implements ParserCallBack
         int modeHeight = MeasureSpec.getMode(heightMeasureSpec);
         setMeasuredDimension(getMeasureSize(300, widthMeasureSpec),
                 getMeasureSize(300, heightMeasureSpec));
+        System.out.println(widthMeasureSpec + "..." + heightMeasureSpec);
     }
 
 
@@ -118,7 +119,9 @@ public class MapView extends View implements ParserCallBack
 //        canvas.concat(mMatrix);
         //上面的方法也可以
 //        canvas.restore();
-        canvas.scale(scale, scale);
+
+        canvas.scale(scaleX, scaleY);
+        //缩放
         canvas.drawColor(getResources().getColor(R.color.color_mapBackground));
         for (int i = 0; i < list.size(); i++)
         {
@@ -126,16 +129,15 @@ public class MapView extends View implements ParserCallBack
             //绘制边的颜色
             mPaint.setStrokeWidth(5);
             mPaint.setStyle(Paint.Style.STROKE);
-            mPaint.setColor(Color.BLACK);
+            mPaint.setColor(Color.parseColor("#ffffff"));
             canvas.drawPath(path.getmPath(), mPaint);
         }
         if (mPath != null)
         {
-            mPaint.setStrokeWidth(1);
-            mPaint.setStyle(Paint.Style.FILL);
+            mPaint.setStrokeWidth(6);
+            mPaint.setStyle(Paint.Style.STROKE);
             mPaint.setColor(getResources().getColor(R.color.color_mapSelected));
             canvas.drawPath(mPath, mPaint);
-            System.out.println(mPath + "....." + mPaint);
         }
 
     }
@@ -143,7 +145,7 @@ public class MapView extends View implements ParserCallBack
     @Override
     public void callback(List<CityPath> list, ViewAttr mViewAttr)
     {
-        this.list = list;
+        MapView.list = list;
         this.mViewAttr = mViewAttr;
         myDraw();
     }
@@ -154,10 +156,7 @@ public class MapView extends View implements ParserCallBack
         {
             if (mViewAttr.getWidth() > 0 && mViewAttr.getHeight() > 0 && viewWidth > 0 && viewHeight > 0)
             {
-                isCalculation = true;
-                float widthScale = viewWidth * 1.00f / mViewAttr.getWidth();
-                float heightScale = viewHeight * 1.00f / mViewAttr.getHeight();
-                scale = Math.min(widthScale, heightScale);
+                scaleX = scaleY = 0.85f;
             }
             postInvalidate();
         }
@@ -174,7 +173,7 @@ public class MapView extends View implements ParserCallBack
                 for (int i = 0; i < list.size(); i++)
                 {
                     CityPath cityPath = list.get(i);
-                    if (cityPath.isArea(x / scale, y / scale))
+                    if (cityPath.isArea(x / scaleX, y / scaleY))
                     {
                         mPath = cityPath.getmPath();
                         postInvalidate();

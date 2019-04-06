@@ -84,8 +84,6 @@ public class MainActivity extends AppCompatActivity {
         updateColor(color);
         toolbar.setBackgroundColor(color);
         listView.setBackgroundColor(color);
-
-        //view.setBackgroundColor(color);
     }
 
     private void updateColor(int color) {

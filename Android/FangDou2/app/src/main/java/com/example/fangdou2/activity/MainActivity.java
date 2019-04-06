@@ -220,6 +220,9 @@ public class MainActivity extends AppCompatActivity implements Serializable
 //        listFragment.onCreateView();
         getSupportFragmentManager().beginTransaction().replace(R.id.MainView, listFragment).show(listFragment)
                 .replace(R.id.MainView, mapFragment).show(mapFragment).commit();
+
+        //这个方法很蠢，因为要更换主题，所以必须得先创建两个碎片的view。
+        //以后更新考虑下函数回调
         bottomNavigationView = findViewById(R.id.bnv);
         bottomNavigationView.setOnNavigationItemSelectedListener(changeFragment);
     }

@@ -2,6 +2,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
     android:orientation="vertical">
 
     <android.support.design.widget.AppBarLayout
@@ -31,7 +32,7 @@
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#FFFFFF"
+            android:background="#22221e"
             android:clickable="true">
 
 
@@ -62,7 +63,9 @@
 
                     <com.example.fangdou2.MyListView
                         android:id="@+id/language_listView"
-                        android:layout_width="wrap_content"
+                        android:layout_width="350dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="22dp"
                         android:layout_height="wrap_content"
                         android:background="@drawable/item_cornerbackground"
                         android:fadingEdgeLength="100dp"
