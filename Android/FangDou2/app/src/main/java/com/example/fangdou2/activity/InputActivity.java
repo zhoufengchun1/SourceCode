@@ -50,7 +50,8 @@ public class InputActivity extends AppCompatActivity implements View.OnClickList
     {
         editText = findViewById(R.id.diyEdit);
         textInputLayout = findViewById(R.id.textInputLayout);
-        textInputLayout.setHint("请在此输入自定义文字");
+        textInputLayout.setHint("你想听到些什么呢？");
+        textInputLayout.setHintTextAppearance(R.style.TextInputAppTheme);
         buildButton = findViewById(R.id.build);
         retypeButton = findViewById(R.id.retype);
         spinner = findViewById(R.id.spinner);

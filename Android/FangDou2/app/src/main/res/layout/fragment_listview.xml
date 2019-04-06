@@ -16,7 +16,7 @@
             android:background="?attr/colorPrimary"
             android:minHeight="?attr/actionBarSize"
             android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-            app:layout_scrollFlags="scroll|enterAlways"
+            app:layout_scrollFlags="scroll"
             android:fitsSystemWindows="true"
 
             app:theme="@style/ThemeOverlay.AppCompat.ActionBar">
@@ -40,7 +40,8 @@
             <com.example.fangdou2.MyListView
                 android:id="@+id/listView"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:layout_height="match_parent"
+                android:background="#22221E" />
         </android.support.v4.widget.NestedScrollView>
 
         <FrameLayout

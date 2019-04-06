@@ -76,8 +76,10 @@ public class MapFragment extends Fragment implements LanguageAdapter.Callback
     @Override
     public void click(View v)
     {
+
         infoFragment = new InfoFragment("示例文字", "https://x1aolata.github.io/fangdouwangye/index.html");
-        getFragmentManager().beginTransaction().replace(R.id.infoFragment, infoFragment).addToBackStack(null).commit();
+        getFragmentManager().beginTransaction().setCustomAnimations(R.anim.translate_into, R.anim.translate_into)
+                .replace(R.id.infoFragment, infoFragment).addToBackStack(null).commit();
 
     }
 

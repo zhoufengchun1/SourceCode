@@ -4,7 +4,7 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
-    <color name="color_lrcColor_N">#000000</color>
+    <color name="color_lrcColor_N">#FFFFFF</color>
     <!--未读语句颜色-->
     <color name="color_lrcColor_Y">#ED7C42</color>
     <!--已读语句颜色-->

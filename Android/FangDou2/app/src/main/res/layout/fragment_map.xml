@@ -75,11 +75,11 @@
 
             <FrameLayout
                 android:id="@+id/infoFragment"
-                android:layout_width="300dp"
-                android:layout_height="600dp"
+                android:layout_width="340dp"
+                android:layout_height="580dp"
                 android:layout_gravity="center"
+                android:layout_marginTop="10dp"
                 android:orientation="vertical">
-
             </FrameLayout>
         </FrameLayout>
 

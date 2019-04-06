@@ -10,6 +10,9 @@
         <item name="colorPrimary">@color/Indigo_colorPrimary</item>
         <!--返回键样式-->
         <item name="drawerArrowStyle">@style/AppTheme.DrawerArrowToggle</item>
+        <!--转场-->
+        <item name="android:windowContentTransitions">true</item>
+
     </style>
 
     <style name="AppTheme.DrawerArrowToggle" parent="Base.Widget.AppCompat.DrawerArrowToggle">
@@ -23,15 +26,16 @@
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
-    <!-- 自定义控件风格-->
 
-    <!--自定义Tab栏文字风格-->
-    <!--<style name="TabStyle" parent="TextAppearance.Design.Tab">-->
-    <!--<recorditem name="textAllCaps">true</recorditem>-->
-    <!--<recorditem name="android:textAllCaps">true</recorditem>-->
-    <!--<recorditem name="android:textSize">18sp</recorditem>-->
+    <style name="TextInputAppTheme" parent="Base.TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#EF6C00</item>
+    </style>
 
-    <!--</style>-->
-
-
+    <style name="itemSpinnerStyle" parent="@android:style/Widget.TextView.SpinnerItem">
+        <item name="android:textSize">20sp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:paddingLeft">0dp</item>
+    </style>
 </resources>

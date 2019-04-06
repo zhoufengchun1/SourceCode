@@ -45,8 +45,7 @@ public class MainActivity extends AppCompatActivity implements Serializable
     LinearLayout MainView;
     @BindView(R.id.fl_fragment)
     FrameLayout flFragment;
-    @BindView(R.id.line)
-    View line;
+
     @BindView(R.id.tv1)
     TextView tv1;
     @BindView(R.id.ll_tab1)

@@ -2,6 +2,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#22282C"
     android:orientation="vertical">
 
     <android.support.design.widget.AppBarLayout
@@ -19,30 +20,26 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="60dp"
-        android:background="@drawable/item_cornerbackground"
-        android:gravity="center"
-        android:text="您可以在这里自定义文字并选择发音人,并尝试不同的方言！"
-        android:textColor="#00838F"
-        android:textSize="30dp" />
-
     <android.support.design.widget.TextInputLayout
         android:id="@+id/textInputLayout"
-        android:layout_width="350dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:textColorHint="#F50057"
         android:layout_marginTop="100dp">
 
         <EditText
             android:id="@+id/diyEdit"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:background="@drawable/diy_cornerbackground"
             android:inputType="textMultiLine"
-            android:textSize="18sp" />
+            android:gravity="top"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="#ffffff"
+            android:textSize="25sp" />
     </android.support.design.widget.TextInputLayout>
 
     <LinearLayout
@@ -53,17 +50,19 @@
 
         <Button
             android:id="@+id/build"
-            android:layout_width="96dp"
+            android:layout_width="120dp"
             android:layout_height="45dp"
-            android:text="合成"
+            android:background="@drawable/bottom_cornerbackground_y"
+            android:text="合成语音"
             android:textSize="19sp" />
 
         <Button
             android:id="@+id/retype"
-            android:layout_width="96dp"
+            android:layout_width="120dp"
             android:layout_height="45dp"
             android:layout_marginStart="50dp"
-            android:text="重输"
+            android:background="@drawable/bottom_cornerbackground_y"
+            android:text="重新输入"
             android:textSize="19sp" />
     </LinearLayout>
 
@@ -74,7 +73,9 @@
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
         android:dropDownWidth="300dp"
-        android:spinnerMode="dropdown">
+        android:background="@drawable/spinner_cornerbackgroung"
+        android:spinnerMode="dropdown"
+        android:theme="@style/itemSpinnerStyle">
 
     </Spinner>
 </LinearLayout>
