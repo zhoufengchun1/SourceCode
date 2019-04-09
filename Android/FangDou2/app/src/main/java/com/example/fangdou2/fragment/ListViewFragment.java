@@ -201,6 +201,15 @@ public class ListViewFragment extends Fragment implements RecordAdapter.Callback
                         }
                         mediaPlayer.start();
                         textView.setTextColor(getResources().getColor(R.color.color_lrcColor_Y));
+                        mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
+                        {
+                            @Override
+                            public void onCompletion(MediaPlayer mp)
+                            {
+                                textView.setTextColor(getResources().getColor(R.color.color_lrcColor_N));
+                                Toast.makeText(view.getContext(), "播放完毕。", Toast.LENGTH_SHORT).show();
+                            }
+                        });
                     } else//播放也有两种可能
                     {
                         if (lastPlaying == nowPlayingId)//点击相同的
@@ -214,6 +223,15 @@ public class ListViewFragment extends Fragment implements RecordAdapter.Callback
                             mediaPlayer = MediaPlayer.create(view.getContext(), nowPlayingId);
                             mediaPlayer.start();
                             textView.setTextColor(getResources().getColor(R.color.color_lrcColor_Y));
+                            mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
+                            {
+                                @Override
+                                public void onCompletion(MediaPlayer mp)
+                                {
+                                    textView.setTextColor(getResources().getColor(R.color.color_lrcColor_N));
+                                    Toast.makeText(view.getContext(), "播放完毕。", Toast.LENGTH_SHORT).show();
+                                }
+                            });
                         }
                     }
                 } catch (NullPointerException e)
@@ -221,7 +239,15 @@ public class ListViewFragment extends Fragment implements RecordAdapter.Callback
                     mediaPlayer = MediaPlayer.create(view.getContext(), nowPlayingId);
                     mediaPlayer.start();
                     textView.setTextColor(getResources().getColor(R.color.color_lrcColor_Y));
-
+                    mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
+                    {
+                        @Override
+                        public void onCompletion(MediaPlayer mp)
+                        {
+                            textView.setTextColor(getResources().getColor(R.color.color_lrcColor_N));
+                            Toast.makeText(view.getContext(), "播放完毕。", Toast.LENGTH_SHORT).show();
+                        }
+                    });
                 } finally
                 {
                     lastPlaying = nowPlayingId;
@@ -269,6 +295,7 @@ public class ListViewFragment extends Fragment implements RecordAdapter.Callback
         super.onCreate(savedInstanceState);
         setHasOptionsMenu(true);
     }
+
 }
 
 
