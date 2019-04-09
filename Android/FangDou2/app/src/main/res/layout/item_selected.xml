@@ -3,5 +3,5 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:gravity="center"
-    android:padding="10dp"
-    android:textColor="#6A1B9A" />
+    android:textColor="#AA00FF"
+    android:textSize="20sp" />

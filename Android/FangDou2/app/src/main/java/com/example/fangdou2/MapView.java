@@ -63,7 +63,6 @@ public class MapView extends View implements ParserCallBack
         int modeHeight = MeasureSpec.getMode(heightMeasureSpec);
         setMeasuredDimension(getMeasureSize(300, widthMeasureSpec),
                 getMeasureSize(300, heightMeasureSpec));
-        System.out.println(widthMeasureSpec + "..." + heightMeasureSpec);
     }
 
 

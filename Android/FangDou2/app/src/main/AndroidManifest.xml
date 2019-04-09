@@ -26,9 +26,15 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar"
         android:usesCleartextTraffic="true">
+        <receiver
+            android:name=".broadcast.ThemeReceiver"
+            android:enabled="true"
+            android:exported="true"></receiver>
+
         <activity android:name=".activity.ThemeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.theme" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>

@@ -4,7 +4,7 @@
 
     <!-- 描边 -->
     <stroke
-        android:width="2dp"
+        android:width="3dp"
         android:color="#FFFFFF" />
     <solid android:color="#B3FF1744" />
     <!-- 圆角 -->

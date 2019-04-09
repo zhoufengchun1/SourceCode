@@ -50,7 +50,7 @@ public class InfoFragment extends Fragment implements View.OnClickListener
 
         } else
         {
-            view = inflater.inflate(R.layout.infocard, null);
+            view = inflater.inflate(R.layout.fragment_infocard, null);
         }
         initView();
 

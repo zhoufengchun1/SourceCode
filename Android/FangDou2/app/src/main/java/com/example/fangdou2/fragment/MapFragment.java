@@ -75,7 +75,7 @@ public class MapFragment extends Fragment implements LanguageAdapter.Callback
 
 
     @Override
-    public void click(View v)
+    public void click()
     {
 
         infoFragment = new InfoFragment("示例文字", "https://x1aolata.github.io/fangdouwangye/index.html");

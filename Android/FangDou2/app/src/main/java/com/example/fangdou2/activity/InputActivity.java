@@ -37,6 +37,8 @@ public class InputActivity extends AppCompatActivity implements View.OnClickList
         setContentView(R.layout.activity_input);
         Toolbar toolbar = findViewById(R.id.toolbar);
         toolbar.setTitle("DIY语音合成");
+        toolbar.setBackgroundColor(getResources().getColor(R.color.color_default));
+        ThemeActivity.setStatusBarColor(InputActivity.this, getResources().getColor(R.color.color_default));
         setSupportActionBar(toolbar);
         ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
@@ -65,7 +67,7 @@ public class InputActivity extends AppCompatActivity implements View.OnClickList
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id)
             {
-                Toast.makeText(view.getContext(), "现在的发言人是：" + languageList[position], Toast.LENGTH_LONG).show();
+                Toast.makeText(view.getContext(), "现在的发言人是：" + languageList[position], Toast.LENGTH_SHORT).show();
                 InputActivity.this.position = position;
             }
 

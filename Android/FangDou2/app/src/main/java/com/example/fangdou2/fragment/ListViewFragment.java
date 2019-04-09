@@ -31,7 +31,6 @@ import com.example.fangdou2.adapter.RecordAdapter;
 import com.example.fangdou2.bean.RecordItemBean;
 import com.example.fangdou2.utils.RecordingItem;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -56,6 +55,9 @@ public class ListViewFragment extends Fragment implements RecordAdapter.Callback
     private Tts tts;
     private String voicer = "xiaoyan";
     private ActionBarDrawerToggle mDrawerToggle;
+    private int nowPlayingId = 0, lastPlaying = 0;
+    private TextView temp = null;
+
 
 
     public static Toolbar toolbar;
@@ -113,7 +115,6 @@ public class ListViewFragment extends Fragment implements RecordAdapter.Callback
         toolbar.setTitle("方逗");
         toolbar.setTitleTextColor(Color.WHITE);
         toolbar.setBackgroundColor(getResources().getColor(R.color.color_default));
-
         ((AppCompatActivity) getActivity()).getSupportActionBar().setHomeButtonEnabled(true);
         ((AppCompatActivity) getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
@@ -187,33 +188,46 @@ public class ListViewFragment extends Fragment implements RecordAdapter.Callback
         switch (v.getId())
         {
             case R.id.item_text:
+                nowPlayingId = recordItemBeanList.get((Integer) v.getTag()).resourceId;
+                //当前点击项就是当前播放（操作）项
                 try
                 {
-                    if (mediaPlayer != null && mediaPlayer.isPlaying())
+                    if (!mediaPlayer.isPlaying())//如果没播放——有两种可能
                     {
-                        textView.setTextColor(getResources().getColor(R.color.color_lrcColor_N));
-                        mediaPlayer.pause();
-                    } else
-                    {
-                        if (mediaPlayer == null)
+                        if (lastPlaying != nowPlayingId)//当前项与上一次播放项不同
                         {
-                            mediaPlayer = MediaPlayer.create(view.getContext(), recordItemBeanList.get((Integer) v.getTag()).resourceId);
-                            mediaPlayer.prepare();
+                            mediaPlayer.reset();//将上一个对象重置
+                            mediaPlayer = MediaPlayer.create(view.getContext(), nowPlayingId);
                         }
                         mediaPlayer.start();
                         textView.setTextColor(getResources().getColor(R.color.color_lrcColor_Y));
+                    } else//播放也有两种可能
+                    {
+                        if (lastPlaying == nowPlayingId)//点击相同的
+                        {
+                            mediaPlayer.pause();//直接暂停
+                            textView.setTextColor(getResources().getColor(R.color.color_lrcColor_N));
+                        } else
+                        {
+                            mediaPlayer.reset();//将上一个对象重置
+                            temp.setTextColor(getResources().getColor(R.color.color_lrcColor_N));
+                            mediaPlayer = MediaPlayer.create(view.getContext(), nowPlayingId);
+                            mediaPlayer.start();
+                            textView.setTextColor(getResources().getColor(R.color.color_lrcColor_Y));
+                        }
                     }
-
-                } catch (IOException e)
+                } catch (NullPointerException e)
                 {
-                    e.printStackTrace();
-                } catch (IllegalStateException e)
-                {
-                    assert mediaPlayer != null;
-                    //假设mediaPlayer不是null
+                    mediaPlayer = MediaPlayer.create(view.getContext(), nowPlayingId);
                     mediaPlayer.start();
                     textView.setTextColor(getResources().getColor(R.color.color_lrcColor_Y));
+
+                } finally
+                {
+                    lastPlaying = nowPlayingId;
+                    temp = textView;
                 }
+
                 /*
                 这里有个bug，第一次点击文字的时候一定会抛出IllegalStateException，再次点击就不会抛出
                 妥协的方法是在catch中再写一次start()和文字颜色处理。
