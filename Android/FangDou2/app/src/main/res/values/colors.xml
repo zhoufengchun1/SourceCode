@@ -15,4 +15,7 @@
     <color name="Indigo_colorPrimaryDark">#303f9f</color>
     <color name="Indigo_colorPrimary">#3f51b5</color>
     <color name="color_default">#22221e</color>
+
+    <color name="color_selected">#01579B</color>
+    <color name="color_notSelected">#22221e</color>
 </resources>

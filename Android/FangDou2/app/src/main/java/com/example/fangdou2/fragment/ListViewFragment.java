@@ -253,11 +253,6 @@ public class ListViewFragment extends Fragment implements RecordAdapter.Callback
                     lastPlaying = nowPlayingId;
                     temp = textView;
                 }
-
-                /*
-                这里有个bug，第一次点击文字的时候一定会抛出IllegalStateException，再次点击就不会抛出
-                妥协的方法是在catch中再写一次start()和文字颜色处理。
-                 */
                 break;
             case R.id.img_record:
                 final RecordAudioDialogFragment fragment = RecordAudioDialogFragment.newInstance();

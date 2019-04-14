@@ -32,7 +32,6 @@ public class ThemeActivity extends AppCompatActivity
     private List<Item> colorList = new ArrayList<Item>();
 
     public static int color = Color.parseColor("#22221e");
-    public MainActivity mainActivity;
 
     public static void setStatusBarColor(Activity activity, int statusColor)
     {
@@ -61,17 +60,12 @@ public class ThemeActivity extends AppCompatActivity
     private void initItem()
     {
 
-        Item white = new Item("默认黑", R.drawable.white);
-        colorList.add(white);
-        Item green = new Item("酷安绿", R.drawable.green);
-        colorList.add(green);
-        Item red = new Item("激情红", R.drawable.red);
-        colorList.add(red);
-        Item pink = new Item("哔哩粉", R.drawable.pink);
-        colorList.add(pink);
-        Item ching = new Item("水鸭青", R.drawable.ching);
-        colorList.add(ching);
-
+        Item black = new Item("默认黑", R.drawable.black);
+        colorList.add(black);
+        Item blue = new Item("天空蓝", R.drawable.blue);
+        colorList.add(blue);
+        Item yellow = new Item("伊藤橙", R.drawable.yellow);
+        colorList.add(yellow);
 
     }
 
@@ -111,17 +105,11 @@ public class ThemeActivity extends AppCompatActivity
             case "默认黑":
                 color = getResources().getColor(R.color.color_default);
                 break;
-            case "酷安绿":
-                color = Color.parseColor("#109D58");
+            case "天空蓝":
+                color = Color.parseColor("#2195F2");
                 break;
-            case "激情红":
-                color = Color.parseColor("#DC4437");
-                break;
-            case "哔哩粉":
-                color = Color.parseColor("#FA7298");
-                break;
-            case "水鸭青":
-                color = Color.parseColor("#019788");
+            case "伊藤橙":
+                color = Color.parseColor("#FD9602");
                 break;
 
         }

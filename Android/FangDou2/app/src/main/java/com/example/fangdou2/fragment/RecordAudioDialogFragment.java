@@ -16,7 +16,6 @@ import android.widget.Chronometer;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-
 import com.example.fangdou2.R;
 import com.example.fangdou2.service.RecordingService;
 import com.melnykov.fab.FloatingActionButton;
@@ -32,12 +31,9 @@ import java.io.File;
 public class RecordAudioDialogFragment extends DialogFragment
 {
 
-    private static final String TAG = "RecordAudioDialogFragme";
 
-    private int mRecordPromptCount = 0;
 
     private boolean mStartRecording = true;
-    private boolean mPauseRecording = true;
 
     long timeWhenPaused = 0;
 
@@ -71,7 +67,6 @@ public class RecordAudioDialogFragment extends DialogFragment
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState)
     {
-        Dialog dialog = super.onCreateDialog(savedInstanceState);
         final AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         View view = getActivity().getLayoutInflater().inflate(R.layout.fragment_record_audio, null);
         initView(view);
@@ -112,9 +107,9 @@ public class RecordAudioDialogFragment extends DialogFragment
 
     private void initView(View view)
     {
-        mChronometerTime = (Chronometer) view.findViewById(R.id.record_audio_chronometer_time);
-        mFabRecord = (FloatingActionButton) view.findViewById(R.id.record_audio_fab_record);
-        mIvClose = (ImageView) view.findViewById(R.id.record_audio_iv_close);
+        mChronometerTime = view.findViewById(R.id.record_audio_chronometer_time);
+        mFabRecord = view.findViewById(R.id.record_audio_fab_record);
+        mIvClose = view.findViewById(R.id.record_audio_iv_close);
     }
 
     private void onRecord(boolean start)
@@ -134,11 +129,9 @@ public class RecordAudioDialogFragment extends DialogFragment
                 //folder /SoundRecorder doesn't exist, create the folder
                 folder.mkdir();
             }
-
             //start Chronometer
             mChronometerTime.setBase(SystemClock.elapsedRealtime());
             mChronometerTime.start();
-
             //start RecordingService
             getActivity().startService(intent);
             //keep screen on while recording

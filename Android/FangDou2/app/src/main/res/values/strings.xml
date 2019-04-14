@@ -56,13 +56,13 @@
         <item>粤方言</item>
     </string-array>
     <string-array name="language_item_pinyin">
-        <item>ganfangyan</item>
-        <item>guanhuafangyan</item>
-        <item>kejiafangyan</item>
+        <item>gan</item>
+        <item>guanhua</item>
+        <item>kejia</item>
         <item>kongbai</item>
-        <item>minfangyan</item>
-        <item>wufangyan</item>
-        <item>xiangfangyan</item>
-        <item>yuefangyan</item>
+        <item>min</item>
+        <item>wu</item>
+        <item>xiang</item>
+        <item>yue</item>
     </string-array>
 </resources>

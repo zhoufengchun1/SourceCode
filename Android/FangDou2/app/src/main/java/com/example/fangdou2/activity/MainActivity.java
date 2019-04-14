@@ -29,7 +29,6 @@ import com.example.fangdou2.fragment.MapFragment;
 import com.iflytek.cloud.SpeechConstant;
 import com.iflytek.cloud.SpeechUtility;
 
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -38,7 +37,7 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 import butterknife.Unbinder;
 
-public class MainActivity extends AppCompatActivity implements Serializable
+public class MainActivity extends AppCompatActivity
 {
 
     @BindView(R.id.MainView)
@@ -82,7 +81,6 @@ public class MainActivity extends AppCompatActivity implements Serializable
         unbinder = ButterKnife.bind(this);
         initBottom();
         StringBuffer param = new StringBuffer();
-
         param.append("appid=" + app_id);
         param.append(",");
         // 设置使用v5+

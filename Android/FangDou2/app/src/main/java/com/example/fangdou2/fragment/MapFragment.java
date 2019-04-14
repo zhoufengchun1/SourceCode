@@ -14,6 +14,7 @@ import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.fangdou2.MyDrawerLayout;
@@ -28,10 +29,9 @@ import java.util.ArrayList;
 public class MapFragment extends Fragment implements LanguageAdapter.Callback
 {
     private View view;
-    private String language_item[];
+    private String language_item[], language_pinyin[];
     private ArrayList<LanguageItemBean> arrayList;
     public static MyListView listView;
-    private int locate;
     private InfoFragment infoFragment;
     private MyDrawerLayout drawerLayout;
     private NavigationView navigationView;
@@ -60,13 +60,14 @@ public class MapFragment extends Fragment implements LanguageAdapter.Callback
 
     public void initView()
     {
-        //initItem();
         language_item = new String[8];
         language_item = view.getResources().getStringArray(R.array.language_item);
+        language_pinyin = new String[8];
+        language_pinyin = view.getResources().getStringArray(R.array.language_item_pinyin);
         arrayList = new ArrayList<>();
-        for (int i = 0; i < language_item.length; i++)
+        for (String aLanguage_item : language_item)
         {
-            arrayList.add(new LanguageItemBean(language_item[i]));
+            arrayList.add(new LanguageItemBean(aLanguage_item));
         }
         listView = view.findViewById(R.id.language_listView);
         listView.setAdapter(new LanguageAdapter(arrayList, getLayoutInflater(), this));
@@ -75,13 +76,19 @@ public class MapFragment extends Fragment implements LanguageAdapter.Callback
 
 
     @Override
-    public void click()
+    public void click(View v)
     {
-
-        infoFragment = new InfoFragment("示例文字", "https://x1aolata.github.io/fangdouwangye/index.html");
+        TextView textView = v.findViewById(R.id.languageItem_text);
+        for (int i = 0; i < language_item.length; i++)
+        {
+            if (textView.getText().toString().equals(language_item[i]))
+            {
+                infoFragment = new InfoFragment(language_item[i], "file:///android_asset/index_" + language_pinyin[i] + ".html");
+                break;
+            }
+        }
         getFragmentManager().beginTransaction().setCustomAnimations(R.anim.translate_into, R.anim.translate_into)
                 .replace(R.id.infoFragment, infoFragment).addToBackStack(null).commit();
-
 
     }
 
@@ -141,6 +148,7 @@ public class MapFragment extends Fragment implements LanguageAdapter.Callback
                         startActivity(intent);
                         break;
                     case "我的收藏/点赞":
+                    case "个人设置":
                         Toast.makeText(view.getContext(), "敬请期待！", Toast.LENGTH_LONG).show();
                         break;
                     case "主题":
