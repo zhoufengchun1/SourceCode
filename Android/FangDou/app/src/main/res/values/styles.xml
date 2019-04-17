@@ -3,10 +3,20 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
-        <item name="windowNoTitle" >true</item>
+        <!--状态栏颜色-->
+        <item name="colorPrimaryDark">@color/Indigo_colorPrimaryDark</item>
+        <!--Toolbar颜色-->
+        <item name="colorPrimary">@color/Indigo_colorPrimary</item>
+        <!--返回键样式-->
+        <item name="drawerArrowStyle">@style/AppTheme.DrawerArrowToggle</item>
+        <!--转场-->
+        <item name="android:windowContentTransitions">true</item>
+
+    </style>
+
+    <style name="AppTheme.DrawerArrowToggle" parent="Base.Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">@android:color/white</item>
     </style>
 
     <style name="AppTheme.NoActionBar">
@@ -16,29 +26,16 @@
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
-    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
-    <!-- 自定义控件风格-->
-    <style name="Custom" />
-
-    <style name="Custom.TabRadioButton">
-        <item name="android:layout_width">0dp</item>
-        <item name="android:layout_weight">1</item>
-        <item name="android:layout_height">match_parent</item>
-        <item name="android:padding">5dp</item>
-        <item name="android:gravity">center</item>
-        <item name="android:button">@null</item>
-        <item name="android:textSize">14sp</item>
-        <item name="android:textColor">@color/tab_text_color_selector</item>
+    <style name="TextInputAppTheme" parent="Base.TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#EF6C00</item>
     </style>
 
-        <!--自定义Tab栏文字风格-->
-    <style name="TabStyle" parent="TextAppearance.Design.Tab">
-        <item name="textAllCaps">true</item>
-        <item name="android:textAllCaps">true</item>
-        <item name="android:textSize">18sp</item>
-
+    <style name="itemSpinnerStyle" parent="@android:style/Widget.TextView.SpinnerItem">
+        <item name="android:textSize">20sp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:paddingLeft">0dp</item>
     </style>
-
-
 </resources>

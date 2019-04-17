@@ -1,28 +1,81 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:fitsSystemWindows="true"
-    >
+    tools:context="com.example.fangdou2.activity.MainActivity">
 
-    <fragment
-        android:id="@+id/square_fragment"
-        android:name="com.example.fangdou.fragment.SquareFragment"
+    <LinearLayout
+        android:id="@+id/MainView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        />
-    <fragment
-        android:id="@+id/knowledge_fragment"
-        android:name="com.example.fangdou.fragment.Knowledge_fragment"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+    <android.support.percent.PercentRelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        />
+        android:layout_height="match_parent">
 
-    <fragment
-        android:id="@+id/navigation_fragment"
-        android:name="com.example.fangdou.fragment.NavigationFragment"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        <FrameLayout
+            android:id="@+id/fl_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/ll"
+            android:background="@color/color_default" />
 
 
-</RelativeLayout>
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/color_default"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ll_tab1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="130dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center"
+                    android:text="地图"
+                    android:textColor="#ece638"
+                    android:textSize="22sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_tab2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv2"
+                    android:layout_width="140dp"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center"
+                    android:text="配音"
+                    android:textColor="#ece638"
+                    android:textSize="22sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.percent.PercentRelativeLayout>
+
+
+</LinearLayout>
