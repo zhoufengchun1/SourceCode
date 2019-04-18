@@ -25,7 +25,7 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <com.example.fangdou2.MyDrawerLayout
+    <com.example.fangdou.MyDrawerLayout
         android:id="@+id/listView_Fragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -57,7 +57,7 @@
                 android:fillViewport="true"
                 app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-                <com.example.fangdou2.MyListView
+                <com.example.fangdou.MyListView
                     android:id="@+id/listView"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -80,5 +80,5 @@
             app:menu="@menu/menu_language">
 
         </android.support.design.widget.NavigationView>
-    </com.example.fangdou2.MyDrawerLayout>
+    </com.example.fangdou.MyDrawerLayout>
 </android.support.design.widget.CoordinatorLayout>

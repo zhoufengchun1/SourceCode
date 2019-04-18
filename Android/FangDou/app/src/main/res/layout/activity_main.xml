@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.fangdou2.activity.MainActivity">
+    tools:context="com.example.fangdou.activity.MainActivity">
 
     <LinearLayout
         android:id="@+id/MainView"

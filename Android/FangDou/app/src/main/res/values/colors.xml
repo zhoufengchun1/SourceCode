@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
@@ -16,6 +16,6 @@
     <color name="Indigo_colorPrimary">#3f51b5</color>
     <color name="color_default">#22221e</color>
 
-    <color name="color_selected">#01579B</color>
-    <color name="color_notSelected">#22221e</color>
+    <color name="color_selected" tools:keep="@color/color_selected">#01579B</color>
+    <color name="color_notSelected" tools:keep="@color/color_notSelected">#22221e</color>
 </resources>

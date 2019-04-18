@@ -13,7 +13,7 @@
         android:text="我是有上限的"
         android:textSize="20sp" />
 
-    <com.example.fangdou2.utils.CircleImageView
+    <com.example.fangdou.utils.CircleImageView
         android:layout_width="wrap_content"
         android:layout_height="72dp"
         android:layout_marginTop="40dp"
