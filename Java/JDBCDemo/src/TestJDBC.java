@@ -2,40 +2,46 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 
 class TestJDBCj
 {
-    final static String cfn = "com.microsoft.sqlserver.jdbc.SQLServerDriver";
-    final static String url = "jdbc:sqlserver://localhost:1433;DatabaseName=20171101041";
+    public static void main(String[] args)
+    {
+        Connection connection = null;
+        Statement statement = null;
+        ResultSet resultSet = null;
+        String username="12334";
+        String password="7893";
+        try
+        {
+            Class.forName("com.mysql.jdbc.Driver");
+            connection = DriverManager
+                    .getConnection("jdbc:mysql://47.100.195.173:3306/UserInfo", "root", "admin");
+            statement = connection.createStatement();
+            statement.executeUpdate("insert into user " + "(" + "user_name,user_passwd" + ") " + "values"
+                    + "(" + username + "," + password + ")");
+            System.out.println("success");
 
-    public static void main(String[] args) {
-        Connection con = null;
-        PreparedStatement statement = null;
-        ResultSet res = null;
-        try {
-            Class.forName(cfn);
-            con = DriverManager.getConnection(url,"sa","admin");
 
-            String sql = "select *from Student";//查询test表
-            statement = con.prepareStatement(sql);
-            res = statement.executeQuery();
-            while(res.next()){
-                String title = res.getString("Sname");//获取test_name列的元素                                                                                                                                                    ;
-                System.out.println("姓名："+title);
-            }
-
-        } catch (Exception e) {
-            // TODO: handle exception
+        } catch (ClassNotFoundException e)
+        {
             e.printStackTrace();
-        }finally{
-            try {
-                if(res != null) res.close();
-                if(statement != null) statement.close();
-                if(con != null) con.close();
-            } catch (Exception e2) {
-                // TODO: handle exception
-                e2.printStackTrace();
+        } catch (SQLException e)
+        {
+            e.printStackTrace();
+        } finally
+        {
+            try
+            {
+                statement.close();
+                connection.close();
+            } catch (SQLException e)
+            {
+                e.printStackTrace();
             }
         }
+
     }
 }

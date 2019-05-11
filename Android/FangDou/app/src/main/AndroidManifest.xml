@@ -19,6 +19,7 @@
     <uses-permission android:name="android.permission.CAMERA" />
 
     <application
+        android:name="android.support.multidex.MultiDexApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="方逗"
@@ -26,25 +27,31 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar"
         android:usesCleartextTraffic="true">
+        <activity
+            android:name=".activity.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:theme="@style/AppTheme.NoActionBar.NoActionBar"></activity>
+
         <receiver
             android:name=".broadcast.ThemeReceiver"
             android:enabled="true"
-            android:exported="true"></receiver>
+            android:exported="true" />
 
-        <activity android:name="com.example.fangdou.activity.ThemeActivity">
+        <activity android:name=".activity.ThemeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.theme" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.fangdou.activity.InputActivity">
+        <activity android:name=".activity.InputActivity">
             <intent-filter>
                 <action android:name="android.intent.action.build" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.fangdou.activity.MainActivity">
+        <activity android:name=".activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -52,7 +59,7 @@
             </intent-filter>
         </activity>
 
-        <service android:name="com.example.fangdou.service.RecordingService" />
+        <service android:name=".service.RecordingService" />
     </application>
 
 </manifest>

@@ -20,6 +20,7 @@ import android.widget.Toast;
 import com.example.fangdou.MyDrawerLayout;
 import com.example.fangdou.MyListView;
 import com.example.fangdou.R;
+import com.example.fangdou.activity.LoginActivity;
 import com.example.fangdou.activity.ThemeActivity;
 import com.example.fangdou.adapter.LanguageAdapter;
 import com.example.fangdou.bean.LanguageItemBean;
@@ -29,7 +30,8 @@ import java.util.ArrayList;
 public class MapFragment extends Fragment implements LanguageAdapter.Callback
 {
     private View view;
-    private String language_item[], language_pinyin[];
+    private String[] language_item;
+    private String[] language_pinyin;
     private ArrayList<LanguageItemBean> arrayList;
     public static MyListView listView;
     private InfoFragment infoFragment;
@@ -149,7 +151,8 @@ public class MapFragment extends Fragment implements LanguageAdapter.Callback
                         break;
                     case "我的收藏/点赞":
                     case "个人设置":
-                        Toast.makeText(view.getContext(), "敬请期待！", Toast.LENGTH_LONG).show();
+                        intent = new Intent(getContext(), LoginActivity.class);
+                        startActivity(intent);
                         break;
                     case "主题":
                         intent = new Intent("android.intent.action.theme");
