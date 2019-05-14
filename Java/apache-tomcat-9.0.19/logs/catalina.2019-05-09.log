@@ -1,0 +1,1210 @@
+09-May-2019 13:39:59.563 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server.服务器版本:        Apache Tomcat/9.0.19
+09-May-2019 13:39:59.563 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server.构建:          Apr 12 2019 14:22:48 UTC
+09-May-2019 13:39:59.563 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.19.0
+09-May-2019 13:39:59.563 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+09-May-2019 13:39:59.563 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS.版本:            10.0
+09-May-2019 13:39:59.563 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 结.造:          amd64
+09-May-2019 13:39:59.563 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java 环境变量:             C:\Program Files\Java\jdk-11.0.2
+09-May-2019 13:39:59.563 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 版本:           11.0.2+9-LTS
+09-May-2019 13:39:59.563 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM.供应商:            Oracle Corporation
+09-May-2019 13:39:59.563 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         D:\SourceCode\Java\apache-tomcat-9.0.19
+09-May-2019 13:39:59.563 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         D:\SourceCode\Java\apache-tomcat-9.0.19
+09-May-2019 13:39:59.578 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=D:\SourceCode\Java\apache-tomcat-9.0.19
+09-May-2019 13:39:59.578 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=D:\SourceCode\Java\apache-tomcat-9.0.19
+09-May-2019 13:39:59.578 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=D:\SourceCode\Java\apache-tomcat-9.0.19\endorsed
+09-May-2019 13:39:59.578 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=D:\SourceCode\Java\apache-tomcat-9.0.19\temp
+09-May-2019 13:39:59.578 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+09-May-2019 13:39:59.578 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=D:\SourceCode\Java\apache-tomcat-9.0.19\conf\logging.properties
+09-May-2019 13:39:59.578 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+09-May-2019 13:39:59.578 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+09-May-2019 13:39:59.578 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+09-May-2019 13:39:59.578 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: exit
+09-May-2019 13:39:59.578 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: abort
+09-May-2019 13:39:59.578 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Xms128m
+09-May-2019 13:39:59.578 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Xmx256m
+09-May-2019 13:39:59.578 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded APR based Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
+09-May-2019 13:39:59.578 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+09-May-2019 13:39:59.578 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+09-May-2019 13:39:59.594 信息 [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+09-May-2019 13:39:59.641 信息 [main] org.apache.coyote.AbstractProtocol.init 初始化协议处理器 ["http-nio-8080"]
+09-May-2019 13:40:00.089 信息 [main] org.apache.coyote.AbstractProtocol.init 初始化协议处理器 ["ajp-nio-8009"]
+09-May-2019 13:40:00.105 信息 [main] org.apache.catalina.startup.Catalina.load 服务器在[1,307]毫秒内初始化
+09-May-2019 13:40:00.168 信息 [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+09-May-2019 13:40:00.168 信息 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.19]
+09-May-2019 13:40:00.199 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\SourceCode\Java\apache-tomcat-9.0.19\webapps\docs]
+09-May-2019 13:40:00.841 警告 [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [314] milliseconds.
+09-May-2019 13:40:00.859 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\SourceCode\Java\apache-tomcat-9.0.19\webapps\docs] has finished in [660] ms
+09-May-2019 13:40:00.906 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\SourceCode\Java\apache-tomcat-9.0.19\webapps\examples]
+09-May-2019 13:40:01.925 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\SourceCode\Java\apache-tomcat-9.0.19\webapps\examples] has finished in [1,019] ms
+09-May-2019 13:40:01.942 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\SourceCode\Java\apache-tomcat-9.0.19\webapps\host-manager]
+09-May-2019 13:40:02.007 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\SourceCode\Java\apache-tomcat-9.0.19\webapps\host-manager] has finished in [65] ms
+09-May-2019 13:40:02.007 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\SourceCode\Java\apache-tomcat-9.0.19\webapps\manager]
+09-May-2019 13:40:02.038 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\SourceCode\Java\apache-tomcat-9.0.19\webapps\manager] has finished in [31] ms
+09-May-2019 13:40:02.038 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\SourceCode\Java\apache-tomcat-9.0.19\webapps\ROOT]
+09-May-2019 13:40:02.069 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\SourceCode\Java\apache-tomcat-9.0.19\webapps\ROOT] has finished in [31] ms
+09-May-2019 13:40:02.069 信息 [main] org.apache.coyote.AbstractProtocol.start 开始协议处理句柄["http-nio-8080"]
+09-May-2019 13:40:02.086 信息 [main] org.apache.coyote.AbstractProtocol.start 开始协议处理句柄["ajp-nio-8009"]
+09-May-2019 13:40:02.086 信息 [main] org.apache.catalina.startup.Catalina.start Server startup in [1,986] milliseconds
+09-May-2019 14:09:15.918 信息 [Catalina-utility-1] org.apache.catalina.users.MemoryUserDatabase.backgroundProcess Reloading memory user database [UserDatabase] from updated source [file:/D:/SourceCode/Java/apache-tomcat-9.0.19/conf/tomcat-users.xml]
+09-May-2019 14:15:26.251 信息 [Catalina-utility-1] org.apache.catalina.users.MemoryUserDatabase.backgroundProcess Reloading memory user database [UserDatabase] from updated source [file:/D:/SourceCode/Java/apache-tomcat-9.0.19/conf/tomcat-users.xml]
+09-May-2019 14:15:26.262 严重 [Catalina-utility-1] org.apache.tomcat.util.digester.Digester.fatalError Parse fatal error at line [46] column [73]
+ org.xml.sax.SAXParseException; lineNumber: 46; columnNumber: 73; 已经为元素 "user" 指定属性 "roles"。
+	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:178)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1471)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanAttribute(XMLDocumentFragmentScannerImpl.java:1524)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanStartElement(XMLDocumentFragmentScannerImpl.java:1353)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2708)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:534)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:888)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:824)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1216)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:635)
+	at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1448)
+	at org.apache.catalina.users.MemoryUserDatabase.open(MemoryUserDatabase.java:445)
+	at org.apache.catalina.users.MemoryUserDatabase.backgroundProcess(MemoryUserDatabase.java:673)
+	at org.apache.catalina.realm.UserDatabaseRealm.backgroundProcess(UserDatabaseRealm.java:141)
+	at org.apache.catalina.realm.CombinedRealm.backgroundProcess(CombinedRealm.java:299)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1130)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1346)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1328)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+09-May-2019 14:15:26.265 严重 [Catalina-utility-1] org.apache.catalina.users.MemoryUserDatabase.backgroundProcess 从更新后的源 [file:/D:/SourceCode/Java/apache-tomcat-9.0.19/conf/tomcat-users.xml] 重新加载内存用户数据库 [UserDatabase] 时出错
+ org.xml.sax.SAXParseException; lineNumber: 46; columnNumber: 73; 已经为元素 "user" 指定属性 "roles"。
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1243)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:635)
+	at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1448)
+	at org.apache.catalina.users.MemoryUserDatabase.open(MemoryUserDatabase.java:445)
+	at org.apache.catalina.users.MemoryUserDatabase.backgroundProcess(MemoryUserDatabase.java:673)
+	at org.apache.catalina.realm.UserDatabaseRealm.backgroundProcess(UserDatabaseRealm.java:141)
+	at org.apache.catalina.realm.CombinedRealm.backgroundProcess(CombinedRealm.java:299)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1130)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1346)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1328)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+09-May-2019 14:15:56.277 信息 [Catalina-utility-2] org.apache.catalina.users.MemoryUserDatabase.backgroundProcess Reloading memory user database [UserDatabase] from updated source [file:/D:/SourceCode/Java/apache-tomcat-9.0.19/conf/tomcat-users.xml]
+09-May-2019 14:15:56.280 严重 [Catalina-utility-2] org.apache.tomcat.util.digester.Digester.fatalError Parse fatal error at line [46] column [80]
+ org.xml.sax.SAXParseException; lineNumber: 46; columnNumber: 80; 已经为元素 "user" 指定属性 "roles"。
+	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:178)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1471)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanAttribute(XMLDocumentFragmentScannerImpl.java:1524)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanStartElement(XMLDocumentFragmentScannerImpl.java:1353)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2708)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:534)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:888)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:824)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1216)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:635)
+	at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1448)
+	at org.apache.catalina.users.MemoryUserDatabase.open(MemoryUserDatabase.java:445)
+	at org.apache.catalina.users.MemoryUserDatabase.backgroundProcess(MemoryUserDatabase.java:673)
+	at org.apache.catalina.realm.UserDatabaseRealm.backgroundProcess(UserDatabaseRealm.java:141)
+	at org.apache.catalina.realm.CombinedRealm.backgroundProcess(CombinedRealm.java:299)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1130)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1346)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1328)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+09-May-2019 14:15:56.281 严重 [Catalina-utility-2] org.apache.catalina.users.MemoryUserDatabase.backgroundProcess 从更新后的源 [file:/D:/SourceCode/Java/apache-tomcat-9.0.19/conf/tomcat-users.xml] 重新加载内存用户数据库 [UserDatabase] 时出错
+ org.xml.sax.SAXParseException; lineNumber: 46; columnNumber: 80; 已经为元素 "user" 指定属性 "roles"。
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1243)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:635)
+	at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1448)
+	at org.apache.catalina.users.MemoryUserDatabase.open(MemoryUserDatabase.java:445)
+	at org.apache.catalina.users.MemoryUserDatabase.backgroundProcess(MemoryUserDatabase.java:673)
+	at org.apache.catalina.realm.UserDatabaseRealm.backgroundProcess(UserDatabaseRealm.java:141)
+	at org.apache.catalina.realm.CombinedRealm.backgroundProcess(CombinedRealm.java:299)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1130)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1346)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1328)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+09-May-2019 14:17:20.410 信息 [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+09-May-2019 14:17:20.411 信息 [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+09-May-2019 14:17:20.726 信息 [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+09-May-2019 14:17:21.023 信息 [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+09-May-2019 14:17:21.048 信息 [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+09-May-2019 14:17:21.053 信息 [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+09-May-2019 14:17:21.057 信息 [main] org.apache.coyote.AbstractProtocol.destroy 正在摧毁协议处理器 ["http-nio-8080"]
+09-May-2019 14:17:21.059 信息 [main] org.apache.coyote.AbstractProtocol.destroy 正在摧毁协议处理器 ["ajp-nio-8009"]
+09-May-2019 14:17:25.912 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server.服务器版本:        Apache Tomcat/9.0.19
+09-May-2019 14:17:25.925 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server.构建:          Apr 12 2019 14:22:48 UTC
+09-May-2019 14:17:25.926 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.19.0
+09-May-2019 14:17:25.927 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+09-May-2019 14:17:25.928 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS.版本:            10.0
+09-May-2019 14:17:25.928 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 结.造:          amd64
+09-May-2019 14:17:25.929 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java 环境变量:             C:\Program Files\Java\jdk-11.0.2
+09-May-2019 14:17:25.932 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 版本:           11.0.2+9-LTS
+09-May-2019 14:17:25.933 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM.供应商:            Oracle Corporation
+09-May-2019 14:17:25.933 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         D:\SourceCode\Java\apache-tomcat-9.0.19
+09-May-2019 14:17:25.933 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         D:\SourceCode\Java\apache-tomcat-9.0.19
+09-May-2019 14:17:25.935 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+09-May-2019 14:17:25.936 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+09-May-2019 14:17:25.937 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+09-May-2019 14:17:25.938 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=D:\SourceCode\Java\apache-tomcat-9.0.19\conf\logging.properties
+09-May-2019 14:17:25.939 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+09-May-2019 14:17:25.940 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+09-May-2019 14:17:25.941 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+09-May-2019 14:17:25.942 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+09-May-2019 14:17:25.943 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=D:\SourceCode\Java\apache-tomcat-9.0.19
+09-May-2019 14:17:25.944 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=D:\SourceCode\Java\apache-tomcat-9.0.19
+09-May-2019 14:17:25.946 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=D:\SourceCode\Java\apache-tomcat-9.0.19\temp
+09-May-2019 14:17:25.947 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded APR based Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
+09-May-2019 14:17:25.948 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+09-May-2019 14:17:25.948 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+09-May-2019 14:17:25.956 信息 [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+09-May-2019 14:17:26.013 信息 [main] org.apache.coyote.AbstractProtocol.init 初始化协议处理器 ["http-nio-8080"]
+09-May-2019 14:17:26.382 信息 [main] org.apache.coyote.AbstractProtocol.init 初始化协议处理器 ["ajp-nio-8009"]
+09-May-2019 14:17:26.386 信息 [main] org.apache.catalina.startup.Catalina.load 服务器在[891]毫秒内初始化
+09-May-2019 14:17:26.448 严重 [main] org.apache.tomcat.util.digester.Digester.fatalError Parse fatal error at line [46] column [80]
+ org.xml.sax.SAXParseException; lineNumber: 46; columnNumber: 80; 已经为元素 "user" 指定属性 "roles"。
+	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:178)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1471)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanAttribute(XMLDocumentFragmentScannerImpl.java:1524)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanStartElement(XMLDocumentFragmentScannerImpl.java:1353)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2708)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:534)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:888)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:824)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1216)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:635)
+	at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1448)
+	at org.apache.catalina.users.MemoryUserDatabase.open(MemoryUserDatabase.java:445)
+	at org.apache.catalina.users.MemoryUserDatabaseFactory.getObjectInstance(MemoryUserDatabaseFactory.java:107)
+	at org.apache.naming.factory.FactoryBase.getObjectInstance(FactoryBase.java:94)
+	at java.naming/javax.naming.spi.NamingManager.getObjectInstance(NamingManager.java:325)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:840)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:159)
+	at org.apache.naming.NamingContextBindingsEnumeration.nextElementInternal(NamingContextBindingsEnumeration.java:117)
+	at org.apache.naming.NamingContextBindingsEnumeration.next(NamingContextBindingsEnumeration.java:71)
+	at org.apache.naming.NamingContextBindingsEnumeration.next(NamingContextBindingsEnumeration.java:34)
+	at org.apache.catalina.mbeans.GlobalResourcesLifecycleListener.createMBeans(GlobalResourcesLifecycleListener.java:134)
+	at org.apache.catalina.mbeans.GlobalResourcesLifecycleListener.createMBeans(GlobalResourcesLifecycleListener.java:108)
+	at org.apache.catalina.mbeans.GlobalResourcesLifecycleListener.lifecycleEvent(GlobalResourcesLifecycleListener.java:83)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:423)
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:366)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:925)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:633)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:350)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:492)
+
+09-May-2019 14:17:26.453 警告 [main] org.apache.naming.NamingContext.lookup 解析引用时意外异常
+ org.xml.sax.SAXParseException; lineNumber: 46; columnNumber: 80; 已经为元素 "user" 指定属性 "roles"。
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1243)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:635)
+	at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1448)
+	at org.apache.catalina.users.MemoryUserDatabase.open(MemoryUserDatabase.java:445)
+	at org.apache.catalina.users.MemoryUserDatabaseFactory.getObjectInstance(MemoryUserDatabaseFactory.java:107)
+	at org.apache.naming.factory.FactoryBase.getObjectInstance(FactoryBase.java:94)
+	at java.naming/javax.naming.spi.NamingManager.getObjectInstance(NamingManager.java:325)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:840)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:159)
+	at org.apache.naming.NamingContextBindingsEnumeration.nextElementInternal(NamingContextBindingsEnumeration.java:117)
+	at org.apache.naming.NamingContextBindingsEnumeration.next(NamingContextBindingsEnumeration.java:71)
+	at org.apache.naming.NamingContextBindingsEnumeration.next(NamingContextBindingsEnumeration.java:34)
+	at org.apache.catalina.mbeans.GlobalResourcesLifecycleListener.createMBeans(GlobalResourcesLifecycleListener.java:134)
+	at org.apache.catalina.mbeans.GlobalResourcesLifecycleListener.createMBeans(GlobalResourcesLifecycleListener.java:108)
+	at org.apache.catalina.mbeans.GlobalResourcesLifecycleListener.lifecycleEvent(GlobalResourcesLifecycleListener.java:83)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:423)
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:366)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:925)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:633)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:350)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:492)
+
+09-May-2019 14:17:26.455 严重 [main] org.apache.catalina.mbeans.GlobalResourcesLifecycleListener.createMBeans Exception processing global JNDI Resources
+ javax.naming.NamingException: 解析引用时意外异常 [Root exception is org.xml.sax.SAXParseException; lineNumber: 46; columnNumber: 80; 已经为元素 "user" 指定属性 "roles"。]
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:856)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:159)
+	at org.apache.naming.NamingContextBindingsEnumeration.nextElementInternal(NamingContextBindingsEnumeration.java:117)
+	at org.apache.naming.NamingContextBindingsEnumeration.next(NamingContextBindingsEnumeration.java:71)
+	at org.apache.naming.NamingContextBindingsEnumeration.next(NamingContextBindingsEnumeration.java:34)
+	at org.apache.catalina.mbeans.GlobalResourcesLifecycleListener.createMBeans(GlobalResourcesLifecycleListener.java:134)
+	at org.apache.catalina.mbeans.GlobalResourcesLifecycleListener.createMBeans(GlobalResourcesLifecycleListener.java:108)
+	at org.apache.catalina.mbeans.GlobalResourcesLifecycleListener.lifecycleEvent(GlobalResourcesLifecycleListener.java:83)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:423)
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:366)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:925)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:633)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:350)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:492)
+Caused by: org.xml.sax.SAXParseException; lineNumber: 46; columnNumber: 80; 已经为元素 "user" 指定属性 "roles"。
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1243)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:635)
+	at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1448)
+	at org.apache.catalina.users.MemoryUserDatabase.open(MemoryUserDatabase.java:445)
+	at org.apache.catalina.users.MemoryUserDatabaseFactory.getObjectInstance(MemoryUserDatabaseFactory.java:107)
+	at org.apache.naming.factory.FactoryBase.getObjectInstance(FactoryBase.java:94)
+	at java.naming/javax.naming.spi.NamingManager.getObjectInstance(NamingManager.java:325)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:840)
+	... 19 more
+
+09-May-2019 14:17:26.468 信息 [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+09-May-2019 14:17:26.469 信息 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.19]
+09-May-2019 14:17:26.474 严重 [main] org.apache.tomcat.util.digester.Digester.fatalError Parse fatal error at line [46] column [80]
+ org.xml.sax.SAXParseException; lineNumber: 46; columnNumber: 80; 已经为元素 "user" 指定属性 "roles"。
+	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:178)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1471)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanAttribute(XMLDocumentFragmentScannerImpl.java:1524)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanStartElement(XMLDocumentFragmentScannerImpl.java:1353)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2708)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:534)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:888)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:824)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1216)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:635)
+	at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1448)
+	at org.apache.catalina.users.MemoryUserDatabase.open(MemoryUserDatabase.java:445)
+	at org.apache.catalina.users.MemoryUserDatabaseFactory.getObjectInstance(MemoryUserDatabaseFactory.java:107)
+	at org.apache.naming.factory.FactoryBase.getObjectInstance(FactoryBase.java:94)
+	at java.naming/javax.naming.spi.NamingManager.getObjectInstance(NamingManager.java:325)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:840)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:173)
+	at org.apache.catalina.realm.UserDatabaseRealm.startInternal(UserDatabaseRealm.java:205)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.realm.CombinedRealm.startInternal(CombinedRealm.java:245)
+	at org.apache.catalina.realm.LockOutRealm.startInternal(LockOutRealm.java:115)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:895)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:423)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:932)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:633)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:350)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:492)
+
+09-May-2019 14:17:26.476 警告 [main] org.apache.naming.NamingContext.lookup 解析引用时意外异常
+ org.xml.sax.SAXParseException; lineNumber: 46; columnNumber: 80; 已经为元素 "user" 指定属性 "roles"。
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1243)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:635)
+	at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1448)
+	at org.apache.catalina.users.MemoryUserDatabase.open(MemoryUserDatabase.java:445)
+	at org.apache.catalina.users.MemoryUserDatabaseFactory.getObjectInstance(MemoryUserDatabaseFactory.java:107)
+	at org.apache.naming.factory.FactoryBase.getObjectInstance(FactoryBase.java:94)
+	at java.naming/javax.naming.spi.NamingManager.getObjectInstance(NamingManager.java:325)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:840)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:173)
+	at org.apache.catalina.realm.UserDatabaseRealm.startInternal(UserDatabaseRealm.java:205)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.realm.CombinedRealm.startInternal(CombinedRealm.java:245)
+	at org.apache.catalina.realm.LockOutRealm.startInternal(LockOutRealm.java:115)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:895)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:423)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:932)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:633)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:350)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:492)
+
+09-May-2019 14:17:26.479 严重 [main] org.apache.catalina.realm.UserDatabaseRealm.startInternal Exception looking up UserDatabase under key [UserDatabase]
+ javax.naming.NamingException: 解析引用时意外异常 [Root exception is org.xml.sax.SAXParseException; lineNumber: 46; columnNumber: 80; 已经为元素 "user" 指定属性 "roles"。]
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:856)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:173)
+	at org.apache.catalina.realm.UserDatabaseRealm.startInternal(UserDatabaseRealm.java:205)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.realm.CombinedRealm.startInternal(CombinedRealm.java:245)
+	at org.apache.catalina.realm.LockOutRealm.startInternal(LockOutRealm.java:115)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:895)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:423)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:932)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:633)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:350)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:492)
+Caused by: org.xml.sax.SAXParseException; lineNumber: 46; columnNumber: 80; 已经为元素 "user" 指定属性 "roles"。
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1243)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:635)
+	at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1448)
+	at org.apache.catalina.users.MemoryUserDatabase.open(MemoryUserDatabase.java:445)
+	at org.apache.catalina.users.MemoryUserDatabaseFactory.getObjectInstance(MemoryUserDatabaseFactory.java:107)
+	at org.apache.naming.factory.FactoryBase.getObjectInstance(FactoryBase.java:94)
+	at java.naming/javax.naming.spi.NamingManager.getObjectInstance(NamingManager.java:325)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:840)
+	... 20 more
+
+09-May-2019 14:17:26.483 严重 [main] org.apache.catalina.realm.CombinedRealm.startInternal Failed to start [org.apache.catalina.realm.UserDatabaseRealm] realm
+ org.apache.catalina.LifecycleException: 未找到key[UserDatabase]对应的UserDatabase组件。
+	at org.apache.catalina.realm.UserDatabaseRealm.startInternal(UserDatabaseRealm.java:213)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.realm.CombinedRealm.startInternal(CombinedRealm.java:245)
+	at org.apache.catalina.realm.LockOutRealm.startInternal(LockOutRealm.java:115)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:895)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:423)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:932)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:633)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:350)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:492)
+
+09-May-2019 14:17:26.496 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\SourceCode\Java\apache-tomcat-9.0.19\webapps\docs]
+09-May-2019 14:17:27.034 警告 [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [342] milliseconds.
+09-May-2019 14:17:27.053 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\SourceCode\Java\apache-tomcat-9.0.19\webapps\docs] has finished in [558] ms
+09-May-2019 14:17:27.053 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\SourceCode\Java\apache-tomcat-9.0.19\webapps\examples]
+09-May-2019 14:17:27.348 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\SourceCode\Java\apache-tomcat-9.0.19\webapps\examples] has finished in [295] ms
+09-May-2019 14:17:27.349 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\SourceCode\Java\apache-tomcat-9.0.19\webapps\host-manager]
+09-May-2019 14:17:27.387 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\SourceCode\Java\apache-tomcat-9.0.19\webapps\host-manager] has finished in [38] ms
+09-May-2019 14:17:27.388 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\SourceCode\Java\apache-tomcat-9.0.19\webapps\manager]
+09-May-2019 14:17:27.419 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\SourceCode\Java\apache-tomcat-9.0.19\webapps\manager] has finished in [31] ms
+09-May-2019 14:17:27.420 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\SourceCode\Java\apache-tomcat-9.0.19\webapps\ROOT]
+09-May-2019 14:17:27.443 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\SourceCode\Java\apache-tomcat-9.0.19\webapps\ROOT] has finished in [22] ms
+09-May-2019 14:17:27.447 信息 [main] org.apache.coyote.AbstractProtocol.start 开始协议处理句柄["http-nio-8080"]
+09-May-2019 14:17:27.456 信息 [main] org.apache.coyote.AbstractProtocol.start 开始协议处理句柄["ajp-nio-8009"]
+09-May-2019 14:17:27.467 信息 [main] org.apache.catalina.startup.Catalina.start Server startup in [1,076] milliseconds
+09-May-2019 14:18:01.136 警告 [http-nio-8080-exec-8] org.apache.catalina.realm.LockOutRealm.filterLockedAccounts 尝试对锁定的用户[tomcat]进行身份验证
+09-May-2019 14:18:20.678 警告 [http-nio-8080-exec-10] org.apache.catalina.realm.LockOutRealm.filterLockedAccounts 尝试对锁定的用户[tomcat]进行身份验证
+09-May-2019 14:18:24.176 警告 [http-nio-8080-exec-7] org.apache.catalina.realm.LockOutRealm.filterLockedAccounts 尝试对锁定的用户[tomcat]进行身份验证
+09-May-2019 14:18:32.439 警告 [http-nio-8080-exec-1] org.apache.catalina.realm.LockOutRealm.filterLockedAccounts 尝试对锁定的用户[tomcat]进行身份验证
+09-May-2019 14:19:36.923 警告 [http-nio-8080-exec-10] org.apache.catalina.realm.LockOutRealm.filterLockedAccounts 尝试对锁定的用户[tomcat]进行身份验证
+09-May-2019 14:19:38.739 警告 [http-nio-8080-exec-7] org.apache.catalina.realm.LockOutRealm.filterLockedAccounts 尝试对锁定的用户[tomcat]进行身份验证
+09-May-2019 14:19:42.464 警告 [http-nio-8080-exec-1] org.apache.catalina.realm.LockOutRealm.filterLockedAccounts 尝试对锁定的用户[tomcat]进行身份验证
+09-May-2019 14:20:32.714 信息 [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+09-May-2019 14:20:32.714 信息 [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+09-May-2019 14:20:33.040 信息 [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+09-May-2019 14:20:33.337 信息 [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+09-May-2019 14:20:33.352 信息 [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+09-May-2019 14:20:33.368 信息 [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+09-May-2019 14:20:33.368 信息 [main] org.apache.coyote.AbstractProtocol.destroy 正在摧毁协议处理器 ["http-nio-8080"]
+09-May-2019 14:20:33.377 信息 [main] org.apache.coyote.AbstractProtocol.destroy 正在摧毁协议处理器 ["ajp-nio-8009"]
+09-May-2019 14:20:37.097 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server.服务器版本:        Apache Tomcat/9.0.19
+09-May-2019 14:20:37.109 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server.构建:          Apr 12 2019 14:22:48 UTC
+09-May-2019 14:20:37.109 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.19.0
+09-May-2019 14:20:37.109 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+09-May-2019 14:20:37.109 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS.版本:            10.0
+09-May-2019 14:20:37.116 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 结.造:          amd64
+09-May-2019 14:20:37.116 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java 环境变量:             C:\Program Files\Java\jdk-11.0.2
+09-May-2019 14:20:37.116 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 版本:           11.0.2+9-LTS
+09-May-2019 14:20:37.116 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM.供应商:            Oracle Corporation
+09-May-2019 14:20:37.116 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         D:\SourceCode\Java\apache-tomcat-9.0.19
+09-May-2019 14:20:37.116 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         D:\SourceCode\Java\apache-tomcat-9.0.19
+09-May-2019 14:20:37.116 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+09-May-2019 14:20:37.116 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+09-May-2019 14:20:37.116 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+09-May-2019 14:20:37.121 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=D:\SourceCode\Java\apache-tomcat-9.0.19\conf\logging.properties
+09-May-2019 14:20:37.121 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+09-May-2019 14:20:37.121 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+09-May-2019 14:20:37.121 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+09-May-2019 14:20:37.121 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+09-May-2019 14:20:37.121 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=D:\SourceCode\Java\apache-tomcat-9.0.19
+09-May-2019 14:20:37.121 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=D:\SourceCode\Java\apache-tomcat-9.0.19
+09-May-2019 14:20:37.121 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=D:\SourceCode\Java\apache-tomcat-9.0.19\temp
+09-May-2019 14:20:37.121 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded APR based Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
+09-May-2019 14:20:37.126 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+09-May-2019 14:20:37.126 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+09-May-2019 14:20:37.131 信息 [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+09-May-2019 14:20:37.176 信息 [main] org.apache.coyote.AbstractProtocol.init 初始化协议处理器 ["http-nio-8080"]
+09-May-2019 14:20:37.574 信息 [main] org.apache.coyote.AbstractProtocol.init 初始化协议处理器 ["ajp-nio-8009"]
+09-May-2019 14:20:37.582 信息 [main] org.apache.catalina.startup.Catalina.load 服务器在[871]毫秒内初始化
+09-May-2019 14:20:37.643 严重 [main] org.apache.tomcat.util.digester.Digester.fatalError Parse fatal error at line [54] column [1]
+ org.xml.sax.SAXParseException; lineNumber: 54; columnNumber: 1; XML 文档结构必须从头至尾包含在同一个实体内。
+	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:178)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1471)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.endEntity(XMLDocumentFragmentScannerImpl.java:933)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.endEntity(XMLDocumentScannerImpl.java:562)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLEntityManager.endEntity(XMLEntityManager.java:1495)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLEntityScanner.load(XMLEntityScanner.java:1925)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLEntityScanner.skipChar(XMLEntityScanner.java:1560)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2744)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:534)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:888)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:824)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1216)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:635)
+	at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1448)
+	at org.apache.catalina.users.MemoryUserDatabase.open(MemoryUserDatabase.java:445)
+	at org.apache.catalina.users.MemoryUserDatabaseFactory.getObjectInstance(MemoryUserDatabaseFactory.java:107)
+	at org.apache.naming.factory.FactoryBase.getObjectInstance(FactoryBase.java:94)
+	at java.naming/javax.naming.spi.NamingManager.getObjectInstance(NamingManager.java:325)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:840)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:159)
+	at org.apache.naming.NamingContextBindingsEnumeration.nextElementInternal(NamingContextBindingsEnumeration.java:117)
+	at org.apache.naming.NamingContextBindingsEnumeration.next(NamingContextBindingsEnumeration.java:71)
+	at org.apache.naming.NamingContextBindingsEnumeration.next(NamingContextBindingsEnumeration.java:34)
+	at org.apache.catalina.mbeans.GlobalResourcesLifecycleListener.createMBeans(GlobalResourcesLifecycleListener.java:134)
+	at org.apache.catalina.mbeans.GlobalResourcesLifecycleListener.createMBeans(GlobalResourcesLifecycleListener.java:108)
+	at org.apache.catalina.mbeans.GlobalResourcesLifecycleListener.lifecycleEvent(GlobalResourcesLifecycleListener.java:83)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:423)
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:366)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:925)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:633)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:350)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:492)
+
+09-May-2019 14:20:37.649 警告 [main] org.apache.naming.NamingContext.lookup 解析引用时意外异常
+ org.xml.sax.SAXParseException; lineNumber: 54; columnNumber: 1; XML 文档结构必须从头至尾包含在同一个实体内。
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1243)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:635)
+	at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1448)
+	at org.apache.catalina.users.MemoryUserDatabase.open(MemoryUserDatabase.java:445)
+	at org.apache.catalina.users.MemoryUserDatabaseFactory.getObjectInstance(MemoryUserDatabaseFactory.java:107)
+	at org.apache.naming.factory.FactoryBase.getObjectInstance(FactoryBase.java:94)
+	at java.naming/javax.naming.spi.NamingManager.getObjectInstance(NamingManager.java:325)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:840)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:159)
+	at org.apache.naming.NamingContextBindingsEnumeration.nextElementInternal(NamingContextBindingsEnumeration.java:117)
+	at org.apache.naming.NamingContextBindingsEnumeration.next(NamingContextBindingsEnumeration.java:71)
+	at org.apache.naming.NamingContextBindingsEnumeration.next(NamingContextBindingsEnumeration.java:34)
+	at org.apache.catalina.mbeans.GlobalResourcesLifecycleListener.createMBeans(GlobalResourcesLifecycleListener.java:134)
+	at org.apache.catalina.mbeans.GlobalResourcesLifecycleListener.createMBeans(GlobalResourcesLifecycleListener.java:108)
+	at org.apache.catalina.mbeans.GlobalResourcesLifecycleListener.lifecycleEvent(GlobalResourcesLifecycleListener.java:83)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:423)
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:366)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:925)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:633)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:350)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:492)
+
+09-May-2019 14:20:37.652 严重 [main] org.apache.catalina.mbeans.GlobalResourcesLifecycleListener.createMBeans Exception processing global JNDI Resources
+ javax.naming.NamingException: 解析引用时意外异常 [Root exception is org.xml.sax.SAXParseException; lineNumber: 54; columnNumber: 1; XML 文档结构必须从头至尾包含在同一个实体内。]
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:856)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:159)
+	at org.apache.naming.NamingContextBindingsEnumeration.nextElementInternal(NamingContextBindingsEnumeration.java:117)
+	at org.apache.naming.NamingContextBindingsEnumeration.next(NamingContextBindingsEnumeration.java:71)
+	at org.apache.naming.NamingContextBindingsEnumeration.next(NamingContextBindingsEnumeration.java:34)
+	at org.apache.catalina.mbeans.GlobalResourcesLifecycleListener.createMBeans(GlobalResourcesLifecycleListener.java:134)
+	at org.apache.catalina.mbeans.GlobalResourcesLifecycleListener.createMBeans(GlobalResourcesLifecycleListener.java:108)
+	at org.apache.catalina.mbeans.GlobalResourcesLifecycleListener.lifecycleEvent(GlobalResourcesLifecycleListener.java:83)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:423)
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:366)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:925)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:633)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:350)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:492)
+Caused by: org.xml.sax.SAXParseException; lineNumber: 54; columnNumber: 1; XML 文档结构必须从头至尾包含在同一个实体内。
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1243)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:635)
+	at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1448)
+	at org.apache.catalina.users.MemoryUserDatabase.open(MemoryUserDatabase.java:445)
+	at org.apache.catalina.users.MemoryUserDatabaseFactory.getObjectInstance(MemoryUserDatabaseFactory.java:107)
+	at org.apache.naming.factory.FactoryBase.getObjectInstance(FactoryBase.java:94)
+	at java.naming/javax.naming.spi.NamingManager.getObjectInstance(NamingManager.java:325)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:840)
+	... 19 more
+
+09-May-2019 14:20:37.665 信息 [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+09-May-2019 14:20:37.667 信息 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.19]
+09-May-2019 14:20:37.673 严重 [main] org.apache.tomcat.util.digester.Digester.fatalError Parse fatal error at line [54] column [1]
+ org.xml.sax.SAXParseException; lineNumber: 54; columnNumber: 1; XML 文档结构必须从头至尾包含在同一个实体内。
+	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:178)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1471)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.endEntity(XMLDocumentFragmentScannerImpl.java:933)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.endEntity(XMLDocumentScannerImpl.java:562)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLEntityManager.endEntity(XMLEntityManager.java:1495)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLEntityScanner.load(XMLEntityScanner.java:1925)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLEntityScanner.skipChar(XMLEntityScanner.java:1560)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2744)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:534)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:888)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:824)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1216)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:635)
+	at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1448)
+	at org.apache.catalina.users.MemoryUserDatabase.open(MemoryUserDatabase.java:445)
+	at org.apache.catalina.users.MemoryUserDatabaseFactory.getObjectInstance(MemoryUserDatabaseFactory.java:107)
+	at org.apache.naming.factory.FactoryBase.getObjectInstance(FactoryBase.java:94)
+	at java.naming/javax.naming.spi.NamingManager.getObjectInstance(NamingManager.java:325)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:840)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:173)
+	at org.apache.catalina.realm.UserDatabaseRealm.startInternal(UserDatabaseRealm.java:205)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.realm.CombinedRealm.startInternal(CombinedRealm.java:245)
+	at org.apache.catalina.realm.LockOutRealm.startInternal(LockOutRealm.java:115)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:895)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:423)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:932)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:633)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:350)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:492)
+
+09-May-2019 14:20:37.676 警告 [main] org.apache.naming.NamingContext.lookup 解析引用时意外异常
+ org.xml.sax.SAXParseException; lineNumber: 54; columnNumber: 1; XML 文档结构必须从头至尾包含在同一个实体内。
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1243)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:635)
+	at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1448)
+	at org.apache.catalina.users.MemoryUserDatabase.open(MemoryUserDatabase.java:445)
+	at org.apache.catalina.users.MemoryUserDatabaseFactory.getObjectInstance(MemoryUserDatabaseFactory.java:107)
+	at org.apache.naming.factory.FactoryBase.getObjectInstance(FactoryBase.java:94)
+	at java.naming/javax.naming.spi.NamingManager.getObjectInstance(NamingManager.java:325)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:840)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:173)
+	at org.apache.catalina.realm.UserDatabaseRealm.startInternal(UserDatabaseRealm.java:205)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.realm.CombinedRealm.startInternal(CombinedRealm.java:245)
+	at org.apache.catalina.realm.LockOutRealm.startInternal(LockOutRealm.java:115)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:895)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:423)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:932)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:633)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:350)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:492)
+
+09-May-2019 14:20:37.678 严重 [main] org.apache.catalina.realm.UserDatabaseRealm.startInternal Exception looking up UserDatabase under key [UserDatabase]
+ javax.naming.NamingException: 解析引用时意外异常 [Root exception is org.xml.sax.SAXParseException; lineNumber: 54; columnNumber: 1; XML 文档结构必须从头至尾包含在同一个实体内。]
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:856)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:173)
+	at org.apache.catalina.realm.UserDatabaseRealm.startInternal(UserDatabaseRealm.java:205)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.realm.CombinedRealm.startInternal(CombinedRealm.java:245)
+	at org.apache.catalina.realm.LockOutRealm.startInternal(LockOutRealm.java:115)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:895)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:423)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:932)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:633)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:350)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:492)
+Caused by: org.xml.sax.SAXParseException; lineNumber: 54; columnNumber: 1; XML 文档结构必须从头至尾包含在同一个实体内。
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1243)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:635)
+	at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1448)
+	at org.apache.catalina.users.MemoryUserDatabase.open(MemoryUserDatabase.java:445)
+	at org.apache.catalina.users.MemoryUserDatabaseFactory.getObjectInstance(MemoryUserDatabaseFactory.java:107)
+	at org.apache.naming.factory.FactoryBase.getObjectInstance(FactoryBase.java:94)
+	at java.naming/javax.naming.spi.NamingManager.getObjectInstance(NamingManager.java:325)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:840)
+	... 20 more
+
+09-May-2019 14:20:37.681 严重 [main] org.apache.catalina.realm.CombinedRealm.startInternal Failed to start [org.apache.catalina.realm.UserDatabaseRealm] realm
+ org.apache.catalina.LifecycleException: 未找到key[UserDatabase]对应的UserDatabase组件。
+	at org.apache.catalina.realm.UserDatabaseRealm.startInternal(UserDatabaseRealm.java:213)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.realm.CombinedRealm.startInternal(CombinedRealm.java:245)
+	at org.apache.catalina.realm.LockOutRealm.startInternal(LockOutRealm.java:115)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:895)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:423)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:932)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:633)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:350)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:492)
+
+09-May-2019 14:20:37.690 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\SourceCode\Java\apache-tomcat-9.0.19\webapps\docs]
+09-May-2019 14:20:38.210 警告 [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [316] milliseconds.
+09-May-2019 14:20:38.228 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\SourceCode\Java\apache-tomcat-9.0.19\webapps\docs] has finished in [538] ms
+09-May-2019 14:20:38.228 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\SourceCode\Java\apache-tomcat-9.0.19\webapps\examples]
+09-May-2019 14:20:38.663 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\SourceCode\Java\apache-tomcat-9.0.19\webapps\examples] has finished in [435] ms
+09-May-2019 14:20:38.665 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\SourceCode\Java\apache-tomcat-9.0.19\webapps\host-manager]
+09-May-2019 14:20:38.722 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\SourceCode\Java\apache-tomcat-9.0.19\webapps\host-manager] has finished in [57] ms
+09-May-2019 14:20:38.723 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\SourceCode\Java\apache-tomcat-9.0.19\webapps\manager]
+09-May-2019 14:20:38.789 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\SourceCode\Java\apache-tomcat-9.0.19\webapps\manager] has finished in [66] ms
+09-May-2019 14:20:38.790 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\SourceCode\Java\apache-tomcat-9.0.19\webapps\ROOT]
+09-May-2019 14:20:38.825 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\SourceCode\Java\apache-tomcat-9.0.19\webapps\ROOT] has finished in [35] ms
+09-May-2019 14:20:38.835 信息 [main] org.apache.coyote.AbstractProtocol.start 开始协议处理句柄["http-nio-8080"]
+09-May-2019 14:20:38.847 信息 [main] org.apache.coyote.AbstractProtocol.start 开始协议处理句柄["ajp-nio-8009"]
+09-May-2019 14:20:38.853 信息 [main] org.apache.catalina.startup.Catalina.start Server startup in [1,269] milliseconds
+09-May-2019 14:24:05.507 警告 [http-nio-8080-exec-2] org.apache.catalina.realm.LockOutRealm.filterLockedAccounts 尝试对锁定的用户[tomcat]进行身份验证
+09-May-2019 14:24:25.722 警告 [http-nio-8080-exec-6] org.apache.catalina.realm.LockOutRealm.filterLockedAccounts 尝试对锁定的用户[admin]进行身份验证
+09-May-2019 14:24:32.580 警告 [http-nio-8080-exec-9] org.apache.catalina.realm.LockOutRealm.filterLockedAccounts 尝试对锁定的用户[admin]进行身份验证
+09-May-2019 14:25:14.898 信息 [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+09-May-2019 14:25:14.898 信息 [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+09-May-2019 14:25:15.216 信息 [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+09-May-2019 14:25:15.535 信息 [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+09-May-2019 14:25:15.551 信息 [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+09-May-2019 14:25:15.566 信息 [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+09-May-2019 14:25:15.566 信息 [main] org.apache.coyote.AbstractProtocol.destroy 正在摧毁协议处理器 ["http-nio-8080"]
+09-May-2019 14:25:15.566 信息 [main] org.apache.coyote.AbstractProtocol.destroy 正在摧毁协议处理器 ["ajp-nio-8009"]
+09-May-2019 14:25:30.458 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server.服务器版本:        Apache Tomcat/9.0.19
+09-May-2019 14:25:30.469 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server.构建:          Apr 12 2019 14:22:48 UTC
+09-May-2019 14:25:30.469 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.19.0
+09-May-2019 14:25:30.470 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+09-May-2019 14:25:30.470 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS.版本:            10.0
+09-May-2019 14:25:30.470 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 结.造:          amd64
+09-May-2019 14:25:30.471 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java 环境变量:             C:\Program Files\Java\jdk-11.0.2
+09-May-2019 14:25:30.472 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 版本:           11.0.2+9-LTS
+09-May-2019 14:25:30.472 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM.供应商:            Oracle Corporation
+09-May-2019 14:25:30.473 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         D:\SourceCode\Java\apache-tomcat-9.0.19
+09-May-2019 14:25:30.473 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         D:\SourceCode\Java\apache-tomcat-9.0.19
+09-May-2019 14:25:30.474 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+09-May-2019 14:25:30.475 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+09-May-2019 14:25:30.476 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+09-May-2019 14:25:30.476 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=D:\SourceCode\Java\apache-tomcat-9.0.19\conf\logging.properties
+09-May-2019 14:25:30.477 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+09-May-2019 14:25:30.477 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+09-May-2019 14:25:30.479 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+09-May-2019 14:25:30.480 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+09-May-2019 14:25:30.481 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=D:\SourceCode\Java\apache-tomcat-9.0.19
+09-May-2019 14:25:30.481 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=D:\SourceCode\Java\apache-tomcat-9.0.19
+09-May-2019 14:25:30.482 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=D:\SourceCode\Java\apache-tomcat-9.0.19\temp
+09-May-2019 14:25:30.483 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded APR based Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
+09-May-2019 14:25:30.483 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+09-May-2019 14:25:30.484 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+09-May-2019 14:25:30.489 信息 [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+09-May-2019 14:25:30.542 信息 [main] org.apache.coyote.AbstractProtocol.init 初始化协议处理器 ["http-nio-8080"]
+09-May-2019 14:25:30.987 信息 [main] org.apache.coyote.AbstractProtocol.init 初始化协议处理器 ["ajp-nio-8009"]
+09-May-2019 14:25:30.994 信息 [main] org.apache.catalina.startup.Catalina.load 服务器在[953]毫秒内初始化
+09-May-2019 14:25:31.068 严重 [main] org.apache.tomcat.util.digester.Digester.fatalError Parse fatal error at line [54] column [1]
+ org.xml.sax.SAXParseException; lineNumber: 54; columnNumber: 1; XML 文档结构必须从头至尾包含在同一个实体内。
+	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:178)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1471)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.endEntity(XMLDocumentFragmentScannerImpl.java:933)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.endEntity(XMLDocumentScannerImpl.java:562)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLEntityManager.endEntity(XMLEntityManager.java:1495)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLEntityScanner.load(XMLEntityScanner.java:1925)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLEntityScanner.skipChar(XMLEntityScanner.java:1560)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2744)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:534)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:888)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:824)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1216)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:635)
+	at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1448)
+	at org.apache.catalina.users.MemoryUserDatabase.open(MemoryUserDatabase.java:445)
+	at org.apache.catalina.users.MemoryUserDatabaseFactory.getObjectInstance(MemoryUserDatabaseFactory.java:107)
+	at org.apache.naming.factory.FactoryBase.getObjectInstance(FactoryBase.java:94)
+	at java.naming/javax.naming.spi.NamingManager.getObjectInstance(NamingManager.java:325)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:840)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:159)
+	at org.apache.naming.NamingContextBindingsEnumeration.nextElementInternal(NamingContextBindingsEnumeration.java:117)
+	at org.apache.naming.NamingContextBindingsEnumeration.next(NamingContextBindingsEnumeration.java:71)
+	at org.apache.naming.NamingContextBindingsEnumeration.next(NamingContextBindingsEnumeration.java:34)
+	at org.apache.catalina.mbeans.GlobalResourcesLifecycleListener.createMBeans(GlobalResourcesLifecycleListener.java:134)
+	at org.apache.catalina.mbeans.GlobalResourcesLifecycleListener.createMBeans(GlobalResourcesLifecycleListener.java:108)
+	at org.apache.catalina.mbeans.GlobalResourcesLifecycleListener.lifecycleEvent(GlobalResourcesLifecycleListener.java:83)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:423)
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:366)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:925)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:633)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:350)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:492)
+
+09-May-2019 14:25:31.076 警告 [main] org.apache.naming.NamingContext.lookup 解析引用时意外异常
+ org.xml.sax.SAXParseException; lineNumber: 54; columnNumber: 1; XML 文档结构必须从头至尾包含在同一个实体内。
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1243)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:635)
+	at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1448)
+	at org.apache.catalina.users.MemoryUserDatabase.open(MemoryUserDatabase.java:445)
+	at org.apache.catalina.users.MemoryUserDatabaseFactory.getObjectInstance(MemoryUserDatabaseFactory.java:107)
+	at org.apache.naming.factory.FactoryBase.getObjectInstance(FactoryBase.java:94)
+	at java.naming/javax.naming.spi.NamingManager.getObjectInstance(NamingManager.java:325)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:840)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:159)
+	at org.apache.naming.NamingContextBindingsEnumeration.nextElementInternal(NamingContextBindingsEnumeration.java:117)
+	at org.apache.naming.NamingContextBindingsEnumeration.next(NamingContextBindingsEnumeration.java:71)
+	at org.apache.naming.NamingContextBindingsEnumeration.next(NamingContextBindingsEnumeration.java:34)
+	at org.apache.catalina.mbeans.GlobalResourcesLifecycleListener.createMBeans(GlobalResourcesLifecycleListener.java:134)
+	at org.apache.catalina.mbeans.GlobalResourcesLifecycleListener.createMBeans(GlobalResourcesLifecycleListener.java:108)
+	at org.apache.catalina.mbeans.GlobalResourcesLifecycleListener.lifecycleEvent(GlobalResourcesLifecycleListener.java:83)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:423)
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:366)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:925)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:633)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:350)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:492)
+
+09-May-2019 14:25:31.079 严重 [main] org.apache.catalina.mbeans.GlobalResourcesLifecycleListener.createMBeans Exception processing global JNDI Resources
+ javax.naming.NamingException: 解析引用时意外异常 [Root exception is org.xml.sax.SAXParseException; lineNumber: 54; columnNumber: 1; XML 文档结构必须从头至尾包含在同一个实体内。]
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:856)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:159)
+	at org.apache.naming.NamingContextBindingsEnumeration.nextElementInternal(NamingContextBindingsEnumeration.java:117)
+	at org.apache.naming.NamingContextBindingsEnumeration.next(NamingContextBindingsEnumeration.java:71)
+	at org.apache.naming.NamingContextBindingsEnumeration.next(NamingContextBindingsEnumeration.java:34)
+	at org.apache.catalina.mbeans.GlobalResourcesLifecycleListener.createMBeans(GlobalResourcesLifecycleListener.java:134)
+	at org.apache.catalina.mbeans.GlobalResourcesLifecycleListener.createMBeans(GlobalResourcesLifecycleListener.java:108)
+	at org.apache.catalina.mbeans.GlobalResourcesLifecycleListener.lifecycleEvent(GlobalResourcesLifecycleListener.java:83)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:123)
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:423)
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:366)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:925)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:633)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:350)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:492)
+Caused by: org.xml.sax.SAXParseException; lineNumber: 54; columnNumber: 1; XML 文档结构必须从头至尾包含在同一个实体内。
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1243)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:635)
+	at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1448)
+	at org.apache.catalina.users.MemoryUserDatabase.open(MemoryUserDatabase.java:445)
+	at org.apache.catalina.users.MemoryUserDatabaseFactory.getObjectInstance(MemoryUserDatabaseFactory.java:107)
+	at org.apache.naming.factory.FactoryBase.getObjectInstance(FactoryBase.java:94)
+	at java.naming/javax.naming.spi.NamingManager.getObjectInstance(NamingManager.java:325)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:840)
+	... 19 more
+
+09-May-2019 14:25:31.100 信息 [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+09-May-2019 14:25:31.101 信息 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.19]
+09-May-2019 14:25:31.108 严重 [main] org.apache.tomcat.util.digester.Digester.fatalError Parse fatal error at line [54] column [1]
+ org.xml.sax.SAXParseException; lineNumber: 54; columnNumber: 1; XML 文档结构必须从头至尾包含在同一个实体内。
+	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:178)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1471)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.endEntity(XMLDocumentFragmentScannerImpl.java:933)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.endEntity(XMLDocumentScannerImpl.java:562)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLEntityManager.endEntity(XMLEntityManager.java:1495)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLEntityScanner.load(XMLEntityScanner.java:1925)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLEntityScanner.skipChar(XMLEntityScanner.java:1560)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2744)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:534)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:888)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:824)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1216)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:635)
+	at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1448)
+	at org.apache.catalina.users.MemoryUserDatabase.open(MemoryUserDatabase.java:445)
+	at org.apache.catalina.users.MemoryUserDatabaseFactory.getObjectInstance(MemoryUserDatabaseFactory.java:107)
+	at org.apache.naming.factory.FactoryBase.getObjectInstance(FactoryBase.java:94)
+	at java.naming/javax.naming.spi.NamingManager.getObjectInstance(NamingManager.java:325)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:840)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:173)
+	at org.apache.catalina.realm.UserDatabaseRealm.startInternal(UserDatabaseRealm.java:205)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.realm.CombinedRealm.startInternal(CombinedRealm.java:245)
+	at org.apache.catalina.realm.LockOutRealm.startInternal(LockOutRealm.java:115)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:895)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:423)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:932)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:633)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:350)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:492)
+
+09-May-2019 14:25:31.112 警告 [main] org.apache.naming.NamingContext.lookup 解析引用时意外异常
+ org.xml.sax.SAXParseException; lineNumber: 54; columnNumber: 1; XML 文档结构必须从头至尾包含在同一个实体内。
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1243)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:635)
+	at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1448)
+	at org.apache.catalina.users.MemoryUserDatabase.open(MemoryUserDatabase.java:445)
+	at org.apache.catalina.users.MemoryUserDatabaseFactory.getObjectInstance(MemoryUserDatabaseFactory.java:107)
+	at org.apache.naming.factory.FactoryBase.getObjectInstance(FactoryBase.java:94)
+	at java.naming/javax.naming.spi.NamingManager.getObjectInstance(NamingManager.java:325)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:840)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:173)
+	at org.apache.catalina.realm.UserDatabaseRealm.startInternal(UserDatabaseRealm.java:205)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.realm.CombinedRealm.startInternal(CombinedRealm.java:245)
+	at org.apache.catalina.realm.LockOutRealm.startInternal(LockOutRealm.java:115)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:895)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:423)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:932)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:633)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:350)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:492)
+
+09-May-2019 14:25:31.115 严重 [main] org.apache.catalina.realm.UserDatabaseRealm.startInternal Exception looking up UserDatabase under key [UserDatabase]
+ javax.naming.NamingException: 解析引用时意外异常 [Root exception is org.xml.sax.SAXParseException; lineNumber: 54; columnNumber: 1; XML 文档结构必须从头至尾包含在同一个实体内。]
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:856)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:173)
+	at org.apache.catalina.realm.UserDatabaseRealm.startInternal(UserDatabaseRealm.java:205)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.realm.CombinedRealm.startInternal(CombinedRealm.java:245)
+	at org.apache.catalina.realm.LockOutRealm.startInternal(LockOutRealm.java:115)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:895)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:423)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:932)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:633)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:350)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:492)
+Caused by: org.xml.sax.SAXParseException; lineNumber: 54; columnNumber: 1; XML 文档结构必须从头至尾包含在同一个实体内。
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1243)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:635)
+	at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1448)
+	at org.apache.catalina.users.MemoryUserDatabase.open(MemoryUserDatabase.java:445)
+	at org.apache.catalina.users.MemoryUserDatabaseFactory.getObjectInstance(MemoryUserDatabaseFactory.java:107)
+	at org.apache.naming.factory.FactoryBase.getObjectInstance(FactoryBase.java:94)
+	at java.naming/javax.naming.spi.NamingManager.getObjectInstance(NamingManager.java:325)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:840)
+	... 20 more
+
+09-May-2019 14:25:31.119 严重 [main] org.apache.catalina.realm.CombinedRealm.startInternal Failed to start [org.apache.catalina.realm.UserDatabaseRealm] realm
+ org.apache.catalina.LifecycleException: 未找到key[UserDatabase]对应的UserDatabase组件。
+	at org.apache.catalina.realm.UserDatabaseRealm.startInternal(UserDatabaseRealm.java:213)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.realm.CombinedRealm.startInternal(CombinedRealm.java:245)
+	at org.apache.catalina.realm.LockOutRealm.startInternal(LockOutRealm.java:115)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:895)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:423)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:932)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:633)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:350)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:492)
+
+09-May-2019 14:25:31.138 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\SourceCode\Java\apache-tomcat-9.0.19\webapps\docs]
+09-May-2019 14:25:31.722 警告 [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [316] milliseconds.
+09-May-2019 14:25:31.753 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\SourceCode\Java\apache-tomcat-9.0.19\webapps\docs] has finished in [616] ms
+09-May-2019 14:25:31.753 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\SourceCode\Java\apache-tomcat-9.0.19\webapps\examples]
+09-May-2019 14:25:32.020 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\SourceCode\Java\apache-tomcat-9.0.19\webapps\examples] has finished in [267] ms
+09-May-2019 14:25:32.020 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\SourceCode\Java\apache-tomcat-9.0.19\webapps\host-manager]
+09-May-2019 14:25:32.070 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\SourceCode\Java\apache-tomcat-9.0.19\webapps\host-manager] has finished in [50] ms
+09-May-2019 14:25:32.071 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\SourceCode\Java\apache-tomcat-9.0.19\webapps\manager]
+09-May-2019 14:25:32.096 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\SourceCode\Java\apache-tomcat-9.0.19\webapps\manager] has finished in [25] ms
+09-May-2019 14:25:32.096 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\SourceCode\Java\apache-tomcat-9.0.19\webapps\ROOT]
+09-May-2019 14:25:32.112 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\SourceCode\Java\apache-tomcat-9.0.19\webapps\ROOT] has finished in [16] ms
+09-May-2019 14:25:32.112 信息 [main] org.apache.coyote.AbstractProtocol.start 开始协议处理句柄["http-nio-8080"]
+09-May-2019 14:25:32.127 信息 [main] org.apache.coyote.AbstractProtocol.start 开始协议处理句柄["ajp-nio-8009"]
+09-May-2019 14:25:32.127 信息 [main] org.apache.catalina.startup.Catalina.start Server startup in [1,142] milliseconds
+09-May-2019 14:27:43.220 信息 [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+09-May-2019 14:27:43.220 信息 [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+09-May-2019 14:27:43.540 信息 [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+09-May-2019 14:27:43.837 信息 [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+09-May-2019 14:27:43.853 信息 [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+09-May-2019 14:27:43.853 信息 [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+09-May-2019 14:27:43.868 信息 [main] org.apache.coyote.AbstractProtocol.destroy 正在摧毁协议处理器 ["http-nio-8080"]
+09-May-2019 14:27:43.868 信息 [main] org.apache.coyote.AbstractProtocol.destroy 正在摧毁协议处理器 ["ajp-nio-8009"]
+09-May-2019 14:27:47.255 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server.服务器版本:        Apache Tomcat/9.0.19
+09-May-2019 14:27:47.265 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server.构建:          Apr 12 2019 14:22:48 UTC
+09-May-2019 14:27:47.265 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.19.0
+09-May-2019 14:27:47.265 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+09-May-2019 14:27:47.265 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS.版本:            10.0
+09-May-2019 14:27:47.265 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 结.造:          amd64
+09-May-2019 14:27:47.265 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java 环境变量:             C:\Program Files\Java\jdk-11.0.2
+09-May-2019 14:27:47.274 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 版本:           11.0.2+9-LTS
+09-May-2019 14:27:47.274 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM.供应商:            Oracle Corporation
+09-May-2019 14:27:47.274 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         D:\SourceCode\Java\apache-tomcat-9.0.19
+09-May-2019 14:27:47.274 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         D:\SourceCode\Java\apache-tomcat-9.0.19
+09-May-2019 14:27:47.279 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+09-May-2019 14:27:47.279 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+09-May-2019 14:27:47.279 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+09-May-2019 14:27:47.279 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=D:\SourceCode\Java\apache-tomcat-9.0.19\conf\logging.properties
+09-May-2019 14:27:47.279 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+09-May-2019 14:27:47.279 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+09-May-2019 14:27:47.279 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+09-May-2019 14:27:47.279 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+09-May-2019 14:27:47.279 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=D:\SourceCode\Java\apache-tomcat-9.0.19
+09-May-2019 14:27:47.279 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=D:\SourceCode\Java\apache-tomcat-9.0.19
+09-May-2019 14:27:47.279 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=D:\SourceCode\Java\apache-tomcat-9.0.19\temp
+09-May-2019 14:27:47.285 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded APR based Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
+09-May-2019 14:27:47.285 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+09-May-2019 14:27:47.285 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+09-May-2019 14:27:47.285 信息 [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+09-May-2019 14:27:47.345 信息 [main] org.apache.coyote.AbstractProtocol.init 初始化协议处理器 ["http-nio-8080"]
+09-May-2019 14:27:47.783 信息 [main] org.apache.coyote.AbstractProtocol.init 初始化协议处理器 ["ajp-nio-8009"]
+09-May-2019 14:27:47.792 信息 [main] org.apache.catalina.startup.Catalina.load 服务器在[937]毫秒内初始化
+09-May-2019 14:27:47.877 信息 [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+09-May-2019 14:27:47.877 信息 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.19]
+09-May-2019 14:27:47.893 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\SourceCode\Java\apache-tomcat-9.0.19\webapps\docs]
+09-May-2019 14:27:48.532 警告 [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [355] milliseconds.
+09-May-2019 14:27:48.562 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\SourceCode\Java\apache-tomcat-9.0.19\webapps\docs] has finished in [669] ms
+09-May-2019 14:27:48.563 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\SourceCode\Java\apache-tomcat-9.0.19\webapps\examples]
+09-May-2019 14:27:48.911 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\SourceCode\Java\apache-tomcat-9.0.19\webapps\examples] has finished in [348] ms
+09-May-2019 14:27:48.912 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\SourceCode\Java\apache-tomcat-9.0.19\webapps\host-manager]
+09-May-2019 14:27:48.947 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\SourceCode\Java\apache-tomcat-9.0.19\webapps\host-manager] has finished in [35] ms
+09-May-2019 14:27:48.948 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\SourceCode\Java\apache-tomcat-9.0.19\webapps\manager]
+09-May-2019 14:27:48.980 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\SourceCode\Java\apache-tomcat-9.0.19\webapps\manager] has finished in [32] ms
+09-May-2019 14:27:48.980 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\SourceCode\Java\apache-tomcat-9.0.19\webapps\ROOT]
+09-May-2019 14:27:49.006 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\SourceCode\Java\apache-tomcat-9.0.19\webapps\ROOT] has finished in [26] ms
+09-May-2019 14:27:49.012 信息 [main] org.apache.coyote.AbstractProtocol.start 开始协议处理句柄["http-nio-8080"]
+09-May-2019 14:27:49.022 信息 [main] org.apache.coyote.AbstractProtocol.start 开始协议处理句柄["ajp-nio-8009"]
+09-May-2019 14:27:49.028 信息 [main] org.apache.catalina.startup.Catalina.start Server startup in [1,234] milliseconds
+09-May-2019 14:29:49.121 信息 [Catalina-utility-2] org.apache.catalina.users.MemoryUserDatabase.backgroundProcess Reloading memory user database [UserDatabase] from updated source [file:/D:/SourceCode/Java/apache-tomcat-9.0.19/conf/tomcat-users.xml]
+09-May-2019 14:29:49.563 信息 [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+09-May-2019 14:29:49.563 信息 [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+09-May-2019 14:29:49.891 信息 [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+09-May-2019 14:29:50.198 信息 [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+09-May-2019 14:29:50.214 信息 [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+09-May-2019 14:29:50.214 信息 [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+09-May-2019 14:29:50.229 信息 [main] org.apache.coyote.AbstractProtocol.destroy 正在摧毁协议处理器 ["http-nio-8080"]
+09-May-2019 14:29:50.229 信息 [main] org.apache.coyote.AbstractProtocol.destroy 正在摧毁协议处理器 ["ajp-nio-8009"]
+09-May-2019 14:29:52.369 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server.服务器版本:        Apache Tomcat/9.0.19
+09-May-2019 14:29:52.385 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server.构建:          Apr 12 2019 14:22:48 UTC
+09-May-2019 14:29:52.385 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.19.0
+09-May-2019 14:29:52.385 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+09-May-2019 14:29:52.385 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS.版本:            10.0
+09-May-2019 14:29:52.385 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 结.造:          amd64
+09-May-2019 14:29:52.385 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java 环境变量:             C:\Program Files\Java\jdk-11.0.2
+09-May-2019 14:29:52.385 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 版本:           11.0.2+9-LTS
+09-May-2019 14:29:52.385 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM.供应商:            Oracle Corporation
+09-May-2019 14:29:52.385 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         D:\SourceCode\Java\apache-tomcat-9.0.19
+09-May-2019 14:29:52.385 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         D:\SourceCode\Java\apache-tomcat-9.0.19
+09-May-2019 14:29:52.385 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+09-May-2019 14:29:52.385 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+09-May-2019 14:29:52.385 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+09-May-2019 14:29:52.385 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=D:\SourceCode\Java\apache-tomcat-9.0.19\conf\logging.properties
+09-May-2019 14:29:52.385 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+09-May-2019 14:29:52.385 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+09-May-2019 14:29:52.385 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+09-May-2019 14:29:52.401 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+09-May-2019 14:29:52.401 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=D:\SourceCode\Java\apache-tomcat-9.0.19
+09-May-2019 14:29:52.401 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=D:\SourceCode\Java\apache-tomcat-9.0.19
+09-May-2019 14:29:52.401 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=D:\SourceCode\Java\apache-tomcat-9.0.19\temp
+09-May-2019 14:29:52.401 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded APR based Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
+09-May-2019 14:29:52.401 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+09-May-2019 14:29:52.401 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+09-May-2019 14:29:52.401 信息 [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+09-May-2019 14:29:52.448 信息 [main] org.apache.coyote.AbstractProtocol.init 初始化协议处理器 ["http-nio-8080"]
+09-May-2019 14:29:52.841 信息 [main] org.apache.coyote.AbstractProtocol.init 初始化协议处理器 ["ajp-nio-8009"]
+09-May-2019 14:29:52.841 信息 [main] org.apache.catalina.startup.Catalina.load 服务器在[913]毫秒内初始化
+09-May-2019 14:29:52.929 信息 [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+09-May-2019 14:29:52.931 信息 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.19]
+09-May-2019 14:29:52.946 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\SourceCode\Java\apache-tomcat-9.0.19\webapps\docs]
+09-May-2019 14:29:53.582 警告 [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [350] milliseconds.
+09-May-2019 14:29:53.611 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\SourceCode\Java\apache-tomcat-9.0.19\webapps\docs] has finished in [665] ms
+09-May-2019 14:29:53.613 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\SourceCode\Java\apache-tomcat-9.0.19\webapps\examples]
+09-May-2019 14:29:53.970 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\SourceCode\Java\apache-tomcat-9.0.19\webapps\examples] has finished in [358] ms
+09-May-2019 14:29:53.971 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\SourceCode\Java\apache-tomcat-9.0.19\webapps\host-manager]
+09-May-2019 14:29:54.045 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\SourceCode\Java\apache-tomcat-9.0.19\webapps\host-manager] has finished in [74] ms
+09-May-2019 14:29:54.047 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\SourceCode\Java\apache-tomcat-9.0.19\webapps\manager]
+09-May-2019 14:29:54.075 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\SourceCode\Java\apache-tomcat-9.0.19\webapps\manager] has finished in [29] ms
+09-May-2019 14:29:54.076 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\SourceCode\Java\apache-tomcat-9.0.19\webapps\ROOT]
+09-May-2019 14:29:54.094 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\SourceCode\Java\apache-tomcat-9.0.19\webapps\ROOT] has finished in [18] ms
+09-May-2019 14:29:54.094 信息 [main] org.apache.coyote.AbstractProtocol.start 开始协议处理句柄["http-nio-8080"]
+09-May-2019 14:29:54.109 信息 [main] org.apache.coyote.AbstractProtocol.start 开始协议处理句柄["ajp-nio-8009"]
+09-May-2019 14:29:54.109 信息 [main] org.apache.catalina.startup.Catalina.start Server startup in [1,272] milliseconds
+09-May-2019 14:31:12.704 信息 [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+09-May-2019 14:31:12.704 信息 [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+09-May-2019 14:31:13.024 信息 [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+09-May-2019 14:31:13.344 信息 [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+09-May-2019 14:31:13.368 信息 [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+09-May-2019 14:31:13.368 信息 [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+09-May-2019 14:31:13.374 信息 [main] org.apache.coyote.AbstractProtocol.destroy 正在摧毁协议处理器 ["http-nio-8080"]
+09-May-2019 14:31:13.374 信息 [main] org.apache.coyote.AbstractProtocol.destroy 正在摧毁协议处理器 ["ajp-nio-8009"]
+09-May-2019 14:31:15.681 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server.服务器版本:        Apache Tomcat/9.0.19
+09-May-2019 14:31:15.689 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server.构建:          Apr 12 2019 14:22:48 UTC
+09-May-2019 14:31:15.690 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.19.0
+09-May-2019 14:31:15.693 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+09-May-2019 14:31:15.695 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS.版本:            10.0
+09-May-2019 14:31:15.695 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 结.造:          amd64
+09-May-2019 14:31:15.696 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java 环境变量:             C:\Program Files\Java\jdk-11.0.2
+09-May-2019 14:31:15.696 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 版本:           11.0.2+9-LTS
+09-May-2019 14:31:15.700 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM.供应商:            Oracle Corporation
+09-May-2019 14:31:15.700 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         D:\SourceCode\Java\apache-tomcat-9.0.19
+09-May-2019 14:31:15.700 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         D:\SourceCode\Java\apache-tomcat-9.0.19
+09-May-2019 14:31:15.701 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+09-May-2019 14:31:15.701 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+09-May-2019 14:31:15.702 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+09-May-2019 14:31:15.703 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=D:\SourceCode\Java\apache-tomcat-9.0.19\conf\logging.properties
+09-May-2019 14:31:15.704 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+09-May-2019 14:31:15.705 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+09-May-2019 14:31:15.706 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+09-May-2019 14:31:15.710 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+09-May-2019 14:31:15.710 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=D:\SourceCode\Java\apache-tomcat-9.0.19
+09-May-2019 14:31:15.711 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=D:\SourceCode\Java\apache-tomcat-9.0.19
+09-May-2019 14:31:15.712 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=D:\SourceCode\Java\apache-tomcat-9.0.19\temp
+09-May-2019 14:31:15.713 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded APR based Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
+09-May-2019 14:31:15.714 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+09-May-2019 14:31:15.714 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+09-May-2019 14:31:15.721 信息 [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+09-May-2019 14:31:15.774 信息 [main] org.apache.coyote.AbstractProtocol.init 初始化协议处理器 ["http-nio-8080"]
+09-May-2019 14:31:16.162 信息 [main] org.apache.coyote.AbstractProtocol.init 初始化协议处理器 ["ajp-nio-8009"]
+09-May-2019 14:31:16.162 信息 [main] org.apache.catalina.startup.Catalina.load 服务器在[963]毫秒内初始化
+09-May-2019 14:31:16.226 信息 [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+09-May-2019 14:31:16.226 信息 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.19]
+09-May-2019 14:31:16.226 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\SourceCode\Java\apache-tomcat-9.0.19\webapps\docs]
+09-May-2019 14:31:16.916 警告 [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [389] milliseconds.
+09-May-2019 14:31:16.939 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\SourceCode\Java\apache-tomcat-9.0.19\webapps\docs] has finished in [713] ms
+09-May-2019 14:31:16.939 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\SourceCode\Java\apache-tomcat-9.0.19\webapps\examples]
+09-May-2019 14:31:17.330 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\SourceCode\Java\apache-tomcat-9.0.19\webapps\examples] has finished in [391] ms
+09-May-2019 14:31:17.331 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\SourceCode\Java\apache-tomcat-9.0.19\webapps\host-manager]
+09-May-2019 14:31:17.371 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\SourceCode\Java\apache-tomcat-9.0.19\webapps\host-manager] has finished in [40] ms
+09-May-2019 14:31:17.372 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\SourceCode\Java\apache-tomcat-9.0.19\webapps\manager]
+09-May-2019 14:31:17.409 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\SourceCode\Java\apache-tomcat-9.0.19\webapps\manager] has finished in [37] ms
+09-May-2019 14:31:17.411 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\SourceCode\Java\apache-tomcat-9.0.19\webapps\ROOT]
+09-May-2019 14:31:17.448 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\SourceCode\Java\apache-tomcat-9.0.19\webapps\ROOT] has finished in [39] ms
+09-May-2019 14:31:17.455 信息 [main] org.apache.coyote.AbstractProtocol.start 开始协议处理句柄["http-nio-8080"]
+09-May-2019 14:31:17.468 信息 [main] org.apache.coyote.AbstractProtocol.start 开始协议处理句柄["ajp-nio-8009"]
+09-May-2019 14:31:17.477 信息 [main] org.apache.catalina.startup.Catalina.start Server startup in [1,307] milliseconds
+09-May-2019 14:32:07.514 信息 [Catalina-utility-1] org.apache.catalina.users.MemoryUserDatabase.backgroundProcess Reloading memory user database [UserDatabase] from updated source [file:/D:/SourceCode/Java/apache-tomcat-9.0.19/conf/tomcat-users.xml]
+09-May-2019 14:32:37.551 信息 [Catalina-utility-2] org.apache.catalina.users.MemoryUserDatabase.backgroundProcess Reloading memory user database [UserDatabase] from updated source [file:/D:/SourceCode/Java/apache-tomcat-9.0.19/conf/tomcat-users.xml]

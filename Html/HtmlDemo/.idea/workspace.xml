@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9038ddce-64be-4cbb-9a57-f8c31bc5f27c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/HtmlDemo/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/HtmlDemo/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/HtmlDemo/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/HtmlDemo/form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/HtmlDemo/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/JDBCDemo/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/JDBCDemo/src/Demo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/TomcatDemo/.idea/artifacts/TomcatDemo_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/TomcatDemo/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/TomcatDemo/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/TomcatDemo/.idea/libraries/Java_EE_6_Java_EE_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/TomcatDemo/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/TomcatDemo/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/TomcatDemo/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/TomcatDemo/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/TomcatDemo/TomcatDemo.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/TomcatDemo/src/HelloWorldServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/TomcatDemo/src/TestLifeCycleServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/TomcatDemo/web/WEB-INF/classes/Demo/HelloWorldServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/TomcatDemo/web/WEB-INF/classes/Demo/TestLifeCycleServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/TomcatDemo/web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/TomcatDemo/web/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/TomcatDemo/web/index_files/GM_script" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/TomcatDemo/web/index_files/activity_start_52498d2c.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/TomcatDemo/web/index_files/all_async_search_2345059.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/TomcatDemo/web/index_files/baidu_resultlogo@2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/TomcatDemo/web/index_files/copy_rignt_24.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/TomcatDemo/web/index_files/dong_18baaa7524814ab080a65d15e2da33fd.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/TomcatDemo/web/index_files/every_cookie_4644b13.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/TomcatDemo/web/index_files/github-btn.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/TomcatDemo/web/index_files/index_e0150f3.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/TomcatDemo/web/index_files/jquery-1.10.2_1c4228b8.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/TomcatDemo/web/index_files/logo_top_86d58ae1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/TomcatDemo/web/index_files/min_super_fdb28b91.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/TomcatDemo/web/index_files/min_tips_e4616384.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/TomcatDemo/web/index_files/mt_min_2247e202.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/TomcatDemo/web/index_files/nsguide_a8cbc2e7.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/TomcatDemo/web/index_files/sbase_a65ca873.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/TomcatDemo/web/index_files/search-sug_73a0f48.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/TomcatDemo/web/index_files/skin_opacity30_98c3c665.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/TomcatDemo/web/index_files/soutu.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/TomcatDemo/web/index_files/super_ext_5031d813.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/TomcatDemo/web/index_files/super_min_353cb37f.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/TomcatDemo/web/index_files/swfobject_0178953.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/TomcatDemo/web/index_files/tu_d03f361.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/TomcatDemo/web/index_files/ubase_83c8f0ba.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Android/FangDou/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/FangDou/.idea/dbnavigator.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Android/FangDou/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/FangDou/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Android/FangDou/app/src/main/java/com/example/fangdou/activity/LoginActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/FangDou/app/src/main/java/com/example/fangdou/activity/LoginActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Android/FangDou/app/src/main/res/layout/activity_login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/FangDou/app/src/main/res/layout/activity_login.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/JDBCDemo/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/JDBCDemo/.idea/dbnavigator.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/JDBCDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/JDBCDemo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/JDBCDemo/out/production/JDBCDemo/TestJDBCj.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/JDBCDemo/out/production/JDBCDemo/TestJDBCj.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java/JDBCDemo/src/TestJDBC.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/JDBCDemo/src/TestJDBC.java" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="8" column="73" selection-start-line="8" selection-start-column="73" selection-end-line="8" selection-end-column="73" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/index.html" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="976" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="HtmlDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HtmlDemo" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/HtmlDemo/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.index.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9038ddce-64be-4cbb-9a57-f8c31bc5f27c" name="Default Changelist" comment="" />
+      <created>1557798994411</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1557798994411</updated>
+      <workItem from="1557798995546" duration="221000" />
+      <workItem from="1557799239699" duration="34000" />
+      <workItem from="1557799327819" duration="1892000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="2147000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="976" height="1056" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" weight="0.17960909" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3991131" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="8" column="73" selection-start-line="8" selection-start-column="73" selection-end-line="8" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

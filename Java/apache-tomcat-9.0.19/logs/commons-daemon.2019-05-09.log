@@ -1,0 +1,10 @@
+[2019-05-09 13:39:12] [info]  [ 4832] Commons Daemon procrun (1.1.0.0 64-bit) started
+[2019-05-09 13:39:12] [info]  [ 4832] Service Tomcat9 name Apache Tomcat 9.0 Tomcat9
+[2019-05-09 13:39:12] [info]  [ 4832] Service 'Tomcat9' installed
+[2019-05-09 13:39:12] [info]  [ 4832] Commons Daemon procrun finished
+[2019-05-09 13:39:57] [info]  [10124] Commons Daemon procrun (1.1.0.0 64-bit) started
+[2019-05-09 13:39:57] [info]  [10124] Running 'Tomcat9' Service...
+[2019-05-09 13:39:57] [info]  [13688] Starting service...
+[2019-05-09 13:39:59] [info]  [13688] Service started in 1446 ms.
+[2019-05-09 14:17:21] [info]  [10124] Run service finished.
+[2019-05-09 14:17:21] [info]  [10124] Commons Daemon procrun finished

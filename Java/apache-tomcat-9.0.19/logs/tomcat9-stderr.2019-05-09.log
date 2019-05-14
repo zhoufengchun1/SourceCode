@@ -1,0 +1,166 @@
+
+2019-05-09 13:39:57 Commons Daemon procrun stderr initialized
+09-May-2019 13:39:59.563 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server.服务器版本:        Apache Tomcat/9.0.19
+09-May-2019 13:39:59.563 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server.构建:          Apr 12 2019 14:22:48 UTC
+09-May-2019 13:39:59.563 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.19.0
+09-May-2019 13:39:59.563 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+09-May-2019 13:39:59.563 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS.版本:            10.0
+09-May-2019 13:39:59.563 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 结.造:          amd64
+09-May-2019 13:39:59.563 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java 环境变量:             C:\Program Files\Java\jdk-11.0.2
+09-May-2019 13:39:59.563 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 版本:           11.0.2+9-LTS
+09-May-2019 13:39:59.563 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM.供应商:            Oracle Corporation
+09-May-2019 13:39:59.563 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         D:\SourceCode\Java\apache-tomcat-9.0.19
+09-May-2019 13:39:59.563 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         D:\SourceCode\Java\apache-tomcat-9.0.19
+09-May-2019 13:39:59.578 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=D:\SourceCode\Java\apache-tomcat-9.0.19
+09-May-2019 13:39:59.578 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=D:\SourceCode\Java\apache-tomcat-9.0.19
+09-May-2019 13:39:59.578 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=D:\SourceCode\Java\apache-tomcat-9.0.19\endorsed
+09-May-2019 13:39:59.578 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=D:\SourceCode\Java\apache-tomcat-9.0.19\temp
+09-May-2019 13:39:59.578 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+09-May-2019 13:39:59.578 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=D:\SourceCode\Java\apache-tomcat-9.0.19\conf\logging.properties
+09-May-2019 13:39:59.578 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+09-May-2019 13:39:59.578 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+09-May-2019 13:39:59.578 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+09-May-2019 13:39:59.578 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: exit
+09-May-2019 13:39:59.578 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: abort
+09-May-2019 13:39:59.578 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Xms128m
+09-May-2019 13:39:59.578 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Xmx256m
+09-May-2019 13:39:59.578 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded APR based Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
+09-May-2019 13:39:59.578 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+09-May-2019 13:39:59.578 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+09-May-2019 13:39:59.594 信息 [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+09-May-2019 13:39:59.641 信息 [main] org.apache.coyote.AbstractProtocol.init 初始化协议处理器 ["http-nio-8080"]
+09-May-2019 13:40:00.089 信息 [main] org.apache.coyote.AbstractProtocol.init 初始化协议处理器 ["ajp-nio-8009"]
+09-May-2019 13:40:00.105 信息 [main] org.apache.catalina.startup.Catalina.load 服务器在[1,307]毫秒内初始化
+09-May-2019 13:40:00.168 信息 [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+09-May-2019 13:40:00.168 信息 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.19]
+09-May-2019 13:40:00.199 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\SourceCode\Java\apache-tomcat-9.0.19\webapps\docs]
+09-May-2019 13:40:00.841 警告 [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [314] milliseconds.
+09-May-2019 13:40:00.859 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\SourceCode\Java\apache-tomcat-9.0.19\webapps\docs] has finished in [660] ms
+09-May-2019 13:40:00.906 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\SourceCode\Java\apache-tomcat-9.0.19\webapps\examples]
+09-May-2019 13:40:01.925 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\SourceCode\Java\apache-tomcat-9.0.19\webapps\examples] has finished in [1,019] ms
+09-May-2019 13:40:01.942 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\SourceCode\Java\apache-tomcat-9.0.19\webapps\host-manager]
+09-May-2019 13:40:02.007 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\SourceCode\Java\apache-tomcat-9.0.19\webapps\host-manager] has finished in [65] ms
+09-May-2019 13:40:02.007 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\SourceCode\Java\apache-tomcat-9.0.19\webapps\manager]
+09-May-2019 13:40:02.038 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\SourceCode\Java\apache-tomcat-9.0.19\webapps\manager] has finished in [31] ms
+09-May-2019 13:40:02.038 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [D:\SourceCode\Java\apache-tomcat-9.0.19\webapps\ROOT]
+09-May-2019 13:40:02.069 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\SourceCode\Java\apache-tomcat-9.0.19\webapps\ROOT] has finished in [31] ms
+09-May-2019 13:40:02.069 信息 [main] org.apache.coyote.AbstractProtocol.start 开始协议处理句柄["http-nio-8080"]
+09-May-2019 13:40:02.086 信息 [main] org.apache.coyote.AbstractProtocol.start 开始协议处理句柄["ajp-nio-8009"]
+09-May-2019 13:40:02.086 信息 [main] org.apache.catalina.startup.Catalina.start Server startup in [1,986] milliseconds
+09-May-2019 14:09:15.918 信息 [Catalina-utility-1] org.apache.catalina.users.MemoryUserDatabase.backgroundProcess Reloading memory user database [UserDatabase] from updated source [file:/D:/SourceCode/Java/apache-tomcat-9.0.19/conf/tomcat-users.xml]
+09-May-2019 14:15:26.251 信息 [Catalina-utility-1] org.apache.catalina.users.MemoryUserDatabase.backgroundProcess Reloading memory user database [UserDatabase] from updated source [file:/D:/SourceCode/Java/apache-tomcat-9.0.19/conf/tomcat-users.xml]
+09-May-2019 14:15:26.262 严重 [Catalina-utility-1] org.apache.tomcat.util.digester.Digester.fatalError Parse fatal error at line [46] column [73]
+ org.xml.sax.SAXParseException; lineNumber: 46; columnNumber: 73; 已经为元素 "user" 指定属性 "roles"。
+	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:178)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1471)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanAttribute(XMLDocumentFragmentScannerImpl.java:1524)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanStartElement(XMLDocumentFragmentScannerImpl.java:1353)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2708)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:534)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:888)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:824)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1216)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:635)
+	at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1448)
+	at org.apache.catalina.users.MemoryUserDatabase.open(MemoryUserDatabase.java:445)
+	at org.apache.catalina.users.MemoryUserDatabase.backgroundProcess(MemoryUserDatabase.java:673)
+	at org.apache.catalina.realm.UserDatabaseRealm.backgroundProcess(UserDatabaseRealm.java:141)
+	at org.apache.catalina.realm.CombinedRealm.backgroundProcess(CombinedRealm.java:299)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1130)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1346)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1328)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+09-May-2019 14:15:26.265 严重 [Catalina-utility-1] org.apache.catalina.users.MemoryUserDatabase.backgroundProcess 从更新后的源 [file:/D:/SourceCode/Java/apache-tomcat-9.0.19/conf/tomcat-users.xml] 重新加载内存用户数据库 [UserDatabase] 时出错
+ org.xml.sax.SAXParseException; lineNumber: 46; columnNumber: 73; 已经为元素 "user" 指定属性 "roles"。
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1243)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:635)
+	at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1448)
+	at org.apache.catalina.users.MemoryUserDatabase.open(MemoryUserDatabase.java:445)
+	at org.apache.catalina.users.MemoryUserDatabase.backgroundProcess(MemoryUserDatabase.java:673)
+	at org.apache.catalina.realm.UserDatabaseRealm.backgroundProcess(UserDatabaseRealm.java:141)
+	at org.apache.catalina.realm.CombinedRealm.backgroundProcess(CombinedRealm.java:299)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1130)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1346)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1328)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+09-May-2019 14:15:56.277 信息 [Catalina-utility-2] org.apache.catalina.users.MemoryUserDatabase.backgroundProcess Reloading memory user database [UserDatabase] from updated source [file:/D:/SourceCode/Java/apache-tomcat-9.0.19/conf/tomcat-users.xml]
+09-May-2019 14:15:56.280 严重 [Catalina-utility-2] org.apache.tomcat.util.digester.Digester.fatalError Parse fatal error at line [46] column [80]
+ org.xml.sax.SAXParseException; lineNumber: 46; columnNumber: 80; 已经为元素 "user" 指定属性 "roles"。
+	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:178)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1471)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanAttribute(XMLDocumentFragmentScannerImpl.java:1524)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanStartElement(XMLDocumentFragmentScannerImpl.java:1353)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2708)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:534)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:888)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:824)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1216)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:635)
+	at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1448)
+	at org.apache.catalina.users.MemoryUserDatabase.open(MemoryUserDatabase.java:445)
+	at org.apache.catalina.users.MemoryUserDatabase.backgroundProcess(MemoryUserDatabase.java:673)
+	at org.apache.catalina.realm.UserDatabaseRealm.backgroundProcess(UserDatabaseRealm.java:141)
+	at org.apache.catalina.realm.CombinedRealm.backgroundProcess(CombinedRealm.java:299)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1130)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1346)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1328)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+09-May-2019 14:15:56.281 严重 [Catalina-utility-2] org.apache.catalina.users.MemoryUserDatabase.backgroundProcess 从更新后的源 [file:/D:/SourceCode/Java/apache-tomcat-9.0.19/conf/tomcat-users.xml] 重新加载内存用户数据库 [UserDatabase] 时出错
+ org.xml.sax.SAXParseException; lineNumber: 46; columnNumber: 80; 已经为元素 "user" 指定属性 "roles"。
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1243)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:635)
+	at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1448)
+	at org.apache.catalina.users.MemoryUserDatabase.open(MemoryUserDatabase.java:445)
+	at org.apache.catalina.users.MemoryUserDatabase.backgroundProcess(MemoryUserDatabase.java:673)
+	at org.apache.catalina.realm.UserDatabaseRealm.backgroundProcess(UserDatabaseRealm.java:141)
+	at org.apache.catalina.realm.CombinedRealm.backgroundProcess(CombinedRealm.java:299)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1130)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1346)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1328)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+09-May-2019 14:17:20.410 信息 [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+09-May-2019 14:17:20.411 信息 [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+09-May-2019 14:17:20.726 信息 [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+09-May-2019 14:17:21.023 信息 [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+09-May-2019 14:17:21.048 信息 [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+09-May-2019 14:17:21.053 信息 [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+09-May-2019 14:17:21.057 信息 [main] org.apache.coyote.AbstractProtocol.destroy 正在摧毁协议处理器 ["http-nio-8080"]
+09-May-2019 14:17:21.059 信息 [main] org.apache.coyote.AbstractProtocol.destroy 正在摧毁协议处理器 ["ajp-nio-8009"]

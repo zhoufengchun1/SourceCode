@@ -52,8 +52,8 @@ public class LoginActivity extends AppCompatActivity
 
     public void init()
     {
-        userText.setHint("用户名");
-        passwdText.setHint("密码");
+        userTextInputLayout.setHint("用户名");
+        passwdTextInputLayout.setHint("密码");
         userTextInputLayout.setHintTextAppearance(R.style.TextInputAppTheme);
         passwdTextInputLayout.setHintTextAppearance(R.style.TextInputAppTheme);
 
@@ -82,6 +82,10 @@ public class LoginActivity extends AppCompatActivity
         } else if (password.equals(""))
         {
             Toast.makeText(LoginActivity.this, "密码不能为空！", Toast.LENGTH_SHORT).show();
+            return false;
+        } else if (username.length() > 10 || password.length() > 10)
+        {
+            Toast.makeText(LoginActivity.this,"用户名、密码均为小于10位的数字或者字母。",Toast.LENGTH_SHORT).show();
             return false;
         }
         return true;
