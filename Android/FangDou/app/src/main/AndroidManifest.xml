@@ -38,18 +38,9 @@
             android:exported="true" />
 
         <activity android:name=".activity.ThemeActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.theme" />
 
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
         </activity>
         <activity android:name=".activity.InputActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.build" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
         </activity>
         <activity android:name=".activity.MainActivity">
             <intent-filter>

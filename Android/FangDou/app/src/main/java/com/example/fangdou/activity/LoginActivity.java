@@ -1,9 +1,14 @@
 package com.example.fangdou.activity;
 
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.os.Looper;
 import android.support.design.widget.TextInputLayout;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
+import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -47,6 +52,14 @@ public class LoginActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         ButterKnife.bind(this);
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        toolbar.setTitle("个人设置");
+        toolbar.setBackgroundColor(getResources().getColor(R.color.color_default));
+        ThemeActivity.setStatusBarColor(LoginActivity.this, getResources().getColor(R.color.color_default));
+        setSupportActionBar(toolbar);
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true);
+        actionBar.setHomeButtonEnabled(true);
         init();
     }
 
@@ -75,6 +88,11 @@ public class LoginActivity extends AppCompatActivity
 
     public boolean judge()
     {
+        if (!checkNetwork())
+        {
+            Toast.makeText(LoginActivity.this, "网络不可用，请检查网络连接！", Toast.LENGTH_SHORT).show();
+            return false;
+        }
         if (username.equals(""))
         {
             Toast.makeText(LoginActivity.this, "用户名不能为空！", Toast.LENGTH_SHORT).show();
@@ -85,7 +103,7 @@ public class LoginActivity extends AppCompatActivity
             return false;
         } else if (username.length() > 10 || password.length() > 10)
         {
-            Toast.makeText(LoginActivity.this,"用户名、密码均为小于10位的数字或者字母。",Toast.LENGTH_SHORT).show();
+            Toast.makeText(LoginActivity.this, "用户名、密码均为小于10位的数字或者字母。", Toast.LENGTH_SHORT).show();
             return false;
         }
         return true;
@@ -195,5 +213,26 @@ public class LoginActivity extends AppCompatActivity
                 }
             }
         }.start();
+    }
+
+    public boolean checkNetwork()
+    {
+        ConnectivityManager connectivityManager = (ConnectivityManager) this.getSystemService(CONNECTIVITY_SERVICE);
+        NetworkInfo networkInfo = connectivityManager.getActiveNetworkInfo();
+        if (networkInfo != null)
+        {
+            return networkInfo.isAvailable();
+        }
+        return false;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item)
+    {
+        if (item.getItemId() == android.R.id.home)
+        {
+            finish();
+        }
+        return true;
     }
 }

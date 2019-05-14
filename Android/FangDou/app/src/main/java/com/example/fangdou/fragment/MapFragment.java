@@ -20,6 +20,7 @@ import android.widget.Toast;
 import com.example.fangdou.MyDrawerLayout;
 import com.example.fangdou.MyListView;
 import com.example.fangdou.R;
+import com.example.fangdou.activity.InputActivity;
 import com.example.fangdou.activity.LoginActivity;
 import com.example.fangdou.activity.ThemeActivity;
 import com.example.fangdou.adapter.LanguageAdapter;
@@ -146,16 +147,18 @@ public class MapFragment extends Fragment implements LanguageAdapter.Callback
                 switch (string)
                 {
                     case "DIY语音合成":
-                        intent = new Intent("android.intent.action.build");
+                        intent = new Intent(getContext(), InputActivity.class);
                         startActivity(intent);
                         break;
                     case "我的收藏/点赞":
+                        Toast.makeText(getContext(), "敬请期待！", Toast.LENGTH_SHORT).show();
+                        break;
                     case "个人设置":
                         intent = new Intent(getContext(), LoginActivity.class);
                         startActivity(intent);
                         break;
                     case "主题":
-                        intent = new Intent("android.intent.action.theme");
+                        intent = new Intent(getContext(), ThemeActivity.class);
                         startActivity(intent);
                         break;
                     default:

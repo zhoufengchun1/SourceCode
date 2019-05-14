@@ -7,131 +7,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="971dbd24-0f2c-4cdf-9812-eda12a9fca7a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../Android/ChangeColorDemo/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Android/ChangeColorDemo/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Android/FangDou2/app/src/main/java/com/example/fangdou2/Item.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Android/FangDou2/app/src/main/java/com/example/fangdou2/activity/ThemeActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Android/FangDou2/app/src/main/java/com/example/fangdou2/adapter/ColorAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Android/FangDou2/app/src/main/java/com/example/fangdou2/utils/RippleAnimation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Android/FangDou2/app/src/main/res/drawable/blue.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Android/FangDou2/app/src/main/res/drawable/ching.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Android/FangDou2/app/src/main/res/drawable/green.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Android/FangDou2/app/src/main/res/drawable/pink.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Android/FangDou2/app/src/main/res/drawable/red.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Android/FangDou2/app/src/main/res/drawable/white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Android/FangDou2/app/src/main/res/layout/activity_theme.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Android/FangDou2/app/src/main/res/layout/color_item.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Homework/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Homework/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Homework/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Homework/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Homework/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Homework/Homework.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Practice/ReflectDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/ChangeColorDemo/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/ChangeColorDemo/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/ChangeColorDemo/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/ChangeColorDemo/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/ChangeColorDemo/app/src/main/java/com/example/changecolordemo/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/ChangeColorDemo/app/src/main/java/com/example/changecolordemo/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/ChangeColorDemo/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/ChangeColorDemo/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/ChangeColorDemo/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/ChangeColorDemo/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/FangDou2/app/release/app-release.apk" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/FangDou2/app/release/app-release.apk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/FangDou2/app/release/output.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/FangDou2/app/release/output.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/FangDou2/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/FangDou2/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/FangDou2/app/src/main/java/com/example/fangdou2/fragment/MapFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/FangDou2/app/src/main/java/com/example/fangdou2/fragment/MapFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/FangDou2/app/src/main/res/layout/activity_input.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/FangDou2/app/src/main/res/layout/activity_input.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/FangDou2/app/src/main/res/menu/menu_leftnavigation.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/FangDou2/app/src/main/res/menu/menu_leftnavigation.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/FangDou2/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/FangDou2/app/src/main/res/values/colors.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Html/HtmlDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Html/HtmlDemo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Html/HtmlDemo/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Html/HtmlDemo/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Java.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Java_jar/Java.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Java_jar/Java.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/META-INF/Java.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/Others/Complex.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/Others/JComplex$ButtonPanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/Others/JComplex$OperatorPanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/Others/JComplex$TextPanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/Others/JComplex.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/Practice/CssChooser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/Account.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/Answer$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/Answer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/Answer0.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/Answer3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/Answer4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/Area.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/Average.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/Bank.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/Calculator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/Comparable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/Complex.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/ComplexCal$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/ComplexCal$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/ComplexCal$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/ComplexCal$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/ComplexCal$5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/ComplexCal$6.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/ComplexCal$7.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/ComplexCal$JComplexList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/ComplexCal.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/Consumer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/Demo1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/Demo2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/Demo3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/Figure.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/Globe.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/IO$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/IO$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/IO$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/IO$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/IO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/Info$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/Info$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/Info$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/Info.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/JComplex$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/JComplex.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/Point.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/Polygon.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/Producer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/ProducerConsumer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/Resources.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/Solid.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/Student.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/Triangle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/Volume.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/ans.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/aver.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/cone.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/judge$1$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/judge$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/judge$2$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/judge$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/judge$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/homework/judge.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Others/JComplex.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Practice/CssChooser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/homework/2-23.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Homework/src/homework/2-23.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/homework/2-26.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Homework/src/homework/2-26.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/homework/2-28.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Homework/src/homework/2-28.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/homework/3-37.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Homework/src/homework/3-37.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/homework/4-17.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Homework/src/homework/4-17.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/homework/4-18.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Homework/src/homework/4-18.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/homework/4-19.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Homework/src/homework/4-19.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/homework/4-21.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Homework/src/homework/4-21.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/homework/6-33.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Homework/src/homework/6-33.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/homework/7-20.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Homework/src/homework/7-20.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/homework/8-12.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Homework/src/homework/8-12.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/homework/8-15.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Homework/src/homework/8-15.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/homework/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Homework/src/homework/Calculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/homework/ComplexCal.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Homework/src/homework/ComplexCal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/homework/IO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Homework/src/homework/IO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/homework/ProducerConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Homework/src/homework/ProducerConsumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/homework/Triangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Homework/src/homework/Triangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/Practice/Apple.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/Practice/Apple.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -172,8 +54,7 @@
     <select />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="ExportToHTMLSettings">
     <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/../Java\exportToHTML" />
@@ -183,11 +64,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Practice/ReflectDemo.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="526">
               <caret line="53" selection-start-line="53" selection-end-line="54" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Practice/RegServer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="480">
+              <caret line="20" column="66" selection-start-line="20" selection-start-column="66" selection-end-line="20" selection-end-column="66" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -249,7 +142,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/ProducerConsumer.java" />
         <option value="$PROJECT_DIR$/src/Text/ProducerConsumer.java" />
         <option value="$PROJECT_DIR$/src/homework/Consumer.java" />
         <option value="$PROJECT_DIR$/src/Text/synchronizedDemo.java" />
@@ -300,6 +192,7 @@
         <option value="$PROJECT_DIR$/src/Demo.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/Practice/ReflectDemo.java" />
+        <option value="$PROJECT_DIR$/src/Practice/RegServer.java" />
       </list>
     </option>
   </component>
@@ -330,6 +223,7 @@
       <foldersAlwaysOnTop value="false" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -352,7 +246,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -375,6 +268,9 @@
     <property name="go.import.settings.migrated" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="10" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -411,26 +307,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Apple">
+  <component name="RunManager" selected="Application.RegServer">
     <configuration name="Apple" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Practice.Apple" />
       <module name="Java" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Practice.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ComplexCal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="homework.ComplexCal" />
-      <module name="Java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="homework.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -447,6 +330,19 @@
     </configuration>
     <configuration name="ReflectDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Practice.ReflectDemo" />
+      <module name="Java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Practice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Practice.RegServer" />
       <module name="Java" />
       <extension name="coverage">
         <pattern>
@@ -483,19 +379,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.ComplexCal" />
       <item itemvalue="Application.Test" />
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.ReflectDemo" />
       <item itemvalue="Application.Apple" />
+      <item itemvalue="Application.RegServer" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.RegServer" />
         <item itemvalue="Application.Apple" />
         <item itemvalue="Application.ReflectDemo" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Test" />
-        <item itemvalue="Application.ComplexCal" />
       </list>
     </recent_temporary>
   </component>
@@ -652,6 +548,7 @@
       <workItem from="1554011821356" duration="42000" />
       <workItem from="1554011898165" duration="7207000" />
       <workItem from="1554190511686" duration="10000" />
+      <workItem from="1557801462604" duration="2906000" />
     </task>
     <task id="LOCAL-00001" summary="123">
       <created>1541220645392</created>
@@ -755,7 +652,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="441699000" />
+    <option name="totallyTimeSpent" value="444605000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -769,16 +666,18 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
+      <window_info id="DB Browser" />
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="1" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="Favorites" order="5" side_tool="true" weight="0.3292683" />
-      <window_info content_ui="combo" id="Project" order="6" sideWeight="0.49901575" visible="true" weight="0.1844609" />
+      <window_info content_ui="combo" id="Project" order="6" sideWeight="0.49901575" weight="0.1844609" />
+      <window_info anchor="bottom" id="DB Execution Console" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3295325" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4989429" weight="0.1919192" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32884398" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4989429" weight="0.59708196" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3647587" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -957,7 +856,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/homework/Demo.java" />
     <entry file="file://$PROJECT_DIR$/src/Others/Demo.java" />
     <entry file="file://$PROJECT_DIR$/src/Practice/PipedDemo.java" />
     <entry file="file://$PROJECT_DIR$/src/Practice/PipedStreamDemo.java">
@@ -1243,14 +1141,16 @@
           <caret line="53" selection-start-line="53" selection-end-line="54" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1252#1253#0" expanded="true" />
-            <element signature="e#1284#1285#0" expanded="true" />
-            <element signature="e#430#431#0" expanded="true" />
-            <element signature="e#447#448#0" expanded="true" />
-            <element signature="e#169#170#0" expanded="true" />
-            <element signature="e#195#196#0" expanded="true" />
-            <element signature="e#234#235#0" expanded="true" />
-            <element signature="e#264#265#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Practice/RegServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="20" column="66" selection-start-line="20" selection-start-column="66" selection-end-line="20" selection-end-column="66" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

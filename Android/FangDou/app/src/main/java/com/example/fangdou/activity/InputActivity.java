@@ -112,11 +112,9 @@ public class InputActivity extends AppCompatActivity implements View.OnClickList
     @Override
     public boolean onOptionsItemSelected(MenuItem item)
     {
-        switch (item.getItemId())
+        if (item.getItemId() == android.R.id.home)
         {
-            case android.R.id.home:
-                finish();
-                break;
+            finish();
         }
         return true;
     }

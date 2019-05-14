@@ -121,7 +121,6 @@ public class ThemeActivity extends AppCompatActivity
         MapFragment.toolbar.setBackgroundColor(color);
         //设置地图的颜色
         ListViewFragment.toolbar.setBackgroundColor(color);
-
         //将这个用广播重写
     }
 
