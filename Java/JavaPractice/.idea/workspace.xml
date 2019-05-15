@@ -7,13 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="971dbd24-0f2c-4cdf-9812-eda12a9fca7a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Html/HtmlDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Html/HtmlDemo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Html/HtmlDemo/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Html/HtmlDemo/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Java_jar/Java.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Java_jar/Java.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/Practice/Apple.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/Practice/Apple.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Android/FangDou/app/src/main/java/com/example/fangdou/activity/LoginActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/FangDou/app/src/main/java/com/example/fangdou/activity/LoginActivity.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -67,7 +61,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Practice/ReflectDemo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="526">
+            <state relative-caret-position="888">
               <caret line="53" selection-start-line="53" selection-end-line="54" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -549,6 +543,7 @@
       <workItem from="1554011898165" duration="7207000" />
       <workItem from="1554190511686" duration="10000" />
       <workItem from="1557801462604" duration="2906000" />
+      <workItem from="1557818756058" duration="11000" />
     </task>
     <task id="LOCAL-00001" summary="123">
       <created>1541220645392</created>
@@ -652,7 +647,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="444605000" />
+    <option name="totallyTimeSpent" value="444616000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -666,7 +661,6 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info id="DB Browser" />
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="1" />
       <window_info id="Designer" order="2" />
@@ -674,7 +668,7 @@
       <window_info id="Capture Tool" order="4" />
       <window_info id="Favorites" order="5" side_tool="true" weight="0.3292683" />
       <window_info content_ui="combo" id="Project" order="6" sideWeight="0.49901575" weight="0.1844609" />
-      <window_info anchor="bottom" id="DB Execution Console" />
+      <window_info id="DB Browser" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32884398" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4989429" weight="0.59708196" />
@@ -689,6 +683,7 @@
       <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.4936575" weight="0.31762066" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Duplicate detector" order="13" weight="0.32959184" />
+      <window_info anchor="bottom" id="DB Execution Console" order="14" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" show_stripe_button="false" side_tool="true" weight="0.24285714" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -1137,7 +1132,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Practice/ReflectDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="526">
+        <state relative-caret-position="888">
           <caret line="53" selection-start-line="53" selection-end-line="54" />
           <folding>
             <element signature="imports" expanded="true" />

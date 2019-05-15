@@ -9,8 +9,10 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.example.fangdou.JDBC;
@@ -40,6 +42,8 @@ public class LoginActivity extends AppCompatActivity
     TextInputLayout userTextInputLayout;
     @BindView(R.id.passwdTextInputLayout)
     TextInputLayout passwdTextInputLayout;
+    @BindView(R.id.progressbar)
+    ProgressBar progressbar;
 
     private String username, password;
     private Connection connection;
@@ -114,20 +118,23 @@ public class LoginActivity extends AppCompatActivity
     {
         username = userText.getText().toString().trim();
         password = passwdText.getText().toString().trim();
-        final boolean isAllow = judge();
-        new Thread()
+        boolean isAllow = judge();
+        if (isAllow)
         {
-            public void run()
+            progressbar.setVisibility(View.VISIBLE);
+            new Thread()
             {
-                Looper.prepare();
-                if (isAllow)
+                public void run()
                 {
+                    Looper.prepare();
+
                     setConnection();
                     try
                     {
                         setConnection();
                         resultSet = statement.executeQuery("select * from user where user_name=" + "'" + username + "'");
                         resultSet.last();
+
                         if (resultSet.getRow() == 0)
                         {
                             Toast.makeText(LoginActivity.this, "未找到该用户", Toast.LENGTH_LONG).show();
@@ -163,9 +170,11 @@ public class LoginActivity extends AppCompatActivity
                         }
                     }
 
+
                 }
-            }
-        }.start();
+            }.start();
+            progressbar.setVisibility(View.INVISIBLE);
+        }
     }
 
     @OnClick(R.id.register)

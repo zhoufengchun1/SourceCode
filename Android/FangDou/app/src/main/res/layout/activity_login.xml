@@ -39,7 +39,7 @@
                 android:layout_height="wrap_content"
                 android:digits="1234567890qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM"
                 android:inputType="textEmailAddress"
-                android:textColor="#000000"
+                android:textColor="#FFFFFF"
                 android:textSize="25sp" />
         </android.support.design.widget.TextInputLayout>
 
@@ -56,7 +56,7 @@
                 android:layout_height="wrap_content"
                 android:digits="1234567890qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM"
                 android:inputType="textPassword"
-                android:textColor="#000000"
+                android:textColor="#FFFFFF"
                 android:textSize="25sp" />
         </android.support.design.widget.TextInputLayout>
     </LinearLayout>
@@ -88,5 +88,11 @@
             android:textSize="22sp" />
     </LinearLayout>
 
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"/>
 
 </RelativeLayout>
