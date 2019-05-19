@@ -7,7 +7,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="971dbd24-0f2c-4cdf-9812-eda12a9fca7a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../Android/FangDou/app/src/main/java/com/example/fangdou/HeadSettingPreference.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android/FangDou/app/src/main/java/com/example/fangdou/activity/EditDataActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android/FangDou/app/src/main/java/com/example/fangdou/fragment/EditDataFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android/FangDou/app/src/main/java/com/example/fangdou/utils/FileUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android/FangDou/app/src/main/java/com/example/fangdou/utils/ResourceIdToUri.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android/FangDou/app/src/main/res/layout/activity_editdata.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android/FangDou/app/src/main/res/layout/dialog_resource_setting.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android/FangDou/app/src/main/res/layout/head_settting.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Android/FangDou/app/src/main/res/xml/pref_setting.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Html/HtmlDemo/JSDemo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Android/FangDou/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/FangDou/.idea/dbnavigator.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Android/FangDou/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/FangDou/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Android/FangDou/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/FangDou/app/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Android/FangDou/app/src/main/java/com/example/fangdou/activity/LoginActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/FangDou/app/src/main/java/com/example/fangdou/activity/LoginActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Android/FangDou/app/src/main/java/com/example/fangdou/activity/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/FangDou/app/src/main/java/com/example/fangdou/activity/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Android/FangDou/app/src/main/java/com/example/fangdou/fragment/MapFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/FangDou/app/src/main/java/com/example/fangdou/fragment/MapFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Android/FangDou/app/src/main/res/layout/activity_login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/FangDou/app/src/main/res/layout/activity_login.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Android/FangDou/app/src/main/res/layout/fragment_map.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/FangDou/app/src/main/res/layout/fragment_map.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Android/FangDou/app/src/main/res/layout/headlayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/FangDou/app/src/main/res/layout/headlayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Android/FangDou/app/src/main/res/values/attrs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/FangDou/app/src/main/res/values/attrs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Android/FangDou/app/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/FangDou/app/src/main/res/values/styles.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Android/FangDou/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/FangDou/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Html/HtmlDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Html/HtmlDemo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Html/HtmlDemo/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Html/HtmlDemo/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Java_jar/Java.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Java_jar/Java.jar" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -73,8 +98,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Practice/RegServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="20" column="66" selection-start-line="20" selection-start-column="66" selection-end-line="20" selection-end-column="66" />
+            <state relative-caret-position="624">
+              <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -197,10 +222,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="646" />
-    <option name="y" value="103" />
-    <option name="width" value="1250" />
-    <option name="height" value="1047" />
+    <option name="x" value="196" />
+    <option name="y" value="63" />
+    <option name="width" value="562" />
+    <option name="height" value="885" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -544,6 +569,8 @@
       <workItem from="1554190511686" duration="10000" />
       <workItem from="1557801462604" duration="2906000" />
       <workItem from="1557818756058" duration="11000" />
+      <workItem from="1558014781773" duration="935000" />
+      <workItem from="1558174467468" duration="11000" />
     </task>
     <task id="LOCAL-00001" summary="123">
       <created>1541220645392</created>
@@ -647,7 +674,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="444616000" />
+    <option name="totallyTimeSpent" value="445562000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -671,7 +698,7 @@
       <window_info id="DB Browser" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32884398" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4989429" weight="0.59708196" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4989429" weight="0.37373737" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3647587" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1142,8 +1169,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Practice/RegServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="20" column="66" selection-start-line="20" selection-start-column="66" selection-end-line="20" selection-end-column="66" />
+        <state relative-caret-position="624">
+          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -20,15 +20,17 @@ import android.widget.Toast;
 import com.example.fangdou.MyDrawerLayout;
 import com.example.fangdou.MyListView;
 import com.example.fangdou.R;
+import com.example.fangdou.activity.EditDataActivity;
 import com.example.fangdou.activity.InputActivity;
 import com.example.fangdou.activity.LoginActivity;
 import com.example.fangdou.activity.ThemeActivity;
 import com.example.fangdou.adapter.LanguageAdapter;
 import com.example.fangdou.bean.LanguageItemBean;
+import com.example.fangdou.utils.CircleImageView;
 
 import java.util.ArrayList;
 
-public class MapFragment extends Fragment implements LanguageAdapter.Callback
+public class MapFragment extends Fragment implements LanguageAdapter.Callback, View.OnClickListener
 {
     private View view;
     private String[] language_item;
@@ -40,6 +42,7 @@ public class MapFragment extends Fragment implements LanguageAdapter.Callback
     private NavigationView navigationView;
     private ActionBarDrawerToggle mDrawerToggle;
     public static Toolbar toolbar;
+    public CircleImageView headImage;
 
     @Nullable
     @Override
@@ -99,6 +102,13 @@ public class MapFragment extends Fragment implements LanguageAdapter.Callback
     {
         drawerLayout = view.findViewById(R.id.leftDraw);
         navigationView = view.findViewById(R.id.nav);
+
+        navigationView.inflateHeaderView(R.layout.headlayout);
+        navigationView.inflateMenu(R.menu.menu_leftnavigation);
+        //动态引入Head Menu
+        View headView = navigationView.getHeaderView(0);
+        headImage = headView.findViewById(R.id.head);
+        headImage.setOnClickListener(this);
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener()
         {
             @Override
@@ -171,4 +181,9 @@ public class MapFragment extends Fragment implements LanguageAdapter.Callback
         });
     }
 
+    @Override
+    public void onClick(View v)
+    {
+        startActivity(new Intent(getContext(), EditDataActivity.class));
+    }
 }

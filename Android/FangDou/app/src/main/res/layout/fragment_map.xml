@@ -88,9 +88,7 @@
             android:layout_gravity="start"
             android:background="#616161"
             android:fitsSystemWindows="true"
-            app:headerLayout="@layout/headlayout"
-            app:itemTextColor="#ffffff"
-            app:menu="@menu/menu_leftnavigation" />
+            app:itemTextColor="#ffffff" />
     </com.example.fangdou.MyDrawerLayout>
 
 

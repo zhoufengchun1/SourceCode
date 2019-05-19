@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            function Persion()
+            {
+                alert("init");
+            }
+            var p = new Persion(1,2);
+            p.name = 30;
+            p.sex = "男";
+            p.doSomething = function ()
+            {
+                alert("123");
+            };
+            function Persion(name,age)
+            {
+                this.name = name;
+                this.age = age;
+            }
+
+            alert(p["name"] + "..." + p.age);
+
+        </script>
+    </body>
+</html>

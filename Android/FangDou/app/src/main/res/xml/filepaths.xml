@@ -1,0 +1,8 @@
+<paths>
+    <external-path
+        name="images"
+        path="com.example.fangdou" />
+    <root-path
+        name="root_path"
+        path="." />
+</paths>

@@ -18,4 +18,8 @@
 
     <color name="color_selected" tools:keep="@color/color_selected">#01579B</color>
     <color name="color_notSelected" tools:keep="@color/color_notSelected">#22221e</color>
+
+    <color name="white">#ede4e8</color>
+    <color name="title_text">#26B8EE</color>
+
 </resources>

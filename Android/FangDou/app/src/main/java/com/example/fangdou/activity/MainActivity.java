@@ -56,13 +56,13 @@ public class MainActivity extends AppCompatActivity
     @BindView(R.id.ll)
     LinearLayout ll;
     // 要申请的权限
-    private String[] permissions = {Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.RECORD_AUDIO};
+    private String[] permissions = {Manifest.permission.CAMERA, Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.RECORD_AUDIO};
     private String tips = "";
     private boolean flag = true;
     private AlertDialog dialog;
     private BottomNavigationView bottomNavigationView;
     private int lastfragment;
-    private Fragment fragment[];
+    private Fragment[] fragment;
 
     private String app_id = "5c6e22da";
     public static MapFragment mapFragment;
@@ -95,8 +95,11 @@ public class MainActivity extends AppCompatActivity
                     flag = false;
                     if (i == 0)
                     {
-                        tips += "存储权限 ";
+                        tips += "相机权限 ";
                     } else if (i == 1)
+                    {
+                        tips += "存储权限 ";
+                    } else if (i == 2)
                     {
                         tips += "录音权限";
                     }
@@ -115,22 +118,8 @@ public class MainActivity extends AppCompatActivity
         new AlertDialog.Builder(this)
                 .setTitle(tips + "不可用")
                 .setMessage("方逗需要获取" + tips + "\n否则，您将无法正常使用方逗\n")
-                .setPositiveButton("立即开启", new DialogInterface.OnClickListener()
-                {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which)
-                    {
-                        startRequestPermission();
-                    }
-                })
-                .setNegativeButton("取消", new DialogInterface.OnClickListener()
-                {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which)
-                    {
-                        finish();
-                    }
-                }).setCancelable(false).show();
+                .setPositiveButton("立即开启", (dialog, which) -> startRequestPermission())
+                .setNegativeButton("取消", (dialog, which) -> finish()).setCancelable(false).show();
     }
 
     // 开始提交请求权限

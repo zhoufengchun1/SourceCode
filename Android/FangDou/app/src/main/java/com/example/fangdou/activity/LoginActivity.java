@@ -1,5 +1,7 @@
 package com.example.fangdou.activity;
 
+import android.app.Instrumentation;
+import android.content.SharedPreferences;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
@@ -7,11 +9,17 @@ import android.os.Looper;
 import android.support.design.widget.TextInputLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.AppCompatCheckBox;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
+import android.view.KeyEvent;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
@@ -27,7 +35,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class LoginActivity extends AppCompatActivity
+public class LoginActivity extends AppCompatActivity implements CompoundButton.OnCheckedChangeListener
 {
 
     @BindView(R.id.user_text)
@@ -44,11 +52,22 @@ public class LoginActivity extends AppCompatActivity
     TextInputLayout passwdTextInputLayout;
     @BindView(R.id.progressbar)
     ProgressBar progressbar;
+    @BindView(R.id.autoLogin)
+    AppCompatCheckBox autoLogin;
+    @BindView(R.id.savePasswd)
+    CheckBox savePasswd;
+    @BindView(R.id.text)
+    LinearLayout text;
+
 
     private String username, password;
     private Connection connection;
     private Statement statement;
     private ResultSet resultSet;
+    private boolean isSuccess = false;
+    private boolean isSave = false;
+    private boolean isAuto = false;
+    private boolean isFirst;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -73,7 +92,29 @@ public class LoginActivity extends AppCompatActivity
         passwdTextInputLayout.setHint("密码");
         userTextInputLayout.setHintTextAppearance(R.style.TextInputAppTheme);
         passwdTextInputLayout.setHintTextAppearance(R.style.TextInputAppTheme);
+        SharedPreferences sharedPreferences = getSharedPreferences("UserInfo.xml", MODE_PRIVATE);
 
+        isFirst = sharedPreferences.getBoolean("isFirst", true);
+        if (sharedPreferences.getBoolean("isFirst", true))
+        {
+            autoLogin.setChecked(false);
+            savePasswd.setChecked(false);
+        } else
+        {
+            isAuto = sharedPreferences.getBoolean("isAuto", false);
+            autoLogin.setChecked(isAuto);
+            isSave = sharedPreferences.getBoolean("isSave", false);
+            savePasswd.setChecked(isSave);
+        }
+        savePasswd.setChecked(isSave);
+        savePasswd.setOnCheckedChangeListener(this);
+        autoLogin.setChecked(isAuto);
+        autoLogin.setOnCheckedChangeListener(this);
+        if (isSave)
+        {
+            userText.setText(sharedPreferences.getString("User_Name", ""));
+            passwdText.setText(sharedPreferences.getString("User_PassWord", ""));
+        }
 
     }
 
@@ -146,6 +187,9 @@ public class LoginActivity extends AppCompatActivity
                                 if (resultSet.getString("user_passwd").equals(password))
                                 {
                                     Toast.makeText(LoginActivity.this, "欢迎," + username, Toast.LENGTH_SHORT).show();
+                                    isSuccess = true;
+                                    saveInfo();
+                                    onBack();
                                     break;
                                 }
                             }
@@ -244,4 +288,57 @@ public class LoginActivity extends AppCompatActivity
         }
         return true;
     }
+
+    public void saveInfo()
+    {
+        SharedPreferences sharedPreferences = getSharedPreferences("UserInfo.xml", MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putString("User_Name", username);
+        editor.putString("User_PassWord", password);
+        editor.putBoolean("isAuto", autoLogin.isChecked());
+        editor.putBoolean("isFirst", false);//取消第一次登录
+        editor.putBoolean("isSave", savePasswd.isChecked());
+        editor.putBoolean("isLogin", true);
+        editor.apply();
+    }
+
+
+    @Override
+    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked)
+    {
+        if (buttonView == savePasswd)
+        {  //记住密码选框发生改变时
+            if (!isChecked)
+            {   //如果取消“记住密码”，那么同样取消自动登陆
+                autoLogin.setChecked(false);
+            }
+        } else if (buttonView == autoLogin)
+        {   //自动登陆选框发生改变时
+            if (isChecked)
+            {   //如果选择“自动登录”，那么同样选中“记住密码”
+                savePasswd.setChecked(true);
+            }
+        }
+
+    }
+
+    public void onBack()//模拟点击返回键
+    {
+        new Thread()
+        {
+            public void run()
+            {
+                try
+                {
+                    Instrumentation inst = new Instrumentation();
+                    inst.sendKeyDownUpSync(KeyEvent.KEYCODE_BACK);
+                } catch (Exception e)
+                {
+                    Log.e("Exception when onBack", e.toString());
+                }
+            }
+        }.start();
+
+    }
+
 }
