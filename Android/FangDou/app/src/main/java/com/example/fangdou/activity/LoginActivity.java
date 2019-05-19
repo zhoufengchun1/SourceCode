@@ -173,6 +173,7 @@ public class LoginActivity extends AppCompatActivity implements CompoundButton.O
                     try
                     {
                         setConnection();
+
                         resultSet = statement.executeQuery("select * from user where user_name=" + "'" + username + "'");
                         resultSet.last();
 

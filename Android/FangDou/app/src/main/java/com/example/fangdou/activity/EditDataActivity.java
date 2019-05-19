@@ -2,27 +2,40 @@ package com.example.fangdou.activity;
 
 import android.app.Dialog;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
+import android.os.Handler;
+import android.os.Looper;
 import android.provider.MediaStore;
 import android.support.v4.content.FileProvider;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
+import android.util.Base64;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.example.fangdou.JDBC;
 import com.example.fangdou.R;
 import com.example.fangdou.utils.CircleImageView;
 import com.example.fangdou.utils.nav_bar;
 
+import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 
 import butterknife.BindView;
 import butterknife.OnClick;
@@ -56,20 +69,64 @@ public class EditDataActivity extends AppCompatActivity
     private File tempFile;
     //最后显示的图片文件
     private String mFile;
+    private String userName;
+    private Connection connection;
+    private Statement statement;
+    private SharedPreferences sharedPreferences;
+    private String baseCode;
+    private Bitmap photo;
+    private int count;
+    private Handler handler;
+    private Runnable runnable;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_editdata);
+
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        toolbar.setTitle("DIY语音合成");
+        toolbar.setBackgroundColor(getResources().getColor(R.color.color_default));
+        ThemeActivity.setStatusBarColor(EditDataActivity.this, getResources().getColor(R.color.color_default));
+        setSupportActionBar(toolbar);
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true);
+        actionBar.setHomeButtonEnabled(true);
+
         bind(this);
         bind = bind(this);
-        Bitmap photo = BitmapFactory.decodeFile(getPath());
-        if (photo == null)
+
+        sharedPreferences = getSharedPreferences("UserInfo.xml", MODE_PRIVATE);
+        handler = new Handler();
+        runnable = new Runnable()
         {
-            photo = BitmapFactory.decodeResource(this.getResources(), R.drawable.my_user_default);
-        }
-        hHead.setImageBitmap(photo);
+            @Override
+            public void run()
+            {
+                hHead.setImageBitmap(photo);
+            }
+        };
+        new Thread()
+        {
+            @Override
+            public void run()
+            {
+                userName = sharedPreferences.getString("User_Name", "方小逗");
+                fetchHeadImg();
+                if (photo == null)
+                {
+                    photo = BitmapFactory.decodeResource(EditDataActivity.this.getResources(), R.drawable.my_user_default);
+                }
+                handler.post(runnable);
+                baseCode = encodeImage(photo);
+            }
+        }.start();
+        Log.d("haha", "3");
+        //28041830@
+
+
+        //fetchHeadImg();
     }
 
     /**
@@ -157,8 +214,39 @@ public class EditDataActivity extends AppCompatActivity
                 if (intent != null)
                 {
                     // 让刚才选择裁剪得到的图片显示在界面上
-                    Bitmap photo = BitmapFactory.decodeFile(mFile);
-                    hHead.setImageBitmap(photo);
+                    photo = BitmapFactory.decodeFile(mFile);
+                    baseCode = encodeImage(photo);
+                    if (sharedPreferences.getBoolean("isLogin", false))
+                    {
+                        new Thread()
+                        {
+                            public void run()
+                            {
+                                Looper.prepare();
+                                try
+                                {
+                                    EditDataActivity.this.count = statement.executeUpdate("update user set head_img=" + "'" + baseCode + "'"
+                                            + "where user_name=" + "'"
+                                            + userName + "'");
+                                    if (count == 1)
+                                    {
+                                        Toast.makeText(EditDataActivity.this, "修改成功！", Toast.LENGTH_SHORT).show();
+                                        handler.post(runnable);
+                                    } else
+                                        Toast.makeText(EditDataActivity.this, "修改失败。", Toast.LENGTH_SHORT).show();
+                                } catch (SQLException e)
+                                {
+                                    Toast.makeText(EditDataActivity.this, "未找到用户！", Toast.LENGTH_SHORT).show();
+                                    e.printStackTrace();
+                                } finally
+                                {
+                                    Looper.loop();
+                                }
+                            }
+                        }.start();
+
+
+                    }
                 } else
                 {
                     Log.e("data", "data为空");
@@ -252,5 +340,60 @@ public class EditDataActivity extends AppCompatActivity
         return null;
     }
 
+    public String encodeImage(Bitmap bitmap)
+    {
+        ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
+        //读取文件到流
+        bitmap.compress(Bitmap.CompressFormat.PNG, 100, byteArrayOutputStream);
+        //100即为不压缩
+        byte[] bytes = byteArrayOutputStream.toByteArray();
+        return Base64.encodeToString(bytes, Base64.DEFAULT);
+    }
+
+    public void setConnection()
+    {
+        connection = JDBC.connSql();
+        try
+        {
+            statement = connection.createStatement();
+        } catch (SQLException e)
+        {
+            e.printStackTrace();
+        } catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+    }
+
+    public synchronized void fetchHeadImg()
+    {
+        setConnection();
+        try
+        {
+            ResultSet resultSet = statement.executeQuery("select head_img from user where user_name=" + "'" + userName + "'");
+            while (resultSet.next())
+            {
+                baseCode = resultSet.getString("head_img");
+                if (baseCode != null)
+                {
+                    break;
+                }
+            }
+
+        } catch (SQLException e)
+        {
+            e.printStackTrace();
+        }
+        if (baseCode == null)
+            return;
+        byte[] bytes = Base64.decode(baseCode, Base64.DEFAULT);
+        photo = BitmapFactory.decodeByteArray(bytes, 0, bytes.length);
+        Log.d("haha", "2");
+
+    }
+
+
 }
+
+
 

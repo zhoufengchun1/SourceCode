@@ -45,8 +45,7 @@
                 android:id="@+id/h_head"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
-                android:layout_centerInParent="true"
-                android:src="@drawable/my_user_default" />
+                android:layout_centerInParent="true" />
 
 
             <TextView
