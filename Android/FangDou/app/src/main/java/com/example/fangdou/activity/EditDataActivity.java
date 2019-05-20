@@ -1,6 +1,8 @@
 package com.example.fangdou.activity;
 
+import android.app.AlertDialog;
 import android.app.Dialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Bitmap;
@@ -19,7 +21,9 @@ import android.support.v7.widget.Toolbar;
 import android.util.Base64;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.MenuItem;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -35,6 +39,7 @@ import java.io.IOException;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.SQLIntegrityConstraintViolationException;
 import java.sql.Statement;
 
 import butterknife.BindView;
@@ -64,6 +69,8 @@ public class EditDataActivity extends AppCompatActivity
     nav_bar birth;
     @BindView(R.id.location)
     nav_bar location;
+    @BindView(R.id.user_name)
+    TextView tinyName;
     private Unbinder bind;
     //调用照相机返回图片文件
     private File tempFile;
@@ -78,15 +85,19 @@ public class EditDataActivity extends AppCompatActivity
     private int count;
     private Handler handler;
     private Runnable runnable;
+    private SharedPreferences.Editor editor;
+    private ResultSet resultSet;
+    private int choice;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_editdata);
+        bind(this);
 
         Toolbar toolbar = findViewById(R.id.toolbar);
-        toolbar.setTitle("DIY语音合成");
+        toolbar.setTitle("个人信息");
         toolbar.setBackgroundColor(getResources().getColor(R.color.color_default));
         ThemeActivity.setStatusBarColor(EditDataActivity.this, getResources().getColor(R.color.color_default));
         setSupportActionBar(toolbar);
@@ -97,7 +108,6 @@ public class EditDataActivity extends AppCompatActivity
         bind(this);
         bind = bind(this);
 
-        sharedPreferences = getSharedPreferences("UserInfo.xml", MODE_PRIVATE);
         handler = new Handler();
         runnable = new Runnable()
         {
@@ -105,24 +115,38 @@ public class EditDataActivity extends AppCompatActivity
             public void run()
             {
                 hHead.setImageBitmap(photo);
+                tinyName.setText(userName);
             }
         };
+        sharedPreferences = getSharedPreferences("UserInfo.xml", MODE_PRIVATE);
+        editor = sharedPreferences.edit();
+       /* 数据库的操作要新开一个线程 但是在主线程的操作需要线程的执行结果，为了防止线程异步
+        只能将其余操作同时放入新线程。
+        android中只有两种线程，主线程（View所在线程）和工作线程。
+        更新UI的操作只能在主线程中进行。
+        所以引入Handler，主线程new Handler和Runnable，然后将需要更新UI的操作放入Runnable中，
+        最后新线程post。
+        尝试了synchronized，和AsyncTask，都不行，不知道是哪里的问题。
+        但是这么做有个问题，进入activity时由于显示头像是在线程中进行的操作，
+        头像不会第一时间显示出来。
+        */
         new Thread()
         {
             @Override
             public void run()
             {
                 userName = sharedPreferences.getString("User_Name", "方小逗");
+
                 fetchHeadImg();
                 if (photo == null)
                 {
                     photo = BitmapFactory.decodeResource(EditDataActivity.this.getResources(), R.drawable.my_user_default);
                 }
                 handler.post(runnable);
-                baseCode = encodeImage(photo);
+                editor.putString("User_Img", baseCode);
+                editor.apply();
             }
         }.start();
-        Log.d("haha", "3");
         //28041830@
 
 
@@ -144,6 +168,9 @@ public class EditDataActivity extends AppCompatActivity
     @OnClick({R.id.h_head, R.id.changeName, R.id.intro, R.id.sex, R.id.birth, R.id.location})
     public void onViewClicked(View view)
     {
+
+        final EditText editText = new EditText(EditDataActivity.this);
+        AlertDialog.Builder editDialog = new AlertDialog.Builder(EditDataActivity.this);
         switch (view.getId())
         {
             case R.id.h_head:
@@ -171,10 +198,149 @@ public class EditDataActivity extends AppCompatActivity
                 cancel.setOnClickListener(v -> changeHeadDialog.dismiss());
                 break;
             case R.id.changeName:
+
+                editDialog.setTitle("请输入新的用户名").setView(editText);
+                editText.setMaxLines(1);
+
+                editDialog.setPositiveButton("确定",
+                        new DialogInterface.OnClickListener()
+                        {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which)
+                            {
+                                if (editText.getText().toString().equals(""))
+                                {
+                                    Toast.makeText(view.getContext(), "用户名未修改。", Toast.LENGTH_SHORT).show();
+                                } else
+                                {
+                                    new Thread()
+                                    {
+                                        public void run()
+                                        {
+                                            Looper.prepare();
+                                            try
+                                            {
+
+                                                resultSet = statement.executeQuery("select * from user where user_name=" + "'" + editText.getText().toString() + "'");
+                                                resultSet.last();
+                                                if (resultSet.getRow() != 0)
+                                                {
+                                                    Toast.makeText(EditDataActivity.this, "用户名已存在！", Toast.LENGTH_LONG).show();
+                                                } else
+                                                {
+                                                    int m = statement.executeUpdate("update user set user_name =" + "'" + editText.getText().toString() + "'"
+                                                            + "where user_name=" + "'"
+                                                            + userName + "'");
+                                                    Log.d("haha", m + "");
+                                                    SharedPreferences.Editor editor = sharedPreferences.edit();
+                                                    editor.putString("User_Name", editText.getText().toString()).apply();
+                                                    userName = editText.getText().toString();
+                                                    handler.post(runnable);
+                                                    Toast.makeText(EditDataActivity.this, "修改成功！", Toast.LENGTH_SHORT).show();
+                                                }
+                                                Looper.loop();
+                                            } catch (SQLIntegrityConstraintViolationException e)
+                                            {
+                                                Toast.makeText(EditDataActivity.this, "用户名已存在。", Toast.LENGTH_SHORT).show();
+
+                                            } catch (SQLException e)
+                                            {
+                                                e.printStackTrace();
+                                            }
+
+                                        }
+                                    }.start();
+                                }
+                            }
+                        }).show();
                 break;
             case R.id.intro:
+                userName = sharedPreferences.getString("User_Name", "方小逗");
+                editDialog.setTitle("介绍下你自己吧").setView(editText);
+                String userIntro = sharedPreferences.getString("User_Intro", "方小逗");
+                editText.setMaxLines(5);
+                editText.setText(userIntro);
+                editDialog.setPositiveButton("确定",
+                        new DialogInterface.OnClickListener()
+                        {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which)
+                            {
+
+                                if (editText.getText().toString().equals(""))
+                                {
+                                    Toast.makeText(view.getContext(), "未修改。", Toast.LENGTH_SHORT).show();
+                                } else
+                                {
+
+                                    editor.putString("User_Intro", editText.getText().toString()).apply();
+                                    Toast.makeText(EditDataActivity.this, "修改成功！", Toast.LENGTH_SHORT).show();
+                                    new Thread()
+                                    {
+                                        public void run()
+                                        {
+                                            try
+                                            {
+                                                statement.executeUpdate("update user set user_intro =" + "'" + editText.getText().toString() + "'"
+                                                        + "where user_name=" + "'"
+                                                        + userName + "'");
+
+                                            } catch (SQLException e)
+                                            {
+                                                e.printStackTrace();
+                                            }
+
+                                        }
+                                    }.start();
+                                }
+                            }
+                        }).show();
                 break;
             case R.id.sex:
+                userName = sharedPreferences.getString("User_Name", "方小逗");
+                final String[] sex = {"男", "女"};
+                AlertDialog.Builder sexDialog = new AlertDialog.Builder(EditDataActivity.this);
+                editDialog.setTitle("性别");
+                choice = sharedPreferences.getInt("User_Sex", 0);
+                sexDialog.setSingleChoiceItems(sex, choice,
+                        new DialogInterface.OnClickListener()
+                        {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which)
+                            {
+                                choice = which;
+                                Log.d("haha", which + "");
+                            }
+                        });
+                sexDialog.setPositiveButton("确定", new DialogInterface.OnClickListener()
+                {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which)
+                    {
+                        editor.putInt("User_Sex", choice).apply();
+                        new Thread()
+                        {
+                            @Override
+                            public void run()
+                            {
+                                Looper.prepare();
+                                try
+                                {
+                                    statement.executeUpdate("update user set user_sex =" + choice + " "
+                                            + "where user_name=" + "'"
+                                            + userName + "'");
+                                    Toast.makeText(EditDataActivity.this, "修改成功", Toast.LENGTH_SHORT).show();
+                                    Looper.loop();
+                                } catch (SQLException e)
+                                {
+                                    e.printStackTrace();
+                                }
+                            }
+                        }.start();
+
+                    }
+                });
+                sexDialog.create().show();
                 break;
             case R.id.birth:
                 break;
@@ -182,6 +348,7 @@ public class EditDataActivity extends AppCompatActivity
                 break;
         }
     }
+
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent intent)
@@ -216,37 +383,36 @@ public class EditDataActivity extends AppCompatActivity
                     // 让刚才选择裁剪得到的图片显示在界面上
                     photo = BitmapFactory.decodeFile(mFile);
                     baseCode = encodeImage(photo);
-                    if (sharedPreferences.getBoolean("isLogin", false))
+
+                    new Thread()
                     {
-                        new Thread()
+                        public void run()
                         {
-                            public void run()
+                            Looper.prepare();
+                            try
                             {
-                                Looper.prepare();
-                                try
+
+                                EditDataActivity.this.count = statement.executeUpdate("update user set head_img=" + "'" + baseCode + "'"
+                                        + "where user_name=" + "'"
+                                        + userName + "'");
+                                if (count == 1)
                                 {
-                                    EditDataActivity.this.count = statement.executeUpdate("update user set head_img=" + "'" + baseCode + "'"
-                                            + "where user_name=" + "'"
-                                            + userName + "'");
-                                    if (count == 1)
-                                    {
-                                        Toast.makeText(EditDataActivity.this, "修改成功！", Toast.LENGTH_SHORT).show();
-                                        handler.post(runnable);
-                                    } else
-                                        Toast.makeText(EditDataActivity.this, "修改失败。", Toast.LENGTH_SHORT).show();
-                                } catch (SQLException e)
-                                {
-                                    Toast.makeText(EditDataActivity.this, "未找到用户！", Toast.LENGTH_SHORT).show();
-                                    e.printStackTrace();
-                                } finally
-                                {
-                                    Looper.loop();
-                                }
+                                    Toast.makeText(EditDataActivity.this, "修改成功！", Toast.LENGTH_SHORT).show();
+                                    editor.putString("User_Img", baseCode);
+                                    editor.apply();
+                                    handler.post(runnable);
+                                } else
+                                    Toast.makeText(EditDataActivity.this, "修改失败。", Toast.LENGTH_SHORT).show();
+                            } catch (SQLException e)
+                            {
+                                Toast.makeText(EditDataActivity.this, "未找到用户！", Toast.LENGTH_SHORT).show();
+                                e.printStackTrace();
+                            } finally
+                            {
+                                Looper.loop();
                             }
-                        }.start();
-
-
-                    }
+                        }
+                    }.start();
                 } else
                 {
                     Log.e("data", "data为空");
@@ -344,7 +510,7 @@ public class EditDataActivity extends AppCompatActivity
     {
         ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
         //读取文件到流
-        bitmap.compress(Bitmap.CompressFormat.PNG, 100, byteArrayOutputStream);
+        bitmap.compress(Bitmap.CompressFormat.PNG, 40, byteArrayOutputStream);
         //100即为不压缩
         byte[] bytes = byteArrayOutputStream.toByteArray();
         return Base64.encodeToString(bytes, Base64.DEFAULT);
@@ -370,7 +536,7 @@ public class EditDataActivity extends AppCompatActivity
         setConnection();
         try
         {
-            ResultSet resultSet = statement.executeQuery("select head_img from user where user_name=" + "'" + userName + "'");
+            ResultSet resultSet = statement.executeQuery("select * from user where user_name=" + "'" + userName + "'");
             while (resultSet.next())
             {
                 baseCode = resultSet.getString("head_img");
@@ -387,11 +553,22 @@ public class EditDataActivity extends AppCompatActivity
         if (baseCode == null)
             return;
         byte[] bytes = Base64.decode(baseCode, Base64.DEFAULT);
+
         photo = BitmapFactory.decodeByteArray(bytes, 0, bytes.length);
-        Log.d("haha", "2");
 
     }
 
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item)
+    {
+        // TODO Auto-generated method stub
+        if (item.getItemId() == android.R.id.home)
+        {
+            finish();
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
 
 }
 

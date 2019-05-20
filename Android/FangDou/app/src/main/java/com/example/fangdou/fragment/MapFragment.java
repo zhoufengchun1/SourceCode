@@ -1,6 +1,10 @@
 package com.example.fangdou.fragment;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -10,6 +14,7 @@ import android.support.v4.app.Fragment;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Base64;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
@@ -43,6 +48,9 @@ public class MapFragment extends Fragment implements LanguageAdapter.Callback, V
     private ActionBarDrawerToggle mDrawerToggle;
     public static Toolbar toolbar;
     public CircleImageView headImage;
+    private SharedPreferences sharedPreferences;
+    private Bitmap photo;
+    private TextView userName;
 
     @Nullable
     @Override
@@ -100,14 +108,24 @@ public class MapFragment extends Fragment implements LanguageAdapter.Callback, V
 
     private void initLeftNavi()
     {
+        sharedPreferences = getActivity().getSharedPreferences("UserInfo.xml", Context.MODE_PRIVATE);
+
         drawerLayout = view.findViewById(R.id.leftDraw);
         navigationView = view.findViewById(R.id.nav);
+
 
         navigationView.inflateHeaderView(R.layout.headlayout);
         navigationView.inflateMenu(R.menu.menu_leftnavigation);
         //动态引入Head Menu
         View headView = navigationView.getHeaderView(0);
+        String baseCode = sharedPreferences.getString("User_Img", "");
         headImage = headView.findViewById(R.id.head);
+        userName = headView.findViewById(R.id.user_name);
+        userName.setText(sharedPreferences.getString("User_Name", "方小逗"));
+        byte[] bytes = Base64.decode(baseCode, Base64.DEFAULT);
+        photo = BitmapFactory.decodeByteArray(bytes, 0, bytes.length);
+        headImage.setImageBitmap(photo);
+
         headImage.setOnClickListener(this);
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener()
         {
@@ -164,6 +182,7 @@ public class MapFragment extends Fragment implements LanguageAdapter.Callback, V
                         Toast.makeText(getContext(), "敬请期待！", Toast.LENGTH_SHORT).show();
                         break;
                     case "个人设置":
+
                         intent = new Intent(getContext(), LoginActivity.class);
                         startActivity(intent);
                         break;
@@ -181,9 +200,15 @@ public class MapFragment extends Fragment implements LanguageAdapter.Callback, V
         });
     }
 
+
     @Override
     public void onClick(View v)
     {
-        startActivity(new Intent(getContext(), EditDataActivity.class));
+        boolean isLogin = sharedPreferences.getBoolean("isLogin", false);
+        if (isLogin)
+        {
+            startActivity(new Intent(getContext(), EditDataActivity.class));
+        } else
+            Toast.makeText(getContext(), "您还未登录，请先登录！", Toast.LENGTH_SHORT).show();
     }
 }

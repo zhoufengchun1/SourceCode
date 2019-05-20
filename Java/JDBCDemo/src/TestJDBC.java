@@ -16,10 +16,11 @@ class TestJDBCj
             Class.forName("com.mysql.jdbc.Driver");
             connection = DriverManager
                     .getConnection("jdbc:mysql://47.100.195.173:3306/UserInfo", "root", "admin");
-            PreparedStatement preparedStatement = connection.prepareStatement("insert into user (user_name,user_passwd)values (?,?)");
-            preparedStatement.setString(1, "ppp  ");
-            preparedStatement.setString(2, "222");
-            preparedStatement.executeUpdate();
+            statement = connection.createStatement();
+            int m=statement.executeUpdate("update user set user_sex =" + 0+" "
+                    + "where user_name=" + "'"
+                    + 123 + "'");
+            System.out.println(m);
             System.out.println("success");
 
 

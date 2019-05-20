@@ -7,32 +7,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="971dbd24-0f2c-4cdf-9812-eda12a9fca7a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../Android/FangDou/app/src/main/java/com/example/fangdou/HeadSettingPreference.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Android/FangDou/app/src/main/java/com/example/fangdou/activity/EditDataActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Android/FangDou/app/src/main/java/com/example/fangdou/fragment/EditDataFragment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Android/FangDou/app/src/main/java/com/example/fangdou/utils/FileUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Android/FangDou/app/src/main/java/com/example/fangdou/utils/ResourceIdToUri.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Android/FangDou/app/src/main/res/layout/activity_editdata.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Android/FangDou/app/src/main/res/layout/dialog_resource_setting.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Android/FangDou/app/src/main/res/layout/head_settting.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Android/FangDou/app/src/main/res/xml/pref_setting.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Html/HtmlDemo/JSDemo.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Android/FangDou/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/FangDou/.idea/dbnavigator.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Android/FangDou/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/FangDou/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Android/FangDou/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/FangDou/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/FangDou/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/FangDou/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/FangDou/app/src/main/java/com/example/fangdou/activity/LoginActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/FangDou/app/src/main/java/com/example/fangdou/activity/LoginActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/FangDou/app/src/main/java/com/example/fangdou/activity/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/FangDou/app/src/main/java/com/example/fangdou/activity/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Android/FangDou/app/src/main/java/com/example/fangdou/activity/EditDataActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/FangDou/app/src/main/java/com/example/fangdou/activity/EditDataActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Android/FangDou/app/src/main/java/com/example/fangdou/fragment/MapFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/FangDou/app/src/main/java/com/example/fangdou/fragment/MapFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/FangDou/app/src/main/res/layout/activity_login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/FangDou/app/src/main/res/layout/activity_login.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/FangDou/app/src/main/res/layout/fragment_map.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/FangDou/app/src/main/res/layout/fragment_map.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/FangDou/app/src/main/res/layout/headlayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/FangDou/app/src/main/res/layout/headlayout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/FangDou/app/src/main/res/values/attrs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/FangDou/app/src/main/res/values/attrs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/FangDou/app/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/FangDou/app/src/main/res/values/styles.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Android/FangDou/app/src/main/res/layout/activity_editdata.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/FangDou/app/src/main/res/layout/activity_editdata.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Android/FangDou/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/FangDou/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Html/HtmlDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Html/HtmlDemo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Html/HtmlDemo/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Html/HtmlDemo/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Java_jar/Java.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Java_jar/Java.jar" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -86,7 +67,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Practice/ReflectDemo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="888">
+            <state relative-caret-position="784">
               <caret line="53" selection-start-line="53" selection-end-line="54" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -286,7 +267,7 @@
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="10" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../JDBCDemo" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -571,6 +552,7 @@
       <workItem from="1557818756058" duration="11000" />
       <workItem from="1558014781773" duration="935000" />
       <workItem from="1558174467468" duration="11000" />
+      <workItem from="1558272830344" duration="23000" />
     </task>
     <task id="LOCAL-00001" summary="123">
       <created>1541220645392</created>
@@ -674,7 +656,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="445562000" />
+    <option name="totallyTimeSpent" value="445585000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -694,7 +676,7 @@
       <window_info id="UI Designer" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="Favorites" order="5" side_tool="true" weight="0.3292683" />
-      <window_info content_ui="combo" id="Project" order="6" sideWeight="0.49901575" weight="0.1844609" />
+      <window_info active="true" content_ui="combo" id="Project" order="6" sideWeight="0.49901575" visible="true" weight="0.1844609" />
       <window_info id="DB Browser" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32884398" />
@@ -1159,7 +1141,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Practice/ReflectDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="888">
+        <state relative-caret-position="784">
           <caret line="53" selection-start-line="53" selection-end-line="54" />
           <folding>
             <element signature="imports" expanded="true" />

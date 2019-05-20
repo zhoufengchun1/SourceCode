@@ -189,7 +189,7 @@ public class LoginActivity extends AppCompatActivity implements CompoundButton.O
                                 {
                                     Toast.makeText(LoginActivity.this, "欢迎," + username, Toast.LENGTH_SHORT).show();
                                     isSuccess = true;
-                                    saveInfo();
+                                    saveInfo(false);
                                     onBack();
                                     break;
                                 }
@@ -248,6 +248,7 @@ public class LoginActivity extends AppCompatActivity implements CompoundButton.O
                             statement.executeUpdate("insert into user " + "(" + "user_name,user_passwd" + ") " + "values"
                                     + "('" + username + "','" + password + "')");
                             Toast.makeText(LoginActivity.this, "注册成功！", Toast.LENGTH_LONG).show();
+                            saveInfo(true);
                         }
                         Looper.loop();
                     } catch (SQLException e)
@@ -290,14 +291,14 @@ public class LoginActivity extends AppCompatActivity implements CompoundButton.O
         return true;
     }
 
-    public void saveInfo()
+    public void saveInfo(Boolean isFirst)
     {
         SharedPreferences sharedPreferences = getSharedPreferences("UserInfo.xml", MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.putString("User_Name", username);
         editor.putString("User_PassWord", password);
         editor.putBoolean("isAuto", autoLogin.isChecked());
-        editor.putBoolean("isFirst", false);//取消第一次登录
+        editor.putBoolean("F", isFirst);//取消第一次登录
         editor.putBoolean("isSave", savePasswd.isChecked());
         editor.putBoolean("isLogin", true);
         editor.apply();
