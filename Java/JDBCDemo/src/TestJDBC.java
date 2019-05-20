@@ -17,7 +17,7 @@ class TestJDBCj
             connection = DriverManager
                     .getConnection("jdbc:mysql://47.100.195.173:3306/UserInfo", "root", "admin");
             statement = connection.createStatement();
-            int m=statement.executeUpdate("update user set user_sex =" + 0+" "
+            int m = statement.executeUpdate("update user set user_location =" + "123" + " "
                     + "where user_name=" + "'"
                     + 123 + "'");
             System.out.println(m);

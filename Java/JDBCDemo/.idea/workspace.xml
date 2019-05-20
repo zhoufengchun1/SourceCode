@@ -2,25 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a9018bea-495b-411a-8cdf-c6761a916363" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../Android/FangDou/app/src/main/res/drawable/btn_01.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Android/FangDou/app/src/main/res/drawable/commom_top.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Android/FangDou/app/src/main/res/drawable/ic_media_pause.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Android/FangDou/app/src/main/res/drawable/ic_media_stop.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Android/FangDou/app/src/main/res/drawable/my_user_default.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Android/FangDou/app/src/main/res/drawable/selector.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/FangDou/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/FangDou/.idea/dbnavigator.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/FangDou/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/FangDou/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/FangDou/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/FangDou/app/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Android/FangDou/app/src/main/java/com/example/fangdou/activity/EditDataActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/FangDou/app/src/main/java/com/example/fangdou/activity/EditDataActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/FangDou/app/src/main/java/com/example/fangdou/activity/LoginActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/FangDou/app/src/main/java/com/example/fangdou/activity/LoginActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/FangDou/app/src/main/java/com/example/fangdou/fragment/MapFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/FangDou/app/src/main/java/com/example/fangdou/fragment/MapFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/FangDou/app/src/main/res/layout/activity_editdata.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/FangDou/app/src/main/res/layout/activity_editdata.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/FangDou/app/src/main/res/layout/headlayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/FangDou/app/src/main/res/layout/headlayout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/FangDou/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/FangDou/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JDBCDemo/TestJDBCj.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JDBCDemo/TestJDBCj.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TestJDBC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TestJDBC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaPractice/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaPractice/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -74,7 +57,7 @@
         <entry file="file://$PROJECT_DIR$/src/TestJDBC.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="218">
-              <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+              <caret line="21" column="33" lean-forward="true" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -241,12 +224,12 @@
       <workItem from="1557639104147" duration="1651000" />
       <workItem from="1557655161125" duration="629000" />
       <workItem from="1558272858297" duration="403000" />
-      <workItem from="1558356075262" duration="789000" />
+      <workItem from="1558356075262" duration="2652000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18672000" />
+    <option name="totallyTimeSpent" value="20535000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -327,7 +310,7 @@
     <entry file="file://$PROJECT_DIR$/src/TestJDBC.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="218">
-          <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+          <caret line="21" column="33" lean-forward="true" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -1,6 +1,7 @@
 package com.example.fangdou.activity;
 
 import android.app.AlertDialog;
+import android.app.DatePickerDialog;
 import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -23,6 +24,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -41,6 +43,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.SQLIntegrityConstraintViolationException;
 import java.sql.Statement;
+import java.util.Calendar;
 
 import butterknife.BindView;
 import butterknife.OnClick;
@@ -88,6 +91,9 @@ public class EditDataActivity extends AppCompatActivity
     private SharedPreferences.Editor editor;
     private ResultSet resultSet;
     private int choice;
+    private int mYear;
+    private int mMonth;
+    private int mDay;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -343,8 +349,83 @@ public class EditDataActivity extends AppCompatActivity
                 sexDialog.create().show();
                 break;
             case R.id.birth:
+                userName = sharedPreferences.getString("User_Name", "方小逗");
+                Calendar calendar = Calendar.getInstance();
+                mYear = calendar.get(Calendar.YEAR);
+                mMonth = calendar.get(Calendar.MONTH);
+                mDay = calendar.get(Calendar.DAY_OF_MONTH);
+                DatePickerDialog datePickerDialog = new DatePickerDialog(EditDataActivity.this,
+                        new DatePickerDialog.OnDateSetListener()
+                        {
+                            @Override
+                            public void onDateSet(DatePicker view, int year, int month, int dayOfMonth)
+                            {
+                                mYear = year;
+                                mMonth = month;
+                                mDay = dayOfMonth;
+                                final String date = year + "-" + (month + 1) + "-" + dayOfMonth;
+                                editor.putString("User_Birth", date).apply();
+                                new Thread()
+                                {
+                                    @Override
+                                    public void run()
+                                    {
+                                        Looper.prepare();
+                                        try
+                                        {
+                                            Log.d("haha", date);
+                                            statement.executeUpdate("update user set user_birth =" + "'" + date + "'"
+                                                    + "where user_name=" + "'"
+                                                    + userName + "'");
+                                            Toast.makeText(EditDataActivity.this, "修改成功", Toast.LENGTH_SHORT).show();
+                                            Looper.loop();
+                                        } catch (SQLException e)
+                                        {
+                                            e.printStackTrace();
+                                        }
+                                    }
+                                }.start();
+                            }
+                        },
+                        mYear, mMonth, mDay);
+                datePickerDialog.show();
                 break;
             case R.id.location:
+                final String[] locations = {"上海", "江苏", "浙江", "安徽", "北京", "天津", "广东",
+                        "河北", "河南", "山东", "湖北", "江西", "福建", "四川", "重庆",
+                        "广西", "山西", "辽宁", "吉林", "黑龙江", "贵州", "陕西", "云南", "内蒙古", "甘肃", "青海"
+                        , "宁夏", "新疆", "海南", "西藏", "香港", "澳门", "台湾"};
+                userName = sharedPreferences.getString("User_Name", "方小逗");
+                AlertDialog.Builder locationDialog = new AlertDialog.Builder(EditDataActivity.this);
+                locationDialog.setTitle("地区");
+                locationDialog.setItems(locations, new DialogInterface.OnClickListener()
+                {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which)
+                    {
+                        editor.putInt("User_Location", choice).apply();
+                        new Thread()
+                        {
+                            @Override
+                            public void run()
+                            {
+                                Looper.prepare();
+                                try
+                                {
+                                    Log.d("haha", which + "");
+                                    statement.executeUpdate("update user set user_location =" + "'" + locations[which] + "' "
+                                            + "where user_name=" + "'"
+                                            + userName + "'");
+                                    Toast.makeText(EditDataActivity.this, "修改成功", Toast.LENGTH_SHORT).show();
+                                    Looper.loop();
+                                } catch (SQLException e)
+                                {
+                                    e.printStackTrace();
+                                }
+                            }
+                        }.start();
+                    }
+                }).show();
                 break;
         }
     }
