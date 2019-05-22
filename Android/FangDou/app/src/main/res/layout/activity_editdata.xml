@@ -75,7 +75,8 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/selector"
                 my:hint="用户名"
-                my:icon="@mipmap/product_part2_icon" />
+                my:icon="@mipmap/product_part2_icon"
+                my:text_size="20dp" />
 
             <com.example.fangdou.utils.nav_bar
 
@@ -84,7 +85,8 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/selector"
                 my:hint="个人介绍"
-                my:icon="@mipmap/my_asset_manage" />
+                my:icon="@mipmap/my_asset_manage"
+                my:text_size="20dp" />
 
             <com.example.fangdou.utils.nav_bar
 
@@ -103,7 +105,9 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/selector"
                 my:hint="生日"
-                my:icon="@mipmap/my_reward_manage" />
+                my:icon="@mipmap/my_reward_manage"
+
+                my:text_size="20dp" />
 
             <com.example.fangdou.utils.nav_bar
 
@@ -112,7 +116,9 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/selector"
                 my:hint="地区"
-                my:icon="@mipmap/my_reward_manage" />
+                my:icon="@mipmap/my_reward_manage"
+
+                my:text_size="20dp" />
 
         </LinearLayout>
     </LinearLayout>
