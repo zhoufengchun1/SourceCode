@@ -90,6 +90,7 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/checkbox"
         android:layout_width="match_parent"
         android:layout_height="20dp"
         android:layout_alignBottom="@id/button"
@@ -120,11 +121,16 @@
             android:theme="@style/My_CheckBox" />
     </LinearLayout>
 
-    <ProgressBar
-        android:id="@+id/progressbar"
-        android:layout_width="wrap_content"
+
+    <TextView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:visibility="invisible" />
+        android:layout_alignBottom="@id/checkbox"
+        android:layout_marginBottom="-39dp"
+        android:id="@+id/logoff"
+        android:text="注销账户?"
+        android:textColor="#BF360C"
+        android:textSize="20dp"
+        android:gravity="center" />
 
 </RelativeLayout>

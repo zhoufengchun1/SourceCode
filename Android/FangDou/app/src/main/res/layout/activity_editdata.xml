@@ -36,7 +36,6 @@
             tools:layout_editor_absoluteY="0dp">
 
             <ImageView
-                android:id="@+id/h_back"
                 android:layout_width="match_parent"
                 android:layout_height="200dp" />
 
@@ -75,7 +74,7 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/selector"
                 my:hint="用户名"
-                my:icon="@mipmap/product_part2_icon"
+                my:icon="@mipmap/img_user"
                 my:text_size="20dp" />
 
             <com.example.fangdou.utils.nav_bar
@@ -85,7 +84,7 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/selector"
                 my:hint="个人介绍"
-                my:icon="@mipmap/my_asset_manage"
+                my:icon="@mipmap/img_intro"
                 my:text_size="20dp" />
 
             <com.example.fangdou.utils.nav_bar
@@ -95,7 +94,7 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/selector"
                 my:hint="性别"
-                my:icon="@mipmap/product_info_icon"
+                my:icon="@mipmap/img_sex"
                 my:text_size="20dp" />
 
             <com.example.fangdou.utils.nav_bar
@@ -105,8 +104,7 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/selector"
                 my:hint="生日"
-                my:icon="@mipmap/my_reward_manage"
-
+                my:icon="@mipmap/img_birth"
                 my:text_size="20dp" />
 
             <com.example.fangdou.utils.nav_bar
@@ -116,8 +114,7 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/selector"
                 my:hint="地区"
-                my:icon="@mipmap/my_reward_manage"
-
+                my:icon="@mipmap/img_location"
                 my:text_size="20dp" />
 
         </LinearLayout>

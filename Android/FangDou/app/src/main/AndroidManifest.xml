@@ -48,6 +48,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".activity.EditDataActivity" />
+        <activity android:name=".activity.LogoffActivity" />
 
         <service android:name=".service.RecordingService" />
 

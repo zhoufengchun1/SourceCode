@@ -7,55 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2cdc282d-b046-4bde-bae3-2dd45a49489e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../HtmlDemo/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JDBCDemo/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JDBCDemo/src/Demo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/TomcatDemo_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Java_EE_6_Java_EE_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TomcatDemo.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/HelloWorldServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TestLifeCycleServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/classes/Demo/HelloWorldServlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/classes/Demo/TestLifeCycleServlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/index_files/GM_script" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/index_files/activity_start_52498d2c.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/index_files/all_async_search_2345059.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/index_files/baidu_resultlogo@2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/index_files/copy_rignt_24.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/index_files/dong_18baaa7524814ab080a65d15e2da33fd.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/index_files/every_cookie_4644b13.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/index_files/github-btn.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/index_files/index_e0150f3.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/index_files/jquery-1.10.2_1c4228b8.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/index_files/logo_top_86d58ae1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/index_files/min_super_fdb28b91.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/index_files/min_tips_e4616384.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/index_files/mt_min_2247e202.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/index_files/nsguide_a8cbc2e7.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/index_files/sbase_a65ca873.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/index_files/search-sug_73a0f48.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/index_files/skin_opacity30_98c3c665.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/index_files/soutu.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/index_files/super_ext_5031d813.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/index_files/super_min_353cb37f.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/index_files/swfobject_0178953.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/index_files/tu_d03f361.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/index_files/ubase_83c8f0ba.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/FangDou/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/FangDou/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/FangDou/app/src/main/java/com/example/fangdou/activity/LoginActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/FangDou/app/src/main/java/com/example/fangdou/activity/LoginActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/FangDou/app/src/main/res/layout/activity_login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/FangDou/app/src/main/res/layout/activity_login.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JDBCDemo/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JDBCDemo/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Html/HtmlDemo/m.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Html/HtmlDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Html/HtmlDemo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Html/HtmlDemo/JSDemo.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Html/HtmlDemo/JSDemo.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../JDBCDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JDBCDemo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JDBCDemo/out/production/JDBCDemo/TestJDBCj.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JDBCDemo/out/production/JDBCDemo/TestJDBCj.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JDBCDemo/src/TestJDBC.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JDBCDemo/src/TestJDBC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -94,8 +50,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/TestLifeCycleServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="18" column="49" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
+            <state relative-caret-position="504">
+              <caret line="30" selection-start-line="30" selection-end-line="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -125,9 +81,9 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="154" />
-    <option name="y" value="124" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="88" />
+    <option name="y" value="192" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
@@ -147,7 +103,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="go.import.settings.migrated" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -263,14 +219,17 @@
       <updated>1557664595722</updated>
       <workItem from="1557664599930" duration="2535000" />
       <workItem from="1557670606040" duration="1084000" />
+      <workItem from="1558960125024" duration="2000" />
+      <workItem from="1558960159918" duration="872000" />
+      <workItem from="1559359269847" duration="3000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3619000" />
+    <option name="totallyTimeSpent" value="4496000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="88" y="192" width="974" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
@@ -284,16 +243,16 @@
       <window_info anchor="bottom" id="DB Execution Console" order="0" />
       <window_info anchor="bottom" id="Run" order="1" weight="0.35578004" />
       <window_info anchor="bottom" id="Application Servers" order="2" weight="0.32996634" />
-      <window_info anchor="bottom" id="Terminal" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="3" weight="0.32996634" />
+      <window_info anchor="bottom" id="Event Log" order="4" sideWeight="0.5011062" side_tool="true" weight="0.39955106" />
       <window_info anchor="bottom" id="Messages" order="5" />
-      <window_info anchor="bottom" id="Java Enterprise" order="6" />
+      <window_info anchor="bottom" id="Java Enterprise" order="6" weight="0.32996634" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32996634" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="10" />
       <window_info anchor="bottom" id="Find" order="11" weight="0.32996634" />
-      <window_info anchor="bottom" id="Debug" order="12" weight="0.39955106" />
+      <window_info anchor="bottom" id="Debug" order="12" sideWeight="0.4988938" weight="0.39955106" />
       <window_info anchor="bottom" id="Cvs" order="13" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="14" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="15" />
@@ -349,8 +308,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/TestLifeCycleServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="18" column="49" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
+        <state relative-caret-position="504">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

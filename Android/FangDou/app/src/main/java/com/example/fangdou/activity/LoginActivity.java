@@ -1,6 +1,9 @@
 package com.example.fangdou.activity;
 
+import android.app.AlertDialog;
 import android.app.Instrumentation;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
@@ -14,13 +17,12 @@ import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.LinearLayout;
-import android.widget.ProgressBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.fangdou.JDBC;
@@ -50,14 +52,14 @@ public class LoginActivity extends AppCompatActivity implements CompoundButton.O
     TextInputLayout userTextInputLayout;
     @BindView(R.id.passwdTextInputLayout)
     TextInputLayout passwdTextInputLayout;
-    @BindView(R.id.progressbar)
-    ProgressBar progressbar;
     @BindView(R.id.autoLogin)
     AppCompatCheckBox autoLogin;
     @BindView(R.id.savePasswd)
     CheckBox savePasswd;
     @BindView(R.id.text)
     LinearLayout text;
+    @BindView(R.id.logoff)
+    TextView logoff;
 
 
     private String username, password;
@@ -162,7 +164,6 @@ public class LoginActivity extends AppCompatActivity implements CompoundButton.O
         boolean isAllow = judge();
         if (isAllow)
         {
-            progressbar.setVisibility(View.VISIBLE);
             new Thread()
             {
                 public void run()
@@ -218,7 +219,6 @@ public class LoginActivity extends AppCompatActivity implements CompoundButton.O
 
                 }
             }.start();
-            progressbar.setVisibility(View.INVISIBLE);
         }
     }
 
@@ -343,4 +343,20 @@ public class LoginActivity extends AppCompatActivity implements CompoundButton.O
 
     }
 
+    @OnClick(R.id.logoff)
+    public void onViewClicked()
+    {
+        AlertDialog.Builder logoffDialog = new AlertDialog.Builder(LoginActivity.this);
+        logoffDialog.setTitle("注销账号");
+        logoffDialog.setMessage("注销帐号操作不可撤回，请确认");
+        logoffDialog.setPositiveButton("去确认信息", new DialogInterface.OnClickListener()
+        {
+            @Override
+            public void onClick(DialogInterface dialog, int which)
+            {
+                startActivity(new Intent(LoginActivity.this, LogoffActivity.class));
+            }
+        }).show();
+
+    }
 }

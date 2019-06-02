@@ -6,25 +6,11 @@
     </head>
     <body>
         <script type="text/javascript">
-            function Persion()
+            var d = new Date();
+            with (d)
             {
-                alert("init");
+                alert(getFullYear() + "年" + (getMonth() + 1) + "月" + getDate() + "日");
             }
-            var p = new Persion(1,2);
-            p.name = 30;
-            p.sex = "男";
-            p.doSomething = function ()
-            {
-                alert("123");
-            };
-            function Persion(name,age)
-            {
-                this.name = name;
-                this.age = age;
-            }
-
-            alert(p["name"] + "..." + p.age);
-
         </script>
     </body>
 </html>
