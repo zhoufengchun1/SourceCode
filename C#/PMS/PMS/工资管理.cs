@@ -111,6 +111,8 @@ namespace PMS
                 string delete_by_ID = "delete from WITHHOLD where WITHHOLDID=" + "'" + select_ID + "'"; //sql删除语句
                 SqlCommand cmd = new SqlCommand(delete_by_ID, sqlConnection);
                 cmd.ExecuteNonQuery();
+                button3.PerformClick();
+
             }
             catch
             {
@@ -128,8 +130,21 @@ namespace PMS
             list.Add(new People("Paytime", textBox3.Text.Trim()));
         }
 
-        
+       
 
+        private void textBox12_TextChanged(object sender, EventArgs e)
+        {
 
+        }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            SqlCommand sqlCommand = new SqlCommand("select * from WITHHOLD", sqlConnection);
+            SqlDataReader sqlDataReader = sqlCommand.ExecuteReader();
+            BindingSource bindingSource = new BindingSource();
+            bindingSource.DataSource = sqlDataReader;
+            withholdtable.DataSource = bindingSource;
+            sqlDataReader.Close();
+        }
     }
 }

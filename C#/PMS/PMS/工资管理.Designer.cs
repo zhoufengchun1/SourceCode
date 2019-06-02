@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.sALARYBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.pMSDataSet2 = new PMS.PMSDataSet2();
             this.sALARYTableAdapter = new PMS.PMSDataSet2TableAdapters.SALARYTableAdapter();
             this.pMSDataSet5 = new PMS.PMSDataSet5();
             this.wITHHOLDBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.wITHHOLDTableAdapter = new PMS.PMSDataSet5TableAdapters.WITHHOLDTableAdapter();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.ID = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.textBox12 = new System.Windows.Forms.TextBox();
             this.textBox11 = new System.Windows.Forms.TextBox();
@@ -49,6 +49,12 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.withholdtable = new System.Windows.Forms.DataGridView();
+            this.wITHHOLDIDDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.snoDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.rIDDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.wITHHOLDTIMEDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.wITHHOLDBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.pMSDataSet22 = new PMS.PMSDataSet22();
             this.wITHHOLDIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.snoDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.rIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -59,6 +65,15 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.salarytable = new System.Windows.Forms.DataGridView();
+            this.sALARYIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.snoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.snameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.deptnoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.grosspayDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.realpayDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.paytimeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sALARYBindingSource6 = new System.Windows.Forms.BindingSource(this.components);
+            this.pMSDataSet20 = new PMS.PMSDataSet20();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -68,65 +83,44 @@
             this.label14 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
-            this.sALARYBindingSource5 = new System.Windows.Forms.BindingSource(this.components);
             this.pMSDataSet17 = new PMS.PMSDataSet17();
-            this.sALARYBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             this.pMSDataSet9 = new PMS.PMSDataSet9();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.pMSDataSet7 = new PMS.PMSDataSet7();
-            this.sALARYBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.sALARYTableAdapter1 = new PMS.PMSDataSet7TableAdapters.SALARYTableAdapter();
             this.pMSDataSet8 = new PMS.PMSDataSet8();
-            this.sALARYBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.sALARYTableAdapter2 = new PMS.PMSDataSet8TableAdapters.SALARYTableAdapter();
             this.sALARYTableAdapter3 = new PMS.PMSDataSet9TableAdapters.SALARYTableAdapter();
             this.attendenceTableAdapter1 = new PMS.PMSDataSet3TableAdapters.ATTENDENCETableAdapter();
             this.pMSDataSet16 = new PMS.PMSDataSet16();
-            this.sALARYBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
             this.sALARYTableAdapter4 = new PMS.PMSDataSet16TableAdapters.SALARYTableAdapter();
             this.pMSDataSet16BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.sALARYTableAdapter5 = new PMS.PMSDataSet17TableAdapters.SALARYTableAdapter();
             this.pMSDataSet19 = new PMS.PMSDataSet19();
-            this.pMSDataSet19BindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.pMSDataSet20 = new PMS.PMSDataSet20();
-            this.sALARYBindingSource6 = new System.Windows.Forms.BindingSource(this.components);
             this.sALARYTableAdapter6 = new PMS.PMSDataSet20TableAdapters.SALARYTableAdapter();
-            this.sALARYIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.snoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.snameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.deptnoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.grosspayDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.realpayDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.paytimeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.sALARYBindingSource)).BeginInit();
+            this.wITHHOLDTableAdapter1 = new PMS.PMSDataSet22TableAdapters.WITHHOLDTableAdapter();
+            this.label9 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pMSDataSet2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pMSDataSet5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.wITHHOLDBindingSource)).BeginInit();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.withholdtable)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.wITHHOLDBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pMSDataSet22)).BeginInit();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.salarytable)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sALARYBindingSource5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sALARYBindingSource6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pMSDataSet20)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pMSDataSet17)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sALARYBindingSource3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pMSDataSet9)).BeginInit();
             this.tabControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pMSDataSet7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sALARYBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pMSDataSet8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sALARYBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pMSDataSet16)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sALARYBindingSource4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pMSDataSet16BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pMSDataSet19)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pMSDataSet19BindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pMSDataSet20)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sALARYBindingSource6)).BeginInit();
             this.SuspendLayout();
-            // 
-            // sALARYBindingSource
-            // 
-            this.sALARYBindingSource.RaiseListChangedEvents = false;
             // 
             // pMSDataSet2
             // 
@@ -152,6 +146,9 @@
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.button3);
+            this.tabPage3.Controls.Add(this.label9);
+            this.tabPage3.Controls.Add(this.ID);
             this.tabPage3.Controls.Add(this.button1);
             this.tabPage3.Controls.Add(this.textBox12);
             this.tabPage3.Controls.Add(this.textBox11);
@@ -172,6 +169,16 @@
             this.tabPage3.Text = "工资代扣";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
+            // ID
+            // 
+            this.ID.AutoSize = true;
+            this.ID.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Bold);
+            this.ID.Location = new System.Drawing.Point(21, 430);
+            this.ID.Name = "ID";
+            this.ID.Size = new System.Drawing.Size(35, 27);
+            this.ID.TabIndex = 57;
+            this.ID.Text = "ID";
+            // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -189,6 +196,7 @@
             this.textBox12.Name = "textBox12";
             this.textBox12.Size = new System.Drawing.Size(60, 21);
             this.textBox12.TabIndex = 55;
+            this.textBox12.TextChanged += new System.EventHandler(this.textBox12_TextChanged);
             // 
             // textBox11
             // 
@@ -199,7 +207,7 @@
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(249, 436);
+            this.textBox5.Location = new System.Drawing.Point(256, 436);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(106, 21);
             this.textBox5.TabIndex = 51;
@@ -279,12 +287,53 @@
             // 
             // withholdtable
             // 
+            this.withholdtable.AutoGenerateColumns = false;
             this.withholdtable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.withholdtable.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.wITHHOLDIDDataGridViewTextBoxColumn1,
+            this.snoDataGridViewTextBoxColumn2,
+            this.rIDDataGridViewTextBoxColumn1,
+            this.wITHHOLDTIMEDataGridViewTextBoxColumn1});
+            this.withholdtable.DataSource = this.wITHHOLDBindingSource1;
             this.withholdtable.Location = new System.Drawing.Point(26, 38);
             this.withholdtable.Name = "withholdtable";
             this.withholdtable.RowTemplate.Height = 23;
             this.withholdtable.Size = new System.Drawing.Size(711, 310);
             this.withholdtable.TabIndex = 41;
+            // 
+            // wITHHOLDIDDataGridViewTextBoxColumn1
+            // 
+            this.wITHHOLDIDDataGridViewTextBoxColumn1.DataPropertyName = "WITHHOLDID";
+            this.wITHHOLDIDDataGridViewTextBoxColumn1.HeaderText = "WITHHOLDID";
+            this.wITHHOLDIDDataGridViewTextBoxColumn1.Name = "wITHHOLDIDDataGridViewTextBoxColumn1";
+            // 
+            // snoDataGridViewTextBoxColumn2
+            // 
+            this.snoDataGridViewTextBoxColumn2.DataPropertyName = "Sno";
+            this.snoDataGridViewTextBoxColumn2.HeaderText = "Sno";
+            this.snoDataGridViewTextBoxColumn2.Name = "snoDataGridViewTextBoxColumn2";
+            // 
+            // rIDDataGridViewTextBoxColumn1
+            // 
+            this.rIDDataGridViewTextBoxColumn1.DataPropertyName = "RID";
+            this.rIDDataGridViewTextBoxColumn1.HeaderText = "RID";
+            this.rIDDataGridViewTextBoxColumn1.Name = "rIDDataGridViewTextBoxColumn1";
+            // 
+            // wITHHOLDTIMEDataGridViewTextBoxColumn1
+            // 
+            this.wITHHOLDTIMEDataGridViewTextBoxColumn1.DataPropertyName = "WITHHOLDTIME";
+            this.wITHHOLDTIMEDataGridViewTextBoxColumn1.HeaderText = "WITHHOLDTIME";
+            this.wITHHOLDTIMEDataGridViewTextBoxColumn1.Name = "wITHHOLDTIMEDataGridViewTextBoxColumn1";
+            // 
+            // wITHHOLDBindingSource1
+            // 
+            this.wITHHOLDBindingSource1.DataMember = "WITHHOLD";
+            this.wITHHOLDBindingSource1.DataSource = this.pMSDataSet22;
+            // 
+            // pMSDataSet22
+            // 
+            this.pMSDataSet22.DataSetName = "PMSDataSet22";
+            this.pMSDataSet22.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // wITHHOLDIDDataGridViewTextBoxColumn
             // 
@@ -328,7 +377,7 @@
             this.tabPage2.Controls.Add(this.label18);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(834, 499);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "工资查询";
@@ -390,6 +439,58 @@
             this.salarytable.RowTemplate.Height = 23;
             this.salarytable.Size = new System.Drawing.Size(720, 298);
             this.salarytable.TabIndex = 45;
+            // 
+            // sALARYIDDataGridViewTextBoxColumn
+            // 
+            this.sALARYIDDataGridViewTextBoxColumn.DataPropertyName = "SALARYID";
+            this.sALARYIDDataGridViewTextBoxColumn.HeaderText = "SALARYID";
+            this.sALARYIDDataGridViewTextBoxColumn.Name = "sALARYIDDataGridViewTextBoxColumn";
+            // 
+            // snoDataGridViewTextBoxColumn
+            // 
+            this.snoDataGridViewTextBoxColumn.DataPropertyName = "Sno";
+            this.snoDataGridViewTextBoxColumn.HeaderText = "Sno";
+            this.snoDataGridViewTextBoxColumn.Name = "snoDataGridViewTextBoxColumn";
+            // 
+            // snameDataGridViewTextBoxColumn
+            // 
+            this.snameDataGridViewTextBoxColumn.DataPropertyName = "Sname";
+            this.snameDataGridViewTextBoxColumn.HeaderText = "Sname";
+            this.snameDataGridViewTextBoxColumn.Name = "snameDataGridViewTextBoxColumn";
+            // 
+            // deptnoDataGridViewTextBoxColumn
+            // 
+            this.deptnoDataGridViewTextBoxColumn.DataPropertyName = "Deptno";
+            this.deptnoDataGridViewTextBoxColumn.HeaderText = "Deptno";
+            this.deptnoDataGridViewTextBoxColumn.Name = "deptnoDataGridViewTextBoxColumn";
+            // 
+            // grosspayDataGridViewTextBoxColumn
+            // 
+            this.grosspayDataGridViewTextBoxColumn.DataPropertyName = "Grosspay";
+            this.grosspayDataGridViewTextBoxColumn.HeaderText = "Grosspay";
+            this.grosspayDataGridViewTextBoxColumn.Name = "grosspayDataGridViewTextBoxColumn";
+            // 
+            // realpayDataGridViewTextBoxColumn
+            // 
+            this.realpayDataGridViewTextBoxColumn.DataPropertyName = "Realpay";
+            this.realpayDataGridViewTextBoxColumn.HeaderText = "Realpay";
+            this.realpayDataGridViewTextBoxColumn.Name = "realpayDataGridViewTextBoxColumn";
+            // 
+            // paytimeDataGridViewTextBoxColumn
+            // 
+            this.paytimeDataGridViewTextBoxColumn.DataPropertyName = "Paytime";
+            this.paytimeDataGridViewTextBoxColumn.HeaderText = "Paytime";
+            this.paytimeDataGridViewTextBoxColumn.Name = "paytimeDataGridViewTextBoxColumn";
+            // 
+            // sALARYBindingSource6
+            // 
+            this.sALARYBindingSource6.DataMember = "SALARY";
+            this.sALARYBindingSource6.DataSource = this.pMSDataSet20;
+            // 
+            // pMSDataSet20
+            // 
+            this.pMSDataSet20.DataSetName = "PMSDataSet20";
+            this.pMSDataSet20.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // textBox3
             // 
@@ -493,18 +594,10 @@
             this.label18.Size = new System.Drawing.Size(0, 27);
             this.label18.TabIndex = 23;
             // 
-            // sALARYBindingSource5
-            // 
-            this.sALARYBindingSource5.RaiseListChangedEvents = false;
-            // 
             // pMSDataSet17
             // 
             this.pMSDataSet17.DataSetName = "PMSDataSet17";
             this.pMSDataSet17.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // sALARYBindingSource3
-            // 
-            this.sALARYBindingSource3.RaiseListChangedEvents = false;
             // 
             // pMSDataSet9
             // 
@@ -526,10 +619,6 @@
             this.pMSDataSet7.DataSetName = "PMSDataSet7";
             this.pMSDataSet7.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // sALARYBindingSource1
-            // 
-            this.sALARYBindingSource1.RaiseListChangedEvents = false;
-            // 
             // sALARYTableAdapter1
             // 
             this.sALARYTableAdapter1.ClearBeforeFill = true;
@@ -538,10 +627,6 @@
             // 
             this.pMSDataSet8.DataSetName = "PMSDataSet8";
             this.pMSDataSet8.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // sALARYBindingSource2
-            // 
-            this.sALARYBindingSource2.RaiseListChangedEvents = false;
             // 
             // sALARYTableAdapter2
             // 
@@ -560,10 +645,6 @@
             this.pMSDataSet16.DataSetName = "PMSDataSet16";
             this.pMSDataSet16.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // sALARYBindingSource4
-            // 
-            this.sALARYBindingSource4.RaiseListChangedEvents = false;
-            // 
             // sALARYTableAdapter4
             // 
             this.sALARYTableAdapter4.ClearBeforeFill = true;
@@ -581,66 +662,34 @@
             this.pMSDataSet19.DataSetName = "PMSDataSet19";
             this.pMSDataSet19.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // pMSDataSet19BindingSource
-            // 
-            this.pMSDataSet19BindingSource.DataSource = this.pMSDataSet19;
-            this.pMSDataSet19BindingSource.Position = 0;
-            // 
-            // pMSDataSet20
-            // 
-            this.pMSDataSet20.DataSetName = "PMSDataSet20";
-            this.pMSDataSet20.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // sALARYBindingSource6
-            // 
-            this.sALARYBindingSource6.DataMember = "SALARY";
-            this.sALARYBindingSource6.DataSource = this.pMSDataSet20;
-            // 
             // sALARYTableAdapter6
             // 
             this.sALARYTableAdapter6.ClearBeforeFill = true;
             // 
-            // sALARYIDDataGridViewTextBoxColumn
+            // wITHHOLDTableAdapter1
             // 
-            this.sALARYIDDataGridViewTextBoxColumn.DataPropertyName = "SALARYID";
-            this.sALARYIDDataGridViewTextBoxColumn.HeaderText = "SALARYID";
-            this.sALARYIDDataGridViewTextBoxColumn.Name = "sALARYIDDataGridViewTextBoxColumn";
+            this.wITHHOLDTableAdapter1.ClearBeforeFill = true;
             // 
-            // snoDataGridViewTextBoxColumn
+            // label9
             // 
-            this.snoDataGridViewTextBoxColumn.DataPropertyName = "Sno";
-            this.snoDataGridViewTextBoxColumn.HeaderText = "Sno";
-            this.snoDataGridViewTextBoxColumn.Name = "snoDataGridViewTextBoxColumn";
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Bold);
+            this.label9.Location = new System.Drawing.Point(177, 432);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(52, 27);
+            this.label9.TabIndex = 58;
+            this.label9.Text = "工号";
             // 
-            // snameDataGridViewTextBoxColumn
+            // button3
             // 
-            this.snameDataGridViewTextBoxColumn.DataPropertyName = "Sname";
-            this.snameDataGridViewTextBoxColumn.HeaderText = "Sname";
-            this.snameDataGridViewTextBoxColumn.Name = "snameDataGridViewTextBoxColumn";
-            // 
-            // deptnoDataGridViewTextBoxColumn
-            // 
-            this.deptnoDataGridViewTextBoxColumn.DataPropertyName = "Deptno";
-            this.deptnoDataGridViewTextBoxColumn.HeaderText = "Deptno";
-            this.deptnoDataGridViewTextBoxColumn.Name = "deptnoDataGridViewTextBoxColumn";
-            // 
-            // grosspayDataGridViewTextBoxColumn
-            // 
-            this.grosspayDataGridViewTextBoxColumn.DataPropertyName = "Grosspay";
-            this.grosspayDataGridViewTextBoxColumn.HeaderText = "Grosspay";
-            this.grosspayDataGridViewTextBoxColumn.Name = "grosspayDataGridViewTextBoxColumn";
-            // 
-            // realpayDataGridViewTextBoxColumn
-            // 
-            this.realpayDataGridViewTextBoxColumn.DataPropertyName = "Realpay";
-            this.realpayDataGridViewTextBoxColumn.HeaderText = "Realpay";
-            this.realpayDataGridViewTextBoxColumn.Name = "realpayDataGridViewTextBoxColumn";
-            // 
-            // paytimeDataGridViewTextBoxColumn
-            // 
-            this.paytimeDataGridViewTextBoxColumn.DataPropertyName = "Paytime";
-            this.paytimeDataGridViewTextBoxColumn.HeaderText = "Paytime";
-            this.paytimeDataGridViewTextBoxColumn.Name = "paytimeDataGridViewTextBoxColumn";
+            this.button3.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Bold);
+            this.button3.Location = new System.Drawing.Point(399, 368);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(87, 38);
+            this.button3.TabIndex = 59;
+            this.button3.Text = "刷新";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click_1);
             // 
             // 工资管理
             // 
@@ -651,32 +700,27 @@
             this.Controls.Add(this.tabControl1);
             this.Location = new System.Drawing.Point(15, 15);
             this.Name = "工资管理";
-            ((System.ComponentModel.ISupportInitialize)(this.sALARYBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pMSDataSet2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pMSDataSet5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.wITHHOLDBindingSource)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.withholdtable)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.wITHHOLDBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pMSDataSet22)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.salarytable)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sALARYBindingSource5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sALARYBindingSource6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pMSDataSet20)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pMSDataSet17)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sALARYBindingSource3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pMSDataSet9)).EndInit();
             this.tabControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pMSDataSet7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sALARYBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pMSDataSet8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sALARYBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pMSDataSet16)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sALARYBindingSource4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pMSDataSet16BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pMSDataSet19)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pMSDataSet19BindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pMSDataSet20)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sALARYBindingSource6)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -684,7 +728,6 @@
         #endregion
 
         private PMS.PMSDataSet2 pMSDataSet2;
-        private System.Windows.Forms.BindingSource sALARYBindingSource;
         private PMS.PMSDataSet2TableAdapters.SALARYTableAdapter sALARYTableAdapter;
         private PMS.PMSDataSet5 pMSDataSet5;
         private System.Windows.Forms.BindingSource wITHHOLDBindingSource;
@@ -718,29 +761,23 @@
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.TabControl tabControl1;
         private PMS.PMSDataSet7 pMSDataSet7;
-        private System.Windows.Forms.BindingSource sALARYBindingSource1;
         private PMS.PMSDataSet7TableAdapters.SALARYTableAdapter sALARYTableAdapter1;
         private PMS.PMSDataSet8 pMSDataSet8;
-        private System.Windows.Forms.BindingSource sALARYBindingSource2;
         private PMS.PMSDataSet8TableAdapters.SALARYTableAdapter sALARYTableAdapter2;
         private PMS.PMSDataSet9 pMSDataSet9;
-        private System.Windows.Forms.BindingSource sALARYBindingSource3;
         private PMS.PMSDataSet9TableAdapters.SALARYTableAdapter sALARYTableAdapter3;
         private PMS.PMSDataSet3TableAdapters.ATTENDENCETableAdapter attendenceTableAdapter1;
         private System.Windows.Forms.DataGridView salarytable;
         private System.Windows.Forms.Button button1;
         private PMS.PMSDataSet16 pMSDataSet16;
-        private System.Windows.Forms.BindingSource sALARYBindingSource4;
         private PMS.PMSDataSet16TableAdapters.SALARYTableAdapter sALARYTableAdapter4;
         private System.Windows.Forms.BindingSource pMSDataSet16BindingSource;
         private PMS.PMSDataSet17 pMSDataSet17;
-        private System.Windows.Forms.BindingSource sALARYBindingSource5;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private PMS.PMSDataSet17TableAdapters.SALARYTableAdapter sALARYTableAdapter5;
-        private System.Windows.Forms.BindingSource pMSDataSet19BindingSource;
         private PMSDataSet19 pMSDataSet19;
         private PMSDataSet20 pMSDataSet20;
         private System.Windows.Forms.BindingSource sALARYBindingSource6;
@@ -752,5 +789,15 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn grosspayDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn realpayDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn paytimeDataGridViewTextBoxColumn;
+        private PMSDataSet22 pMSDataSet22;
+        private System.Windows.Forms.BindingSource wITHHOLDBindingSource1;
+        private PMSDataSet22TableAdapters.WITHHOLDTableAdapter wITHHOLDTableAdapter1;
+        private System.Windows.Forms.Label ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn wITHHOLDIDDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn snoDataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn rIDDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn wITHHOLDTIMEDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Label label9;
     }
 }
