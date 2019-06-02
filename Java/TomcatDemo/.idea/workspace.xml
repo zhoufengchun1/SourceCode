@@ -7,10 +7,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2cdc282d-b046-4bde-bae3-2dd45a49489e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../Html/HtmlDemo/m.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Html/HtmlDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Html/HtmlDemo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Html/HtmlDemo/JSDemo.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Html/HtmlDemo/JSDemo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JDBCDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JDBCDemo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C#/PMS/PMS/bin/Debug/PMS.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../../C#/PMS/PMS/bin/Debug/PMS.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C#/PMS/PMS/bin/Debug/PMS.exe.config" beforeDir="false" afterPath="$PROJECT_DIR$/../../C#/PMS/PMS/bin/Debug/PMS.exe.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C#/PMS/PMS/bin/Debug/PMS.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../C#/PMS/PMS/bin/Debug/PMS.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C#/PMS/PMS/obj/Debug/PMS.csproj.GenerateResource.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../C#/PMS/PMS/obj/Debug/PMS.csproj.GenerateResource.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C#/PMS/PMS/obj/Debug/PMS.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../../C#/PMS/PMS/obj/Debug/PMS.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C#/PMS/PMS/obj/Debug/PMS.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../C#/PMS/PMS/obj/Debug/PMS.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C#/PMS/PMS/人事管理.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../C#/PMS/PMS/人事管理.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -81,9 +84,9 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="88" />
-    <option name="y" value="192" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="159" />
+    <option name="y" value="-22" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
@@ -222,14 +225,16 @@
       <workItem from="1558960125024" duration="2000" />
       <workItem from="1558960159918" duration="872000" />
       <workItem from="1559359269847" duration="3000" />
+      <workItem from="1559459872998" duration="293000" />
+      <workItem from="1559460229395" duration="20000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4496000" />
+    <option name="totallyTimeSpent" value="4809000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="88" y="192" width="974" height="1047" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />

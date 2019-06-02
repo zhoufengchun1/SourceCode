@@ -13,6 +13,8 @@ namespace PMS
 
         private void 员工查询_Load(object sender, EventArgs e)
         {
+            // TODO: 这行代码将数据加载到表“pMSDataSet15.SALARY”中。您可以根据需要移动或删除它。
+            this.sALARYTableAdapter1.Fill(this.pMSDataSet15.SALARY);
             // TODO: 这行代码将数据加载到表“pMSDataSet14.STAFF”中。您可以根据需要移动或删除它。
             this.sTAFFTableAdapter.Fill(this.pMSDataSet14.STAFF);
             // TODO: 这行代码将数据加载到表“pMSDataSet13.ATTENDENCE”中。您可以根据需要移动或删除它。
@@ -271,5 +273,7 @@ namespace PMS
 
             sqlConnection.Close();
         }
+
+       
     }
 }

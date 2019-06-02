@@ -28,37 +28,29 @@ namespace PMS
 
         private void Button3_Click(object sender, EventArgs e) //增加
         {
-            String dept = comboBox2.Text.Substring(0, 1);
-            String Sno = textBox1.Text.Trim();
-            String Sname = textBox2.Text.Trim();
-            String Ssex = comboBox1.Text.Trim();
-            String Sbirth = textBox4.Text.Trim();
-            String Deptno = dept.Trim();
-            String Slevel = textBox3.Text.Trim();
-            String Stel = textBox5.Text.Trim();
-            String Jointime = textBox6.Text.Trim();
             try
             {
                 GetData();
-                StringBuilder stringBuilder = new StringBuilder("UPDATE STAFF SET ");
+                StringBuilder stringBuilder = new StringBuilder("INSERT INTO STAFF VALUES (");
                 for (int i = 0; i < list.Count; i++)
                 {
-                    stringBuilder.Append(list[i].name + " = '" + list[i].attr + "'");
+                    stringBuilder.Append("'" + list[i].attr + "'");
                     if (i != list.Count - 1)
                     {
                         stringBuilder.Append(" , ");
                     }
                 }
 
+                stringBuilder.Append(")");
+
                 SqlCommand cmd = new SqlCommand(stringBuilder.ToString(), sqlConnection);
                 cmd.ExecuteNonQuery();
+                MessageBox.Show("成功添加。");
             }
             catch
             {
-                MessageBox.Show("输入数据违反要求!", "警告");
+                MessageBox.Show("已有工号或姓名相同的信息，请更正。");
             }
-
-            sTAFFTableAdapter.Fill(this.pMSDataSet1.STAFF);
         }
 
         private void 人事管理_Load(object sender, EventArgs e)
@@ -121,36 +113,41 @@ namespace PMS
 
         private void Button2_Click(object sender, EventArgs e) //修改
         {
+            GetData();
+            StringBuilder stringBuilder = new StringBuilder("UPDATE STAFF SET ");
+            for (int i = 0; i < list.Count; i++)
+            {
+                stringBuilder.Append(list[i].name + " = '" + list[i].attr + "'");
+                if (i != list.Count - 1)
+                {
+                    stringBuilder.Append(" , ");
+                }
+            }
+
             try
             {
-                GetData();
-                StringBuilder stringBuilder = new StringBuilder("UPDATE STAFF SET ");
-                for (int i = 0; i < list.Count; i++)
-                {
-                    stringBuilder.Append(list[i].name + " = '" + list[i].attr + "'");
-                    if (i != list.Count - 1)
-                    {
-                        stringBuilder.Append(" , ");
-                    }
-                }
-
                 if (list[0].attr == "" && list[1].attr == "")
                 {
                     MessageBox.Show("工号或姓名不能全为空！");
                 }
                 else
                 {
-                    stringBuilder.Append("where " + (list[0].attr == ""
-                                             ? list[1].name + "='" + list[1].attr + "'"
-                                             : list[0].name + "='" + list[0].attr + "'"));
+                    stringBuilder.Append(" where " + list[1].name + "='" + list[1].attr + "'"+" and "
+                                         + list[0].name + "='" + list[0].attr + "'");
                     SqlCommand cmd = new SqlCommand(stringBuilder.ToString(), sqlConnection);
-                    cmd.ExecuteNonQuery();
-                    MessageBox.Show("修改成功！");
+                    if (cmd.ExecuteNonQuery() != 0)
+                    {
+                        MessageBox.Show("修改成功！");
+                    }
+                    else
+                    {
+                        MessageBox.Show("未找到数据。");
+                    }
                 }
             }
             catch
             {
-                MessageBox.Show("输入数据违反要求!", "警告");
+                MessageBox.Show("已有相同的信息，请更正。");
             }
         }
 
@@ -186,15 +183,5 @@ namespace PMS
         }
     }
 
-    public class People
-    {
-        public People(string name, string attr)
-        {
-            this.name = name;
-            this.attr = attr;
-        }
-
-        public string name { set; get; }
-        public string attr { set; get; }
-    }
+   
 }
