@@ -41,6 +41,8 @@ namespace PMS
             {
                 MessageBox.Show("登陆成功！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Asterisk); //登录成功
                 工资管理系统 form2 = new 工资管理系统();
+                sqlDataReader.Close();
+
                 form2.Show();
                 this.Hide();
             }

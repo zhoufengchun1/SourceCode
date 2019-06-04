@@ -9,7 +9,7 @@ namespace PMS
     public partial class 出勤管理 : Form
     {
         private List<People> list;
-        private SqlConnection sqlConnection = SetConnection.GetConnection();
+        private SqlConnection sqlConnection = SetConnection.sqlConnection;
 
         public 出勤管理()
         {

@@ -157,6 +157,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>PMSDataSet9.xsd</DependentUpon>
     </Compile>
+      <Compile Include="Query.cs"/>
     <Compile Include="SetConnection.cs" />
     <Compile Include="出勤管理.cs">
       <SubType>Form</SubType>

@@ -9,7 +9,7 @@ namespace PMS
     public partial class 工资管理 : Form
     {
         private List<People> list;
-        private SqlConnection sqlConnection = SetConnection.GetConnection();
+        private SqlConnection sqlConnection = SetConnection.sqlConnection;
 
         public 工资管理()
         {

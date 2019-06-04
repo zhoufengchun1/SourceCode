@@ -9,7 +9,7 @@ namespace PMS
     public partial class 行政管理 : Form
     {
         private List<People> list;
-        SqlConnection sqlConnection = SetConnection.GetConnection();
+        private SqlConnection sqlConnection = SetConnection.sqlConnection;
 
         public 行政管理()
         {

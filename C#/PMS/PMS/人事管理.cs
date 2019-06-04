@@ -9,11 +9,18 @@ namespace PMS
     public partial class 人事管理 : Form
     {
         private List<People> list = null;
-        SqlConnection sqlConnection = SetConnection.GetConnection();
+        SqlConnection sqlConnection = SetConnection.sqlConnection;
 
         public 人事管理()
         {
             InitializeComponent();
+
+            SqlCommand sqlCommand = new SqlCommand("select * from STAFF", sqlConnection);
+            SqlDataReader sqlDataReader = sqlCommand.ExecuteReader();
+            BindingSource bindingSource = new BindingSource();
+            bindingSource.DataSource = sqlDataReader;
+            stafftable.DataSource = bindingSource;
+            sqlDataReader.Close();
         }
 
         public object PMSDataSet { get; private set; }
@@ -62,49 +69,7 @@ namespace PMS
         private void Button1_Click(object sender, EventArgs e) //查询
         {
             GetData();
-            SqlDataReader sqlDataReader = null;
-            StringBuilder stringBuilder = new StringBuilder("select * from STAFF where ");
-            for (int i = list.Count - 1; i >= 0; i--)
-            {
-                if (list[i].attr == "")
-                {
-                    list.Remove(list[i]);
-                }
-            }
-
-            if (list.Count == 0)
-            {
-                MessageBox.Show("请输入信息！");
-            }
-            else
-            {
-                for (int i = 0; i < list.Count; i++)
-                {
-                    stringBuilder.Append(list[i].name + " = '" + list[i].attr + "'");
-                    if (i != list.Count - 1)
-                    {
-                        stringBuilder.Append(" and ");
-                    }
-                }
-
-                SqlCommand sqlCommand = new SqlCommand(stringBuilder.ToString(), sqlConnection);
-                sqlDataReader = sqlCommand.ExecuteReader();
-                if (sqlDataReader.HasRows)
-                {
-                    BindingSource bindingSource = new BindingSource();
-                    bindingSource.DataSource = sqlDataReader;
-                    stafftable.DataSource = bindingSource;
-                }
-                else
-                {
-                    MessageBox.Show("未找到数据！");
-                }
-
-                if (sqlDataReader != null)
-                {
-                    sqlDataReader.Close();
-                }
-            }
+            new Query("select * from STAFF where ", list, stafftable);
         }
 
         private void Stafftable_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -132,7 +97,7 @@ namespace PMS
                 }
                 else
                 {
-                    stringBuilder.Append(" where " + list[1].name + "='" + list[1].attr + "'"+" and "
+                    stringBuilder.Append(" where " + list[1].name + "='" + list[1].attr + "'" + " and "
                                          + list[0].name + "='" + list[0].attr + "'");
                     SqlCommand cmd = new SqlCommand(stringBuilder.ToString(), sqlConnection);
                     if (cmd.ExecuteNonQuery() != 0)
@@ -182,6 +147,4 @@ namespace PMS
             list.Add(new People("JoinTime", textBox6.Text.Trim()));
         }
     }
-
-   
 }

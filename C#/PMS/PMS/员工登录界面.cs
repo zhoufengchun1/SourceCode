@@ -27,7 +27,7 @@ namespace PMS
             if (sqlDataReader.HasRows)
             {
                 MessageBox.Show("登陆成功！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Asterisk); //登录成功
-                工资管理系统 form2 = new 工资管理系统();
+                员工查询 form2 = new 员工查询();
                 form2.Show();
                 this.Hide();
             }
@@ -72,6 +72,7 @@ namespace PMS
                     SqlCommand mycom = new SqlCommand(myinsert, sqlConnection);
                     mycom.ExecuteNonQuery();
                     MessageBox.Show("您已注册成功", "提示");
+                    button1.PerformClick();
                 }
 
                 sqlDataReader.Close();

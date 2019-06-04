@@ -7,6 +7,7 @@ namespace PMS
     public partial class 忘记密码 : Form
     {
         private Form _form;
+        private SqlConnection sqlConnection = SetConnection.sqlConnection;
 
         public 忘记密码(Form form)
         {
@@ -20,11 +21,6 @@ namespace PMS
             string UNAME = textBox3.Text.Trim();
             string newpass = textBox2.Text.Trim();
             string checknewpass = textBox1.Text.Trim();
-
-            string myConnString =
-                "Data Source=.;Initial Catalog=PMS;Persist Security Info=True;User ID=sa;Password=1641117";
-            SqlConnection sqlConnection = new SqlConnection(myConnString); //实例化连接对象
-            sqlConnection.Open();
 
             string sql = "select UNAME from USERS where UNAME = '" + UNAME + "'";
             SqlCommand sqlCommand = new SqlCommand(sql, sqlConnection);
@@ -42,12 +38,9 @@ namespace PMS
                 MessageBox.Show("无该用户，请检查后重新输入！", "提示");
             else
             {
-                SqlConnection con = new SqlConnection("Data Source=.;Initial Catalog=PMS;User ID=sa;Password=1641117");
-                con.Open();
                 string insertStr = "UPDATE USERS SET UPASSWORD = '" + newpass + "' WHERE UNAME = '" + UNAME + "'";
-                SqlCommand cmd = new SqlCommand(insertStr, con);
+                SqlCommand cmd = new SqlCommand(insertStr, sqlConnection);
                 cmd.ExecuteNonQuery();
-                con.Dispose();
                 MessageBox.Show("修改成功！", "提示");
 
                 管理员登录界面 form = new 管理员登录界面();

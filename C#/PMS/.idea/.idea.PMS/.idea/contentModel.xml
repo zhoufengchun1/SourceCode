@@ -113,6 +113,7 @@
           <e p="Settings.Designer.cs" t="Include" />
           <e p="Settings.settings" t="Include" />
         </e>
+        <e p="Query.cs" t="Include" />
         <e p="SetConnection.cs" t="Include" />
         <e p="人事管理.cs" t="Include" />
         <e p="人事管理.Designer.cs" t="Include" />
