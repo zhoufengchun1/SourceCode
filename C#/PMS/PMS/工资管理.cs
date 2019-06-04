@@ -8,8 +8,8 @@ namespace PMS
 {
     public partial class 工资管理 : Form
     {
-        private SqlConnection sqlConnection = SetConnection.GetConnection();
         private List<People> list;
+        private SqlConnection sqlConnection = SetConnection.GetConnection();
 
         public 工资管理()
         {
@@ -112,7 +112,6 @@ namespace PMS
                 SqlCommand cmd = new SqlCommand(delete_by_ID, sqlConnection);
                 cmd.ExecuteNonQuery();
                 button3.PerformClick();
-
             }
             catch
             {
@@ -130,11 +129,9 @@ namespace PMS
             list.Add(new People("Paytime", textBox3.Text.Trim()));
         }
 
-       
 
         private void textBox12_TextChanged(object sender, EventArgs e)
         {
-
         }
 
         private void button3_Click_1(object sender, EventArgs e)

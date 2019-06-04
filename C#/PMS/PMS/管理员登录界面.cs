@@ -82,8 +82,9 @@ namespace PMS
                 else
                 {
                     string myinsert = "insert into USERS(UNAME,UPASSWORD) values('" + name + "','" + password + "')";
-                    SqlCommand mycom = new SqlCommand(myinsert, sqlConnection);
-                    mycom.ExecuteNonQuery();
+                    sqlCommand = new SqlCommand(myinsert, sqlConnection);
+                    sqlDataReader.Close();
+                    sqlCommand.ExecuteNonQuery();
                     MessageBox.Show("您已注册成功", "提示");
                     button1.PerformClick();
                 }

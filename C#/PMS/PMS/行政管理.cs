@@ -1,11 +1,16 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Data.SqlClient;
+using System.Text;
 using System.Windows.Forms;
 
 namespace PMS
 {
     public partial class 行政管理 : Form
     {
+        private List<People> list;
+        SqlConnection sqlConnection = SetConnection.GetConnection();
+
         public 行政管理()
         {
             InitializeComponent();
@@ -21,46 +26,50 @@ namespace PMS
 
         private void Button1_Click(object sender, EventArgs e) //查询
         {
-            String Dno = textBox1.Text.Trim();
-            String Dname = textBox2.Text.Trim();
-            String Dpop = textBox3.Text.Trim();
+            GetData();
+            SqlDataReader sqlDataReader = null;
+            StringBuilder stringBuilder = new StringBuilder("select * from DEPARTMENT where ");
+            for (int i = list.Count - 1; i >= 0; i--)
+            {
+                if (list[i].attr == "")
+                {
+                    list.Remove(list[i]);
+                }
+            }
 
-            String conn = "Data Source=.;Initial Catalog=PMS;User ID=sa;Password=1641117";
-            SqlConnection sqlConnection = new SqlConnection(conn); //实例化连接对象
-            sqlConnection.Open();
-            if (Dno != "" && Dname == "")
+            if (list.Count == 0)
             {
-                String select_by_Dno = "select * from DEPARTMENT where Dno='" + Dno + "'";
-                SqlCommand sqlCommand = new SqlCommand(select_by_Dno, sqlConnection);
-                SqlDataReader sqlDataReader = sqlCommand.ExecuteReader();
-                BindingSource bindingSource = new BindingSource();
-                bindingSource.DataSource = sqlDataReader;
-                departmenttable.DataSource = bindingSource;
-            }
-            else if (Dname != "" && Dno == "")
-            {
-                String select_by_Dname = "select * from DEPARTMENT where Dname='" + Dname + "'";
-                SqlCommand sqlCommand1 = new SqlCommand(select_by_Dname, sqlConnection);
-                SqlDataReader sqlDataReader1 = sqlCommand1.ExecuteReader();
-                BindingSource bindingSource1 = new BindingSource();
-                bindingSource1.DataSource = sqlDataReader1;
-                departmenttable.DataSource = bindingSource1;
-            }
-            else if (Dname == "" && Dno == "")
-            {
-                String select_by_Dname = "select * from DEPARTMENT ";
-                SqlCommand sqlCommand1 = new SqlCommand(select_by_Dname, sqlConnection);
-                SqlDataReader sqlDataReader1 = sqlCommand1.ExecuteReader();
-                BindingSource bindingSource1 = new BindingSource();
-                bindingSource1.DataSource = sqlDataReader1;
-                departmenttable.DataSource = bindingSource1;
+                MessageBox.Show("请输入信息！");
             }
             else
             {
-                MessageBox.Show("输入有误，请检查!", "警告");
-            }
+                for (int i = 0; i < list.Count; i++)
+                {
+                    stringBuilder.Append(list[i].name + " = '" + list[i].attr + "'");
+                    if (i != list.Count - 1)
+                    {
+                        stringBuilder.Append(" and ");
+                    }
+                }
 
-            sqlConnection.Close();
+                SqlCommand sqlCommand = new SqlCommand(stringBuilder.ToString(), sqlConnection);
+                sqlDataReader = sqlCommand.ExecuteReader();
+                if (sqlDataReader.HasRows)
+                {
+                    BindingSource bindingSource = new BindingSource();
+                    bindingSource.DataSource = sqlDataReader;
+                    departmenttable.DataSource = bindingSource;
+                }
+                else
+                {
+                    MessageBox.Show("未找到数据！");
+                }
+
+                if (sqlDataReader != null)
+                {
+                    sqlDataReader.Close();
+                }
+            }
         }
 
         private void Button2_Click(object sender, EventArgs e) //修改
@@ -69,25 +78,24 @@ namespace PMS
             String Dname = textBox2.Text.Trim();
             String Dpop = textBox3.Text.Trim();
 
-            SqlConnection con = new SqlConnection("Data Source=.;Initial Catalog=PMS;User ID=sa;Password=1641117");
             try
             {
-                con.Open();
                 string insertStr = "UPDATE DEPARTMENT SET Dname = '" + Dname + "',Dpop='" + Dpop + "' WHERE Dno = '" +
                                    Dno + "'";
-                SqlCommand cmd = new SqlCommand(insertStr, con);
+                SqlCommand cmd = new SqlCommand(insertStr, sqlConnection);
                 cmd.ExecuteNonQuery();
+                MessageBox.Show("修改成功。");
+                SqlCommand sqlCommand = new SqlCommand("select * from DEPARTMENT", sqlConnection);
+                SqlDataReader sqlDataReader = sqlCommand.ExecuteReader();
+                BindingSource bindingSource = new BindingSource();
+                bindingSource.DataSource = sqlDataReader;
+                departmenttable.DataSource = bindingSource;
+                sqlDataReader.Close();
             }
             catch
             {
                 MessageBox.Show("输入数据违反要求!", "警告");
             }
-            finally
-            {
-                con.Dispose();
-            }
-
-            this.dEPARTMENTTableAdapter.Fill(this.pMSDataSet4.DEPARTMENT);
         }
 
         private void Button3_Click(object sender, EventArgs e) //增加
@@ -95,8 +103,6 @@ namespace PMS
             String Dno = textBox1.Text.Trim();
             String Dname = textBox2.Text.Trim();
             String Dpop = textBox3.Text.Trim();
-
-            SqlConnection con = new SqlConnection("Data Source=.;Initial Catalog=PMS;User ID=sa;Password=1641117");
             try
             {
                 if (Dno == "" || Dname == "" || Dpop == "")
@@ -105,49 +111,42 @@ namespace PMS
                 }
                 else
                 {
-                    con.Open();
                     string insertStr = "INSERT INTO  DEPARTMENT (Dno,Dname,Dpop)    " +
                                        "VALUES ('" + Dno + "','" + Dname + "','" + Dpop + "')";
-                    SqlCommand cmd = new SqlCommand(insertStr, con);
+                    SqlCommand cmd = new SqlCommand(insertStr, sqlConnection);
                     cmd.ExecuteNonQuery();
+                    MessageBox.Show("添加成功。");
+                    SqlCommand sqlCommand = new SqlCommand("select * from DEPARTMENT", sqlConnection);
+                    SqlDataReader sqlDataReader = sqlCommand.ExecuteReader();
+                    BindingSource bindingSource = new BindingSource();
+                    bindingSource.DataSource = sqlDataReader;
+                    departmenttable.DataSource = bindingSource;
+                    sqlDataReader.Close();
                 }
             }
             catch
             {
                 MessageBox.Show("输入数据违反要求!", "警告");
             }
-            finally
-            {
-                con.Dispose();
-            }
-
-            this.dEPARTMENTTableAdapter.Fill(this.pMSDataSet4.DEPARTMENT);
         }
 
         private void Button8_Click(object sender, EventArgs e) //查询
         {
             String RATEID = textBox6.Text.Trim();
-
-            String conn = "Data Source=.;Initial Catalog=PMS;User ID=sa;Password=1641117";
-
-            SqlConnection sqlConnection = new SqlConnection(conn); //实例化连接对象
             try
             {
-                sqlConnection.Open();
-                String select_by_RATEID = "select * from RATE where RATEID='" + RATEID + "'";
+                String select_by_RATEID = "select * from RATE where RATEID ='" + RATEID + "'";
                 SqlCommand sqlCommand = new SqlCommand(select_by_RATEID, sqlConnection);
                 SqlDataReader sqlDataReader = sqlCommand.ExecuteReader();
                 BindingSource bindingSource = new BindingSource();
                 bindingSource.DataSource = sqlDataReader;
                 dataGridView1.DataSource = bindingSource;
+                sqlDataReader.Close();
             }
             catch
             {
                 MessageBox.Show("查询有误，请检查!", "警告");
-            }
-            finally
-            {
-                sqlConnection.Close();
+                throw;
             }
         }
 
@@ -157,26 +156,24 @@ namespace PMS
             String INSURANCE = textBox5.Text.Trim();
             String TAX = textBox4.Text.Trim();
             String MINpaytax = textBox7.Text.Trim();
-
-            SqlConnection con = new SqlConnection("Data Source=.;Initial Catalog=PMS;User ID=sa;Password=1641117");
             try
             {
-                con.Open();
                 string insertStr = "UPDATE RATE SET INSURANCE = '" + INSURANCE + "',TAX='" + TAX + "',MINpaytax='" +
                                    MINpaytax + "' WHERE RATEID = '" + RATEID + "'";
-                SqlCommand cmd = new SqlCommand(insertStr, con);
+                SqlCommand cmd = new SqlCommand(insertStr, sqlConnection);
                 cmd.ExecuteNonQuery();
+                MessageBox.Show("修改成功。");
+                SqlCommand sqlCommand = new SqlCommand("select * from RATE", sqlConnection);
+                SqlDataReader sqlDataReader = sqlCommand.ExecuteReader();
+                BindingSource bindingSource = new BindingSource();
+                bindingSource.DataSource = sqlDataReader;
+                dataGridView1.DataSource = bindingSource;
+                sqlDataReader.Close();
             }
             catch
             {
                 MessageBox.Show("输入数据违反要求!", "警告");
             }
-            finally
-            {
-                con.Dispose();
-            }
-
-            this.rATETableAdapter.Fill(this.pMSDataSet10.RATE);
         }
 
         private void Button4_Click(object sender, EventArgs e) //增加
@@ -185,8 +182,6 @@ namespace PMS
             String INSURANCE = textBox5.Text.Trim();
             String TAX = textBox4.Text.Trim();
             String MINpaytax = textBox7.Text.Trim();
-
-            SqlConnection con = new SqlConnection("Data Source=.;Initial Catalog=PMS;User ID=sa;Password=1641117");
             try
             {
                 if (RATEID == "" || INSURANCE == "" || TAX == "" || MINpaytax == "")
@@ -195,47 +190,53 @@ namespace PMS
                 }
                 else
                 {
-                    con.Open();
                     string insertStr = "INSERT INTO  RATE (RATEID,INSURANCE,TAX,MINpaytax)    " +
                                        "VALUES ('" + RATEID + "','" + INSURANCE + "','" + TAX + "','" + MINpaytax +
                                        "')";
-                    SqlCommand cmd = new SqlCommand(insertStr, con);
+                    SqlCommand cmd = new SqlCommand(insertStr, sqlConnection);
                     cmd.ExecuteNonQuery();
+                    SqlCommand sqlCommand = new SqlCommand("select * from RATE", sqlConnection);
+                    SqlDataReader sqlDataReader = sqlCommand.ExecuteReader();
+                    BindingSource bindingSource = new BindingSource();
+                    bindingSource.DataSource = sqlDataReader;
+                    dataGridView1.DataSource = bindingSource;
+                    sqlDataReader.Close();
                 }
             }
             catch
             {
                 MessageBox.Show("输入数据违反要求!");
             }
-            finally
-            {
-                con.Dispose();
-            }
-
-            this.rATETableAdapter.Fill(this.pMSDataSet10.RATE);
         }
 
         private void Button9_Click(object sender, EventArgs e) //删除
         {
-            SqlConnection con = new SqlConnection("Data Source=.;Initial Catalog=PMS;User ID=sa;Password=1641117");
             try
             {
-                con.Open();
                 string select_Dno = departmenttable.SelectedRows[0].Cells[0].Value.ToString(); //选择的当前行第一列的值，也就是ID
                 string delete_by_Dno = "delete from DEPARTMENT where Dno=" + select_Dno; //sql删除语句
-                SqlCommand cmd = new SqlCommand(delete_by_Dno, con);
+                SqlCommand cmd = new SqlCommand(delete_by_Dno, sqlConnection);
                 cmd.ExecuteNonQuery();
+                SqlCommand sqlCommand = new SqlCommand("select * from RATE", sqlConnection);
+                SqlDataReader sqlDataReader = sqlCommand.ExecuteReader();
+                BindingSource bindingSource = new BindingSource();
+                bindingSource.DataSource = sqlDataReader;
+                dataGridView1.DataSource = bindingSource;
+                sqlDataReader.Close();
             }
             catch
             {
                 MessageBox.Show("请正确选择行!");
             }
-            finally
-            {
-                con.Dispose();
-            }
+        }
 
-            this.dEPARTMENTTableAdapter.Fill(this.pMSDataSet4.DEPARTMENT);
+        public void GetData()
+        {
+            list = null;
+            list = new List<People>();
+            list.Add(new People("Dno", textBox1.Text.Trim()));
+            list.Add(new People("Dname", textBox2.Text.Trim()));
+            list.Add(new People("Dpop", textBox3.Text));
         }
     }
 }
