@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Windows.Forms;
 
 namespace PMS
@@ -23,7 +24,7 @@ namespace PMS
             list.Add(new People("Sname", textBox9.Text.Trim()));
             list.Add(new People("Deptno", textBox11.Text));
             list.Add(new People("Paytime", textBox11.Text.Trim()));
-            new Query("select * from SALARY where ", list, salarytable).ExecuteQuery();
+            new Query("select * from temp where ", list, salarytable).ExecuteQuery();
         }
 
         private void Button2_Click(object sender, EventArgs e) //代扣查询
@@ -58,6 +59,17 @@ namespace PMS
             list.Add(new People("Stel", textBox6.Text.Trim()));
             list.Add(new People("JoinTime", textBox14.Text.Trim()));
             new Query("select * from STAFF where ", list, stafftable).ExecuteQuery();
+        }
+
+        private void 员工查询_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult dialog = MessageBox.Show("是否退出程序？", "退出程序", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
+            if (dialog == DialogResult.Yes)
+                Environment.Exit(0);
+            else
+            {
+                e.Cancel = true;
+            }
         }
     }
 }

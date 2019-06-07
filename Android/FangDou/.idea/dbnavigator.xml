@@ -80,8 +80,7 @@
           <host value="47.100.195.173" />
           <port value="3306" />
           <database value="mysql" />
-          <os-authentication value="false" />
-          <empty-authentication value="false" />
+          <type value="USER_PASSWORD" />
           <user value="root" />
           <deprecated-pwd value="YWRtaW4=" />
         </database>
@@ -119,7 +118,7 @@
           <max-connection-pool-size value="7" />
           <alternative-statement-delimiter value="" />
         </details>
-        <object-filters hide-empty-schemas="false">
+        <object-filters hide-empty-schemas="false" hide-pseudo-columns="false">
           <object-type-filter use-master-settings="true">
             <object-type name="SCHEMA" enabled="true" />
             <object-type name="USER" enabled="true" />

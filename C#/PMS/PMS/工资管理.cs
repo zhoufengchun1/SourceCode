@@ -20,49 +20,7 @@ namespace PMS
         private void Button6_Click(object sender, EventArgs e) //工资查询
         {
             GetData();
-            SqlDataReader sqlDataReader = null;
-            StringBuilder stringBuilder = new StringBuilder("select * from SALARY where ");
-            for (int i = list.Count - 1; i >= 0; i--)
-            {
-                if (list[i].attr == "")
-                {
-                    list.Remove(list[i]);
-                }
-            }
-
-            if (list.Count == 0)
-            {
-                MessageBox.Show("请输入信息！");
-            }
-            else
-            {
-                for (int i = 0; i < list.Count; i++)
-                {
-                    stringBuilder.Append(list[i].name + " = '" + list[i].attr + "'");
-                    if (i != list.Count - 1)
-                    {
-                        stringBuilder.Append(" and ");
-                    }
-                }
-
-                SqlCommand sqlCommand = new SqlCommand(stringBuilder.ToString(), sqlConnection);
-                sqlDataReader = sqlCommand.ExecuteReader();
-                if (sqlDataReader.HasRows)
-                {
-                    BindingSource bindingSource = new BindingSource();
-                    bindingSource.DataSource = sqlDataReader;
-                    salarytable.DataSource = bindingSource;
-                }
-                else
-                {
-                    MessageBox.Show("未找到数据！");
-                }
-
-                if (sqlDataReader != null)
-                {
-                    sqlDataReader.Close();
-                }
-            }
+            new Query("select * from SALARY where ", list, salarytable).ExecuteQuery();
         }
 
         private void Button2_Click(object sender, EventArgs e) //写入
@@ -143,5 +101,7 @@ namespace PMS
             withholdtable.DataSource = bindingSource;
             sqlDataReader.Close();
         }
+
+
     }
 }

@@ -122,6 +122,36 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>PMSDataSet22.xsd</DependentUpon>
     </Compile>
+    <Compile Include="PMSDataSet23.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PMSDataSet23.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PMSDataSet24.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PMSDataSet24.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PMSDataSet25.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PMSDataSet25.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PMSDataSet26.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PMSDataSet26.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PMSDataSet27.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PMSDataSet27.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PMSDataSet28.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PMSDataSet28.xsd</DependentUpon>
+    </Compile>
     <Compile Include="PMSDataSet3.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -157,7 +187,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>PMSDataSet9.xsd</DependentUpon>
     </Compile>
-      <Compile Include="Query.cs"/>
+    <Compile Include="Query.cs" />
     <Compile Include="SetConnection.cs" />
     <Compile Include="出勤管理.cs">
       <SubType>Form</SubType>
@@ -446,6 +476,72 @@
     </None>
     <None Include="PMSDataSet22.xss">
       <DependentUpon>PMSDataSet22.xsd</DependentUpon>
+    </None>
+    <None Include="PMSDataSet23.xsc">
+      <DependentUpon>PMSDataSet23.xsd</DependentUpon>
+    </None>
+    <None Include="PMSDataSet23.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PMSDataSet23.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PMSDataSet23.xss">
+      <DependentUpon>PMSDataSet23.xsd</DependentUpon>
+    </None>
+    <None Include="PMSDataSet24.xsc">
+      <DependentUpon>PMSDataSet24.xsd</DependentUpon>
+    </None>
+    <None Include="PMSDataSet24.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PMSDataSet24.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PMSDataSet24.xss">
+      <DependentUpon>PMSDataSet24.xsd</DependentUpon>
+    </None>
+    <None Include="PMSDataSet25.xsc">
+      <DependentUpon>PMSDataSet25.xsd</DependentUpon>
+    </None>
+    <None Include="PMSDataSet25.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PMSDataSet25.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PMSDataSet25.xss">
+      <DependentUpon>PMSDataSet25.xsd</DependentUpon>
+    </None>
+    <None Include="PMSDataSet26.xsc">
+      <DependentUpon>PMSDataSet26.xsd</DependentUpon>
+    </None>
+    <None Include="PMSDataSet26.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PMSDataSet26.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PMSDataSet26.xss">
+      <DependentUpon>PMSDataSet26.xsd</DependentUpon>
+    </None>
+    <None Include="PMSDataSet27.xsc">
+      <DependentUpon>PMSDataSet27.xsd</DependentUpon>
+    </None>
+    <None Include="PMSDataSet27.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PMSDataSet27.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PMSDataSet27.xss">
+      <DependentUpon>PMSDataSet27.xsd</DependentUpon>
+    </None>
+    <None Include="PMSDataSet28.xsc">
+      <DependentUpon>PMSDataSet28.xsd</DependentUpon>
+    </None>
+    <None Include="PMSDataSet28.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PMSDataSet28.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PMSDataSet28.xss">
+      <DependentUpon>PMSDataSet28.xsd</DependentUpon>
     </None>
     <None Include="PMSDataSet3.xsc">
       <DependentUpon>PMSDataSet3.xsd</DependentUpon>

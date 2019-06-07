@@ -56,8 +56,19 @@ namespace PMS
 
         private void button2_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
             _form.Show();
+        }
+
+        private void 忘记密码_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult dialog = MessageBox.Show("是否退出程序？", "退出程序", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
+            if (dialog == DialogResult.Yes)
+                Environment.Exit(0);
+            else
+            {
+                e.Cancel = true;
+            }
         }
     }
 }

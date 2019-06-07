@@ -75,7 +75,7 @@
             this.Controls.Add(this.button1);
             this.Name = "选择登陆";
             this.Text = "XX公司工资系统";
-            this.Load += new System.EventHandler(this.选择登陆_Load);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.选择登陆_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 

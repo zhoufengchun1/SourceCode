@@ -77,6 +77,30 @@
         <e p="PMSDataSet22.xsc" t="Include" />
         <e p="PMSDataSet22.xsd" t="Include" />
         <e p="PMSDataSet22.xss" t="Include" />
+        <e p="PMSDataSet23.Designer.cs" t="Include" />
+        <e p="PMSDataSet23.xsc" t="Include" />
+        <e p="PMSDataSet23.xsd" t="Include" />
+        <e p="PMSDataSet23.xss" t="Include" />
+        <e p="PMSDataSet24.Designer.cs" t="Include" />
+        <e p="PMSDataSet24.xsc" t="Include" />
+        <e p="PMSDataSet24.xsd" t="Include" />
+        <e p="PMSDataSet24.xss" t="Include" />
+        <e p="PMSDataSet25.Designer.cs" t="Include" />
+        <e p="PMSDataSet25.xsc" t="Include" />
+        <e p="PMSDataSet25.xsd" t="Include" />
+        <e p="PMSDataSet25.xss" t="Include" />
+        <e p="PMSDataSet26.Designer.cs" t="Include" />
+        <e p="PMSDataSet26.xsc" t="Include" />
+        <e p="PMSDataSet26.xsd" t="Include" />
+        <e p="PMSDataSet26.xss" t="Include" />
+        <e p="PMSDataSet27.Designer.cs" t="Include" />
+        <e p="PMSDataSet27.xsc" t="Include" />
+        <e p="PMSDataSet27.xsd" t="Include" />
+        <e p="PMSDataSet27.xss" t="Include" />
+        <e p="PMSDataSet28.Designer.cs" t="Include" />
+        <e p="PMSDataSet28.xsc" t="Include" />
+        <e p="PMSDataSet28.xsd" t="Include" />
+        <e p="PMSDataSet28.xss" t="Include" />
         <e p="PMSDataSet3.Designer.cs" t="Include" />
         <e p="PMSDataSet3.xsc" t="Include" />
         <e p="PMSDataSet3.xsd" t="Include" />

@@ -19,57 +19,15 @@ namespace PMS
         private void 行政管理_Load(object sender, EventArgs e)
         {
             // TODO: 这行代码将数据加载到表“pMSDataSet10.RATE”中。您可以根据需要移动或删除它。
-//            this.rATETableAdapter.Fill(this.pMSDataSet10.RATE);
-//            // TODO: 这行代码将数据加载到表“pMSDataSet4.DEPARTMENT”中。您可以根据需要移动或删除它。
-//            this.dEPARTMENTTableAdapter.Fill(this.pMSDataSet4.DEPARTMENT);
+            //            this.rATETableAdapter.Fill(this.pMSDataSet10.RATE);
+            //            // TODO: 这行代码将数据加载到表“pMSDataSet4.DEPARTMENT”中。您可以根据需要移动或删除它。
+            //            this.dEPARTMENTTableAdapter.Fill(this.pMSDataSet4.DEPARTMENT);
         }
 
         private void Button1_Click(object sender, EventArgs e) //查询
         {
             GetData();
-            SqlDataReader sqlDataReader = null;
-            StringBuilder stringBuilder = new StringBuilder("select * from DEPARTMENT where ");
-            for (int i = list.Count - 1; i >= 0; i--)
-            {
-                if (list[i].attr == "")
-                {
-                    list.Remove(list[i]);
-                }
-            }
-
-            if (list.Count == 0)
-            {
-                MessageBox.Show("请输入信息！");
-            }
-            else
-            {
-                for (int i = 0; i < list.Count; i++)
-                {
-                    stringBuilder.Append(list[i].name + " = '" + list[i].attr + "'");
-                    if (i != list.Count - 1)
-                    {
-                        stringBuilder.Append(" and ");
-                    }
-                }
-
-                SqlCommand sqlCommand = new SqlCommand(stringBuilder.ToString(), sqlConnection);
-                sqlDataReader = sqlCommand.ExecuteReader();
-                if (sqlDataReader.HasRows)
-                {
-                    BindingSource bindingSource = new BindingSource();
-                    bindingSource.DataSource = sqlDataReader;
-                    departmenttable.DataSource = bindingSource;
-                }
-                else
-                {
-                    MessageBox.Show("未找到数据！");
-                }
-
-                if (sqlDataReader != null)
-                {
-                    sqlDataReader.Close();
-                }
-            }
+            new Query("select * from DEPARTMENT where ", list, departmenttable).ExecuteQuery();
         }
 
         private void Button2_Click(object sender, EventArgs e) //修改
@@ -132,22 +90,15 @@ namespace PMS
 
         private void Button8_Click(object sender, EventArgs e) //查询
         {
-            String RATEID = textBox6.Text.Trim();
-            try
-            {
-                String select_by_RATEID = "select * from RATE where RATEID ='" + RATEID + "'";
-                SqlCommand sqlCommand = new SqlCommand(select_by_RATEID, sqlConnection);
-                SqlDataReader sqlDataReader = sqlCommand.ExecuteReader();
-                BindingSource bindingSource = new BindingSource();
-                bindingSource.DataSource = sqlDataReader;
-                dataGridView1.DataSource = bindingSource;
-                sqlDataReader.Close();
-            }
-            catch
-            {
-                MessageBox.Show("查询有误，请检查!", "警告");
-                throw;
-            }
+            if (list != null)
+                list.Clear();
+            else
+                list = new List<People>();
+            list.Add(new People("RATEID", textBox6.Text.Trim()));
+            list.Add(new People("INSURANCE", textBox5.Text.Trim()));
+            list.Add(new People("TAX", textBox4.Text));
+            list.Add(new People("MINpaytax", textBox7.Text.Trim()));
+            new Query("select * from RATE where ", list, dataGridView1).ExecuteQuery();
         }
 
         private void Button7_Click(object sender, EventArgs e) //修改

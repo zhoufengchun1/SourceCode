@@ -147,6 +147,7 @@
             this.Controls.Add(this.label1);
             this.Name = "员工登录界面";
             this.Text = "用户登录";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.员工登录界面_FormClosing);
             this.Load += new System.EventHandler(this.员工登录界面_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

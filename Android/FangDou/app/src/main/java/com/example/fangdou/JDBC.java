@@ -3,12 +3,15 @@ package com.example.fangdou;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.sql.Statement;
 
 public class JDBC
 {
-    public static Connection connSql()
+    public static Connection connection;
+    public static Statement statement;
+
+    public static void connSql()
     {
-        Connection connection = null;
         try
         {
             Class.forName("com.mysql.jdbc.Driver");
@@ -22,6 +25,26 @@ public class JDBC
         {
             e.printStackTrace();
         }
-        return connection;
+
+    }
+
+    public static Statement getStatement()
+    {
+        new Thread()
+        {
+            @Override
+            public void run()
+            {
+                try
+                {
+                    statement = connection.createStatement();
+                } catch (SQLException e)
+                {
+                    e.printStackTrace();
+                }
+
+            }
+        }.start();
+        return statement;
     }
 }

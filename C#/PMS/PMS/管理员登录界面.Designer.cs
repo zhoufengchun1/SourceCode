@@ -150,6 +150,7 @@
             this.Margin = new System.Windows.Forms.Padding(8);
             this.Name = "管理员登录界面";
             this.Text = "XX公司工资管理系统";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.管理员登录界面_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -150,5 +150,16 @@ namespace PMS
                     f.Hide();
             }
         }
+
+        private void 工资管理系统_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult dialog = MessageBox.Show("是否退出程序？", "退出程序", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
+            if (dialog == DialogResult.Yes)
+                Environment.Exit(0);
+            else
+            {
+                e.Cancel = true;
+            }
+        }
     }
 }

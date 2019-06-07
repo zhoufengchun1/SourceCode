@@ -29,8 +29,15 @@ namespace PMS
             this.Hide();
         }
 
-        private void 选择登陆_Load(object sender, EventArgs e)
+        private void 选择登陆_FormClosing(object sender, FormClosingEventArgs e)
         {
+            DialogResult dialog = MessageBox.Show("是否退出程序？", "退出程序", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
+            if (dialog == DialogResult.Yes)
+                Environment.Exit(0);
+            else
+            {
+                e.Cancel = true;
+            }
         }
     }
 }

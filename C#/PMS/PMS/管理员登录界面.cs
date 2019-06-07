@@ -117,5 +117,16 @@ namespace PMS
             form.Show();
             this.Hide();
         }
+
+        private void 管理员登录界面_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult dialog = MessageBox.Show("是否退出程序？", "退出程序", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
+            if (dialog == DialogResult.Yes)
+                Environment.Exit(0);
+            else
+            {
+                e.Cancel = true;
+            }
+        }
     }
 }

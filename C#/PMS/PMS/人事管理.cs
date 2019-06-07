@@ -69,7 +69,7 @@ namespace PMS
         private void Button1_Click(object sender, EventArgs e) //查询
         {
             GetData();
-            new Query("select * from STAFF where ", list, stafftable);
+            new Query("select * from STAFF where ", list, stafftable).ExecuteQuery();
         }
 
         private void Stafftable_CellContentClick(object sender, DataGridViewCellEventArgs e)
