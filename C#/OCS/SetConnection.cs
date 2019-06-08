@@ -24,7 +24,6 @@ namespace PMS
             }
             catch (Exception e)
             {
-                throw;
                 MessageBox.Show("数据库连接错误。");
             }
 
