@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4abf524d-89da-4e76-a925-8e261a274805" name="Default Changelist" comment="" />
+    <list default="true" id="4abf524d-89da-4e76-a925-8e261a274805" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../OCS/SetConnection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../OCS/SetConnection.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OCS/欢迎.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../OCS/欢迎.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OCS/注册帐号.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../OCS/注册帐号.cs" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +76,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PMS/Program.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-306">
+            <state relative-caret-position="102">
               <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
               <folding>
                 <marker date="1559459665611" expanded="false" signature="6:41" ph="..." />
@@ -90,8 +94,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PMS/SetConnection.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="23" column="54" selection-start-line="23" selection-start-column="54" selection-end-line="23" selection-end-column="54" />
+            <state relative-caret-position="510">
+              <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="62" />
               <folding>
                 <marker date="1559618547204" expanded="false" signature="6:70" ph="..." />
                 <marker date="1559618547204" expanded="true" signature="85:1152" ph="{...}" />
@@ -108,7 +112,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PMS/人事管理.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-238">
+            <state relative-caret-position="1734">
               <caret line="71" column="85" selection-start-line="71" selection-start-column="85" selection-end-line="71" selection-end-column="85" />
               <folding>
                 <marker date="1559651099770" expanded="false" signature="6:123" ph="..." />
@@ -148,7 +152,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PMS/工资管理.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
+            <state relative-caret-position="170">
               <caret line="11" column="73" selection-start-line="11" selection-start-column="73" selection-end-line="11" selection-end-column="73" />
               <folding>
                 <marker date="1559655443650" expanded="false" signature="6:123" ph="..." />
@@ -177,7 +181,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PMS/忘记密码.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-714">
+            <state relative-caret-position="238">
               <caret line="11" selection-start-line="11" selection-end-line="11" />
               <folding>
                 <marker date="1559656583348" expanded="false" signature="6:70" ph="..." />
@@ -200,8 +204,8 @@
       </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/PMS/管理员登录界面.cs">
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="-1827">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1292">
               <caret line="44" selection-start-line="44" selection-end-line="44" />
               <folding>
                 <marker date="1559656510378" expanded="false" signature="6:70" ph="..." />
@@ -228,7 +232,7 @@
               </folding>
             </state>
           </provider>
-          <provider selected="true" editor-type-id="WinFormsEditor" />
+          <provider editor-type-id="WinFormsEditor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -366,7 +370,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="56" />
     <option name="y" value="-26" />
     <option name="width" value="974" />
@@ -397,8 +401,8 @@
         </subPane>
         <option name="show-all-files" value="false" />
       </pane>
-      <pane id="FileSystemExplorer" />
       <pane id="AssemblyExplorer" />
+      <pane id="FileSystemExplorer" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -471,6 +475,7 @@
       <workItem from="1559650916706" duration="267000" />
       <workItem from="1559909932541" duration="853000" />
       <workItem from="1559911707994" duration="1425000" />
+      <workItem from="1559918251129" duration="1167000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1559447104398</created>
@@ -504,7 +509,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43569000" />
+    <option name="totallyTimeSpent" value="44736000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -516,9 +521,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15817694" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16032171" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -2142,28 +2148,77 @@
       </provider>
       <provider editor-type-id="WinFormsEditor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/PMS/工资管理.cs">
+    <entry file="file://$PROJECT_DIR$/PMS/Program.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="11" column="73" selection-start-line="11" selection-start-column="73" selection-end-line="11" selection-end-column="73" />
+        <state relative-caret-position="102">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
           <folding>
-            <marker date="1559655443650" expanded="false" signature="6:123" ph="..." />
-            <marker date="1559655443650" expanded="true" signature="138:3682" ph="{...}" />
-            <marker date="1559655443650" expanded="true" signature="177:3680" ph="{...}" />
-            <marker date="1559655443650" expanded="true" signature="316:371" ph="{...}" />
-            <marker date="1559655443650" expanded="true" signature="443:574" ph="{...}" />
-            <marker date="1559655443650" expanded="true" signature="643:2064" ph="{...}" />
-            <marker date="1559655443650" expanded="true" signature="875:1956" ph="{...}" />
-            <marker date="1559655443650" expanded="true" signature="975:1067" ph="{...}" />
-            <marker date="1559655443650" expanded="true" signature="1088:1942" ph="{...}" />
-            <marker date="1559655443650" expanded="true" signature="1987:2054" ph="{...}" />
-            <marker date="1559655443650" expanded="true" signature="2128:2148" ph="{...}" />
-            <marker date="1559655443650" expanded="true" signature="2217:2754" ph="{...}" />
-            <marker date="1559655443650" expanded="true" signature="2243:2654" ph="{...}" />
-            <marker date="1559655443650" expanded="true" signature="2685:2744" ph="{...}" />
-            <marker date="1559655443650" expanded="true" signature="2785:3124" ph="{...}" />
-            <marker date="1559655443650" expanded="true" signature="3197:3217" ph="{...}" />
-            <marker date="1559655443650" expanded="true" signature="3283:3672" ph="{...}" />
+            <marker date="1559459665611" expanded="false" signature="6:41" ph="..." />
+            <marker date="1559459665611" expanded="true" signature="56:774" ph="{...}" />
+            <marker date="1559459665611" expanded="true" signature="83:772" ph="{...}" />
+            <marker date="1559459665611" expanded="true" signature="98:157" ph="/// 应用程序的主入口点。 ... " />
+            <marker date="1559459665611" expanded="true" signature="204:766" ph="{...}" />
+            <marker date="1559459665611" expanded="true" signature="499:607" ph="{...}" />
+            <marker date="1559459665611" expanded="true" signature="671:756" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PMS/人事管理.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1734">
+          <caret line="71" column="85" selection-start-line="71" selection-start-column="85" selection-end-line="71" selection-end-column="85" />
+          <folding>
+            <marker date="1559651099770" expanded="false" signature="6:123" ph="..." />
+            <marker date="1559651099770" expanded="true" signature="138:4996" ph="{...}" />
+            <marker date="1559651099770" expanded="true" signature="177:4994" ph="{...}" />
+            <marker date="1559651099770" expanded="true" signature="315:734" ph="{...}" />
+            <marker date="1559651099770" expanded="false" signature="853:873" ph="{...}" />
+            <marker date="1559651099770" expanded="false" signature="953:973" ph="{...}" />
+            <marker date="1559651099770" expanded="true" signature="1042:1843" ph="{...}" />
+            <marker date="1559651099770" expanded="true" signature="1068:1733" ph="{...}" />
+            <marker date="1559651099770" expanded="true" signature="1257:1503" ph="{...}" />
+            <marker date="1559651099770" expanded="true" signature="1388:1485" ph="{...}" />
+            <marker date="1559651099770" expanded="true" signature="1764:1833" ph="{...}" />
+            <marker date="1559651099770" expanded="false" signature="1903:2053" ph="{...}" />
+            <marker date="1559651099770" expanded="false" signature="1926:2043" ph="/* TODO: 这行代码将数据加载到表“pMSDataSet1.STAFF”中。您可以根据需要移动或删除它。 ... */" />
+            <marker date="1559651099770" expanded="true" signature="2122:2251" ph="{...}" />
+            <marker date="1559651099770" expanded="false" signature="2345:2365" ph="{...}" />
+            <marker date="1559651099770" expanded="true" signature="2434:3741" ph="{...}" />
+            <marker date="1559651099770" expanded="true" signature="2598:2834" ph="{...}" />
+            <marker date="1559651099770" expanded="true" signature="2735:2820" ph="{...}" />
+            <marker date="1559651099770" expanded="true" signature="2851:3636" ph="{...}" />
+            <marker date="1559651099770" expanded="true" signature="2927:3015" ph="{...}" />
+            <marker date="1559651099770" expanded="true" signature="3036:3622" ph="{...}" />
+            <marker date="1559651099770" expanded="true" signature="3390:3484" ph="{...}" />
+            <marker date="1559651099770" expanded="true" signature="3509:3604" ph="{...}" />
+            <marker date="1559651099770" expanded="true" signature="3667:3731" ph="{...}" />
+            <marker date="1559651099770" expanded="true" signature="3821:4363" ph="{...}" />
+            <marker date="1559651099770" expanded="true" signature="3847:4197" ph="{...}" />
+            <marker date="1559651099770" expanded="true" signature="4228:4287" ph="{...}" />
+            <marker date="1559651099770" expanded="true" signature="4394:4988" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="WinFormsEditor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PMS/忘记密码.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <marker date="1559656583348" expanded="false" signature="6:70" ph="..." />
+            <marker date="1559656583348" expanded="true" signature="85:2312" ph="{...}" />
+            <marker date="1559656583348" expanded="true" signature="124:2310" ph="{...}" />
+            <marker date="1559656583348" expanded="true" signature="265:384" ph="{...}" />
+            <marker date="1559656583348" expanded="true" signature="453:1642" ph="{...}" />
+            <marker date="1559656583348" expanded="true" signature="886:967" ph="{...}" />
+            <marker date="1559656583348" expanded="true" signature="1025:1103" ph="{...}" />
+            <marker date="1559656583348" expanded="true" signature="1222:1632" ph="{...}" />
+            <marker date="1559656583348" expanded="true" signature="1713:1789" ph="{...}" />
+            <marker date="1559656583348" expanded="true" signature="1853:1924" ph="{...}" />
+            <marker date="1559656583348" expanded="true" signature="2002:2304" ph="{...}" />
+            <marker date="1559656583348" expanded="true" signature="2233:2294" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -2224,26 +2279,37 @@
       </provider>
       <provider editor-type-id="WinFormsEditor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/PMS/Program.cs">
+    <entry file="file://$PROJECT_DIR$/PMS/工资管理.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-306">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        <state relative-caret-position="170">
+          <caret line="11" column="73" selection-start-line="11" selection-start-column="73" selection-end-line="11" selection-end-column="73" />
           <folding>
-            <marker date="1559459665611" expanded="false" signature="6:41" ph="..." />
-            <marker date="1559459665611" expanded="true" signature="56:774" ph="{...}" />
-            <marker date="1559459665611" expanded="true" signature="83:772" ph="{...}" />
-            <marker date="1559459665611" expanded="true" signature="98:157" ph="/// 应用程序的主入口点。 ... " />
-            <marker date="1559459665611" expanded="true" signature="204:766" ph="{...}" />
-            <marker date="1559459665611" expanded="true" signature="499:607" ph="{...}" />
-            <marker date="1559459665611" expanded="true" signature="671:756" ph="{...}" />
+            <marker date="1559655443650" expanded="false" signature="6:123" ph="..." />
+            <marker date="1559655443650" expanded="true" signature="138:3682" ph="{...}" />
+            <marker date="1559655443650" expanded="true" signature="177:3680" ph="{...}" />
+            <marker date="1559655443650" expanded="true" signature="316:371" ph="{...}" />
+            <marker date="1559655443650" expanded="true" signature="443:574" ph="{...}" />
+            <marker date="1559655443650" expanded="true" signature="643:2064" ph="{...}" />
+            <marker date="1559655443650" expanded="true" signature="875:1956" ph="{...}" />
+            <marker date="1559655443650" expanded="true" signature="975:1067" ph="{...}" />
+            <marker date="1559655443650" expanded="true" signature="1088:1942" ph="{...}" />
+            <marker date="1559655443650" expanded="true" signature="1987:2054" ph="{...}" />
+            <marker date="1559655443650" expanded="true" signature="2128:2148" ph="{...}" />
+            <marker date="1559655443650" expanded="true" signature="2217:2754" ph="{...}" />
+            <marker date="1559655443650" expanded="true" signature="2243:2654" ph="{...}" />
+            <marker date="1559655443650" expanded="true" signature="2685:2744" ph="{...}" />
+            <marker date="1559655443650" expanded="true" signature="2785:3124" ph="{...}" />
+            <marker date="1559655443650" expanded="true" signature="3197:3217" ph="{...}" />
+            <marker date="1559655443650" expanded="true" signature="3283:3672" ph="{...}" />
           </folding>
         </state>
       </provider>
+      <provider editor-type-id="WinFormsEditor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/PMS/SetConnection.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="23" column="54" selection-start-line="23" selection-start-column="54" selection-end-line="23" selection-end-column="54" />
+        <state relative-caret-position="510">
+          <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="62" />
           <folding>
             <marker date="1559618547204" expanded="false" signature="6:70" ph="..." />
             <marker date="1559618547204" expanded="true" signature="85:1152" ph="{...}" />
@@ -2256,69 +2322,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PMS/人事管理.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-238">
-          <caret line="71" column="85" selection-start-line="71" selection-start-column="85" selection-end-line="71" selection-end-column="85" />
-          <folding>
-            <marker date="1559651099770" expanded="false" signature="6:123" ph="..." />
-            <marker date="1559651099770" expanded="true" signature="138:4996" ph="{...}" />
-            <marker date="1559651099770" expanded="true" signature="177:4994" ph="{...}" />
-            <marker date="1559651099770" expanded="true" signature="315:734" ph="{...}" />
-            <marker date="1559651099770" expanded="false" signature="853:873" ph="{...}" />
-            <marker date="1559651099770" expanded="false" signature="953:973" ph="{...}" />
-            <marker date="1559651099770" expanded="true" signature="1042:1843" ph="{...}" />
-            <marker date="1559651099770" expanded="true" signature="1068:1733" ph="{...}" />
-            <marker date="1559651099770" expanded="true" signature="1257:1503" ph="{...}" />
-            <marker date="1559651099770" expanded="true" signature="1388:1485" ph="{...}" />
-            <marker date="1559651099770" expanded="true" signature="1764:1833" ph="{...}" />
-            <marker date="1559651099770" expanded="false" signature="1903:2053" ph="{...}" />
-            <marker date="1559651099770" expanded="false" signature="1926:2043" ph="/* TODO: 这行代码将数据加载到表“pMSDataSet1.STAFF”中。您可以根据需要移动或删除它。 ... */" />
-            <marker date="1559651099770" expanded="true" signature="2122:2251" ph="{...}" />
-            <marker date="1559651099770" expanded="false" signature="2345:2365" ph="{...}" />
-            <marker date="1559651099770" expanded="true" signature="2434:3741" ph="{...}" />
-            <marker date="1559651099770" expanded="true" signature="2598:2834" ph="{...}" />
-            <marker date="1559651099770" expanded="true" signature="2735:2820" ph="{...}" />
-            <marker date="1559651099770" expanded="true" signature="2851:3636" ph="{...}" />
-            <marker date="1559651099770" expanded="true" signature="2927:3015" ph="{...}" />
-            <marker date="1559651099770" expanded="true" signature="3036:3622" ph="{...}" />
-            <marker date="1559651099770" expanded="true" signature="3390:3484" ph="{...}" />
-            <marker date="1559651099770" expanded="true" signature="3509:3604" ph="{...}" />
-            <marker date="1559651099770" expanded="true" signature="3667:3731" ph="{...}" />
-            <marker date="1559651099770" expanded="true" signature="3821:4363" ph="{...}" />
-            <marker date="1559651099770" expanded="true" signature="3847:4197" ph="{...}" />
-            <marker date="1559651099770" expanded="true" signature="4228:4287" ph="{...}" />
-            <marker date="1559651099770" expanded="true" signature="4394:4988" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-      <provider editor-type-id="WinFormsEditor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PMS/忘记密码.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-714">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <marker date="1559656583348" expanded="false" signature="6:70" ph="..." />
-            <marker date="1559656583348" expanded="true" signature="85:2312" ph="{...}" />
-            <marker date="1559656583348" expanded="true" signature="124:2310" ph="{...}" />
-            <marker date="1559656583348" expanded="true" signature="265:384" ph="{...}" />
-            <marker date="1559656583348" expanded="true" signature="453:1642" ph="{...}" />
-            <marker date="1559656583348" expanded="true" signature="886:967" ph="{...}" />
-            <marker date="1559656583348" expanded="true" signature="1025:1103" ph="{...}" />
-            <marker date="1559656583348" expanded="true" signature="1222:1632" ph="{...}" />
-            <marker date="1559656583348" expanded="true" signature="1713:1789" ph="{...}" />
-            <marker date="1559656583348" expanded="true" signature="1853:1924" ph="{...}" />
-            <marker date="1559656583348" expanded="true" signature="2002:2304" ph="{...}" />
-            <marker date="1559656583348" expanded="true" signature="2233:2294" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-      <provider editor-type-id="WinFormsEditor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/PMS/管理员登录界面.cs">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="-1827">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1292">
           <caret line="44" selection-start-line="44" selection-end-line="44" />
           <folding>
             <marker date="1559656510378" expanded="false" signature="6:70" ph="..." />
@@ -2345,7 +2351,7 @@
           </folding>
         </state>
       </provider>
-      <provider selected="true" editor-type-id="WinFormsEditor" />
+      <provider editor-type-id="WinFormsEditor" />
     </entry>
   </component>
 </project>

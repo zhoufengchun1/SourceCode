@@ -16,14 +16,15 @@ namespace PMS
             try
             {
                 string myConnString =
-                    "server=47.100.195.173;port=3306;user="+user+";password="+passwd+";database=OCS";
+                    "server=47.100.195.173;port=3306;user="+user+";password="+passwd
+                    +";database=OCS;";
                 Console.WriteLine("已建立连接");
                 mySqlConnection=new MySqlConnection(myConnString);
                 mySqlConnection.Open();
             }
             catch (Exception e)
             {
-                Console.WriteLine(e);
+                throw;
                 MessageBox.Show("数据库连接错误。");
             }
 
