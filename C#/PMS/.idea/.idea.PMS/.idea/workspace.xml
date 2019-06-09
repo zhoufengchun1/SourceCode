@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4abf524d-89da-4e76-a925-8e261a274805" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../OCS/MailServer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../OCS/主界面.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OCS/MailServer.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../OCS/SetConnection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../OCS/SetConnection.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OCS/主界面.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../OCS/忘记密码.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../OCS/忘记密码.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../OCS/欢迎.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../OCS/欢迎.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PMS/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PMS/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -162,10 +163,11 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-7" />
-    <option name="width" value="974" />
-    <option name="height" value="1047" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="976" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -269,7 +271,6 @@
       <workItem from="1559918251129" duration="1167000" />
       <workItem from="1559963888581" duration="1185000" />
       <workItem from="1559970827386" duration="25000" />
-      <workItem from="1559988684328" duration="646000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1559447104398</created>
@@ -303,7 +304,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46592000" />
+    <option name="totallyTimeSpent" value="45946000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -318,7 +319,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.1919571" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.08096515" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -337,7 +338,7 @@
       <window_info anchor="bottom" id="Terminal" order="13" />
       <window_info anchor="bottom" id="Event Log" order="14" side_tool="true" weight="0.3296582" />
       <window_info anchor="bottom" id="Build" order="15" weight="0.323043" />
-      <window_info active="true" anchor="right" id="Designer Toolbox" order="0" sideWeight="0.50275636" side_tool="true" visible="true" weight="0.3297587" />
+      <window_info anchor="right" id="Designer Toolbox" order="0" sideWeight="0.50275636" side_tool="true" visible="true" weight="0.3297587" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
@@ -2071,35 +2072,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PMS/管理员登录界面.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="903">
-          <caret line="120" column="26" selection-start-line="120" selection-start-column="26" selection-end-line="120" selection-end-column="26" />
-          <folding>
-            <marker date="1559656510378" expanded="true" signature="127:4263" ph="{...}" />
-            <marker date="1559656510378" expanded="true" signature="228:321" ph="{...}" />
-            <marker date="1559656510378" expanded="true" signature="382:402" ph="{...}" />
-            <marker date="1559656510378" expanded="true" signature="495:515" ph="{...}" />
-            <marker date="1559656510378" expanded="true" signature="578:598" ph="{...}" />
-            <marker date="1559656510378" expanded="true" signature="667:1946" ph="{...}" />
-            <marker date="1559656510378" expanded="true" signature="1146:1420" ph="{...}" />
-            <marker date="1559656510378" expanded="true" signature="1558:1685" ph="{...}" />
-            <marker date="1559656510378" expanded="true" signature="1702:1769" ph="{...}" />
-            <marker date="1559656510378" expanded="true" signature="1809:1936" ph="{...}" />
-            <marker date="1559656510378" expanded="true" signature="2016:3202" ph="{...}" />
-            <marker date="1559656510378" expanded="true" signature="2259:3192" ph="{...}" />
-            <marker date="1559656510378" expanded="true" signature="2720:3138" ph="{...}" />
-            <marker date="1559656510378" expanded="true" signature="3273:3628" ph="{...}" />
-            <marker date="1559656510378" expanded="true" signature="3322:3402" ph="{...}" />
-            <marker date="1559656510378" expanded="true" signature="3419:3618" ph="{...}" />
-            <marker date="1559656510378" expanded="true" signature="3699:3874" ph="{...}" />
-            <marker date="1559656510378" expanded="true" signature="3955:4257" ph="{...}" />
-            <marker date="1559656510378" expanded="true" signature="4186:4247" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-      <provider editor-type-id="WinFormsEditor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/PMS/工资管理系统.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
@@ -2126,6 +2098,35 @@
             <marker date="1559656510327" expanded="true" signature="5198:5264" ph="{...}" />
             <marker date="1559656510327" expanded="true" signature="5419:5721" ph="{...}" />
             <marker date="1559656510327" expanded="true" signature="5650:5711" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="WinFormsEditor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PMS/管理员登录界面.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="128" column="13" selection-start-line="122" selection-start-column="12" selection-end-line="128" selection-end-column="13" />
+          <folding>
+            <marker date="1559656510378" expanded="true" signature="127:4263" ph="{...}" />
+            <marker date="1559656510378" expanded="true" signature="228:321" ph="{...}" />
+            <marker date="1559656510378" expanded="true" signature="382:402" ph="{...}" />
+            <marker date="1559656510378" expanded="true" signature="495:515" ph="{...}" />
+            <marker date="1559656510378" expanded="true" signature="578:598" ph="{...}" />
+            <marker date="1559656510378" expanded="true" signature="667:1946" ph="{...}" />
+            <marker date="1559656510378" expanded="true" signature="1146:1420" ph="{...}" />
+            <marker date="1559656510378" expanded="true" signature="1558:1685" ph="{...}" />
+            <marker date="1559656510378" expanded="true" signature="1702:1769" ph="{...}" />
+            <marker date="1559656510378" expanded="true" signature="1809:1936" ph="{...}" />
+            <marker date="1559656510378" expanded="true" signature="2016:3202" ph="{...}" />
+            <marker date="1559656510378" expanded="true" signature="2259:3192" ph="{...}" />
+            <marker date="1559656510378" expanded="true" signature="2720:3138" ph="{...}" />
+            <marker date="1559656510378" expanded="true" signature="3273:3628" ph="{...}" />
+            <marker date="1559656510378" expanded="true" signature="3322:3402" ph="{...}" />
+            <marker date="1559656510378" expanded="true" signature="3419:3618" ph="{...}" />
+            <marker date="1559656510378" expanded="true" signature="3699:3874" ph="{...}" />
+            <marker date="1559656510378" expanded="true" signature="3955:4257" ph="{...}" />
+            <marker date="1559656510378" expanded="true" signature="4186:4247" ph="{...}" />
           </folding>
         </state>
       </provider>

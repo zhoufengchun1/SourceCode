@@ -17,7 +17,7 @@ namespace PMS
             {
                 string myConnString =
                     "server=47.100.195.173;port=3306;user="+user+";password="+passwd
-                    +";database=OCS;Allow User Variables=True";
+                    +";database=OCS;";
                 Console.WriteLine("已建立连接");
                 mySqlConnection=new MySqlConnection(myConnString);
                 mySqlConnection.Open();

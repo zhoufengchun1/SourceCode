@@ -59,49 +59,40 @@ namespace OCS
             userId = comboBox1.Text;
             userPasswd = textBox2.Text;
 
-            if (comboBox1.Text == "")
+            string cmd = "select * from user where userId=@userid";
+            MySqlCommand mySqlCommand = new MySqlCommand(cmd, mySqlConnection);
+            mySqlCommand.Parameters.Add("@userid", MySqlDbType.Int16);
+            mySqlCommand.Parameters["@userid"].Value = userId;
+            try
             {
-                MessageBox.Show("请输入用户名！", "登录失败", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            else
-            {
-                string cmd = "select * from user where userId=@userid";
-                MySqlCommand mySqlCommand = new MySqlCommand(cmd, mySqlConnection);
-                mySqlCommand.Parameters.Add("@userid", MySqlDbType.Int16);
-                mySqlCommand.Parameters["@userid"].Value = userId;
-                try
+                using (MySqlDataReader reader = mySqlCommand.ExecuteReader())
                 {
-                    using (MySqlDataReader reader = mySqlCommand.ExecuteReader())
+                    if (!reader.HasRows)
                     {
-                        if (!reader.HasRows)
+                        MessageBox.Show("用户不存在！", "登录失败", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    else
+                    {
+                        reader.Read();
+                        if (reader.GetString("userPasswd") == userPasswd)
                         {
-                            MessageBox.Show("用户不存在！", "登录失败", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            reader.Close();
+                            MessageBox.Show("登录成功！");
+                            WriteToFile();
+                            this.Hide();
+                            new 主界面(user).Show();
                         }
                         else
                         {
-                            reader.Read();
-                            if (reader.GetString("userPasswd") == userPasswd)
-                            {
-                                MessageBox.Show("登录成功！", "成功");
-                                WriteToFile();
-                                reader.Close();
-                                主界面 form = new 主界面(user);
-                                this.Hide();
-                                form.Show();
-                                form.StartPosition = FormStartPosition.CenterScreen;
-                            }
-                            else
-                            {
-                                MessageBox.Show("密码错误。", "登录失败", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                            }
+                            MessageBox.Show("密码错误。", "登录失败", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
                     }
                 }
-                catch (Exception exception)
-                {
-                    Console.WriteLine(exception);
-                    throw;
-                }
+            }
+            catch (Exception exception)
+            {
+                Console.WriteLine(exception);
+                throw;
             }
         }
 
