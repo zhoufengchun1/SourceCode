@@ -16,6 +16,7 @@ namespace OCS
         public 忘记密码 form2;
         private Dictionary<string, User> users;
         private string userId, userPasswd;
+        private User user;
 
         public 欢迎()
         {
@@ -29,7 +30,6 @@ namespace OCS
             form2.StartPosition = FormStartPosition.CenterScreen;
         }
 
-        
 
         private void textBox2_KeyPress(object sender, KeyPressEventArgs e) //密码限制
         {
@@ -59,37 +59,49 @@ namespace OCS
             userId = comboBox1.Text;
             userPasswd = textBox2.Text;
 
-            string cmd = "select * from user where userId=@userid";
-            MySqlCommand mySqlCommand = new MySqlCommand(cmd, mySqlConnection);
-            mySqlCommand.Parameters.Add("@userid", MySqlDbType.Int16);
-            mySqlCommand.Parameters["@userid"].Value = userId;
-            try
+            if (comboBox1.Text == "")
             {
-                using (MySqlDataReader reader = mySqlCommand.ExecuteReader())
+                MessageBox.Show("请输入用户名！", "登录失败", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                string cmd = "select * from user where userId=@userid";
+                MySqlCommand mySqlCommand = new MySqlCommand(cmd, mySqlConnection);
+                mySqlCommand.Parameters.Add("@userid", MySqlDbType.Int16);
+                mySqlCommand.Parameters["@userid"].Value = userId;
+                try
                 {
-                    if (!reader.HasRows)
+                    using (MySqlDataReader reader = mySqlCommand.ExecuteReader())
                     {
-                        MessageBox.Show("用户不存在！", "登录失败", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
-                    else
-                    {
-                        reader.Read();
-                        if (reader.GetString("userPasswd") == userPasswd)
+                        if (!reader.HasRows)
                         {
-                            MessageBox.Show("登录成功！");
-                            WriteToFile();
+                            MessageBox.Show("用户不存在！", "登录失败", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
                         else
                         {
-                            MessageBox.Show("密码错误。", "登录失败", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            reader.Read();
+                            if (reader.GetString("userPasswd") == userPasswd)
+                            {
+                                MessageBox.Show("登录成功！", "成功");
+                                WriteToFile();
+                                reader.Close();
+                                主界面 form = new 主界面(user);
+                                this.Hide();
+                                form.Show();
+                                form.StartPosition = FormStartPosition.CenterScreen;
+                            }
+                            else
+                            {
+                                MessageBox.Show("密码错误。", "登录失败", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            }
                         }
                     }
                 }
-            }
-            catch (Exception exception)
-            {
-                Console.WriteLine(exception);
-                throw;
+                catch (Exception exception)
+                {
+                    Console.WriteLine(exception);
+                    throw;
+                }
             }
         }
 
@@ -113,7 +125,7 @@ namespace OCS
 
         private void WriteToFile()
         {
-            User user = new User();
+            user = new User();
             FileStream fileStream = new FileStream("user.bin", FileMode.OpenOrCreate);
             BinaryFormatter binaryFormatter = new BinaryFormatter();
             user.UserId = userId;
