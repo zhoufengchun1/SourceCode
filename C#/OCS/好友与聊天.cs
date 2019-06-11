@@ -11,6 +11,7 @@ using System.Text.RegularExpressions;
 using System.Threading;
 using MySql.Data.MySqlClient;
 using OCS.Resources;
+using Org.BouncyCastle.Crypto.Tls;
 
 namespace OCS
 {
@@ -23,7 +24,7 @@ namespace OCS
         Thread thDataFromServer;
         IPAddress ipadr;
         private TreeNode _treeNode;
-        public static  List<string> group;
+        public static List<string> group;
 
         public 好友与聊天(User user)
         {
@@ -37,42 +38,7 @@ namespace OCS
         private void 好友与聊天_Load(object sender, EventArgs e)
         {
             treeView1.LabelEdit = true;
-
-            try
-            {
-                string cmd = "SELECT distinct userGroup  from relationshipPlus where userId=@userId;"
-                             + "SELECT friendId AS friends,userGroup as myGroup,userName as userName,friendName as friendName from relationshipPlus  WHERE userId =@userId  union ALL SELECT userId as friends, friendGroup as myGroup,friendName as userName,userName as friendName  from relationshipPlus  WHERE friendId = @userId";
-
-                MySqlCommand mySqlCommand = new MySqlCommand(cmd, mySqlConnection);
-                mySqlCommand.Parameters.Add("@userId", MySqlDbType.Int16);
-                mySqlCommand.Parameters["@userId"].Value = user.UserId;
-
-                MySqlDataAdapter mySqlDataAdapter = new MySqlDataAdapter();
-                mySqlDataAdapter.SelectCommand = mySqlCommand;
-
-                DataSet dataSet = new DataSet();
-                mySqlDataAdapter.Fill(dataSet, "relationshipPlus");
-                foreach (DataRow dataRow in dataSet.Tables[0].Rows)
-                {
-                    TreeNode treeNode = new TreeNode();
-                    treeNode.Text = dataRow["userGroup"].ToString();
-                    treeNode.Name= dataRow["userGroup"].ToString();
-                    group.Add(dataRow["userGroup"].ToString());
-                    treeView1.Nodes.Add(treeNode);
-                    foreach (DataRow row in dataSet.Tables[1].Rows)
-                    {
-                        if (row["myGroup"].ToString().Equals(treeNode.Text))
-                        {
-                            treeNode.Nodes.Add(new TreeNode(row["friendName"] + "(" + row["friends"] + ")"));
-                        }
-                    }
-                }
-            }
-            catch (Exception exception)
-            {
-                Console.WriteLine(exception);
-                throw;
-            }
+            DrawNode();
         }
 
         private void SendMessage()
@@ -92,6 +58,46 @@ namespace OCS
             else
             {
                 MessageBox.Show("未连接服务器或者服务器已停止，请联系管理员~");
+            }
+        }
+
+        private void DrawNode()
+        {
+            treeView1.Nodes.Clear();
+            try
+            {
+                string cmd = "SELECT distinct userGroup  from relationshipPlus where userId=@userId;"
+                             + "SELECT friendId AS friends,userGroup as myGroup,userName as userName,friendName as friendName from relationshipPlus  WHERE userId =@userId  union ALL SELECT userId as friends, friendGroup as myGroup,friendName as userName,userName as friendName  from relationshipPlus  WHERE friendId = @userId";
+
+                MySqlCommand mySqlCommand = new MySqlCommand(cmd, mySqlConnection);
+                mySqlCommand.Parameters.Add("@userId", MySqlDbType.Int16);
+                mySqlCommand.Parameters["@userId"].Value = user.UserId;
+
+                MySqlDataAdapter mySqlDataAdapter = new MySqlDataAdapter();
+                mySqlDataAdapter.SelectCommand = mySqlCommand;
+
+                DataSet dataSet = new DataSet();
+                mySqlDataAdapter.Fill(dataSet, "relationshipPlus");
+                foreach (DataRow dataRow in dataSet.Tables[0].Rows)
+                {
+                    TreeNode treeNode = new TreeNode();
+                    treeNode.Text = dataRow["userGroup"].ToString();
+                    treeNode.Name = dataRow["userGroup"].ToString();
+                    group.Add(dataRow["userGroup"].ToString());
+                    treeView1.Nodes.Add(treeNode);
+                    foreach (DataRow row in dataSet.Tables[1].Rows)
+                    {
+                        if (row["myGroup"].ToString().Equals(treeNode.Text))
+                        {
+                            treeNode.Nodes.Add(new TreeNode(row["friendName"] + "(" + row["friends"] + ")"));
+                        }
+                    }
+                }
+            }
+            catch (Exception exception)
+            {
+                Console.WriteLine(exception);
+                throw;
             }
         }
 
@@ -273,6 +279,12 @@ namespace OCS
                     removeGroup();
                     break;
                 case "修改组名":
+                    修改组名 form = new 修改组名(_treeNode.Text);
+                    form.changeGroupName += changeGroup;
+                    form.ShowDialog();
+                    break;
+                case "刷新":
+                    DrawNode();
                     break;
             }
         }
@@ -325,9 +337,37 @@ namespace OCS
         public void MoveNode(string result)
         {
             _treeNode.Remove();
-            treeView1.Nodes[result].Nodes.Add(_treeNode);
+            try
+            {
+                treeView1.Nodes[result].Nodes.Add(_treeNode);
+            }
+            catch (Exception e)
+            {
+                TreeNode treeNode = new TreeNode();
+                treeNode.Text = result;
+                treeNode.Name = result;
+                group.Add(result);
+                treeView1.Nodes.Add(treeNode);
+            }
+            DrawNode();
         }
-        
-    }
 
+        public void changeGroup(string str)
+        {
+            string cmd =
+                "update relationship set userGroup=@userGroupNew where userGroup=@userGroupOld;";
+            MySqlCommand mySqlCommand = new MySqlCommand(cmd, mySqlConnection);
+            mySqlCommand.Parameters.Add("@userGroupNew", MySqlDbType.String);
+            mySqlCommand.Parameters["@userGroupNew"].Value = str;
+            mySqlCommand.Parameters.Add("@userGroupOld", MySqlDbType.String);
+            mySqlCommand.Parameters["@userGroupOld"].Value = _treeNode.Text;
+            if (mySqlCommand.ExecuteNonQuery() != 0)
+            {
+                MessageBox.Show("修改成功！", "成功");
+                _treeNode.Text = str;
+            }
+            else
+                MessageBox.Show("修改失败!", "失败", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+    }
 }

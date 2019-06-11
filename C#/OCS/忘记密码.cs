@@ -9,8 +9,7 @@ namespace OCS
     public partial class 忘记密码 : Form
     {
         private Form form;
-        private string userName;
-        
+
         private string verificationcode;
         private MySqlConnection mySqlConnection = SetConnection.mySqlConnection;
 
@@ -68,8 +67,6 @@ namespace OCS
             }
             else
             {
-                userName = textBox1.Text;
-                
                 try
                 {
                     verificationcode = MailService.SendMail(textBox2.Text);

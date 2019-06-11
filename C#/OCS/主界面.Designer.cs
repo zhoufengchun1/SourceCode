@@ -77,7 +77,7 @@ namespace OCS
             // 
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.tabPage3.Size = new System.Drawing.Size(793, 426);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "添加好友";
@@ -89,6 +89,7 @@ namespace OCS
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.tabControl1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "主界面";
             this.Text = "主界面";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.主界面_FormClosing);

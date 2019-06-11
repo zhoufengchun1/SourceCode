@@ -47,7 +47,7 @@ namespace OCS
             MySqlCommand mySqlCommand = new MySqlCommand(cmd, mySqlConnection);
             mySqlCommand.Parameters.Add("@friendId", MySqlDbType.Int16);
             mySqlCommand.Parameters["@friendId"].Value = friendId;
-            mySqlCommand.Parameters.Add("@userGroup", MySqlDbType.Int16);
+            mySqlCommand.Parameters.Add("@userGroup", MySqlDbType.String);
             mySqlCommand.Parameters["@userGroup"].Value = comboBox1.Text;
 
             if (mySqlCommand.ExecuteNonQuery() == 1)

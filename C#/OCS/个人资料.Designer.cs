@@ -193,6 +193,7 @@ namespace OCS
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBoxId);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "个人管理";
             this.Text = "个人管理";

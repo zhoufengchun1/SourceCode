@@ -132,6 +132,12 @@
     <Compile Include="主界面.Designer.cs">
       <DependentUpon>主界面.cs</DependentUpon>
     </Compile>
+    <Compile Include="修改组名.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="修改组名.Designer.cs">
+      <DependentUpon>修改组名.cs</DependentUpon>
+    </Compile>
     <Compile Include="好友与聊天.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -198,6 +204,9 @@
     </Compile>
     <EmbeddedResource Include="主界面.resx">
       <DependentUpon>主界面.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="修改组名.resx">
+      <DependentUpon>修改组名.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="好友与聊天.resx">
       <DependentUpon>好友与聊天.cs</DependentUpon>

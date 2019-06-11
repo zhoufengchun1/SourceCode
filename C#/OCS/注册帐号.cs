@@ -10,6 +10,8 @@ namespace OCS
     {
         private MySqlConnection mySqlConnection = SetConnection.mySqlConnection;
         private Form form;
+        private string verificationcode;
+
 
         public 注册帐号(Form form)
         {
