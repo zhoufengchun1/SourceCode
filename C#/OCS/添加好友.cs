@@ -8,7 +8,7 @@ namespace OCS
     public partial class 添加好友 : Form
     {
         private MySqlConnection mySqlConnection = SetConnection.mySqlConnection;
-        private string Name, attr;
+        private new string Name, attr;
         private MySqlDbType mySqlDbType;
         private string friendId;
         public string group=null;

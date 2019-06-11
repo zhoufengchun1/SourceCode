@@ -52,7 +52,7 @@ namespace OCS
             this.treeView1.Location = new System.Drawing.Point(10, 8);
             this.treeView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.treeView1.Name = "treeView1";
-            this.treeView1.Size = new System.Drawing.Size(245, 419);
+            this.treeView1.Size = new System.Drawing.Size(245, 394);
             this.treeView1.TabIndex = 0;
             this.treeView1.NodeMouseClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.treeView1_NodeMouseClick);
             // 
@@ -106,13 +106,13 @@ namespace OCS
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(440, 279);
+            this.textBox1.Size = new System.Drawing.Size(440, 246);
             this.textBox1.TabIndex = 1;
             // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button1.Location = new System.Drawing.Point(454, 390);
+            this.button1.Location = new System.Drawing.Point(454, 365);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(145, 37);
@@ -123,7 +123,7 @@ namespace OCS
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(321, 323);
+            this.textBox2.Location = new System.Drawing.Point(321, 291);
             this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";

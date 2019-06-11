@@ -144,7 +144,7 @@ namespace OCS
             this.listView1.Location = new System.Drawing.Point(119, 89);
             this.listView1.MultiSelect = false;
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(533, 219);
+            this.listView1.Size = new System.Drawing.Size(554, 219);
             this.listView1.TabIndex = 5;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;

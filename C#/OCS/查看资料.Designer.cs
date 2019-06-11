@@ -57,7 +57,7 @@ namespace OCS.Resources
             // labelName
             // 
             this.labelName.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelName.Location = new System.Drawing.Point(153, 9);
+            this.labelName.Location = new System.Drawing.Point(206, 9);
             this.labelName.Name = "labelName";
             this.labelName.Size = new System.Drawing.Size(100, 37);
             this.labelName.TabIndex = 1;
@@ -67,7 +67,7 @@ namespace OCS.Resources
             // labelId
             // 
             this.labelId.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelId.Location = new System.Drawing.Point(153, 54);
+            this.labelId.Location = new System.Drawing.Point(206, 54);
             this.labelId.Name = "labelId";
             this.labelId.Size = new System.Drawing.Size(100, 37);
             this.labelId.TabIndex = 3;
@@ -86,7 +86,7 @@ namespace OCS.Resources
             // labelSex
             // 
             this.labelSex.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelSex.Location = new System.Drawing.Point(153, 93);
+            this.labelSex.Location = new System.Drawing.Point(206, 93);
             this.labelSex.Name = "labelSex";
             this.labelSex.Size = new System.Drawing.Size(100, 37);
             this.labelSex.TabIndex = 5;
@@ -105,7 +105,7 @@ namespace OCS.Resources
             // labelClass
             // 
             this.labelClass.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelClass.Location = new System.Drawing.Point(153, 137);
+            this.labelClass.Location = new System.Drawing.Point(206, 137);
             this.labelClass.Name = "labelClass";
             this.labelClass.Size = new System.Drawing.Size(100, 37);
             this.labelClass.TabIndex = 7;
@@ -124,7 +124,7 @@ namespace OCS.Resources
             // labelDep
             // 
             this.labelDep.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelDep.Location = new System.Drawing.Point(153, 187);
+            this.labelDep.Location = new System.Drawing.Point(206, 187);
             this.labelDep.Name = "labelDep";
             this.labelDep.Size = new System.Drawing.Size(100, 37);
             this.labelDep.TabIndex = 9;
@@ -142,10 +142,10 @@ namespace OCS.Resources
             // 
             // labelEmail
             // 
-            this.labelEmail.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelEmail.Location = new System.Drawing.Point(153, 230);
+            this.labelEmail.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.labelEmail.Location = new System.Drawing.Point(159, 230);
             this.labelEmail.Name = "labelEmail";
-            this.labelEmail.Size = new System.Drawing.Size(100, 37);
+            this.labelEmail.Size = new System.Drawing.Size(192, 37);
             this.labelEmail.TabIndex = 11;
             this.labelEmail.Text = "label11";
             this.labelEmail.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -163,7 +163,7 @@ namespace OCS.Resources
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(318, 315);
+            this.ClientSize = new System.Drawing.Size(393, 276);
             this.Controls.Add(this.labelEmail);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.labelDep);

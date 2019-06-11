@@ -17,6 +17,8 @@ namespace OCS
         {
             InitializeComponent();
             this.form = form;
+            this.StartPosition = FormStartPosition.CenterScreen;
+            this.MaximizeBox = false;
         }
 
 
@@ -108,8 +110,8 @@ namespace OCS
                                 mySqlCommand.Parameters["@userclass"].Value = "未设置";
                                 mySqlCommand.Parameters.Add("@userdepname", MySqlDbType.String);
                                 mySqlCommand.Parameters["@userdepname"].Value = "未设置";
-                                mySqlCommand.Parameters.Add("@usersex", MySqlDbType.Int16);
-                                mySqlCommand.Parameters["@usersex"].Value = 0;
+                                mySqlCommand.Parameters.Add("@usersex", MySqlDbType.String);
+                                mySqlCommand.Parameters["@usersex"].Value ="男";
                                 mySqlCommand.Parameters.Add("@userEmail", MySqlDbType.String);
                                 mySqlCommand.Parameters["@userEmail"].Value = textBox5.Text;
                                 mySqlCommand.ExecuteNonQuery();
@@ -168,7 +170,7 @@ namespace OCS
 
         private void button3_Click(object sender, EventArgs e)
         {
-            if (!Regex.IsMatch(textBox2.Text,
+            if (!Regex.IsMatch(textBox5.Text,
                 "^\\s*([A-Za-z0-9_-]+(\\.\\w+)*@(\\w+\\.)+\\w{2,5})\\s*$"))
             {
                 MessageBox.Show("请输入正确的邮箱格式！\n 邮箱是找回密码的唯一凭据，请正确输入。", "注册失败", MessageBoxButtons.OK,
@@ -178,7 +180,7 @@ namespace OCS
             {
                 try
                 {
-                    verificationcode = MailService.SendMail(textBox2.Text);
+                    verificationcode = MailService.SendMail(textBox5.Text);
                     MessageBox.Show("发送成功！");
                 }
                 catch (Exception exception)
@@ -188,5 +190,18 @@ namespace OCS
                 }
             }
         }
+
+        private void textBox6_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar != '\b') && (!Char.IsLetter(e.KeyChar)) && (!char.IsDigit(e.KeyChar)))
+                if (e.KeyChar != '\b' && !Char.IsLetter(e.KeyChar) && !char.IsDigit(e.KeyChar))
+                {
+                    e.Handled = true;
+                }
+
+            e.KeyChar = Convert.ToChar(e.KeyChar.ToString().ToUpper());
+        }
+
+ 
     }
 }
