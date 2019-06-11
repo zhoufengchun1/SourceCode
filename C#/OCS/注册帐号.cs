@@ -20,9 +20,6 @@ namespace OCS
         }
 
 
-
-
-
         private void textBox3_KeyPress_1(object sender, KeyPressEventArgs e)
         {
             Regex rg = new Regex("^[\u4e00-\u9fa5]$"); //正则表达式
@@ -61,7 +58,7 @@ namespace OCS
         {
             if (textBox1.Text == "" || textBox2.Text == "" || textBox3.Text == "" || textBox4.Text == "")
             {
-                MessageBox.Show("请键入全部信息。","错误",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                MessageBox.Show("请键入全部信息。", "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
@@ -90,6 +87,11 @@ namespace OCS
                             else if (textBox3.Text != textBox4.Text)
                             {
                                 MessageBox.Show("两次输入的密码不一致！", "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            }
+                            else if (!textBox6.Text.Equals(verificationcode))
+                            {
+                                MessageBox.Show("验证码错误,请检查邮箱是否填写并正确重新发送验证码", "错误", MessageBoxButtons.OK,
+                                    MessageBoxIcon.Error);
                             }
                             else
                             {
@@ -147,7 +149,7 @@ namespace OCS
 
         private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if ((e.KeyChar != '\b') &&(!Char.IsLetter(e.KeyChar)) && (!char.IsDigit(e.KeyChar)))
+            if ((e.KeyChar != '\b') && (!Char.IsLetter(e.KeyChar)) && (!char.IsDigit(e.KeyChar)))
             {
                 e.Handled = true;
             }
@@ -160,6 +162,29 @@ namespace OCS
                 if ((e.KeyChar < '0') || (e.KeyChar > '9')) //这是允许输入0-9数字  
                 {
                     e.Handled = true;
+                }
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (!Regex.IsMatch(textBox2.Text,
+                "^\\s*([A-Za-z0-9_-]+(\\.\\w+)*@(\\w+\\.)+\\w{2,5})\\s*$"))
+            {
+                MessageBox.Show("请输入正确的邮箱格式！\n 邮箱是找回密码的唯一凭据，请正确输入。", "注册失败", MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+            }
+            else
+            {
+                try
+                {
+                    verificationcode = MailService.SendMail(textBox2.Text);
+                    MessageBox.Show("发送成功！");
+                }
+                catch (Exception exception)
+                {
+                    MessageBox.Show("发送失败！");
+                    throw;
                 }
             }
         }
