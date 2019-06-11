@@ -1,5 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\xunit.core.2.4.1\build\xunit.core.props" Condition="Exists('packages\xunit.core.2.4.1\build\xunit.core.props')" />
+  <Import Project="packages\NUnit.3.12.0\build\NUnit.props" Condition="Exists('packages\NUnit.3.12.0\build\NUnit.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -27,6 +29,8 @@
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -74,6 +78,12 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>C:\Program Files (x86)\MySQL\MySQL Connector Net 6.9.9\Assemblies\v4.5\MySql.Web.dll</HintPath>
     </Reference>
+    <Reference Include="nunit.framework, Version=3.12.0.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
+      <HintPath>packages\NUnit.3.12.0\lib\net45\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Rhino.Mocks, Version=3.6.0.0, Culture=neutral, PublicKeyToken=0b3305902db7183f, processorArchitecture=MSIL">
+      <HintPath>packages\RhinoMocks.3.6.1\lib\net\Rhino.Mocks.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -92,9 +102,26 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="xunit.abstractions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c, processorArchitecture=MSIL">
+      <HintPath>packages\xunit.abstractions.2.0.3\lib\net35\xunit.abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="xunit.assert, Version=2.4.1.0, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c, processorArchitecture=MSIL">
+      <HintPath>packages\xunit.assert.2.4.1\lib\netstandard1.1\xunit.assert.dll</HintPath>
+    </Reference>
+    <Reference Include="xunit.core, Version=2.4.1.0, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c, processorArchitecture=MSIL">
+      <HintPath>packages\xunit.extensibility.core.2.4.1\lib\net452\xunit.core.dll</HintPath>
+    </Reference>
+    <Reference Include="xunit.execution.desktop, Version=2.4.1.0, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c, processorArchitecture=MSIL">
+      <HintPath>packages\xunit.extensibility.execution.2.4.1\lib\net452\xunit.execution.desktop.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MailServer.cs" />
+    <Compile Include="OCSDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OCSDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SetConnection.cs" />
@@ -123,6 +150,12 @@
     <Compile Include="忘记密码.Designer.cs">
       <DependentUpon>忘记密码.cs</DependentUpon>
     </Compile>
+    <Compile Include="查看资料.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="查看资料.Designer.cs">
+      <DependentUpon>查看资料.cs</DependentUpon>
+    </Compile>
     <Compile Include="欢迎.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -134,6 +167,18 @@
     </Compile>
     <Compile Include="注册帐号.Designer.cs">
       <DependentUpon>注册帐号.cs</DependentUpon>
+    </Compile>
+    <Compile Include="添加好友.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="添加好友.Designer.cs">
+      <DependentUpon>添加好友.cs</DependentUpon>
+    </Compile>
+    <Compile Include="移动分组.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="移动分组.Designer.cs">
+      <DependentUpon>移动分组.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -157,12 +202,32 @@
     <EmbeddedResource Include="忘记密码.resx">
       <DependentUpon>忘记密码.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="查看资料.resx">
+      <DependentUpon>查看资料.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="欢迎.resx">
       <DependentUpon>欢迎.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="注册帐号.resx">
       <DependentUpon>注册帐号.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="添加好友.resx">
+      <DependentUpon>添加好友.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="移动分组.resx">
+      <DependentUpon>移动分组.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="OCSDataSet.xsc">
+      <DependentUpon>OCSDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="OCSDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OCSDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OCSDataSet.xss">
+      <DependentUpon>OCSDataSet.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -193,5 +258,17 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="packages\xunit.analyzers.0.10.0\analyzers\dotnet\cs\xunit.analyzers.dll" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>这台计算机上缺少此项目引用的 NuGet 程序包。使用“NuGet 程序包还原”可下载这些程序包。有关更多信息，请参见 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\NUnit.3.12.0\build\NUnit.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\NUnit.3.12.0\build\NUnit.props'))" />
+    <Error Condition="!Exists('packages\xunit.core.2.4.1\build\xunit.core.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\xunit.core.2.4.1\build\xunit.core.props'))" />
+    <Error Condition="!Exists('packages\xunit.core.2.4.1\build\xunit.core.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\xunit.core.2.4.1\build\xunit.core.targets'))" />
+  </Target>
+  <Import Project="packages\xunit.core.2.4.1\build\xunit.core.targets" Condition="Exists('packages\xunit.core.2.4.1\build\xunit.core.targets')" />
 </Project>

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace OCS.Properties {
+namespace chatRoomClient.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
@@ -31,16 +31,6 @@ namespace OCS.Properties {
         public string OCSConnectionString {
             get {
                 return ((string)(this["OCSConnectionString"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("server=47.100.195.173;user id=root;persistsecurityinfo=True;database=OCS")]
-        public string OCSConnectionString1 {
-            get {
-                return ((string)(this["OCSConnectionString1"]));
             }
         }
     }

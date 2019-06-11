@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="relationship" targetNamespace="http://tempuri.org/relationship.xsd" xmlns:mstns="http://tempuri.org/relationship.xsd" xmlns="http://tempuri.org/relationship.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="OCSConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="OCSConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.OCS.Properties.Settings.GlobalReference.Default.OCSConnectionString" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="relationshipPlusTableAdapter" GeneratorDataComponentClassName="relationshipPlusTableAdapter" Name="relationshipPlus" UserDataComponentName="relationshipPlusTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="OCSConnectionString (Settings)" DbObjectName="OCS.relationshipPlus" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `userId`, `friendId`, `userGroup`, `friendGroup`, `userName`, `friendName` FROM `OCS`.`relationshipPlus`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="relationship" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="relationship" msprop:Generator_UserDSName="relationship">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="relationshipPlus" msprop:Generator_TableClassName="relationshipPlusDataTable" msprop:Generator_TableVarName="tablerelationshipPlus" msprop:Generator_TablePropName="relationshipPlus" msprop:Generator_RowDeletingName="relationshipPlusRowDeleting" msprop:Generator_RowChangingName="relationshipPlusRowChanging" msprop:Generator_RowEvHandlerName="relationshipPlusRowChangeEventHandler" msprop:Generator_RowDeletedName="relationshipPlusRowDeleted" msprop:Generator_UserTableName="relationshipPlus" msprop:Generator_RowChangedName="relationshipPlusRowChanged" msprop:Generator_RowEvArgName="relationshipPlusRowChangeEvent" msprop:Generator_RowClassName="relationshipPlusRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

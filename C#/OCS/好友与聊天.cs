@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Data;
 using System.IO;
 using System.Net.Sockets;
@@ -6,8 +7,10 @@ using System.Windows.Forms;
 using PMS;
 using System.Net;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading;
 using MySql.Data.MySqlClient;
+using OCS.Resources;
 
 namespace OCS
 {
@@ -15,17 +18,19 @@ namespace OCS
     {
         private MySqlConnection mySqlConnection = SetConnection.mySqlConnection;
         private User user;
-        Socket clientSocket = null;
+        Socket clientSocket;
         static Boolean isListen = true;
         Thread thDataFromServer;
         IPAddress ipadr;
-
+        private TreeNode _treeNode;
+        private List<string> group;
 
         public 好友与聊天(User user)
         {
             InitializeComponent();
             this.user = user;
             ipadr = IPAddress.Loopback;
+            group = new List<string>();
             setConnect();
         }
 
@@ -51,6 +56,8 @@ namespace OCS
                 {
                     TreeNode treeNode = new TreeNode();
                     treeNode.Text = dataRow["userGroup"].ToString();
+                    treeNode.Name= dataRow["userGroup"].ToString();
+                    group.Add(dataRow["userGroup"].ToString());
                     treeView1.Nodes.Add(treeNode);
                     foreach (DataRow row in dataSet.Tables[1].Rows)
                     {
@@ -68,7 +75,6 @@ namespace OCS
                 throw;
             }
         }
-
 
         private void SendMessage()
         {
@@ -124,10 +130,10 @@ namespace OCS
                         if (args.IsCompleted) //判断该异步操作是否执行完毕
                         {
                             Byte[] bytesSend = new Byte[4096];
-                        if (user.UserName == null)
-                            bytesSend = Encoding.UTF8.GetBytes(user.UserId + "$"); //用户名，这里是刚刚连接上时需要传过去
-                        else
-                            bytesSend = Encoding.UTF8.GetBytes(user.UserName + "$"); //用户名，这里是刚刚连接上时需要传过去
+                            if (user.UserName == null)
+                                bytesSend = Encoding.UTF8.GetBytes(user.UserId + "$"); //用户名，这里是刚刚连接上时需要传过去
+                            else
+                                bytesSend = Encoding.UTF8.GetBytes(user.UserName + "$"); //用户名，这里是刚刚连接上时需要传过去
 
                             if (clientSocket != null && clientSocket.Connected)
                             {
@@ -171,8 +177,8 @@ namespace OCS
                     if (!String.IsNullOrWhiteSpace(dataFromClient))
                     {
                         //如果收到服务器已经关闭的消息，那么就把客户端接口关了，免得出错，并在客户端界面上显示出来
-                        if (dataFromClient.ToString().Length >= 17 &&
-                            dataFromClient.ToString().Substring(0, 17).Equals("Server has closed"))
+                        if (dataFromClient.Length >= 17 &&
+                            dataFromClient.Substring(0, 17).Equals("Server has closed"))
                         {
                             clientSocket.Close();
                             clientSocket = null;
@@ -230,5 +236,99 @@ namespace OCS
                 //txtReceiveMsg.ScrollToCaret();
             }));
         }
+
+        private void treeView1_NodeMouseClick(object sender, TreeNodeMouseClickEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right) //判断点击的是否为右键
+            {
+                if (e.Node.Level == 0) //如果是第一级节点处右键，显示菜单
+                {
+                    修改组名ToolStripMenuItem.Visible = true;
+                    查看资料ToolStripMenuItem.Visible = false;
+                    移动分组ToolStripMenuItem.Visible = false;
+                    删除好友ToolStripMenuItem.Visible = false;
+                }
+                else if (e.Node.Level == 1) //如果是第二级节点右键，显示菜单
+                {
+                    修改组名ToolStripMenuItem.Visible = false;
+                    查看资料ToolStripMenuItem.Visible = true;
+                    移动分组ToolStripMenuItem.Visible = true;
+                    删除好友ToolStripMenuItem.Visible = true;
+                }
+
+                _treeNode = e.Node;
+            }
+        }
+
+        private void contextMenuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+            switch (e.ClickedItem.Text)
+            {
+                case "查看资料":
+                    checkData();
+                    break;
+                case "删除好友":
+                    deleteData();
+                    break;
+                case "移动分组":
+                    removeGroup();
+                    break;
+                case "修改组名":
+                    break;
+            }
+        }
+
+        private void checkData()
+        {
+            string userId = Regex.Replace(_treeNode.Text, @"(.*\()(.*)(\).*)", "$2");
+            查看资料 form = new 查看资料(userId);
+            form.Show();
+        }
+
+        private void deleteData()
+        {
+            DialogResult dialog =
+                MessageBox.Show("确认删除？", "删除好友", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
+            if (dialog == DialogResult.Yes)
+            {
+                string friendId = Regex.Replace(_treeNode.Text, @"(.*\()(.*)(\).*)", "$2");
+                string cmd =
+                    "delete from relationship where (userId=@userId and friendId=@friendId) or (userId=@friendId and friendId=@userId)";
+                MySqlCommand mySqlCommand = new MySqlCommand(cmd, mySqlConnection);
+                mySqlCommand.Parameters.Add("@userId", MySqlDbType.Int16);
+                mySqlCommand.Parameters["@userId"].Value = user.UserId;
+                mySqlCommand.Parameters.Add("@friendId", MySqlDbType.Int16);
+                mySqlCommand.Parameters["@friendId"].Value = friendId;
+                if (mySqlCommand.ExecuteNonQuery() == 1)
+                {
+                    MessageBox.Show("删除成功！");
+                    _treeNode.Remove();
+                }
+                else
+                    MessageBox.Show("删除失败。", "失败", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void removeGroup()
+        {
+            try
+            {
+                移动分组 form = new 移动分组(_treeNode.Text, _treeNode.Parent.Text, group);
+                form.Show();
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("移动失败。", "失败", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                throw;
+            }
+        }
+
+        public void MoveNode(string result)
+        {
+            _treeNode.Remove();
+            treeView1.Nodes[result].Nodes.Add(_treeNode);
+        }
+        
     }
+
 }

@@ -8,8 +8,9 @@ namespace OCS
         private User user;
         private 好友与聊天 chatForm;
         private 个人管理 squareForm;
-        private Form[] _forms = new Form[2];
-        private TabPage[] tabPages = new TabPage[2];
+        private 添加好友 addFriendsForm;
+        private Form[] _forms = new Form[3];
+        private TabPage[] tabPages = new TabPage[3];
         private int i;
 
 
@@ -44,10 +45,13 @@ namespace OCS
         {
             chatForm = new 好友与聊天(user);
             squareForm = new 个人管理(user);
+            addFriendsForm = new 添加好友();
             _forms[0] = chatForm;
             _forms[1] = squareForm;
+            _forms[2] = addFriendsForm;
             tabPages[0] = tabPage1;
             tabPages[1] = tabPage2;
+            tabPages[2] = tabPage3;
             for (int i = 0; i < _forms.Length; i++)
             {
                 _forms[i].FormBorderStyle = FormBorderStyle.None;
