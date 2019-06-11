@@ -64,7 +64,6 @@ namespace OCS
                         if (row["myGroup"].ToString().Equals(treeNode.Text))
                         {
                             treeNode.Nodes.Add(new TreeNode(row["friendName"] + "(" + row["friends"] + ")"));
-                            break;
                         }
                     }
                 }

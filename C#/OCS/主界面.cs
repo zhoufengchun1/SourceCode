@@ -45,7 +45,7 @@ namespace OCS
         {
             chatForm = new 好友与聊天(user);
             squareForm = new 个人管理(user);
-            addFriendsForm = new 添加好友();
+            addFriendsForm = new 添加好友(user);
             _forms[0] = chatForm;
             _forms[1] = squareForm;
             _forms[2] = addFriendsForm;

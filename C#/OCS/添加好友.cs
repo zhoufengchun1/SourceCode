@@ -1,8 +1,6 @@
 using System;
-using System.Drawing;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
-using Org.BouncyCastle.Asn1.Cms;
 using PMS;
 
 namespace OCS
@@ -12,11 +10,13 @@ namespace OCS
         private MySqlConnection mySqlConnection = SetConnection.mySqlConnection;
         private string Name, attr;
         private MySqlDbType mySqlDbType;
-        private string userId;
-        public string group;
+        private string friendId;
+        public string group=null;
+        private User user;
 
-        public 添加好友()
+        public 添加好友(User user)
         {
+            this.user = user;
             InitializeComponent();
             comboBox1.SelectedIndex = 0;
             comboBox2.SelectedIndex = 0;
@@ -41,19 +41,37 @@ namespace OCS
         {
             if (listView1.SelectedItems.Count > 0)
             {
-                
                 好友分组 form = new 好友分组();
-                form.ShowDialog(this);
-                string cmd = "update relationship set userGroup=@Group where friendId=@userId";
-                MySqlCommand mySqlCommand = new MySqlCommand(cmd, mySqlConnection);
-                mySqlCommand.Parameters.Add("@userId", MySqlDbType.Int16);
-                mySqlCommand.Parameters["@userId"].Value = userId;
-                if (mySqlCommand.ExecuteNonQuery() == 0)
+                form.changeGroup+=changeGroup;
+                form.ShowDialog();
+                if (group != null)
                 {
-                    MessageBox.Show("添加失败!", "失败", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    try
+                    {
+                        string cmd = "insert into relationship values (@userId,@friendId,@userGroup,@friendGroup)";
+                        MySqlCommand mySqlCommand = new MySqlCommand(cmd, mySqlConnection);
+                        mySqlCommand.Parameters.Add("@userId", MySqlDbType.Int16);
+                        mySqlCommand.Parameters["@userId"].Value = user.UserId;
+                        mySqlCommand.Parameters.Add("@friendId", MySqlDbType.Int16);
+                        mySqlCommand.Parameters["@friendId"].Value = friendId;
+                        mySqlCommand.Parameters.Add("@userGroup", MySqlDbType.String);
+                        mySqlCommand.Parameters["@userGroup"].Value = group; 
+                        mySqlCommand.Parameters.Add("@friendGroup", MySqlDbType.String);
+                        mySqlCommand.Parameters["@friendGroup"].Value = "新添加好友";
+                        if (mySqlCommand.ExecuteNonQuery() == 0)
+                        {
+                            MessageBox.Show("添加失败!", "失败", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                        else
+                            MessageBox.Show("添加成功！", "成功", MessageBoxButtons.OK);
+                    }
+                    catch (Exception exception)
+                    {
+                        MessageBox.Show("已为好友，无需添加！","填加失败",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                        
+                    }
                     
                 }
-                
             }
             else
             {
@@ -135,12 +153,18 @@ namespace OCS
             mySqlDataReader.Close();
         }
 
-        private void listView1_ColumnClick(object sender, ColumnClickEventArgs e)
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (listView1.Items.Count != 0)
+            if (listView1.SelectedItems.Count>0)
             {
-                userId = listView1.Items[e.Column].Text;
+                friendId = listView1.SelectedItems[0].SubItems[1].Text.ToString();
             }
+        }
+
+        public void changeGroup(string str)
+        {
+            group = str;
+            
         }
     }
 }
