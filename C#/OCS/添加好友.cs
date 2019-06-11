@@ -9,6 +9,8 @@ namespace OCS
     {
         private MySqlConnection mySqlConnection = SetConnection.mySqlConnection;
         private string Name, attr;
+        private MySqlDbType mySqlDbType;
+        
        
         public 添加好友()
         {
@@ -17,7 +19,7 @@ namespace OCS
             comboBox2.SelectedIndex = 0;
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, System.EventArgs e)
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (comboBox1.Text.Equals("性别"))
             {
@@ -50,18 +52,23 @@ namespace OCS
             {
                 case "学号/工号":
                     Name = "userId";
+                    mySqlDbType=MySqlDbType.Int16;
                     break;
                 case "用户名":
                     Name = "userName";
+                    mySqlDbType=MySqlDbType.String;
                     break;
                 case "性别":
                     Name = "userSex";
+                    mySqlDbType=MySqlDbType.String;
                     break;
                 case "所在班级":
-                    Name = "userClasd";
+                    Name = "userClass";
+                    mySqlDbType=MySqlDbType.String;
                     break;
                 case "所在系":
                     Name = "userDepname";
+                    mySqlDbType=MySqlDbType.String;
                     break;
             }
 
@@ -75,12 +82,24 @@ namespace OCS
             }
 
             string cmd =
-                "select * from user where @Name=@attr";
+                "select * from user where "+Name+"=@attr";
             MySqlCommand mySqlCommand = new MySqlCommand(cmd, mySqlConnection);
-            mySqlCommand.Parameters.Add("@Name", MySqlDbType.Int16);
-            mySqlCommand.Parameters["@Name"].Value = Name;
-            mySqlCommand.Parameters.Add("@attr", MySqlDbType.Int16);
+            mySqlCommand.Parameters.Add("@attr", mySqlDbType);
             mySqlCommand.Parameters["@attr"].Value = attr;
+
+            MySqlDataReader mySqlDataReader = mySqlCommand.ExecuteReader();
+            
+            while (mySqlDataReader.Read())
+            {
+                ListViewItem listViewItem = new ListViewItem();
+                listViewItem.Text = mySqlDataReader["userId"].ToString();
+                listViewItem.SubItems.Add(mySqlDataReader["userName"].ToString());
+                listViewItem.SubItems.Add(mySqlDataReader["userSex"].ToString());
+                listViewItem.SubItems.Add(mySqlDataReader["userClass"].ToString());
+                listViewItem.SubItems.Add(mySqlDataReader["userDepname"].ToString());
+                listView1.Items.Add(listViewItem);
+            }
+            mySqlDataReader.Close();
         }
     }
 }
