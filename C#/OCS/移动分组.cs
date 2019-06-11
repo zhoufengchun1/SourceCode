@@ -13,15 +13,14 @@ namespace OCS
         public delegate void MoveNode(string result);
         private string str;
         private string group;
-        private List<string> list;
+        private List<string> list=好友与聊天.group;
         private MySqlConnection mySqlConnection = SetConnection.mySqlConnection;
 
 
-        public 移动分组(string str, string group, List<string> list)
+        public 移动分组(string str, string group)
         {
             this.str = str;
             this.group = group;
-            this.list = list;
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterScreen;
             this.MaximizeBox = false;

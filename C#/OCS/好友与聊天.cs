@@ -23,7 +23,7 @@ namespace OCS
         Thread thDataFromServer;
         IPAddress ipadr;
         private TreeNode _treeNode;
-        private List<string> group;
+        public static  List<string> group;
 
         public 好友与聊天(User user)
         {
@@ -313,7 +313,7 @@ namespace OCS
         {
             try
             {
-                移动分组 form = new 移动分组(_treeNode.Text, _treeNode.Parent.Text, group);
+                移动分组 form = new 移动分组(_treeNode.Text, _treeNode.Parent.Text);
                 form.Show();
             }
             catch (Exception e)

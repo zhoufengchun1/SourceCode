@@ -2,6 +2,7 @@ using System;
 using System.Drawing;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using Org.BouncyCastle.Asn1.Cms;
 using PMS;
 
 namespace OCS
@@ -11,7 +12,8 @@ namespace OCS
         private MySqlConnection mySqlConnection = SetConnection.mySqlConnection;
         private string Name, attr;
         private MySqlDbType mySqlDbType;
-
+        private string userId;
+        public string group;
 
         public 添加好友()
         {
@@ -34,26 +36,40 @@ namespace OCS
             }
         }
 
-        private void 添加好友_Load(object sender, EventArgs e)
+
+        private void button2_Click(object sender, EventArgs e)
         {
-            // TODO: 这行代码将数据加载到表“oCSDataSet.user”中。您可以根据需要移动或删除它。
-            this.userTableAdapter.Fill(this.oCSDataSet.user);
-            // TODO: 这行代码将数据加载到表“oCSDataSet.user”中。您可以根据需要移动或删除它。
-            this.userTableAdapter.Fill(this.oCSDataSet.user);
-            // TODO: 这行代码将数据加载到表“oCSDataSet.user”中。您可以根据需要移动或删除它。
-            this.userTableAdapter.Fill(this.oCSDataSet.user);
-            // TODO: 这行代码将数据加载到表“oCSDataSet.user”中。您可以根据需要移动或删除它。
-            this.userTableAdapter.Fill(this.oCSDataSet.user);
+            if (listView1.SelectedItems.Count > 0)
+            {
+                
+                好友分组 form = new 好友分组();
+                form.ShowDialog(this);
+                string cmd = "update relationship set userGroup=@Group where friendId=@userId";
+                MySqlCommand mySqlCommand = new MySqlCommand(cmd, mySqlConnection);
+                mySqlCommand.Parameters.Add("@userId", MySqlDbType.Int16);
+                mySqlCommand.Parameters["@userId"].Value = userId;
+                if (mySqlCommand.ExecuteNonQuery() == 0)
+                {
+                    MessageBox.Show("添加失败!", "失败", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    
+                }
+                
+            }
+            else
+            {
+                MessageBox.Show("没有选中用户！", "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             listView1.Items.Clear();
-            if (textBox1.Visible&& textBox1.Text == "")
+            if (textBox1.Visible && textBox1.Text == "")
             {
                 MessageBox.Show("请输入查询数据!", "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
+
             switch (comboBox1.Text)
             {
                 case "学号/工号":
@@ -110,7 +126,21 @@ namespace OCS
             {
                 MessageBox.Show("未查询到相关数据。");
             }
+            else
+            {
+                listView1.Items[0].Selected = true;
+                listView1.Select();
+            }
+
             mySqlDataReader.Close();
+        }
+
+        private void listView1_ColumnClick(object sender, ColumnClickEventArgs e)
+        {
+            if (listView1.Items.Count != 0)
+            {
+                userId = listView1.Items[e.Column].Text;
+            }
         }
     }
 }

@@ -144,6 +144,12 @@
     <Compile Include="个人资料.Designer.cs">
       <DependentUpon>个人资料.cs</DependentUpon>
     </Compile>
+    <Compile Include="好友分组.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="好友分组.Designer.cs">
+      <DependentUpon>好友分组.cs</DependentUpon>
+    </Compile>
     <Compile Include="忘记密码.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -198,6 +204,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="个人资料.resx">
       <DependentUpon>个人资料.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="好友分组.resx">
+      <DependentUpon>好友分组.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="忘记密码.resx">
       <DependentUpon>忘记密码.cs</DependentUpon>
