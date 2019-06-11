@@ -1,15 +1,17 @@
 using System;
-using System.Data;
 using System.Windows.Forms;
-using MySql.Data.MySqlClient;
-using PMS;
 
 namespace OCS
 {
     public partial class 主界面 : Form
     {
-        private MySqlConnection mySqlConnection = SetConnection.mySqlConnection;
         private User user;
+        private 好友与聊天 chatForm;
+        private 个人管理 squareForm;
+        private Form[] _forms = new Form[2];
+        private TabPage[] tabPages = new TabPage[2];
+        private int i;
+
 
         public 主界面(User user)
         {
@@ -17,73 +19,12 @@ namespace OCS
             this.user = user;
             this.MaximizeBox = false;
             this.StartPosition = FormStartPosition.CenterScreen;
+            DrawForm();
+            _forms[0].Show();
         }
 
-        private void 主界面_Load(object sender, System.EventArgs e)
+        private void 主界面_Load(object sender, EventArgs e)
         {
-            treeView1.LabelEdit = true;
-
-            try
-            {
-                string cmd = "SELECT distinct userGroup  from relationshipPlus where userId=@userId;"
-                             + "SELECT friendId AS friends,userGroup as myGroup,userName as userName,friendName as friendName from relationshipPlus  WHERE userId =@userId  union ALL SELECT userId as friends, friendGroup as myGroup,friendName as userName,userName as friendName  from relationshipPlus  WHERE friendId = @userId";
-
-                MySqlCommand mySqlCommand = new MySqlCommand(cmd, mySqlConnection);
-                mySqlCommand.Parameters.Add("@userId", MySqlDbType.Int16);
-                mySqlCommand.Parameters["@userId"].Value = user.UserId;
-
-                MySqlDataAdapter mySqlDataAdapter = new MySqlDataAdapter();
-                mySqlDataAdapter.SelectCommand = mySqlCommand;
-                
-                DataSet dataSet = new DataSet();
-                mySqlDataAdapter.Fill(dataSet, "relationshipPlus");
-                foreach (DataRow dataRow in dataSet.Tables[0].Rows)
-                {
-                    TreeNode treeNode = new TreeNode();
-                    treeNode.Text = dataRow["userGroup"].ToString();
-                    treeView1.Nodes.Add(treeNode);
-                    foreach (DataRow row in dataSet.Tables[1].Rows)
-                    {
-                        if (row["myGroup"].ToString().Equals(treeNode.Text))
-                        {
-                            treeNode.Nodes.Add(new TreeNode(row["friendName"] + "(" + row["friends"] + ")"));
-                            break;
-                        }
-                    }
-                }
-            }
-            catch (Exception exception)
-            {
-                Console.WriteLine(exception);
-                throw;
-            }
-
-
-            /*MySqlCommand mySqlCommand = new MySqlCommand(cmd, mySqlConnection);
-            mySqlCommand.Parameters.Add("@userId", MySqlDbType.Int16);
-            mySqlCommand.Parameters["@userId"].Value = user.UserId;
-            try
-            {
-                using (MySqlDataReader reader = mySqlCommand.ExecuteReader())
-                {
-                    while (reader.Read())
-                    {
-                        string Title = reader.GetString("userGroup");
-                        TreeNode node = new TreeNode();
-                        node.Text = Title;
-                        treeView1.Nodes.Add(node);
-                        cmd =
-                            "SELECT friendId AS friends,userGroup as myGroup  from relationship  WHERE userId = @userId "
-                            + "union ALL SELECT userId as friends, friendGroup   as myGroup  from relationship  WHERE friendid = @userId";
-                        
-                    }
-                }
-            }
-            catch (Exception exception)
-            {
-                Console.WriteLine(exception);
-                throw;
-            }*/
         }
 
         private void 主界面_FormClosing(object sender, FormClosingEventArgs e)
@@ -96,6 +37,42 @@ namespace OCS
             {
                 e.Cancel = true;
             }
+        }
+
+
+        private void DrawForm()
+        {
+            chatForm = new 好友与聊天(user);
+            squareForm = new 个人管理(user);
+            _forms[0] = chatForm;
+            _forms[1] = squareForm;
+            tabPages[0] = tabPage1;
+            tabPages[1] = tabPage2;
+            for (int i = 0; i < _forms.Length; i++)
+            {
+                _forms[i].FormBorderStyle = FormBorderStyle.None;
+                _forms[i].TopLevel = false;
+                _forms[i].ControlBox = false;
+                _forms[i].Dock = DockStyle.Fill;
+                _forms[i].StartPosition = FormStartPosition.CenterParent;
+                _forms[i].Parent = tabPages[i];
+            }
+        }
+        
+
+
+        private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            foreach (Form f in _forms)
+            {
+                if (!tabControl1.SelectedIndex.Equals(i))
+                {
+                    f.Show();
+                }else
+                    f.Hide();
+            }
+            Console.Write(i);
+            i = tabControl1.SelectedIndex;     
         }
     }
 }

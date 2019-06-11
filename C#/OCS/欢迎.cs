@@ -76,9 +76,9 @@ namespace OCS
                         reader.Read();
                         if (reader.GetString("userPasswd") == userPasswd)
                         {
-                            reader.Close();
                             MessageBox.Show("登录成功！");
-                            WriteToFile();
+                            WriteToFile(reader);
+                            reader.Close();
                             this.Hide();
                             new 主界面(user).Show();
                         }
@@ -114,7 +114,7 @@ namespace OCS
             }
         }
 
-        private void WriteToFile()
+        private void WriteToFile(MySqlDataReader mySqlDataReader)
         {
             user = new User();
             FileStream fileStream = new FileStream("user.bin", FileMode.OpenOrCreate);
@@ -124,6 +124,8 @@ namespace OCS
 
             user.UserPasswd = checkBox2.Checked ? userPasswd : "";
 
+            user.UserName = mySqlDataReader.GetString("userName");
+            
             if (users == null)
             {
                 users = new Dictionary<string, User>();
@@ -147,15 +149,15 @@ namespace OCS
             {
                 BinaryFormatter bf = new BinaryFormatter();
                 users = bf.Deserialize(fs) as Dictionary<string, User>;
-                //读出存在Data.bin 里的用户信息
+                //读出存在user.bin 里的用户信息
                 //循环添加到Combox1
                 foreach (User user in users.Values)
                 {
                     comboBox1.Items.Add(user.UserId);
                 }
-
-                //combox1 用户名默认选中第一个
             }
+
+            //comboBox1.SelectedIndex = 0;
 
             fs.Close();
         }

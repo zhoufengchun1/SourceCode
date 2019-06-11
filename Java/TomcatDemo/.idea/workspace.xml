@@ -7,14 +7,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2cdc282d-b046-4bde-bae3-2dd45a49489e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../C#/PMS/PMS/bin/Debug/PMS.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../../C#/PMS/PMS/bin/Debug/PMS.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C#/PMS/PMS/bin/Debug/PMS.exe.config" beforeDir="false" afterPath="$PROJECT_DIR$/../../C#/PMS/PMS/bin/Debug/PMS.exe.config" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C#/PMS/PMS/bin/Debug/PMS.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../C#/PMS/PMS/bin/Debug/PMS.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C#/PMS/PMS/obj/Debug/PMS.csproj.GenerateResource.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../C#/PMS/PMS/obj/Debug/PMS.csproj.GenerateResource.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C#/PMS/PMS/obj/Debug/PMS.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../../C#/PMS/PMS/obj/Debug/PMS.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C#/PMS/PMS/obj/Debug/PMS.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../C#/PMS/PMS/obj/Debug/PMS.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C#/PMS/PMS/人事管理.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../C#/PMS/PMS/人事管理.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C#/OCS/好友与聊天.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C#/OCS/广场.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C#/OCS/OCS.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../../C#/OCS/OCS.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C#/OCS/主界面.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../C#/OCS/主界面.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C#/OCS/主界面.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../C#/OCS/主界面.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C#/OCS/欢迎.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../C#/OCS/欢迎.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C#/PMS/.idea/.idea.PMS/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../C#/PMS/.idea/.idea.PMS/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HelloWorldServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TestLifeCycleServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/HelloWorldServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/TestLifeCycleServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,37 +30,24 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/HelloWorldServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="18" column="83" selection-start-line="18" selection-start-column="83" selection-end-line="18" selection-end-column="83" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="72">
+              <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/TestLifeCycleServlet.java">
+        <entry file="file://$PROJECT_DIR$/src/Server.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="30" selection-start-line="30" selection-end-line="30" />
+            <state relative-caret-position="192">
+              <caret line="8" selection-start-line="8" selection-end-line="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -71,9 +64,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/web/index.jsp" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/HelloWorldServlet.java" />
         <option value="$PROJECT_DIR$/src/TestLifeCycleServlet.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/Server.java" />
       </list>
     </option>
   </component>
@@ -85,8 +79,8 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="159" />
-    <option name="y" value="-22" />
+    <option name="x" value="436" />
+    <option name="y" value="-13" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
@@ -115,12 +109,13 @@
     <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\SourceCode\Java\TomcatDemo\web\WEB-INF" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\SourceCode\Java\TomcatDemo\src" />
       <recent name="D:\SourceCode\Java\TomcatDemo\web" />
+      <recent name="D:\SourceCode\Java\TomcatDemo\web\WEB-INF" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\SourceCode\Java\TomcatDemo\src" />
       <recent name="D:\SourceCode\Java\TomcatDemo\web\WEB-INF" />
     </key>
   </component>
@@ -228,11 +223,13 @@
       <workItem from="1559459872998" duration="293000" />
       <workItem from="1559460229395" duration="20000" />
       <workItem from="1559618477191" duration="1000" />
+      <workItem from="1560093163732" duration="1422000" />
+      <workItem from="1560095513181" duration="37000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4810000" />
+    <option name="totallyTimeSpent" value="6269000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -294,27 +291,19 @@
     <entry file="file://$PROJECT_DIR$/TomcatDemo.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/TestLifeCycleServlet.java" />
+    <entry file="file://$PROJECT_DIR$/src/HelloWorldServlet.java" />
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+        <state relative-caret-position="72">
+          <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/HelloWorldServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/Server.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="18" column="83" selection-start-line="18" selection-start-column="83" selection-end-line="18" selection-end-column="83" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/TestLifeCycleServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        <state relative-caret-position="192">
+          <caret line="8" selection-start-line="8" selection-end-line="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

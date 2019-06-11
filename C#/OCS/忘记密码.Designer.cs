@@ -121,6 +121,7 @@ namespace OCS
             this.button2.TabIndex = 18;
             this.button2.Text = "确认更改";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             this.textBox4.BackColor = System.Drawing.Color.WhiteSmoke;
             this.textBox4.Font = new System.Drawing.Font("黑体", 18F, System.Drawing.FontStyle.Bold,
                 System.Drawing.GraphicsUnit.Point, ((byte) (134)));

@@ -8,6 +8,7 @@ namespace OCS
         private string userId;
         private string userPasswd;
         private Boolean rememberPasswd;
+        private string userName;
 
         public string UserId
         {
@@ -19,6 +20,12 @@ namespace OCS
         {
             get => rememberPasswd;
             set => rememberPasswd = value;
+        }
+
+        public string UserName
+        {
+            get => userName;
+            set => userName = value;
         }
 
         public string UserPasswd
