@@ -40,8 +40,8 @@ namespace OCS
             {
                 comboBox1.Items.Add(s);
             }
-
-            comboBox1.SelectedIndex = 0;
+            
+            //comboBox1.SelectedIndex = 0;
         }
     }
 }

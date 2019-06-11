@@ -64,6 +64,7 @@ namespace OCS
         private void DrawNode()
         {
             treeView1.Nodes.Clear();
+            group.Clear();
             try
             {
                 string cmd = "SELECT distinct userGroup  from relationshipPlus where userId=@userId;"
@@ -127,9 +128,22 @@ namespace OCS
                      * object state     一个用户定义对象，其中包含连接操作的相关信息。 当操作完成时，此对象会被传递给 requestCallback 委托
                      */
                     //如果txtIP里面有值，就选择填入的IP作为服务器IP，不填的话就默认是本机的
-
-                    ipadr = IPAddress.Loopback;
-
+                    if (!String.IsNullOrWhiteSpace(textBox3.Text.ToString().Trim()))
+                    {
+                        try
+                        {
+                            ipadr = IPAddress.Parse(textBox3.Text.ToString().Trim());
+                        }
+                        catch
+                        {
+                            MessageBox.Show("请输入正确的IP后重试");
+                            return;
+                        }
+                    }
+                    else
+                    {
+                        ipadr = IPAddress.Loopback;
+                    }
                     clientSocket.BeginConnect(ipadr, 8080, args =>
                     {
                         if (args.IsCompleted) //判断该异步操作是否执行完毕
@@ -277,6 +291,7 @@ namespace OCS
                     break;
                 case "移动分组":
                     removeGroup();
+                    DrawNode();
                     break;
                 case "修改组名":
                     修改组名 form = new 修改组名(_treeNode.Text);
@@ -368,6 +383,11 @@ namespace OCS
             }
             else
                 MessageBox.Show("修改失败!", "失败", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
