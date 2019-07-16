@@ -156,7 +156,7 @@ namespace OCS
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(50, 21);
             this.button2.TabIndex = 6;
-            this.button2.Text = "确定";
+            this.button2.Text = "连接";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -175,7 +175,9 @@ namespace OCS
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "好友与聊天";
             this.Text = "好友与聊天";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.好友与聊天_FormClosing);
             this.Load += new System.EventHandler(this.好友与聊天_Load);
+            this.Shown += new System.EventHandler(this.好友与聊天_Shown);
             this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();

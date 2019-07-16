@@ -48,14 +48,16 @@ public class ForgetPassWordActivity extends AppCompatActivity
         user_name = userName.getText().toString();
         user_passwd = userPasswd.getText().toString();
 
-        new Thread()
-        {
+        new Thread() {
             @Override
-            public void run()
-            {
-                statement.executeQuery("select ")
+            public void run() {
+                try {
+                    statement.executeQuery("select ");
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
             }
-        }
+        }.start();
     }
 
     @OnClick({R.id.selectDate, R.id.okay})

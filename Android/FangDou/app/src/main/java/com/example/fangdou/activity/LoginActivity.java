@@ -122,7 +122,7 @@ public class LoginActivity extends AppCompatActivity implements CompoundButton.O
 
     public void setConnection()
     {
-        connection = JDBC.connSql();
+        JDBC.connSql();
         try
         {
             statement = connection.createStatement();
@@ -354,7 +354,7 @@ public class LoginActivity extends AppCompatActivity implements CompoundButton.O
             @Override
             public void onClick(DialogInterface dialog, int which)
             {
-                startActivity(new Intent(LoginActivity.this, LogoffActivity.class));
+                //startActivity(new Intent(LoginActivity.this, LogoffActivity.class));
             }
         }).show();
 

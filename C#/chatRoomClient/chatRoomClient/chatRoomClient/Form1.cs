@@ -98,8 +98,7 @@ namespace chatRoomClient
                     }
                     else
                     {
-                        ipadr = IPAddress.Loopback;
-                    }
+                        ipadr = IPAddress.Loopback;                   }
                     //IPAddress ipadr = IPAddress.Parse("192.168.1.100");
                     clientSocket.BeginConnect(ipadr, 8080, (args) =>
                     {

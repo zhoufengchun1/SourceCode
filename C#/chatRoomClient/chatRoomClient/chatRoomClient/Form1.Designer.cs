@@ -43,26 +43,29 @@
             // 
             this.lbMsg.AutoSize = true;
             this.lbMsg.Font = new System.Drawing.Font("宋体", 10F);
-            this.lbMsg.Location = new System.Drawing.Point(8, 27);
+            this.lbMsg.Location = new System.Drawing.Point(6, 22);
+            this.lbMsg.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbMsg.Name = "lbMsg";
-            this.lbMsg.Size = new System.Drawing.Size(161, 17);
+            this.lbMsg.Size = new System.Drawing.Size(133, 14);
             this.lbMsg.TabIndex = 0;
             this.lbMsg.Text = "请设置你的用户名：";
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(175, 19);
+            this.txtName.Location = new System.Drawing.Point(131, 15);
+            this.txtName.Margin = new System.Windows.Forms.Padding(2);
             this.txtName.Multiline = true;
             this.txtName.Name = "txtName";
             this.txtName.ShortcutsEnabled = false;
-            this.txtName.Size = new System.Drawing.Size(200, 30);
+            this.txtName.Size = new System.Drawing.Size(151, 25);
             this.txtName.TabIndex = 1;
             // 
             // btnConnect
             // 
-            this.btnConnect.Location = new System.Drawing.Point(400, 19);
+            this.btnConnect.Location = new System.Drawing.Point(300, 15);
+            this.btnConnect.Margin = new System.Windows.Forms.Padding(2);
             this.btnConnect.Name = "btnConnect";
-            this.btnConnect.Size = new System.Drawing.Size(100, 30);
+            this.btnConnect.Size = new System.Drawing.Size(75, 24);
             this.btnConnect.TabIndex = 2;
             this.btnConnect.Text = "连接服务器";
             this.btnConnect.UseVisualStyleBackColor = true;
@@ -70,29 +73,32 @@
             // 
             // txtReceiveMsg
             // 
-            this.txtReceiveMsg.Location = new System.Drawing.Point(42, 77);
+            this.txtReceiveMsg.Location = new System.Drawing.Point(32, 62);
+            this.txtReceiveMsg.Margin = new System.Windows.Forms.Padding(2);
             this.txtReceiveMsg.Multiline = true;
             this.txtReceiveMsg.Name = "txtReceiveMsg";
             this.txtReceiveMsg.ReadOnly = true;
             this.txtReceiveMsg.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtReceiveMsg.Size = new System.Drawing.Size(491, 218);
+            this.txtReceiveMsg.Size = new System.Drawing.Size(369, 175);
             this.txtReceiveMsg.TabIndex = 3;
             // 
             // txtSendMsg
             // 
             this.txtSendMsg.AcceptsReturn = true;
-            this.txtSendMsg.Location = new System.Drawing.Point(42, 324);
+            this.txtSendMsg.Location = new System.Drawing.Point(32, 259);
+            this.txtSendMsg.Margin = new System.Windows.Forms.Padding(2);
             this.txtSendMsg.Multiline = true;
             this.txtSendMsg.Name = "txtSendMsg";
             this.txtSendMsg.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtSendMsg.Size = new System.Drawing.Size(491, 93);
+            this.txtSendMsg.Size = new System.Drawing.Size(369, 75);
             this.txtSendMsg.TabIndex = 4;
             // 
             // btnSend
             // 
-            this.btnSend.Location = new System.Drawing.Point(60, 449);
+            this.btnSend.Location = new System.Drawing.Point(45, 359);
+            this.btnSend.Margin = new System.Windows.Forms.Padding(2);
             this.btnSend.Name = "btnSend";
-            this.btnSend.Size = new System.Drawing.Size(154, 44);
+            this.btnSend.Size = new System.Drawing.Size(116, 35);
             this.btnSend.TabIndex = 5;
             this.btnSend.Text = "发送";
             this.btnSend.UseVisualStyleBackColor = true;
@@ -102,25 +108,28 @@
             // 
             this.labelIP.AutoSize = true;
             this.labelIP.Font = new System.Drawing.Font("宋体", 10F);
-            this.labelIP.Location = new System.Drawing.Point(532, 27);
+            this.labelIP.Location = new System.Drawing.Point(399, 22);
+            this.labelIP.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelIP.Name = "labelIP";
-            this.labelIP.Size = new System.Drawing.Size(189, 17);
+            this.labelIP.Size = new System.Drawing.Size(154, 14);
             this.labelIP.TabIndex = 6;
             this.labelIP.Text = "请输入服务器IP(可选):";
             // 
             // txtIP
             // 
-            this.txtIP.Location = new System.Drawing.Point(739, 19);
+            this.txtIP.Location = new System.Drawing.Point(554, 15);
+            this.txtIP.Margin = new System.Windows.Forms.Padding(2);
             this.txtIP.Multiline = true;
             this.txtIP.Name = "txtIP";
-            this.txtIP.Size = new System.Drawing.Size(179, 30);
+            this.txtIP.Size = new System.Drawing.Size(135, 25);
             this.txtIP.TabIndex = 7;
             // 
             // btnBreak
             // 
-            this.btnBreak.Location = new System.Drawing.Point(321, 449);
+            this.btnBreak.Location = new System.Drawing.Point(241, 359);
+            this.btnBreak.Margin = new System.Windows.Forms.Padding(2);
             this.btnBreak.Name = "btnBreak";
-            this.btnBreak.Size = new System.Drawing.Size(154, 43);
+            this.btnBreak.Size = new System.Drawing.Size(116, 34);
             this.btnBreak.TabIndex = 8;
             this.btnBreak.Text = "退出聊天";
             this.btnBreak.UseVisualStyleBackColor = true;
@@ -128,9 +137,9 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(930, 549);
+            this.ClientSize = new System.Drawing.Size(698, 439);
             this.Controls.Add(this.btnBreak);
             this.Controls.Add(this.txtIP);
             this.Controls.Add(this.labelIP);
@@ -140,6 +149,7 @@
             this.Controls.Add(this.btnConnect);
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.lbMsg);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

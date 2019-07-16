@@ -2,16 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9038ddce-64be-4cbb-9a57-f8c31bc5f27c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/m.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Python/Demo/.idea/Demo.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Python/Demo/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Python/Demo/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Python/Demo/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Python/Demo/Demo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JSDemo.html" beforeDir="false" afterPath="$PROJECT_DIR$/JSDemo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/JDBCDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/JDBCDemo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java/TomcatDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java/TomcatDemo/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/Demo/libs/mssql-jdbc-7.0.0.jre8.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Java/Demo/src/MyTable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../php/phpDemo/connet.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../php/phpDemo/loading.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C#/OCS.zip" beforeDir="false" afterPath="$PROJECT_DIR$/../../C#/OCS.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C#/OCS/MailServer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../C#/OCS/MailServer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C#/OCS/OCS.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../../C#/OCS/OCS.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C#/OCS/主界面.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../C#/OCS/主界面.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C#/OCS/主界面.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../C#/OCS/主界面.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C#/OCS/好友与聊天.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../C#/OCS/好友与聊天.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C#/OCS/好友与聊天.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../C#/OCS/好友与聊天.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C#/OCS/查看资料.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../C#/OCS/查看资料.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C#/OCS/欢迎.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../C#/OCS/欢迎.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C#/OCS/添加好友.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../C#/OCS/添加好友.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C#/chatRoomClient/chatRoomClient/chatRoomClient/Form1.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../C#/chatRoomClient/chatRoomClient/chatRoomClient/Form1.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C#/chatRoomClient/chatRoomClient/chatRoomClient/Form1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../C#/chatRoomClient/chatRoomClient/chatRoomClient/Form1.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C#/chatRoomClient/chatRoomClient/chatRoomClient/Form1.resx" beforeDir="false" afterPath="$PROJECT_DIR$/../../C#/chatRoomClient/chatRoomClient/chatRoomClient/Form1.resx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../下载 - 快捷方式.lnk" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -33,8 +41,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/JSDemo.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="11" column="45" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
+            <state relative-caret-position="476">
+              <caret line="14" column="11" lean-forward="true" selection-end-line="15" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -43,7 +51,7 @@
         <entry file="file://$PROJECT_DIR$/m.js">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret selection-end-line="3" selection-end-column="1" />
+              <caret lean-forward="true" />
             </state>
           </provider>
         </entry>
@@ -172,11 +180,12 @@
       <workItem from="1558959308457" duration="746000" />
       <workItem from="1559127487258" duration="46000" />
       <workItem from="1559127564853" duration="224000" />
+      <workItem from="1560833323590" duration="657000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22158000" />
+    <option name="totallyTimeSpent" value="22815000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -195,7 +204,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info active="true" anchor="bottom" id="Event Log" order="10" sideWeight="0.5002641" side_tool="true" visible="true" weight="0.39488322" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5002641" side_tool="true" weight="0.39488322" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -223,17 +232,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/JSDemo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="11" column="45" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/m.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret selection-end-line="3" selection-end-column="1" />
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JSDemo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="14" column="11" lean-forward="true" selection-end-line="15" selection-end-column="7" />
         </state>
       </provider>
     </entry>

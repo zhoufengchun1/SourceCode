@@ -25,6 +25,7 @@ import android.widget.Toast;
 
 import com.example.fangdou.R;
 import com.example.fangdou.fragment.ListViewFragment;
+import com.example.fangdou.fragment.MainFragment;
 import com.example.fangdou.fragment.MapFragment;
 import com.iflytek.cloud.SpeechConstant;
 import com.iflytek.cloud.SpeechUtility;
@@ -67,6 +68,7 @@ public class MainActivity extends AppCompatActivity
     private String app_id = "5c6e22da";
     public static MapFragment mapFragment;
     public static ListViewFragment listFragment;
+    public static MainFragment mainFragment;
 
     private List<TextView> tv_list;
     private Unbinder unbinder;
@@ -255,14 +257,15 @@ public class MainActivity extends AppCompatActivity
         {
             case R.id.ll_tab1:
             case R.id.tv1:
-                if (mapFragment == null)
+                if (mainFragment == null)
                 {//减少new fragment,避免不必要的内存消耗
                     mapFragment = new MapFragment();
                     listFragment = new ListViewFragment();
+                    mainFragment = new MainFragment();
                     switchFragment(fragment_now, listFragment);
                 }
                 changePageSelect(0);
-                switchFragment(fragment_now, mapFragment);
+                switchFragment(fragment_now, mainFragment);
                 tv1.setBackgroundResource(R.drawable.bottom_cornerbackground_y);
                 tv1.setTextColor(Color.parseColor("#000000"));
                 tv2.setBackgroundResource(R.drawable.bottom_cornerbackground_n);

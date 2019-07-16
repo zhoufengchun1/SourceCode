@@ -6,21 +6,126 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2cdc282d-b046-4bde-bae3-2dd45a49489e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../C#/OCS/好友与聊天.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../C#/OCS/广场.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Server.java" afterDir="false" />
+    <list default="true" id="ca0a6d5a-2cf6-4b37-8f3d-ff07d5f1b9c9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Demo/libs/mssql-jdbc-7.0.0.jre8.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Demo/src/MyTable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/result.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../php/phpDemo/connet.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../php/phpDemo/loading.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Android/Androidlogindemo/.gradle/5.1.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/Androidlogindemo/.gradle/5.1.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Android/Androidlogindemo/.gradle/5.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/Androidlogindemo/.gradle/5.1.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Android/Androidlogindemo/.gradle/5.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/Androidlogindemo/.gradle/5.1.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Android/Androidlogindemo/.gradle/5.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/Androidlogindemo/.gradle/5.1.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Android/Androidlogindemo/.gradle/5.1.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/Androidlogindemo/.gradle/5.1.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Android/Androidlogindemo/.gradle/5.1.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/Androidlogindemo/.gradle/5.1.1/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Android/Androidlogindemo/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/Androidlogindemo/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Android/Androidlogindemo/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/Androidlogindemo/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Android/Androidlogindemo/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/Androidlogindemo/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Android/Androidlogindemo/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/Androidlogindemo/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Android/Androidlogindemo/.idea/libraries/Gradle__com_android_support_appcompat_v7_23_1_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/Androidlogindemo/.idea/libraries/Gradle__com_android_support_appcompat_v7_23_1_1_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Android/Androidlogindemo/.idea/libraries/Gradle__com_android_support_support_v4_23_1_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/Androidlogindemo/.idea/libraries/Gradle__com_android_support_support_v4_23_1_1_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Android/Androidlogindemo/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/Androidlogindemo/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Android/Androidlogindemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/Androidlogindemo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Android/Androidlogindemo/Androidlogindemo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/Androidlogindemo/Androidlogindemo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Android/Androidlogindemo/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/Androidlogindemo/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Android/FangDou/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/FangDou/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Android/FangDou/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/FangDou/.idea/dbnavigator.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Android/FangDou/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/FangDou/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Android/FangDou/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Android/FangDou/app/src/main/java/com/example/fangdou/JDBC.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/FangDou/app/src/main/java/com/example/fangdou/JDBC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Android/FangDou/app/src/main/java/com/example/fangdou/activity/ForgetPassWordActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/FangDou/app/src/main/java/com/example/fangdou/activity/ForgetPassWordActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Android/FangDou/app/src/main/java/com/example/fangdou/activity/LoginActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/FangDou/app/src/main/java/com/example/fangdou/activity/LoginActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Android/FangDou/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/FangDou/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Android/FangDou/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/FangDou/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C#/OCS.zip" beforeDir="false" afterPath="$PROJECT_DIR$/../../C#/OCS.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C#/OCS/MailServer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../C#/OCS/MailServer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../C#/OCS/OCS.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../../C#/OCS/OCS.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../C#/OCS/主界面.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../C#/OCS/主界面.Designer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../C#/OCS/主界面.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../C#/OCS/主界面.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C#/OCS/好友与聊天.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../C#/OCS/好友与聊天.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C#/OCS/好友与聊天.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../C#/OCS/好友与聊天.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C#/OCS/查看资料.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../C#/OCS/查看资料.Designer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../C#/OCS/欢迎.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../C#/OCS/欢迎.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C#/PMS/.idea/.idea.PMS/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../C#/PMS/.idea/.idea.PMS/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C#/OCS/添加好友.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../C#/OCS/添加好友.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C#/chatRoomClient/chatRoomClient/chatRoomClient/Form1.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../C#/chatRoomClient/chatRoomClient/chatRoomClient/Form1.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C#/chatRoomClient/chatRoomClient/chatRoomClient/Form1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../C#/chatRoomClient/chatRoomClient/chatRoomClient/Form1.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C#/chatRoomClient/chatRoomClient/chatRoomClient/Form1.resx" beforeDir="false" afterPath="$PROJECT_DIR$/../../C#/chatRoomClient/chatRoomClient/chatRoomClient/Form1.resx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Html/HtmlDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Html/HtmlDemo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/TomcatDemo_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/TomcatDemo_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Java_EE_6_Java_EE_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HelloWorldServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TestLifeCycleServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/HelloWorldServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/TestLifeCycleServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TomcatDemo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TomcatDemo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/javax.annotation.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/javax.ejb.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/javax.jms.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/javax.persistence.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/javax.resource.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/javax.servlet.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/javax.servlet.jsp.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/javax.servlet.jsp.jstl.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/javax.transaction.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/Demo/HelloWorldServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/Demo/TestLifeCycleServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/META-INF/TomcatDemo.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index_files/GM_script" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index_files/activity_start_52498d2c.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index_files/all_async_search_2345059.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index_files/baidu_resultlogo@2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index_files/copy_rignt_24.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index_files/dong_18baaa7524814ab080a65d15e2da33fd.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index_files/every_cookie_4644b13.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index_files/github-btn.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index_files/index_e0150f3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index_files/jquery-1.10.2_1c4228b8.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index_files/logo_top_86d58ae1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index_files/min_super_fdb28b91.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index_files/min_tips_e4616384.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index_files/mt_min_2247e202.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index_files/nsguide_a8cbc2e7.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index_files/sbase_a65ca873.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index_files/search-sug_73a0f48.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index_files/skin_opacity30_98c3c665.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index_files/soutu.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index_files/super_ext_5031d813.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index_files/super_min_353cb37f.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index_files/swfobject_0178953.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index_files/tu_d03f361.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index_files/ubase_83c8f0ba.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../apache-tomcat-9.0.19/webapps/Test/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../apache-tomcat-9.0.19/webapps/Test/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../apache-tomcat-9.0.19/webapps/Test/index_files/GM_script" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../apache-tomcat-9.0.19/webapps/Test/index_files/activity_start_52498d2c.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../apache-tomcat-9.0.19/webapps/Test/index_files/all_async_search_2345059.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../apache-tomcat-9.0.19/webapps/Test/index_files/baidu_resultlogo@2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../apache-tomcat-9.0.19/webapps/Test/index_files/copy_rignt_24.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../apache-tomcat-9.0.19/webapps/Test/index_files/dong_18baaa7524814ab080a65d15e2da33fd.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../apache-tomcat-9.0.19/webapps/Test/index_files/every_cookie_4644b13.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../apache-tomcat-9.0.19/webapps/Test/index_files/github-btn.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../apache-tomcat-9.0.19/webapps/Test/index_files/index_e0150f3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../apache-tomcat-9.0.19/webapps/Test/index_files/jquery-1.10.2_1c4228b8.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../apache-tomcat-9.0.19/webapps/Test/index_files/logo_top_86d58ae1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../apache-tomcat-9.0.19/webapps/Test/index_files/min_super_fdb28b91.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../apache-tomcat-9.0.19/webapps/Test/index_files/min_tips_e4616384.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../apache-tomcat-9.0.19/webapps/Test/index_files/mt_min_2247e202.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../apache-tomcat-9.0.19/webapps/Test/index_files/nsguide_a8cbc2e7.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../apache-tomcat-9.0.19/webapps/Test/index_files/sbase_a65ca873.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../apache-tomcat-9.0.19/webapps/Test/index_files/search-sug_73a0f48.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../apache-tomcat-9.0.19/webapps/Test/index_files/skin_opacity30_98c3c665.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../apache-tomcat-9.0.19/webapps/Test/index_files/soutu.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../apache-tomcat-9.0.19/webapps/Test/index_files/super_ext_5031d813.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../apache-tomcat-9.0.19/webapps/Test/index_files/super_min_353cb37f.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../apache-tomcat-9.0.19/webapps/Test/index_files/swfobject_0178953.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../apache-tomcat-9.0.19/webapps/Test/index_files/tu_d03f361.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../apache-tomcat-9.0.19/webapps/Test/index_files/ubase_83c8f0ba.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../下载 - 快捷方式.lnk" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,32 +135,45 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="isMigrated" value="true" />
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+        <entry file="file://$PROJECT_DIR$/web/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+            <state relative-caret-position="46">
+              <caret line="2" column="11" lean-forward="true" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
             </state>
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Server.java">
+        <entry file="file://$PROJECT_DIR$/web/result.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="8" selection-start-line="8" selection-end-line="9" />
+            <state relative-caret-position="87">
+              <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="n#!!doc;n#jsp:root#0;n#!!top" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Jsp File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
@@ -64,10 +182,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/web/index.jsp" />
-        <option value="$PROJECT_DIR$/src/HelloWorldServlet.java" />
-        <option value="$PROJECT_DIR$/src/TestLifeCycleServlet.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/Server.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/result.jsp" />
       </list>
     </option>
   </component>
@@ -91,32 +206,40 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="TomcatDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TomcatDemo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TomcatDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TomcatDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="go.import.settings.migrated" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="settings.editor.selected.configurable" value="background.image.plus" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\SourceCode\Java\TomcatDemo\src" />
-      <recent name="D:\SourceCode\Java\TomcatDemo\web" />
-      <recent name="D:\SourceCode\Java\TomcatDemo\web\WEB-INF" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\SourceCode\Java\TomcatDemo\src" />
-      <recent name="D:\SourceCode\Java\TomcatDemo\web\WEB-INF" />
+      <recent name="D:\SourceCode\Java\TomcatDemo\web" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -132,17 +255,17 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="TomcatDemo" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.19" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="UPDATING_POLICY" value="restart-server" />
+    <configuration name="Tomcat 9.0.19" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.19" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
       <deployment>
         <artifact name="TomcatDemo:war exploded">
           <settings>
-            <option name="CONTEXT_PATH" value="/" />
+            <option name="CONTEXT_PATH" value="/TomcatDemo_war_exploded" />
           </settings>
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="Unnamed_TomcatDemo" />
+        <option name="BASE_DIRECTORY_NAME" value="Tomcat_9_0_19_TomcatDemo" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -150,7 +273,7 @@
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="54727" />
+        <option name="DEBUG_PORT" value="3245" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -210,179 +333,81 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="2cdc282d-b046-4bde-bae3-2dd45a49489e" name="Default Changelist" comment="" />
-      <created>1557664595722</created>
+      <changelist id="ca0a6d5a-2cf6-4b37-8f3d-ff07d5f1b9c9" name="Default Changelist" comment="" />
+      <created>1563199206687</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1557664595722</updated>
-      <workItem from="1557664599930" duration="2535000" />
-      <workItem from="1557670606040" duration="1084000" />
-      <workItem from="1558960125024" duration="2000" />
-      <workItem from="1558960159918" duration="872000" />
-      <workItem from="1559359269847" duration="3000" />
-      <workItem from="1559459872998" duration="293000" />
-      <workItem from="1559460229395" duration="20000" />
-      <workItem from="1559618477191" duration="1000" />
-      <workItem from="1560093163732" duration="1422000" />
-      <workItem from="1560095513181" duration="37000" />
+      <updated>1563199206687</updated>
+      <workItem from="1563199211014" duration="133000" />
+      <workItem from="1563199384711" duration="2045000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6269000" />
+    <option name="totallyTimeSpent" value="2178000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info id="Designer" order="0" />
-      <window_info id="Image Layers" order="1" />
-      <window_info id="UI Designer" order="2" />
-      <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info id="Web" order="5" sideWeight="0.5005612" side_tool="true" weight="0.1502146" />
-      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="7" sideWeight="0.49943882" weight="0.1502146" />
-      <window_info anchor="bottom" id="DB Execution Console" order="0" />
-      <window_info anchor="bottom" id="Run" order="1" weight="0.35578004" />
-      <window_info anchor="bottom" id="Application Servers" order="2" weight="0.32996634" />
-      <window_info anchor="bottom" id="Terminal" order="3" weight="0.32996634" />
-      <window_info anchor="bottom" id="Event Log" order="4" sideWeight="0.5011062" side_tool="true" weight="0.39955106" />
-      <window_info anchor="bottom" id="Messages" order="5" />
-      <window_info anchor="bottom" id="Java Enterprise" order="6" weight="0.32996634" />
-      <window_info anchor="bottom" id="Database Changes" order="7" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32996634" />
-      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Message" order="10" />
-      <window_info anchor="bottom" id="Find" order="11" weight="0.32996634" />
-      <window_info anchor="bottom" id="Debug" order="12" sideWeight="0.4988938" weight="0.39955106" />
-      <window_info anchor="bottom" id="Cvs" order="13" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="14" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="15" />
-      <window_info anchor="right" id="Maven" order="0" />
-      <window_info anchor="right" id="Palette" order="1" />
-      <window_info anchor="right" id="Capture Analysis" order="2" />
-      <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="right" id="Palette&#9;" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
-      <window_info anchor="right" id="DB Browser" order="9" weight="0.3299356" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25294748" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="DB Browser" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="UI Designer" order="6" />
+      <window_info id="Favorites" order="7" side_tool="true" />
+      <window_info id="Web" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="DB Execution Console" order="7" />
+      <window_info anchor="bottom" id="Application Servers" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/index_files/GM_script">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp" />
-    <entry file="file://$PROJECT_DIR$/src/ServletDemo.java" />
-    <entry file="file://$PROJECT_DIR$/src/Servlet.java" />
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-10395" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TomcatDemo.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/TestLifeCycleServlet.java" />
-    <entry file="file://$PROJECT_DIR$/src/HelloWorldServlet.java" />
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+        <state relative-caret-position="46">
+          <caret line="2" column="11" lean-forward="true" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Server.java">
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/result.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" selection-start-line="8" selection-end-line="9" />
+        <state relative-caret-position="87">
+          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="n#!!doc;n#jsp:root#0;n#!!top" />
           </folding>
         </state>
       </provider>
     </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <last-edited>TomcatDemo:war exploded</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.5" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>TomcatDemo</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>

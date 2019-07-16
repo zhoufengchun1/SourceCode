@@ -18,13 +18,13 @@ namespace OCS
             {
                 char ch;
                 int num = random.Next();
-                if ((num % 2) == 0)
+                if (num % 2 == 0)
                 {
-                    ch = (char) (0x30 + ((ushort) (num % 10)));
+                    ch = (char) (0x30 + (ushort) (num % 10));
                 }
                 else
                 {
-                    ch = (char) (0x41 + ((ushort) (num % 0x1a)));
+                    ch = (char) (0x41 + (ushort) (num % 0x1a));
                 }
 
                 str = str + ch;

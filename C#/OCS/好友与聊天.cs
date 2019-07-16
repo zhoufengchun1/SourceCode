@@ -12,6 +12,7 @@ using System.Threading;
 using MySql.Data.MySqlClient;
 using OCS.Resources;
 using Org.BouncyCastle.Crypto.Tls;
+using System.Diagnostics;
 
 namespace OCS
 {
@@ -30,9 +31,8 @@ namespace OCS
         {
             InitializeComponent();
             this.user = user;
-            ipadr = IPAddress.Loopback;
             group = new List<string>();
-            setConnect();
+            textBox3.Text = IPAddress.Loopback.ToString();
         }
 
         private void 好友与聊天_Load(object sender, EventArgs e)
@@ -149,15 +149,12 @@ namespace OCS
                         if (args.IsCompleted) //判断该异步操作是否执行完毕
                         {
                             Byte[] bytesSend = new Byte[4096];
-                            if (user.UserName == null)
-                                bytesSend = Encoding.UTF8.GetBytes(user.UserId + "$"); //用户名，这里是刚刚连接上时需要传过去
-                            else
-                                bytesSend = Encoding.UTF8.GetBytes(user.UserName + "$"); //用户名，这里是刚刚连接上时需要传过去
 
+                            bytesSend = Encoding.UTF8.GetBytes(user.UserId + "$");
                             if (clientSocket != null && clientSocket.Connected)
                             {
                                 clientSocket.Send(bytesSend);
-                                textBox2.Focus(); //将焦点放在
+                                //textBox2.Focus(); //将焦点放在
                                 thDataFromServer = new Thread(DataFromServer);
                                 thDataFromServer.IsBackground = true;
                                 thDataFromServer.Start();
@@ -167,6 +164,13 @@ namespace OCS
                                 MessageBox.Show("服务器已关闭");
                             }
                         }
+                        textBox3.BeginInvoke(new Action(() =>
+                        {
+                            if (clientSocket != null && clientSocket.Connected)
+                            {
+                                textBox3.Enabled = false;
+                            }
+                        }));
                     }, null);
                 }
                 catch (SocketException ex)
@@ -211,25 +215,23 @@ namespace OCS
 
                             return;
                         }
+                       //ShowMsg(dataFromClient);
+                       //Debug.WriteLine(dataFromClient);
+                           if (dataFromClient.StartsWith("#") && dataFromClient.EndsWith("#"))
+                           {
+                               String userName = dataFromClient.Substring(1, dataFromClient.Length - 2);
+                               //MessageBox.Show("用户名：[" + userName + "]已经存在，请尝试其他用户名并重试");
 
-
-                        if (dataFromClient.StartsWith("#") && dataFromClient.EndsWith("#"))
-                        {
-                            String userName = dataFromClient.Substring(1, dataFromClient.Length - 2);
-                            this.BeginInvoke(new Action(() =>
-                            {
-                                MessageBox.Show("用户名：[" + userName + "]已经存在，请尝试其他用户名并重试");
-                            }));
-                            isListen = false;
-                            clientSocket.Send(Encoding.UTF8.GetBytes("$"));
-                            clientSocket.Close();
-                            clientSocket = null;
-                        }
-                        else
-                        {
-                            //txtName.Enabled = false;    //当用户名唯一时才禁止再次输入用户名
-                            ShowMsg(dataFromClient);
-                        }
+                               isListen = false;
+                               clientSocket.Send(Encoding.UTF8.GetBytes("$"));
+                               clientSocket.Close();
+                               clientSocket = null;
+                           }
+                           else
+                           {
+                               //txtName.Enabled = false;    //当用户名唯一时才禁止再次输入用户名
+                               ShowMsg(dataFromClient);
+                           }
                     }
                 }
             }
@@ -251,8 +253,9 @@ namespace OCS
             textBox1.BeginInvoke(new Action(() =>
             {
                 textBox1.Text +=
-                    Environment.NewLine + msg; // 在 Windows 环境中，C# 语言 Environment.NewLine == "\r\n" 结果为 true
-                //txtReceiveMsg.ScrollToCaret();
+                Environment.NewLine + msg; // 在 Windows 环境中，C# 语言 Environment.NewLine == "\r\n" 结果为 true
+                                           //txtReceiveMsg.ScrollToCaret();
+
             }));
         }
 
@@ -387,7 +390,26 @@ namespace OCS
 
         private void button2_Click(object sender, EventArgs e)
         {
+            setConnect();
+        }
 
+        private void 好友与聊天_Shown(object sender, EventArgs e)
+        {
+            //setConnect();
+        }
+
+        private void 好友与聊天_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (clientSocket != null && clientSocket.Connected)
+            {
+                clientSocket.Send(Encoding.UTF8.GetBytes("$"));
+
+                thDataFromServer.Abort();
+                clientSocket.Send(Encoding.UTF8.GetBytes("$"));
+
+                clientSocket.Close();
+                clientSocket = null;
+            }
         }
     }
 }

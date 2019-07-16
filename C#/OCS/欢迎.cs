@@ -20,6 +20,7 @@ namespace OCS
 
         public 欢迎()
         {
+            new Sunisoft.IrisSkin.SkinEngine().SkinFile = "skins/WaveColor2.ssk";
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterScreen;
             this.MaximizeBox = false;
