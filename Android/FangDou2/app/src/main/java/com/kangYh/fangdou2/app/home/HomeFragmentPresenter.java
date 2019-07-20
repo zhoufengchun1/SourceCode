@@ -27,16 +27,13 @@ public class HomeFragmentPresenter implements HomeFragmentContract.Presenter {
 
     //大模块的图片数组
     private static final int[] bigModuleDrawables = {
-            R.mipmap.homepage_icon_light_food_b,
-            R.mipmap.homepage_icon_light_movie_b,
-            R.mipmap.homepage_icon_light_hotel_b,
-            R.mipmap.homepage_icon_light_amusement_b,
-            R.mipmap.homepage_icon_light_takeout_b,
+            R.mipmap.homepage_icon_light_rankinglist,
+            R.mipmap.homepage_icon_light_like,
     };
 
     //大模块的标题数组
     private static final String[] bigModuleTitles = {
-            "美食", "电影/演出", "酒店住宿", "休闲娱乐", "外卖"
+           "排行榜","猜你喜欢"
     };
 
     private HomeFragmentContract.View mFragment;
@@ -47,7 +44,7 @@ public class HomeFragmentPresenter implements HomeFragmentContract.Presenter {
     private CloseableRxServiceExecutor executor;
 
     //每页的大小
-    private static final int PAGE_SIZE = 10;
+    private static final int PAGE_SIZE = 5;
     //当前是第几页
     private int mCurrentPage = 0;
     //是否没有更多数据了
@@ -163,7 +160,7 @@ public class HomeFragmentPresenter implements HomeFragmentContract.Presenter {
      * 初始化banner下面的5个大模块
      */
     private void initBigModule() {
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < 2; i++) {
             IconTitleView iconTitleView = IconTitleView.newInstance(mContext, bigModuleDrawables[i], bigModuleTitles[i]);
             // 设置宽高和权重weight，使每个View占用相同的宽度
             LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(
@@ -208,16 +205,12 @@ public class HomeFragmentPresenter implements HomeFragmentContract.Presenter {
     @Override
     public List<IconTitleModel> getIconTitleModels() {
         List<IconTitleModel> datas = new ArrayList<>();
-        datas.add(new IconTitleModel(R.mipmap.homepage_icon_light_ktv_s, "KTV"));
-        datas.add(new IconTitleModel(R.mipmap.homepage_icon_light_toursaround_s, "周边游"));
-        datas.add(new IconTitleModel(R.mipmap.homepage_icon_light_transportation_s, "机票/火车票"));
-        datas.add(new IconTitleModel(R.mipmap.homepage_icon_light_beauty_s, "丽人/美发"));
-        datas.add(new IconTitleModel(R.mipmap.homepage_icon_light_travel_s, "旅游/出行"));
-        datas.add(new IconTitleModel(R.mipmap.homepage_icon_light_fitness_s, "跑腿/代购"));
-        datas.add(new IconTitleModel(R.mipmap.homepage_icon_light_amusement_s, "景点/门票"));
-        datas.add(new IconTitleModel(R.mipmap.homepage_icon_light_bath_s, "温泉"));
-        datas.add(new IconTitleModel(R.mipmap.homepage_icon_light_lifeservice_s, "榛果民宿"));
-        datas.add(new IconTitleModel(R.mipmap.homepage_icon_light_more_s, "全部分类"));
+        datas.add(new IconTitleModel(R.mipmap.homepage_icon_light_putonghua, "普通话"));
+        datas.add(new IconTitleModel(R.mipmap.homepage_icon_light_sichuanhua, "四川话"));
+        datas.add(new IconTitleModel(R.mipmap.homepage_icon_light_dongbeihua, "东北话"));
+        datas.add(new IconTitleModel(R.mipmap.homepage_icon_light_guangdonghua, "粤语"));
+        datas.add(new IconTitleModel(R.mipmap.homepage_icon_light_qita, "全部种类"));
+
         return datas;
     }
 

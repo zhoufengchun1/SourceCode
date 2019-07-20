@@ -2,14 +2,11 @@ package com.kangYh.fangdou2.app;
 
 import android.os.Bundle;
 
-
 import com.kangYh.fangdou2.MyApplication;
 import com.kangYh.fangdou2.R;
 import com.kangYh.fangdou2.app.discover.DiscoverFragment;
 import com.kangYh.fangdou2.app.home.HomeFragment;
-import com.kangYh.fangdou2.app.mine.MineFragment;
 import com.kangYh.fangdou2.app.nearby.NearbyFragment;
-import com.kangYh.fangdou2.app.order.OrderFragment;
 import com.kangYh.fangdou2.base.BaseActivity;
 import com.kangYh.fangdou2.base.BaseFragment;
 import com.kangYh.fangdou2.di.components.DaggerActivityComponent;

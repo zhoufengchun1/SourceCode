@@ -45,7 +45,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:text="¥18"
-        android:textColor="#FF0000"
+        android:textColor="#000000"
         android:textSize="18sp"
         app:layout_constraintLeft_toLeftOf="@id/tv_shop_location"
         app:layout_constraintTop_toBottomOf="@+id/tv_shop_location" />

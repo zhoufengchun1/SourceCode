@@ -1,7 +1,6 @@
 package com.kangYh.fangdou2.app.home;
 
 import android.os.Bundle;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,7 +14,6 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.cachecats.domin.shop.model.ShopModel;
-
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.kangYh.fangdou2.MyApplication;
 import com.kangYh.fangdou2.R;
@@ -26,7 +24,6 @@ import com.kangYh.fangdou2.base.BaseFragment;
 import com.kangYh.fangdou2.di.components.DaggerActivityComponent;
 import com.kangYh.fangdou2.utils.GlideImageLoader;
 import com.kangYh.fangdou2.utils.ToastUtils;
-import com.kangYh.fangdou2.widget.HomeAdsView;
 import com.kangYh.fangdou2.widget.IconTitleView;
 import com.kangYh.fangdou2.widget.decoration.DividerItemDecoration;
 import com.kangYh.fangdou2.widget.decoration.HomeGridDecoration;
@@ -40,7 +37,6 @@ import com.youth.banner.Banner;
 import com.youth.banner.BannerConfig;
 import com.youth.banner.Transformer;
 
-import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
@@ -64,8 +60,6 @@ public class HomeFragment extends BaseFragment implements HomeFragmentContract.V
     @BindView(R.id.recyclerview_little_module)
     RecyclerView littleModuleRecyclerView;
     //4块广告封装成的自定义View
-    @BindView(R.id.home_ads_view)
-    HomeAdsView homeAdsView;
     //团购商店列表
     @BindView(R.id.recycler_view_shops)
     RecyclerView rvShopList;
@@ -106,7 +100,7 @@ public class HomeFragment extends BaseFragment implements HomeFragmentContract.V
     private void init() {
         initBanner();
         initLittleModuleRecyclerView();
-        initAds();
+        //initAds();
         initShopList();
         initSmartRefreshLayout();
     }
@@ -184,30 +178,6 @@ public class HomeFragment extends BaseFragment implements HomeFragmentContract.V
     @Override
     public void setShopListData(List<ShopModel> shopModels) {
         mShopListAdapter.setNewData(shopModels);
-    }
-
-    private void initAds() {
-        homeAdsView.setOnAdsClickListener(new HomeAdsView.OnAdsClickListener() {
-            @Override
-            public void onAds1Click() {
-                ToastUtils.show("Ads1");
-            }
-
-            @Override
-            public void onAds2Click() {
-                ToastUtils.show("Ads2");
-            }
-
-            @Override
-            public void onAds3Click() {
-                ToastUtils.show("Ads3");
-            }
-
-            @Override
-            public void onAds4Click() {
-                ToastUtils.show("Ads4");
-            }
-        });
     }
 
     /**
