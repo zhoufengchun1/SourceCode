@@ -19,6 +19,7 @@ ext {
     dbflowVersion = "4.2.4"
     stethoVersion = '1.5.1'
     smartRefreshLayoutVersion = "1.0.4"
+    jiaozivideoplayerVersion = "7.0.5"
 
     app = [
             recyclerView                 : "com.android.support:recyclerview-v7:${recyclerViewVersion}",
@@ -39,7 +40,7 @@ ext {
             dbflowRx2                    : "com.github.Raizlabs.DBFlow:dbflow-rx2:${dbflowVersion}",
             stetho                       : "com.facebook.stetho:stetho:${stethoVersion}",
             smartRefreshLayout           : "com.scwang.smartrefresh:SmartRefreshLayout:${smartRefreshLayoutVersion}",
-
+            jiaozivideoplayer            : "cn.jzvd:jiaozivideoplayer:${jiaozivideoplayerVersion}",
     ]
 
     data = [

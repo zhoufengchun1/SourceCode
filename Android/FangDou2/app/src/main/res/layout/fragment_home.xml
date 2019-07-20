@@ -17,15 +17,7 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="( ＾∀＾）／欢迎＼( ＾∀＾）"
-                android:gravity="center"
-                />
-
-
-            <ScrollView
+            <androidx.core.widget.NestedScrollView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
@@ -67,14 +59,16 @@
                         android:layout_marginBottom="10dp" />
 
 
-                    <!--团购列表-->
                     <androidx.recyclerview.widget.RecyclerView
-                        android:id="@+id/recycler_view_shops"
+                        android:id="@+id/recyclerview_videolist"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content">
+
+                    </androidx.recyclerview.widget.RecyclerView>
+
 
                 </LinearLayout>
-            </ScrollView>
+            </androidx.core.widget.NestedScrollView>
         </LinearLayout>
 
     </com.scwang.smartrefresh.layout.SmartRefreshLayout>

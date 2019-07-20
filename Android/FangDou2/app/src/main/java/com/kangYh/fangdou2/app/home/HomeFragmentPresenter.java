@@ -7,10 +7,10 @@ import com.cachecats.domin.shop.service.GroupPackageService;
 import com.cachecats.domin.shop.service.ShopService;
 import com.kangYh.fangdou2.R;
 import com.kangYh.fangdou2.app.home.model.IconTitleModel;
+import com.kangYh.fangdou2.app.home.model.ImageTitleModel;
 import com.kangYh.fangdou2.mock.MockUtils;
 import com.kangYh.fangdou2.utils.ToastUtils;
 import com.kangYh.fangdou2.widget.IconTitleView;
-import com.kangYh.fangdou2.widget.refresh.CustomRefreshFooter;
 import com.orhanobut.logger.Logger;
 import com.solo.common.rxjava.CloseableRxServiceExecutor;
 
@@ -43,14 +43,6 @@ public class HomeFragmentPresenter implements HomeFragmentContract.Presenter {
     private MockUtils mockUtils;
     private CloseableRxServiceExecutor executor;
 
-    //每页的大小
-    private static final int PAGE_SIZE = 5;
-    //当前是第几页
-    private int mCurrentPage = 0;
-    //是否没有更多数据了
-    private boolean isNoMoreData = false;
-
-
     @Inject
     public HomeFragmentPresenter(Context context,
                                  ShopService shopService,
@@ -76,85 +68,16 @@ public class HomeFragmentPresenter implements HomeFragmentContract.Presenter {
         mockUtils.mockShopDataToDB();
         mockUtils.clearShop();
         mockUtils.mockGroupPackagesToDB();
-        getAllShops();
+//        getAllShops();
         mockUtils.mockGroupInfoData();
-        getFirstPageShops();
+//        getFirstPageShops();
     }
 
     @Override
     public void onDestroy() {
-        mCurrentPage = 0;
-        isNoMoreData = false;
     }
 
 
-    /**
-     * 获取所有的商铺信息
-     */
-    private void getAllShops() {
-        executor.execute(shopService.getAllShops(), shopModels -> {
-            Logger.d(shopModels);
-            mFragment.setShopListData(shopModels);
-        });
-    }
-
-    /**
-     * 获取首页商店信息
-     */
-    private void getFirstPageShops() {
-        executor.execute(shopService.getShopsByPage(0, PAGE_SIZE), shopModels -> {
-            Logger.d(shopModels);
-            mFragment.setShopListData(shopModels);
-        });
-    }
-
-
-    @Override
-    public void onLoadMore() {
-        if (isNoMoreData) {
-            return;
-        }
-
-        mCurrentPage++;
-        executor.execute(
-                shopService.getShopsByPage(mCurrentPage, PAGE_SIZE),
-                shopModels -> {
-                    Logger.d(shopModels);
-                    //返回结果为空则说明没有更多数据了
-                    if (shopModels.isEmpty()) {
-                        isNoMoreData = true;
-                        //重置Footer为没有更多数据状态
-                        mFragment.setRefreshFooter(new CustomRefreshFooter(mContext, "没有更多啦"));
-                        mFragment.finishLoadmoreWithNoMoreData();
-                        return;
-                    }
-                    mFragment.addData2RecyclerView(shopModels);
-                    mFragment.finishLoadmore(true);
-                },
-                error -> {
-                    Logger.d(error);
-                    mFragment.finishLoadmore(false);
-                });
-    }
-
-    @Override
-    public void onRefresh() {
-        mCurrentPage = 0;
-        isNoMoreData = false;
-        mFragment.setRefreshFooter(new CustomRefreshFooter(mContext, "加载中…"));
-        //重置没有更多数据状态
-        mFragment.resetNoMoreData();
-        executor.execute(
-                shopService.getShopsByPage(0, PAGE_SIZE),
-                shopModels -> {
-                    Logger.d(shopModels);
-                    mFragment.setShopListData(shopModels);
-                    mFragment.finishRefresh(true);
-                },
-                error -> {
-                    mFragment.finishRefresh(false);
-                });
-    }
 
     /**
      * 初始化banner下面的5个大模块
@@ -213,6 +136,21 @@ public class HomeFragmentPresenter implements HomeFragmentContract.Presenter {
 
         return datas;
     }
+
+    @Override
+    public List<ImageTitleModel> getImageTitleModels()
+    {
+        List<ImageTitleModel> datas = new ArrayList<>();
+        datas.add(new ImageTitleModel(R.mipmap.homepage_icon_light_putonghua, "test1"));
+        datas.add(new ImageTitleModel(R.mipmap.homepage_icon_light_sichuanhua, "test2"));
+        datas.add(new ImageTitleModel(R.mipmap.homepage_icon_light_dongbeihua, "test3"));
+        datas.add(new ImageTitleModel(R.mipmap.homepage_icon_light_guangdonghua, "test4"));
+        datas.add(new ImageTitleModel(R.mipmap.homepage_icon_light_qita, "test5"));
+
+        return datas;
+    }
+
+
 
 
 }

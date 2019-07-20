@@ -4,6 +4,7 @@ import com.cachecats.domin.shop.model.ShopModel;
 
 
 import com.kangYh.fangdou2.app.home.model.IconTitleModel;
+import com.kangYh.fangdou2.app.home.model.ImageTitleModel;
 import com.kangYh.fangdou2.base.BasePresenter;
 import com.kangYh.fangdou2.widget.IconTitleView;
 import com.scwang.smartrefresh.layout.api.RefreshFooter;
@@ -20,23 +21,7 @@ public interface HomeFragmentContract {
 
         void addViewToBigModule(IconTitleView iconTitleView);
 
-        void setShopListData(List<ShopModel> shopModels);
-
-        void finishLoadmore(boolean success);
-
-        void finishLoadmoreWithNoMoreData();
-
-        void resetNoMoreData();
-
-        void finishRefresh(boolean success);
-
-        void setRefreshFooter(RefreshFooter footer);
-
-        void addData2RecyclerView(List<ShopModel> shopModels);
-
-
-
-
+        void initVideoPlayer();
     }
 
     interface Presenter extends BasePresenter<View>
@@ -46,8 +31,9 @@ public interface HomeFragmentContract {
 
         List<IconTitleModel> getIconTitleModels();
 
-        void onLoadMore();
+        List<ImageTitleModel> getImageTitleModels();
 
-        void onRefresh();
+//        void onLoadMore();
+
     }
 }

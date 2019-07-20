@@ -1,10 +1,12 @@
 package com.kangYh.fangdou2.app.home;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -13,43 +15,47 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.cachecats.domin.shop.model.ShopModel;
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.kangYh.fangdou2.MyApplication;
 import com.kangYh.fangdou2.R;
 import com.kangYh.fangdou2.app.home.adapter.LittleModuleAdapter;
-import com.kangYh.fangdou2.app.home.adapter.ShopListAdapter;
+import com.kangYh.fangdou2.app.home.adapter.VideoListAdapter;
 import com.kangYh.fangdou2.app.home.model.IconTitleModel;
+import com.kangYh.fangdou2.app.home.model.ImageTitleModel;
 import com.kangYh.fangdou2.base.BaseFragment;
 import com.kangYh.fangdou2.di.components.DaggerActivityComponent;
 import com.kangYh.fangdou2.utils.GlideImageLoader;
 import com.kangYh.fangdou2.utils.ToastUtils;
 import com.kangYh.fangdou2.widget.IconTitleView;
-import com.kangYh.fangdou2.widget.decoration.DividerItemDecoration;
 import com.kangYh.fangdou2.widget.decoration.HomeGridDecoration;
 import com.kangYh.fangdou2.widget.refresh.CustomRefreshFooter;
 import com.kangYh.fangdou2.widget.refresh.CustomRefreshHeader;
 import com.scwang.smartrefresh.layout.SmartRefreshLayout;
-import com.scwang.smartrefresh.layout.api.RefreshFooter;
 import com.scwang.smartrefresh.layout.api.RefreshLayout;
+import com.scwang.smartrefresh.layout.constant.SpinnerStyle;
+import com.scwang.smartrefresh.layout.footer.BallPulseFooter;
+import com.scwang.smartrefresh.layout.header.BezierRadarHeader;
+import com.scwang.smartrefresh.layout.listener.OnRefreshListener;
 import com.scwang.smartrefresh.layout.listener.OnRefreshLoadmoreListener;
 import com.youth.banner.Banner;
 import com.youth.banner.BannerConfig;
 import com.youth.banner.Transformer;
 
-import java.util.Collections;
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.inject.Inject;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import cn.jzvd.Jzvd;
 
 /**
  * Created by solo on 2018/1/8.
  */
 
-public class HomeFragment extends BaseFragment implements HomeFragmentContract.View {
+public class HomeFragment extends BaseFragment implements HomeFragmentContract.View
+{
 
     @BindView(R.id.home_banner)
     Banner banner;
@@ -60,23 +66,24 @@ public class HomeFragment extends BaseFragment implements HomeFragmentContract.V
     @BindView(R.id.recyclerview_little_module)
     RecyclerView littleModuleRecyclerView;
     //4块广告封装成的自定义View
-    //团购商店列表
-    @BindView(R.id.recycler_view_shops)
-    RecyclerView rvShopList;
     //下拉刷新组件
     @BindView(R.id.smartRefreshLayout_home)
-    SmartRefreshLayout smartRefreshLayout;
+    RefreshLayout smartRefreshLayout;
 
+    @BindView(R.id.recyclerview_videolist)
+    RecyclerView videoListRecyclerView;
     @Inject
     HomeFragmentContract.Presenter presenter;
+    private VideoListAdapter videoListAdapter;
 
-    private ShopListAdapter mShopListAdapter;
-    private List<ShopModel> mShopModels = Collections.EMPTY_LIST;
+    //private ShopListAdapter mShopListAdapter;
+//    private List<ShopModel> mShopModels = Collections.EMPTY_LIST;
 
 
     @Nullable
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState)
+    {
         View view = inflater.inflate(R.layout.fragment_home, null);
         //绑定 ButterKnife
         ButterKnife.bind(this, view);
@@ -92,98 +99,66 @@ public class HomeFragment extends BaseFragment implements HomeFragmentContract.V
     }
 
     @Override
-    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+    public void onActivityCreated(@Nullable Bundle savedInstanceState)
+    {
         super.onActivityCreated(savedInstanceState);
         init();
     }
 
-    private void init() {
+    private void init()
+    {
         initBanner();
         initLittleModuleRecyclerView();
-        //initAds();
-        initShopList();
+        initVideoRecyclerView();
         initSmartRefreshLayout();
     }
 
 
     //初始化下拉刷新控件
-    private void initSmartRefreshLayout() {
-        smartRefreshLayout.setRefreshHeader(new CustomRefreshHeader(getActivity()));
-        smartRefreshLayout.setRefreshFooter(new CustomRefreshFooter(getActivity(), "加载中…"));
+    private void initSmartRefreshLayout()
+    {
+        smartRefreshLayout.setRefreshHeader(new BezierRadarHeader(getActivity()).setEnableHorizontalDrag(true));
+        //设置 Footer 为 球脉冲 样式
+        smartRefreshLayout.setRefreshFooter(new BallPulseFooter(getActivity()).setSpinnerStyle(SpinnerStyle.Scale));
         smartRefreshLayout.setEnableScrollContentWhenLoaded(true);//是否在加载完成时滚动列表显示新的内容
         smartRefreshLayout.setEnableFooterFollowWhenLoadFinished(true);
-        smartRefreshLayout.setOnRefreshLoadmoreListener(new OnRefreshLoadmoreListener() {
+        smartRefreshLayout.setOnRefreshLoadmoreListener(new OnRefreshLoadmoreListener()
+        {
             @Override
-            public void onLoadmore(RefreshLayout refreshlayout) {
-                presenter.onLoadMore();
+            public void onLoadmore(RefreshLayout refreshlayout)
+            {
+                videoListAdapter.addData(new ImageTitleModel(R.mipmap.homepage_icon_light_sichuanhua, "test2"));
+                videoListAdapter.addData(new ImageTitleModel(R.mipmap.homepage_icon_light_sichuanhua, "test2"));
+                videoListAdapter.addData(new ImageTitleModel(R.mipmap.homepage_icon_light_sichuanhua, "test2"));
+                videoListAdapter.addData(new ImageTitleModel(R.mipmap.homepage_icon_light_sichuanhua, "test2"));
+                videoListAdapter.notifyDataSetChanged();
+                refreshlayout.finishLoadmore(true);
             }
 
             @Override
-            public void onRefresh(RefreshLayout refreshlayout) {
-                presenter.onRefresh();
+            public void onRefresh(RefreshLayout refreshlayout)
+            {
+                Log.d("haha", "555");
+                //模拟网络请求到的数据
+                List<ImageTitleModel> datas = new ArrayList<>();
+                datas.add(new ImageTitleModel(R.mipmap.homepage_icon_light_putonghua, "test1"));
+                datas.add(new ImageTitleModel(R.mipmap.homepage_icon_light_sichuanhua, "test2"));
+                datas.add(new ImageTitleModel(R.mipmap.homepage_icon_light_dongbeihua, "test3"));
+                datas.add(new ImageTitleModel(R.mipmap.homepage_icon_light_guangdonghua, "test4"));
+                datas.add(new ImageTitleModel(R.mipmap.homepage_icon_light_qita, "test5"));
+                videoListAdapter.addData(datas);
+                refreshlayout.finishLoadmore(2000/*,false*/);//不传时间则立即停止刷新    传入false表示加载失败
             }
         });
+
     }
 
-    @Override
-    public void finishLoadmore(boolean success) {
-        smartRefreshLayout.finishLoadmore(success);
-    }
-
-    @Override
-    public void finishLoadmoreWithNoMoreData() {
-        smartRefreshLayout.finishLoadmoreWithNoMoreData();
-    }
-
-    @Override
-    public void finishRefresh(boolean success) {
-        smartRefreshLayout.finishRefresh(success);
-    }
-
-    @Override
-    public void resetNoMoreData() {
-        smartRefreshLayout.resetNoMoreData();
-    }
-
-    /**
-     * 加载更多后添加新的数据到RecyclerView
-     * @param shopModels
-     */
-    @Override
-    public void addData2RecyclerView(List<ShopModel> shopModels) {
-        mShopListAdapter.addData(shopModels);
-    }
-
-    @Override
-    public void setRefreshFooter(RefreshFooter footer) {
-        smartRefreshLayout.setRefreshFooter(footer);
-    }
-
-    private void initShopList() {
-        LinearLayoutManager lm = new LinearLayoutManager(getActivity(), LinearLayoutManager.VERTICAL, false) {
-            @Override
-            public boolean canScrollVertically() {
-                return false;
-            }
-        };
-        rvShopList.setLayoutManager(lm);
-        rvShopList.addItemDecoration(new DividerItemDecoration(getActivity(), DividerItemDecoration.VERTICAL_LIST));
-        rvShopList.setItemAnimator(new DefaultItemAnimator());
-        mShopListAdapter = new ShopListAdapter(this.getActivity(), R.layout.item_home_shop_list, mShopModels);
-        mShopListAdapter.setUpFetchEnable(true);
-        rvShopList.setAdapter(mShopListAdapter);
-//        mShopListAdapter.setEmptyView();
-    }
-
-    @Override
-    public void setShopListData(List<ShopModel> shopModels) {
-        mShopListAdapter.setNewData(shopModels);
-    }
 
     /**
      * 初始化小模块的RecyclerView
      */
-    private void initLittleModuleRecyclerView() {
+    private void initLittleModuleRecyclerView()
+    {
 
         GridLayoutManager gridLayoutManager = new GridLayoutManager(getActivity(), 5);
         //设置LayoutManager
@@ -200,36 +175,71 @@ public class HomeFragment extends BaseFragment implements HomeFragmentContract.V
 
         littleModuleRecyclerView.setAdapter(littleModuleAdapter);
         //设置item点击事件
-        littleModuleAdapter.setOnItemClickListener(new BaseQuickAdapter.OnItemClickListener() {
+        littleModuleAdapter.setOnItemClickListener(new BaseQuickAdapter.OnItemClickListener()
+        {
             @Override
-            public void onItemClick(BaseQuickAdapter adapter, View view, int position) {
+            public void onItemClick(BaseQuickAdapter adapter, View view, int position)
+            {
                 ToastUtils.show(iconTitleModels.get(position).getTitle());
             }
         });
 
     }
 
+    private void initVideoRecyclerView()
+    {
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getActivity(), LinearLayoutManager.VERTICAL, false)
+        {
+            @Override
+            public boolean canScrollVertically()
+            {
+                return false;
+            }
+        };
+        videoListRecyclerView.setLayoutManager(linearLayoutManager);
+        videoListRecyclerView.addItemDecoration(new HomeGridDecoration(12));
+        videoListRecyclerView.setItemAnimator(new DefaultItemAnimator());
+        List<ImageTitleModel> imageTitleModels = presenter.getImageTitleModels();
+        videoListAdapter = new VideoListAdapter(R.layout.item_video_list, imageTitleModels);
+
+        videoListRecyclerView.setAdapter(videoListAdapter);
+
+        videoListAdapter.setOnItemClickListener(new BaseQuickAdapter.OnItemClickListener()
+        {
+            @Override
+            public void onItemClick(BaseQuickAdapter adapter, View view, int position)
+            {
+                ToastUtils.show(imageTitleModels.get(position).getTitle());
+            }
+        });
+
+    }
+
     @Override
-    public void onStart() {
+    public void onStart()
+    {
         super.onStart();
         //增加banner的体验
         banner.startAutoPlay();
     }
 
     @Override
-    public void onResume() {
+    public void onResume()
+    {
         super.onResume();
         presenter.onStart();
     }
 
     @Override
-    public void onStop() {
+    public void onStop()
+    {
         super.onStop();
         //增加banner的体验
         banner.stopAutoPlay();
     }
 
-    public void initBanner() {
+    private void initBanner()
+    {
         //设置banner的各种属性
         banner.setBannerStyle(BannerConfig.CIRCLE_INDICATOR)
                 .setImageLoader(new GlideImageLoader())
@@ -245,14 +255,33 @@ public class HomeFragment extends BaseFragment implements HomeFragmentContract.V
      * 往根布局上添加View
      */
     @Override
-    public void addViewToBigModule(IconTitleView iconTitleView) {
+    public void addViewToBigModule(IconTitleView iconTitleView)
+    {
         llBigModule.addView(iconTitleView);
+    }
+
+    @Override
+    public void initVideoPlayer()
+    {
+       /* JzvdStd myJzvdStd = (JzvdStd) getActivity().findViewById(R.id.jz_video);
+        myJzvdStd.setUp("http://jzvd.nathen.cn/342a5f7ef6124a4a8faf00e738b8bee4/cf6d9db0bd4d41f59d09ea0a81e918fd-5287d2089db37e62345123a1be272f8b.mp4"
+                , "饺子快长大", JzvdStd.SCREEN_NORMAL);
+        Glide.with(this).load("http://jzvd-pic.nathen.cn/jzvd-pic/1bb2ebbe-140d-4e2e-abd2-9e7e564f71ac.png").into(myJzvdStd.thumbImageView);
+        */
     }
 
 
     @Override
-    public void onDestroy() {
+    public void onDestroy()
+    {
         super.onDestroy();
         presenter.onDestroy();
+    }
+
+    @Override
+    public void onPause()
+    {
+        super.onPause();
+        Jzvd.releaseAllVideos();
     }
 }
