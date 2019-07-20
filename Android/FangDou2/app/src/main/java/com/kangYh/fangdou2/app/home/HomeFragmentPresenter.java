@@ -76,11 +76,11 @@ public class HomeFragmentPresenter implements HomeFragmentContract.Presenter {
     public void onStart() {
 
         initBigModule();
-//        mockUtils.mockShopDataToDB();
-//        mockUtils.clearShop();
-//        mockUtils.mockGroupPackagesToDB();
-//        getAllShops();
-//        mockUtils.mockGroupInfoData();
+        mockUtils.mockShopDataToDB();
+        mockUtils.clearShop();
+        mockUtils.mockGroupPackagesToDB();
+        getAllShops();
+        mockUtils.mockGroupInfoData();
         getFirstPageShops();
     }
 

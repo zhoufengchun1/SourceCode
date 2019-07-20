@@ -31,10 +31,6 @@ public class CustomBottomTabWidget extends LinearLayout
     LinearLayout llMenuNearby;
     @BindView(R.id.ll_menu_discover)
     LinearLayout llMenuDiscover;
-    @BindView(R.id.ll_menu_order)
-    LinearLayout llMenuOrder;
-    @BindView(R.id.ll_menu_mine)
-    LinearLayout llMenuMine;
     @BindView(R.id.vp_tab_widget)
     ViewPager viewPager;
 
@@ -96,12 +92,6 @@ public class CustomBottomTabWidget extends LinearLayout
                     case 2:
                         selectTab(MenuTab.DISCOVER);
                         break;
-                    case 3:
-                        selectTab(MenuTab.ORDER);
-                        break;
-                    case 4:
-                        selectTab(MenuTab.MINE);
-                        break;
                     default:
                         selectTab(MenuTab.HOME);
                         break;
@@ -118,7 +108,7 @@ public class CustomBottomTabWidget extends LinearLayout
     /**
      * 点击事件集合
      */
-    @OnClick({R.id.ll_menu_home_page, R.id.ll_menu_nearby, R.id.ll_menu_discover, R.id.ll_menu_order, R.id.ll_menu_mine})
+    @OnClick({R.id.ll_menu_home_page, R.id.ll_menu_nearby, R.id.ll_menu_discover})
     public void onViewClicked(View view) {
 
         switch (view.getId()) {
@@ -134,14 +124,6 @@ public class CustomBottomTabWidget extends LinearLayout
             case R.id.ll_menu_discover:
                 selectTab(MenuTab.DISCOVER);
                 viewPager.setCurrentItem(2);
-                break;
-            case R.id.ll_menu_order:
-                selectTab(MenuTab.ORDER);
-                viewPager.setCurrentItem(3);
-                break;
-            case R.id.ll_menu_mine:
-                selectTab(MenuTab.MINE);
-                viewPager.setCurrentItem(4);
                 break;
         }
     }
@@ -165,11 +147,6 @@ public class CustomBottomTabWidget extends LinearLayout
             case DISCOVER:
                 llMenuDiscover.setActivated(true);
                 break;
-            case ORDER:
-                llMenuOrder.setActivated(true);
-                break;
-            case MINE:
-                llMenuMine.setActivated(true);
         }
 
     }
@@ -180,8 +157,6 @@ public class CustomBottomTabWidget extends LinearLayout
         llMenuHome.setActivated(false);
         llMenuNearby.setActivated(false);
         llMenuDiscover.setActivated(false);
-        llMenuOrder.setActivated(false);
-        llMenuMine.setActivated(false);
     }
 
     /**
@@ -191,7 +166,5 @@ public class CustomBottomTabWidget extends LinearLayout
         HOME,
         NEARBY,
         DISCOVER,
-        ORDER,
-        MINE
     }
 }

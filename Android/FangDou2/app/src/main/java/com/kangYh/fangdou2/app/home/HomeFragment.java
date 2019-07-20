@@ -40,6 +40,7 @@ import com.youth.banner.Banner;
 import com.youth.banner.BannerConfig;
 import com.youth.banner.Transformer;
 
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
@@ -76,7 +77,7 @@ public class HomeFragment extends BaseFragment implements HomeFragmentContract.V
     HomeFragmentContract.Presenter presenter;
 
     private ShopListAdapter mShopListAdapter;
-    private List<ShopModel> mShopModels = Collections.emptyList();
+    private List<ShopModel> mShopModels = Collections.EMPTY_LIST;
 
 
     @Nullable
@@ -174,9 +175,8 @@ public class HomeFragment extends BaseFragment implements HomeFragmentContract.V
         rvShopList.setLayoutManager(lm);
         rvShopList.addItemDecoration(new DividerItemDecoration(getActivity(), DividerItemDecoration.VERTICAL_LIST));
         rvShopList.setItemAnimator(new DefaultItemAnimator());
-        //mShopModels.add(new ShopModel());
         mShopListAdapter = new ShopListAdapter(this.getActivity(), R.layout.item_home_shop_list, mShopModels);
-//        mShopListAdapter.setUpFetchEnable(true);
+        mShopListAdapter.setUpFetchEnable(true);
         rvShopList.setAdapter(mShopListAdapter);
 //        mShopListAdapter.setEmptyView();
     }

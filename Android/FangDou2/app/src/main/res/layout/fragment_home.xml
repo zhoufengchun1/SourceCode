@@ -57,7 +57,7 @@
                         android:layout_height="1dp"
                         android:layout_marginLeft="20dp"
                         android:layout_marginRight="20dp"
-                        android:background="#ACACAC" />
+                        android:background="#000000" />
 
                     <!--两行小模块布局 RecyclerView实现的GridView -->
                     <androidx.recyclerview.widget.RecyclerView
@@ -73,7 +73,7 @@
                         android:layout_height="wrap_content" />
 
                     <!--团购列表-->
-                    <
+                    <androidx.recyclerview.widget.RecyclerView
                         android:id="@+id/recycler_view_shops"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />

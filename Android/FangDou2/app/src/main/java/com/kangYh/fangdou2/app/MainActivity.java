@@ -52,8 +52,8 @@ public class MainActivity extends BaseActivity
         fragmentList.add(new HomeFragment());
         fragmentList.add(new NearbyFragment());
         fragmentList.add(new DiscoverFragment());
-        fragmentList.add(new OrderFragment());
-        fragmentList.add(new MineFragment());
+      /*  fragmentList.add(new OrderFragment());
+        fragmentList.add(new MineFragment());*/
         //初始化CustomBottomTabWidget
         tabWidget.init(getSupportFragmentManager(), fragmentList);
     }
