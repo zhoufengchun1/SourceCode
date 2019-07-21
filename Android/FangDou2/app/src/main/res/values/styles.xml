@@ -16,6 +16,11 @@
         <item name="android:textSize">12sp</item>
         <item name="android:layout_marginTop">3dp</item>
     </style>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        ...
+
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
 
 
 </resources>

@@ -1,12 +1,12 @@
 package com.kangYh.fangdou2.app.home;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -18,6 +18,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.kangYh.fangdou2.MyApplication;
 import com.kangYh.fangdou2.R;
+import com.kangYh.fangdou2.app.VideoActivity;
 import com.kangYh.fangdou2.app.home.adapter.LittleModuleAdapter;
 import com.kangYh.fangdou2.app.home.adapter.VideoListAdapter;
 import com.kangYh.fangdou2.app.home.model.IconTitleModel;
@@ -28,14 +29,10 @@ import com.kangYh.fangdou2.utils.GlideImageLoader;
 import com.kangYh.fangdou2.utils.ToastUtils;
 import com.kangYh.fangdou2.widget.IconTitleView;
 import com.kangYh.fangdou2.widget.decoration.HomeGridDecoration;
-import com.kangYh.fangdou2.widget.refresh.CustomRefreshFooter;
-import com.kangYh.fangdou2.widget.refresh.CustomRefreshHeader;
-import com.scwang.smartrefresh.layout.SmartRefreshLayout;
 import com.scwang.smartrefresh.layout.api.RefreshLayout;
 import com.scwang.smartrefresh.layout.constant.SpinnerStyle;
 import com.scwang.smartrefresh.layout.footer.BallPulseFooter;
 import com.scwang.smartrefresh.layout.header.BezierRadarHeader;
-import com.scwang.smartrefresh.layout.listener.OnRefreshListener;
 import com.scwang.smartrefresh.layout.listener.OnRefreshLoadmoreListener;
 import com.youth.banner.Banner;
 import com.youth.banner.BannerConfig;
@@ -76,6 +73,7 @@ public class HomeFragment extends BaseFragment implements HomeFragmentContract.V
     HomeFragmentContract.Presenter presenter;
     private VideoListAdapter videoListAdapter;
 
+
     //private ShopListAdapter mShopListAdapter;
 //    private List<ShopModel> mShopModels = Collections.EMPTY_LIST;
 
@@ -111,6 +109,7 @@ public class HomeFragment extends BaseFragment implements HomeFragmentContract.V
         initLittleModuleRecyclerView();
         initVideoRecyclerView();
         initSmartRefreshLayout();
+
     }
 
 
@@ -209,7 +208,8 @@ public class HomeFragment extends BaseFragment implements HomeFragmentContract.V
             @Override
             public void onItemClick(BaseQuickAdapter adapter, View view, int position)
             {
-                ToastUtils.show(imageTitleModels.get(position).getTitle());
+                Intent intent = new Intent(getContext(), VideoActivity.class);
+                startActivity(intent);
             }
         });
 
