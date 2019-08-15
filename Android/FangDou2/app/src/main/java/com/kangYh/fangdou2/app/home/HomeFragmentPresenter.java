@@ -23,7 +23,8 @@ import javax.inject.Inject;
  * Created by solo on 2018/1/10.
  */
 
-public class HomeFragmentPresenter implements HomeFragmentContract.Presenter {
+public class HomeFragmentPresenter implements HomeFragmentContract.Presenter
+{
 
     //大模块的图片数组
     private static final int[] bigModuleDrawables = {
@@ -33,7 +34,7 @@ public class HomeFragmentPresenter implements HomeFragmentContract.Presenter {
 
     //大模块的标题数组
     private static final String[] bigModuleTitles = {
-           "排行榜","猜你喜欢"
+            "排行榜", "猜你喜欢"
     };
 
     private HomeFragmentContract.View mFragment;
@@ -42,13 +43,15 @@ public class HomeFragmentPresenter implements HomeFragmentContract.Presenter {
     private GroupPackageService groupPackageService;
     private MockUtils mockUtils;
     private CloseableRxServiceExecutor executor;
+    private boolean flag = true;
 
     @Inject
     public HomeFragmentPresenter(Context context,
                                  ShopService shopService,
                                  GroupPackageService groupPackageService,
                                  MockUtils mockUtils,
-                                 CloseableRxServiceExecutor executor) {
+                                 CloseableRxServiceExecutor executor)
+    {
         mContext = context;
         this.shopService = shopService;
         this.groupPackageService = groupPackageService;
@@ -57,12 +60,14 @@ public class HomeFragmentPresenter implements HomeFragmentContract.Presenter {
     }
 
     @Override
-    public void setContractView(HomeFragmentContract.View fragment) {
+    public void setContractView(HomeFragmentContract.View fragment)
+    {
         mFragment = fragment;
     }
 
     @Override
-    public void onStart() {
+    public void onStart()
+    {
 
         initBigModule();
         mockUtils.mockShopDataToDB();
@@ -74,32 +79,39 @@ public class HomeFragmentPresenter implements HomeFragmentContract.Presenter {
     }
 
     @Override
-    public void onDestroy() {
+    public void onDestroy()
+    {
     }
-
 
 
     /**
      * 初始化banner下面的5个大模块
      */
-    private void initBigModule() {
-        for (int i = 0; i < 2; i++) {
-            IconTitleView iconTitleView = IconTitleView.newInstance(mContext, bigModuleDrawables[i], bigModuleTitles[i]);
-            // 设置宽高和权重weight，使每个View占用相同的宽度
-            LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(
-                    LinearLayout.LayoutParams.WRAP_CONTENT,
-                    LinearLayout.LayoutParams.WRAP_CONTENT, 1.0f);
-            iconTitleView.setLayoutParams(lp);
+    private void initBigModule()
+    {
+        if (flag)
+        {
+            for (int i = 0; i < 2; i++)
+            {
+                IconTitleView iconTitleView = IconTitleView.newInstance(mContext, bigModuleDrawables[i], bigModuleTitles[i]);
+                // 设置宽高和权重weight，使每个View占用相同的宽度
+                LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(
+                        LinearLayout.LayoutParams.WRAP_CONTENT,
+                        LinearLayout.LayoutParams.WRAP_CONTENT, 1.0f);
+                iconTitleView.setLayoutParams(lp);
 
-            // 往根布局上添加View
-            mFragment.addViewToBigModule(iconTitleView);
+                // 往根布局上添加View
+                mFragment.addViewToBigModule(iconTitleView);
 
-            //给View添加点击事件
-            int finalI = i;
-            iconTitleView.setOnClickListener((view) -> {
-                Logger.d(bigModuleTitles[finalI]);
-                ToastUtils.show(bigModuleTitles[finalI]);
-            });
+                //给View添加点击事件
+                int finalI = i;
+                iconTitleView.setOnClickListener((view) ->
+                {
+                    Logger.d(bigModuleTitles[finalI]);
+                    ToastUtils.show(bigModuleTitles[finalI]);
+                });
+            }
+            flag = false;
         }
     }
 
@@ -109,14 +121,13 @@ public class HomeFragmentPresenter implements HomeFragmentContract.Presenter {
      * @return
      */
     @Override
-    public List<Integer> getBannerImages() {
+    public List<Integer> getBannerImages()
+    {
         List<Integer> mBannerImages = new ArrayList<>();
-        mBannerImages.add(R.mipmap.banner1);
-        mBannerImages.add(R.mipmap.banner2);
-        mBannerImages.add(R.mipmap.banner3);
-        mBannerImages.add(R.mipmap.banner4);
-        mBannerImages.add(R.mipmap.banner5);
-        mBannerImages.add(R.mipmap.banner6);
+        mBannerImages.add(R.mipmap.banner_1);
+        mBannerImages.add(R.mipmap.banner_2);
+        mBannerImages.add(R.mipmap.banner_3);
+        mBannerImages.add(R.mipmap.banner_4);
         return mBannerImages;
     }
 
@@ -126,7 +137,8 @@ public class HomeFragmentPresenter implements HomeFragmentContract.Presenter {
      * @return
      */
     @Override
-    public List<IconTitleModel> getIconTitleModels() {
+    public List<IconTitleModel> getIconTitleModels()
+    {
         List<IconTitleModel> datas = new ArrayList<>();
         datas.add(new IconTitleModel(R.mipmap.homepage_icon_light_putonghua, "普通话"));
         datas.add(new IconTitleModel(R.mipmap.homepage_icon_light_sichuanhua, "四川话"));
@@ -149,8 +161,6 @@ public class HomeFragmentPresenter implements HomeFragmentContract.Presenter {
 
         return datas;
     }
-
-
 
 
 }

@@ -1,0 +1,39 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="accountService1" class="com.kangyh.service.impl.AccountServiceImpl">
+
+        <constructor-arg name="age" value="123" />
+        <constructor-arg name="name" value="dadada" />
+        <constructor-arg name="birthday" ref="now" />
+    </bean>
+
+    <bean id="now" class="java.util.Date" />
+
+
+    <bean id="accountService2" class="com.kangyh.service.impl.AccountServiceImpl">
+
+        <property name="name" value="hahaha" />
+        <property name="age" value="123" />
+        <property name="birthday" ref="now" />
+
+        <property name="strings">
+            <array>
+                <value>123</value>
+                <value>32</value>
+                <value>42</value>
+                <value>342</value>
+            </array>
+        </property>
+
+        <property name="map">
+            <map>
+                <entry key="123" value="789" />
+                <entry key="31" value="789" />
+                <entry key="3432" value="789" />
+            </map>
+        </property>
+    </bean>
+
+</beans>

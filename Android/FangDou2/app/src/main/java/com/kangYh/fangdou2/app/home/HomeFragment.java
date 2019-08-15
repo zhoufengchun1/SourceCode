@@ -1,11 +1,13 @@
 package com.kangYh.fangdou2.app.home;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.LinearLayout;
 
 import androidx.annotation.NonNull;
@@ -18,7 +20,9 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.kangYh.fangdou2.MyApplication;
 import com.kangYh.fangdou2.R;
-import com.kangYh.fangdou2.app.VideoActivity;
+import com.kangYh.fangdou2.app.home.activity.MainActivity;
+import com.kangYh.fangdou2.app.home.activity.ManyActivity;
+import com.kangYh.fangdou2.app.home.activity.VideoActivity;
 import com.kangYh.fangdou2.app.home.adapter.LittleModuleAdapter;
 import com.kangYh.fangdou2.app.home.adapter.VideoListAdapter;
 import com.kangYh.fangdou2.app.home.model.IconTitleModel;
@@ -26,7 +30,6 @@ import com.kangYh.fangdou2.app.home.model.ImageTitleModel;
 import com.kangYh.fangdou2.base.BaseFragment;
 import com.kangYh.fangdou2.di.components.DaggerActivityComponent;
 import com.kangYh.fangdou2.utils.GlideImageLoader;
-import com.kangYh.fangdou2.utils.ToastUtils;
 import com.kangYh.fangdou2.widget.IconTitleView;
 import com.kangYh.fangdou2.widget.decoration.HomeGridDecoration;
 import com.scwang.smartrefresh.layout.api.RefreshLayout;
@@ -71,6 +74,8 @@ public class HomeFragment extends BaseFragment implements HomeFragmentContract.V
     RecyclerView videoListRecyclerView;
     @Inject
     HomeFragmentContract.Presenter presenter;
+    @BindView(R.id.home_root)
+    LinearLayout homeRoot;
     private VideoListAdapter videoListAdapter;
 
 
@@ -179,7 +184,8 @@ public class HomeFragment extends BaseFragment implements HomeFragmentContract.V
             @Override
             public void onItemClick(BaseQuickAdapter adapter, View view, int position)
             {
-                ToastUtils.show(iconTitleModels.get(position).getTitle());
+                Intent intent = new Intent(getActivity().getApplicationContext(), ManyActivity.class);
+                startActivity(intent);
             }
         });
 
@@ -283,5 +289,32 @@ public class HomeFragment extends BaseFragment implements HomeFragmentContract.V
     {
         super.onPause();
         Jzvd.releaseAllVideos();
+    }
+
+    @Override
+    public void onAttach(@NonNull Context context)
+    {
+        MainActivity.OnHideKeyboardListener onHideKeyboardListener = new MainActivity.OnHideKeyboardListener()
+        {
+            private InputMethodManager inputMethodManager = (InputMethodManager) getActivity().getSystemService(Context.INPUT_METHOD_SERVICE);
+            ;
+
+            @Override
+            public boolean hideKeyboard()
+            {
+                // TODO Auto-generated method stub
+                if (inputMethodManager.isActive(getActivity().findViewById(R.id.activity_main_input_edittext)))
+                {
+                    getView().requestFocus();
+                    inputMethodManager.hideSoftInputFromWindow(getActivity().getCurrentFocus().getWindowToken()
+                            , InputMethodManager.HIDE_NOT_ALWAYS);
+                    return true;
+                }
+                return false;
+            }
+        };
+        ((MainActivity) getActivity()).setOnHideKeyboardListener(onHideKeyboardListener);
+        super.onAttach(context);
+
     }
 }

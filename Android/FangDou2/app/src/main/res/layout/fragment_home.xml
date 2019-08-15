@@ -3,8 +3,38 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
-    android:orientation="vertical">
+    android:id="@+id/home_root"
+    android:orientation="vertical"
+    android:focusable="true">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FF3D3D"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        app:titleMarginStart="20dp">
+
+
+        <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="320dp"
+            android:layout_height="70dp"
+            android:padding="5dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            tools:context=".MainActivity">
+
+
+            <com.kangYh.fangdou2.widget.SearchEditView
+                android:id="@+id/activity_main_input_edittext"
+                style="@style/editTextStyle"
+                android:layout_marginTop="28dp" />
+        </LinearLayout>
+
+
+    </androidx.appcompat.widget.Toolbar>
 
     <!--下拉刷新组件-->
     <com.scwang.smartrefresh.layout.SmartRefreshLayout
@@ -30,7 +60,7 @@
                     <com.youth.banner.Banner
                         android:id="@+id/home_banner"
                         android:layout_width="match_parent"
-                        android:layout_height="100dp"
+                        android:layout_height="200dp"
                         app:image_scale_type="center_crop"
                         app:scroll_time="500" />
 
@@ -39,8 +69,8 @@
                         android:id="@+id/ll_big_module_fragment_home"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="15dp"
                         android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
                         android:orientation="horizontal" />
 
                     <!--分割线-->

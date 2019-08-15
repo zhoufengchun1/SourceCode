@@ -1,21 +1,70 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#EBEBEF"
+    android:orientation="vertical">
 
-    <TextView
-        android:layout_width="56dp"
-        android:layout_height="18dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:text="我的"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/h_back"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/h_head"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/h_back"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="方小逗"
+                android:textColor="#000000"
+                android:textSize="17sp" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <com.kangYh.fangdou2.widget.ItemView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:image="@drawable/icon_favorite"
+        app:text="我的收藏" />
+
+    <com.kangYh.fangdou2.widget.ItemView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:image="@drawable/icon_history"
+        app:show_bottomline="false"
+        app:text="观看历史" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <com.kangYh.fangdou2.widget.ItemView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:image="@drawable/icon_about"
+        app:show_bottomline="false"
+        app:text="关于" />
+
+</LinearLayout>

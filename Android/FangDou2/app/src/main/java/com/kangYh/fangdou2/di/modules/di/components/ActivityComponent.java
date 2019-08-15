@@ -1,9 +1,8 @@
 package com.kangYh.fangdou2.di.modules.di.components;
 
 
-
-import com.kangYh.fangdou2.app.MainActivity;
 import com.kangYh.fangdou2.app.home.HomeFragment;
+import com.kangYh.fangdou2.app.home.activity.MainActivity;
 import com.kangYh.fangdou2.di.modules.ActivityModule;
 import com.kangYh.fangdou2.di.modules.di.scopes.Scopes;
 

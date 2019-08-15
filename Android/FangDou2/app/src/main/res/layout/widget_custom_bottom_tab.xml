@@ -50,7 +50,7 @@
 
             <TextView
                 style="@style/menuTextStyle"
-                android:text="附近" />
+                android:text="翻译" />
         </LinearLayout>
 
         <LinearLayout
@@ -67,7 +67,7 @@
 
             <TextView
                 style="@style/menuTextStyle"
-                android:text="发现" />
+                android:text="我的" />
         </LinearLayout>
 
     </LinearLayout>

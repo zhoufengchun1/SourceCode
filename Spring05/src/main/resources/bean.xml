@@ -1,0 +1,27 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:aop="http://www.springframework.org/schema/aop"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/aop
+        https://www.springframework.org/schema/aop/spring-aop.xsd">
+
+
+
+    <bean id="AccountService" class="com.kangyh.service.impl.AccountServiceImpl" />
+
+    <bean id="Logger" class="com.kangyh.service.utils.Logger" />
+
+    <aop:config>
+        <aop:pointcut id="pt1" expression="execution(* com.kangyh.service.impl.*.*(..))" />
+        <aop:aspect id="logAdvice" ref="Logger" >
+
+            <aop:before method="beforePrintLog" pointcut-ref="pt1" />
+            <aop:after-returning method="afterReturningPrintLog" pointcut-ref="pt1" />
+            <aop:after-throwing method="afterThrowingPrintLog" pointcut-ref="pt1" />
+            <aop:after method="afterPrintLog" pointcut-ref="pt1" />
+
+        </aop:aspect>
+    </aop:config>
+</beans>

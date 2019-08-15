@@ -2,25 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62a28673-e726-444e-8893-b7c5b8cb9de5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../Android/FangDou2/app/src/main/res/mipmap-xhdpi/homepage_icon_light_dongbeihua.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Android/FangDou2/app/src/main/res/mipmap-xhdpi/homepage_icon_light_guangdonghua.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Android/FangDou2/app/src/main/res/mipmap-xhdpi/homepage_icon_light_like.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Android/FangDou2/app/src/main/res/mipmap-xhdpi/homepage_icon_light_putonghua.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Android/FangDou2/app/src/main/res/mipmap-xhdpi/homepage_icon_light_rankinglist.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Android/FangDou2/app/src/main/res/mipmap-xhdpi/homepage_icon_light_sichuanhua.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Android/FangDou2/app/src/main/res/mipmap-xxhdpi/homepage_icon_light_dongbeihua.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Android/FangDou2/app/src/main/res/mipmap-xxhdpi/homepage_icon_light_guangdonghua.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Android/FangDou2/app/src/main/res/mipmap-xxhdpi/homepage_icon_light_like.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Android/FangDou2/app/src/main/res/mipmap-xxhdpi/homepage_icon_light_putonghua.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Android/FangDou2/app/src/main/res/mipmap-xxhdpi/homepage_icon_light_rankinglist.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Android/FangDou2/app/src/main/res/mipmap-xxhdpi/homepage_icon_light_sichuanhua.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/FangDou2/app/src/main/java/com/kangYh/fangdou2/app/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/FangDou2/app/src/main/java/com/kangYh/fangdou2/app/MainActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Android/FangDou2/app/src/main/java/com/kangYh/fangdou2/app/home/HomeFragmentPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/FangDou2/app/src/main/java/com/kangYh/fangdou2/app/home/HomeFragmentPresenter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/FangDou2/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/FangDou2/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/FangDou2/app/src/main/res/layout/fragment_home.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/FangDou2/app/src/main/res/layout/fragment_home.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/FangDou2/app/src/main/res/layout/view_home_tool_bar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/FangDou2/app/src/main/res/layout/view_home_tool_bar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Android/FangDou2/app/src/main/res/mipmap-xhdpi/homepage_icon_light_food_b.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TomcatDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TomcatDemo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Android/FangDou2/app/src/main/java/com/kangYh/fangdou2/widget/MyJzvdStd.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Android/FangDou2/app/src/main/java/com/kangYh/fangdou2/widget/MyJzvdStd.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Android/FangDou2/app/src/main/res/layout/activity_video.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -92,7 +77,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-7" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
@@ -104,7 +89,11 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane" />
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -114,7 +103,13 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="go.import.settings.migrated" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../TomcatDemo" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -175,17 +170,18 @@
       <workItem from="1562159327826" duration="96000" />
       <workItem from="1563109113080" duration="78000" />
       <workItem from="1563625900505" duration="334000" />
+      <workItem from="1563765600195" duration="599000" />
+      <workItem from="1563847949643" duration="1342000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2205000" />
+    <option name="totallyTimeSpent" value="4146000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.31929046" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31886387" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />

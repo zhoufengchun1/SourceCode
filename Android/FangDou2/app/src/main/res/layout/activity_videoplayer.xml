@@ -5,7 +5,7 @@
     android:fitsSystemWindows="true"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".app.VideoActivity">
+    tools:context=".app.home.activity.VideoActivity">
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:id="@+id/main_content"
         android:layout_width="match_parent"
@@ -44,6 +44,8 @@
                     android:layout_height="?attr/actionBarSize"
                     app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
                     android:fitsSystemWindows="true"
+
+                    android:layout_marginTop="5dp"
                     app:layout_collapseMode="pin" />
 
             </com.google.android.material.appbar.CollapsingToolbarLayout>
@@ -87,7 +89,7 @@
                                 android:id="@+id/detail_page_userName"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:textColor="#5B595A"
+                                android:textColor="#423F3F"
                                 android:textSize="14sp"
                                 android:text="沐风" />
                             <TextView
